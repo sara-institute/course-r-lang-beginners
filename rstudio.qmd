@@ -1,0 +1,206 @@
+---
+title: "[RStudio]{.clr-white .r-fit-text}"
+author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+format: revealjs
+execute: 
+  echo: true
+controls: true
+slide-number: true
+scrollable: true
+logo: images/logo-sara.png
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+---
+
+## [R and RStudio]{.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### Imagine R as a powerful engine
+
+<br>
+
+[{{< fa gear size=7x >}}]{style="color:tomato"}
+:::
+
+::: {.column width="50%"}
+### and RStudio as a stylish car
+
+<br>
+
+[{{< fa car size=7x >}}]{style="color:navy"}
+:::
+:::
+
+## 
+
+<br>
+<br>
+<br>
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/logo_rstd.png)
+:::
+
+::: {.column width="50%"}
+RStudio is an integrated development environment (IDE) for R and Python from [posit](https://posit.co/).
+:::
+
+::::
+
+## 
+
+![](images/logo_rstd.png){width=30%}
+
+- It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management.
+
+- Download RStudio.
+
+::: aside
+Source: <https://posit.co/products/open-source/rstudio/>
+:::
+
+## RStudio IDE 
+
+![](images/rstd_ide.png){fig-align="center"}
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center}
+
+![](images/rstd_options1.png){fig-align="center"}
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center}
+
+![](images/rstd_options2.png){fig-align="center"}
+
+# {.inverse}
+
+![](images/project-logo.png){fig-align=center width=25%}
+
+[RStudio Project]{.r-fit-text}
+
+## Open RStudio
+
+![](images/rstd-proj.png){fig-align=center}
+
+## RStudio without project
+
+![](images/rstd-proj-none.png){fig-align=center}
+
+## RStudio without project 
+
+![](images/rstd-proj-folders.png){fig-align=center}
+
+## RStudio project helps: {background-image="images/r-projects.jpg" background-size="55%" background-position="bottom right"}
+
+::: columns
+::: {.column width="100%"}
+-   "to divide your work into multiple contexts, each with their own"
+    -   working directory,
+    -   workspace,
+    -   history, and
+    -   source documents."
+:::
+:::
+
+::: aside
+Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) & artwork by [Allison Horst](https://www.allisonhorst.com/)
+:::
+
+## Let's do it together {background-image=images/dito.gif background-size="contain" background-position="right" background-color=black}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+[Create <br> RStudio <br> project]{.r-fit-text}
+:::
+
+::::
+
+::: aside
+GIF Source {{< fa brands instagram >}} [@dolly_ki_tapri_nagpur](https://www.instagram.com/dolly_ki_tapri_nagpur)
+:::
+
+## Create RStudio project 
+
+![](images/rstd_proj1.png){fig-align=center}
+
+## Create RStudio project 
+
+![](images/rstd_proj2.png){fig-align=center}
+
+## [In case anything goes wrong$...$]{.theme-red}
+
+![](images/rstd_proj3.1.png){fig-align=center}
+
+## Create RStudio project {.center}
+
+![](images/rstd_proj3.png){fig-align=center}
+
+## Create RStudio project {.center}
+
+![](images/rstd_proj4.png){fig-align=center}
+
+## Create RStudio project {.center}
+
+![](images/rstd_proj4a.png){fig-align=center}
+
+## Create RStudio project {.center}
+
+![](images/rstd_proj4b.png){fig-align=center}
+
+## Create RStudio project {.center}
+
+![](images/rstd_proj4c.png){fig-align=center}
+
+## RStudio project "name" {.center}
+
+![](images/rstd_proj_name.png){fig-align=center}
+
+## RStudio project "path" {.center}
+
+![](images/rstd_proj_path1.png){fig-align=center}
+
+## RStudio project {.center}
+
+![](images/rstd_proj_path2.png){fig-align=center}
+
+## Write codes in R console
+
+![](images/code-console.png){fig-align=center}
+
+## Write codes in R script
+
+![](images/code-script.png){fig-align=center}
+
+## R script `.R`
+
+> Write codes in the R script $\rightarrow$ Console will show the results.
+
+-   Benefits of writing codes in R script:
+    -   You can save it for later use and revision.
+    -   You can share with others.
+    -   A better track of codes.
+
+## 💡 Tips for R script:
+
+1.  Writing readable code because other people might need to use your code.
+
+1.  Writing readable code because you might need to use your code, a few weeks/months/years after you've written it.
+
+1.  Put spaces between and around variable names and operators (`=+-*/`).
+
+1.  Break up long lines of code.
+
+1.  Keeping a consistent style.
+
+::: aside
+Source: [Marius Mather](https://bookdown.org/marius_mather/Rad/tips-for-effective-r-programming.html) also [Tomaž Kaštrun](https://tomaztsql.wordpress.com/2023/01/31/tips-for-organising-your-r-code/)
+:::

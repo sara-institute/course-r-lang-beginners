@@ -1,0 +1,196 @@
+/*-- scss:defaults --*/
+
+// color system
+$clr-navyblue:    #003262;
+$clr-gray:        #2A2121;
+$clr-blue:        #0061ab;
+$clr-cream:       #f2f2f2;
+$clr-white:       #fff;
+$clr-tom:         #ef4338;
+
+.clr-blue {
+  color: $clr-blue;
+}
+
+.clr-tom {
+  color: $clr-tom;
+}
+
+.clr-cream {
+  color: $clr-cream;
+}
+
+.clr-white {
+  color: $clr-white;
+}
+
+.clr-gray {
+  color: $clr-gray;
+}
+
+
+
+
+
+
+
+
+.banner-blue {
+  background-color: $clr-navyblue;
+}
+
+.banner-cream {
+  background-color: $clr-cream;
+  padding: .7777777789em 0em 0em;
+}
+
+
+.card {
+  padding: 2rem;
+  border-top: 2px solid;
+  border-radius: 0.5rem; 
+  box-shadow: 0 1rem 1.5rem -0.5rem rgba(0 50 100 / 0.15);
+  background: #0e6655;
+  text-align: left;
+  color: $clr-white;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.layout-grid {
+  --gap: 0.85rem;
+  display: grid;
+  gap: var(--gap);
+}
+
+@media (min-width: 800px) {
+  .layout-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.layout-grid > * {
+  flex: 1;
+}
+
+.col {
+  display: grid;
+  gap: var(--gap);
+  align-content: center;
+}
+
+.button {
+  background-color: $clr-navyblue;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 1.5;
+  padding: .77777778em 5em 0em;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  font-size: 1.0em;
+  margin: 40px 2px 80px 2px;
+}
+
+@media (max-width: 400px) {
+  .button {
+    font-size: .75em;
+    font-weight: 400;
+    padding: .77777778em 2.0em 0em;
+    margin: 30px 2px 60px 2px;
+  }
+  
+}
+
+.button a:link {
+  color: #fff;
+}
+
+.button a:visited {
+  color: #fff;
+}
+
+.button:hover {
+  background: $clr-tom;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.fa-facebook:hover {
+    color: #316FF6;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-instagram:hover {
+    color: #a51f3c;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.fa-youtube:hover {
+    color: #CD201F;
+}
+
+.fa-github:hover {
+    color: #000;
+}
+
+.fa-whatsapp:hover {
+    color: #25D366;    
+}
+
+.fa-bluesky:hover {
+    color: #25D366;    
+}
+
+// below important to zero top padding gap solution is from the Stackoverflow
+.content {
+  //margin-top: -20px;
+  margin-bottom: -60px;
+}
+
+.centering {
+  text-align: center;
+}
+
+your-turn {
+  color: #36454F;
+  h1, h2, h3 {
+    color: #36454F;
+    font-size: 2.5em;
+  }
+
+  a {
+    color: #f1fa8c;
+  }
+  
+  a:hover {
+    color: #d8e17e;
+  }
+  
+  .slide-background-content {
+    background-color: azure;
+  }
+  
+}

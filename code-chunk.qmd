@@ -1,0 +1,375 @@
+---
+title: "[Code Chunk]{.clr-white .r-fit-text}"
+author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+format: revealjs
+execute: 
+  echo: true
+controls: true
+slide-number: true
+scrollable: true
+code-line-numbers: false
+logo: images/logo-sara.png
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+---
+
+# {.inverse}
+
+![](images/rainbowr.gif){fig-align=center width=30%}
+
+[Code Chunk]{.r-fit-text}
+
+::: aside
+Artwork by [Alision Horst](https://allisonhorst.com/)
+:::
+
+## Code chunks (or cells or blocks)
+
+**Three ways to insert code chunks in the quarto file:**
+
+1. Keyboard shortcuts: 
+    - for {{< fa brands apple >}} `Option` + `Cmd` + `i`.
+    - for {{< fa brands windows >}} `ctrl` + `alt` + `i`.
+
+1. ![](images/rstudio-insert-chunk.png) **Insert Chunk** button in the editor toolbar. 
+
+1. Manually type the chunk delimiters ```` ```{r} ```` and ```` ``` ````.
+
+::: aside
+
+Source: [Jadey Ryan's Talk](https://jadeyryan.quarto.pub/slc-rug-quarto/#/code-chunks-or-cells-or-blocks)
+
+:::
+
+## Code chunks (or cells or blocks)
+
+**Two ways to run code chunks:**
+
+![](images/rstudio-code-chunk.png)
+
+1. Use the Run Current Chunk or Run All Chunks Above buttons.
+
+1. Run the current code chunk with `Cmd`/`Ctrl` + `Shift` + `Enter`.
+
+::: aside
+
+Source: [Jadey Ryan's Talk](https://jadeyryan.quarto.pub/slc-rug-quarto/#/code-chunks-or-cells-or-blocks)
+
+:::
+
+## {background-image="images/demo.gif" background-size="50%" background-position="right" background-color=black}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+[Demo <br> Code <br> Chunk]{.r-fit-text}
+
+::: aside
+[{{< fa download >}} demo_code_chunk.qmd](demo_code_chunk.qmd){.r-fit-text}
+
+GIF Source {{< fa brands instagram >}} [@dolly_ki_tapri_nagpur](https://www.instagram.com/dolly_ki_tapri_nagpur)
+:::
+
+:::
+
+::::
+
+# {.inverse}
+
+![](images/heartyr.gif){width=25% fig-align="center"}
+
+[R Function]{.r-fit-text}
+
+::: aside
+Artwork by [Alision Horst](https://allisonhorst.com/)
+:::
+
+## R function
+
+-   "A function, in a programming environment, is a set of instructions."
+
+-   "A programmer builds a function to avoid repeating the same task, or reduce complexity."
+
+## R function
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: fun-round1
+#| eval: false
+
+round(24.3454, 3)
+```
+
+<br>
+
+`round(argument 1, argument 2)`
+
+### Output
+
+```{r}
+#| label: fun-round1
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str1.png)
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str2.png)
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str3.png)
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str4.png)
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str5.png)
+
+<!-- ## Structure of R function {.center background-image="images/function-args.png" background-size="80%"} -->
+
+## Round function
+
+::: panel-tabset
+### Code
+
+Function with default argument.
+
+```{r}
+#| label: fun-round2
+#| eval: false
+
+round(46.487)
+```
+
+### Output
+
+```{r}
+#| label: fun-round2
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Round function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-round3
+#| eval: false
+
+round(x = 46.587, digits = 2)
+```
+
+### Output
+
+```{r}
+#| label: fun-round3
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Square root function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-sqrt
+#| eval: false
+
+sqrt(x = 9)
+```
+
+### Output
+
+```{r}
+#| label: fun-sqrt
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Sequence function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-seq
+#| eval: false
+
+seq.int(from = 10, to = 30, by = 5)
+```
+
+or
+
+```{r}
+#| label: fun-seq1
+#| eval: false
+
+seq.int(from = 10,
+        to = 30,
+        by = 5)
+```
+
+### Output
+
+```{r}
+#| label: fun-seq
+#| echo: false
+#| output: asis
+
+```
+:::
+
+# {.inverse}
+
+![](images/pkgs-space.png){fig-align=center}
+
+[R Packages]{.r-fit-text}
+
+## R packages {background-image="https://miro.medium.com/v2/resize:fit:732/1*qVn_OyvyHA6AG2gaQkTXfA.png" background-size="50%" background-position="right"}
+
+<br>
+
+::: columns
+::: {.column width="60%"}
+
+> "An R package is a collection of functions, data, and documentation that extends the capabilities of base R. Using packages is key to the successful use of R."
+
+:::
+
+::: {.column width="40%"}
+
+:::
+:::
+
+::: aside
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)}
+:::
+
+## Metacran
+
+![](images/metacran.png)
+
+::: aside
+Source: [Metacran](https://www.r-pkg.org/)
+:::
+
+## R packages
+
+1. Install the R package
+
+1. Call the R package
+
+1. Update the R package
+
+1. Remove the R package
+
+1. Write the R package
+
+::: aside
+Demo: demo_code_chunk.qmd
+:::
+
+## Install ackages {.center}
+
+![](images/pkg-download1.png){fig-align=center}
+
+## Name of the packages {.center}
+
+![](images/pkg-download2.png){fig-align=center}
+
+## Installed packages {.center}
+
+![](images/pkg-download3.png){fig-align=center}
+
+## Function to install packages
+
+<br>
+
+```{r}
+#| eval: false
+
+install.packages("tidyverse")
+```
+
+## Function to call package
+
+<br>
+
+```{r}
+#| eval: false
+
+library(tidyverse)
+```
+
+## Using packages
+
+-   You need to install package only once like:
+
+    -   📚 We buy books once and use them again and again
+
+    -   💡 Fix the bulb once and use it again and again.
+
+## Using packages
+
+-   In every R document you need to **call once** the package using function `library()`, for example library(ggplot2).
+
+-   Once in a while, you need to update the installed packages as well.
+
+-   If you un-install R or RStudio, you will lose all installed packages.
+
+## Tools $\rightarrow$ Package updates {.center}
+
+![](images/update-pkg1.png){fig-align=center}
+
+## Select packages to update {.center}
+
+![](images/update-pkg2.png){fig-align=center}
+
+## Click install updates {.center}
+
+![](images/update-pkg3.png){fig-align=center}
+
+## To remove packages {.center}
+
+![](images/remove-pkg.png){fig-align=center}
+

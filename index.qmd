@@ -1,0 +1,21 @@
+---
+format: html
+---
+
+![](images/logo-sara.png){fig-align="center" width="15%"}
+
+# "R for Beginners" - SARA Bootcamp 2025
+
+<span style="text-shadow: none;"><a class="github-button" href="https://github.com/sara-institute/course-r-lang-beginners.git" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub"> Star this Course on GitHub</a><script async defer src="https://buttons.github.io/buttons.js"></script></span>
+
+This program aims to help the participants to overcome the fear of coding.
+
+- It is an annual five days residential training program to learn data science using R programming language. 
+
+- Students from Underrepresented Communities are Prioritized for Selection. 
+
+- There is no tuition fee for any participant. The fee of Rs. 6000 (70 USD) includes only the food and accommodation for five days (December 16 - 20) at the SARA Institute, Dr. Ambedkar Bhawan, Sonipat, Haryana - 131001.
+
+SARA is a non-profit organization in India. To know more about SARA, kindly vist our [website](https://sara-edu.netlify.app/).
+
+Email us at `sara.institute.info@gmail.com` | Call us at `925 315 2024`.

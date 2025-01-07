@@ -1,0 +1,806 @@
+---
+title: "[Data <br> Wrangling]{.clr-white .r-fit-text}"
+author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+format: 
+  revealjs:
+    theme: [default, style.scss]
+execute: 
+  echo: true
+controls: true
+slide-number: true
+scrollable: true
+code-line-numbers: false
+logo: images/logo-sara.png
+#bibliography: references.bib
+#theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+---
+
+## Data Wrangling
+
+- "data exploration and data manipulation" by [Jesse Mostipak](https://www.kaggle.com/jessemostipak/dive-into-dplyr-tutorial-1)
+
+- "tidying and transforming" by [Hadley & Garrett](https://r4ds.had.co.nz/index.html)
+
+## Transforming Data
+
+- "narrowing in on observations of interest ...
+
+- creating new variables that are functions of existing variables and ...
+
+- calculating a set of summary statistics."
+
+::: aside
+Source: <https://r4ds.had.co.nz/index.html>
+:::
+
+#  {.inverse background-image=images/dplyr.svg background-size=48%}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+[R Package dplyr]{.r-fit-text}
+
+## `dplyr` Package
+
+- "dplyr is a grammar of data manipulation"
+
+- "providing a consistent set of verbs that help you solve the most common data manipulation challenges:"
+
+## `dplyr` Functions:
+
+- `filter()`
+
+- `select()` 
+  
+- `mutate()` 
+  
+- `arrange()` 
+  
+- `summarise()`
+
+::: aside
+Source: <https://dplyr.tidyverse.org/>
+:::
+
+## `filter()` Function: 
+
+> Picks cases/observations based on their values.
+
+![](images/01-filter.png)
+
+## `filter()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to have a data of only Gentoo penguins?
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png){width=50%}
+
+### Code
+
+```{r}
+#| label: filter-fun
+#| eval: false
+
+library(tidyverse)
+library(palmerpenguins)
+library(countdown)
+
+penguins |> 
+  filter(species == "Gentoo")
+```
+
+### Output
+
+```{r }
+#| label: filter-fun
+#| echo: false
+```
+
+:::
+
+## Wait! What the f* is `|>` 
+
+- This is called native **pipe** operator
+
+- `|>` let you "pipe" an object forward to a function or call expression
+
+- allowing you to express a sequence of operations that transform an object.
+
+- ctrl + shift + m = `|>`
+
+
+::: aside
+Read more about pipes [here](https://www.tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/)
+:::
+
+## `filter()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to have a data of penguins of bill length more than 43 mm?
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png){width=50%}
+
+### Code
+
+```{r}
+#| label: filter-fun2
+#| eval: false
+
+penguins |> 
+  filter(bill_length_mm > 43)
+```
+
+### Output
+
+```{r }
+#| label: filter-fun2
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+1. How to have a data of only Adele penguins?
+
+1. How to have a data of penguins of bill depth more than 10 mm?
+
+### Answer
+
+```{r}
+#| label: your-turn6
+#| eval: false
+#| echo: true
+
+# question number 1
+penguins |> 
+  filter(species == "Adelie")
+
+# question number 2
+penguins |> 
+  filter(bill_depth_mm > 10)
+```
+
+### Output
+
+```{r}
+#| label: your-turn6
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 10,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `filter()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to have a data of Gentoo penguins of bill length more than 50 mm?
+
+### Code
+
+```{r}
+#| label: filter-fun3
+#| eval: false
+
+penguins |> 
+  filter(species == "Gentoo",
+         bill_length_mm > 50)
+```
+
+### Output
+
+```{r }
+#| label: filter-fun3
+#| echo: false
+```
+
+:::
+
+## `filter()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to have a data of non-Gentoo penguins of bill length more than 50 mm and weight more than 4 kg?
+
+### Code
+
+```{r}
+#| label: filter-fun4
+#| eval: false
+
+penguins |> 
+  filter(species != "Gentoo",
+         bill_length_mm > 50,
+         body_mass_g > 4000)
+```
+
+### Output
+
+```{r }
+#| label: filter-fun4
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+How to have a data of penguins only from the Dream island which have bill depth more than 7 mm and weight more than 3 kg?
+
+### Answer
+
+```{r}
+#| label: your-turn7
+#| eval: false
+#| echo: true
+
+penguins |> 
+  filter(island == "Dream",
+         bill_depth_mm > 7,
+         body_mass_g > 3000)
+```
+
+### Output
+
+```{r}
+#| label: your-turn7
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 7,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `select()` Function:
+
+> Picks variables/columns based on their names.
+
+![](images/03-select.png)
+
+## `select()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to keep only species variable in the data?
+
+### Code
+
+```{r}
+#| label: select-fun1
+#| eval: false
+
+penguins |> 
+  select(species)
+```
+
+### Output
+
+```{r }
+#| label: select-fun1
+#| echo: false
+```
+
+:::
+
+## `select()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to keep only bill related variables in the data?
+
+### Code
+
+```{r}
+#| label: select-fun2
+#| eval: false
+
+penguins |> 
+  select(bill_length_mm, bill_depth_mm)
+```
+
+### Output
+
+```{r }
+#| label: select-fun2
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+How to have a data of variables sex, year, island and flipper length?
+
+### Answer
+
+```{r}
+#| label: your-turn8
+#| eval: false
+#| echo: true
+
+penguins |> 
+  select(sex, year, island, flipper_length_mm)
+```
+
+### Output
+
+```{r}
+#| label: your-turn8
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `r emo::ji("bulb")` Tips for variable selection
+
+(@) Use `names()` function to see the exact names and the order of the variables.
+
+(@) Use `:` operator to select the range of variables.
+
+```{r}
+#| echo: true
+#| results: hide
+
+penguins |> 
+  select(island : flipper_length_mm)
+```
+
+
+(@) Use location value of the variable. 
+
+```{r}
+#| echo: true
+#| results: hide
+
+penguins |> 
+  select(3 : 7)
+```
+
+(@) Use `-` operator to not to select the range of variables.
+
+```{r}
+#| echo: true
+# results: hide
+
+penguins |> 
+  select(-c(island : flipper_length_mm))
+```
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+How to have a data of variables from location first to fifth but without the variable island?
+
+### Answer
+
+```{r}
+#| label: your-turn9
+#| eval: false
+#| echo: true
+
+penguins |> 
+  select(c(1, 3:5))
+```
+
+### Output
+
+```{r}
+#| label: your-turn9
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `mutate()` Function:
+
+> Adds new variables that are functions of existing variables.
+
+![](images/04-mutate.png)
+
+## `mutate()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to convert body mass of penguins from grams to kilograms?
+
+### Code
+
+```{r}
+#| label: mutate-fun1
+#| eval: false
+
+penguins |> 
+  select(body_mass_g) |> 
+  mutate(body_mass_kg = body_mass_g / 1000)
+```
+
+### Output
+
+```{r }
+#| label: mutate-fun1
+#| echo: false
+```
+
+:::
+
+## `mutate()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to measure the penguin's bill size using length and depth?
+
+### Code
+
+```{r}
+#| label: mutate-fun2
+#| eval: false
+
+penguins |> 
+  mutate(bill_size = bill_length_mm * bill_depth_mm) |> 
+  select(bill_size)
+```
+
+### Output
+
+```{r }
+#| label: mutate-fun2
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+How to convert the bill dimensions from mm to cm?
+
+### Answer
+
+```{r}
+#| label: your-turn10
+#| eval: false
+#| echo: true
+
+penguins |> 
+  select(bill_length_mm, bill_depth_mm) |> 
+  mutate(bill_length_cm = bill_length_mm / 10, bill_depth_mm / 10)
+```
+
+### Output
+
+```{r}
+#| label: your-turn10
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `arrange()` Function:
+
+> Changes the ordering of the rows.
+
+![](images/02-arrange.png)
+
+## `arrange()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to arrange data as per the bill length of the penguins?
+
+### Code
+
+```{r}
+#| label: arrange-fun1
+#| eval: false
+
+penguins |> 
+  arrange(bill_length_mm) #default is ascending order
+```
+
+### Output
+
+```{r }
+#| label: arrange-fun1
+#| echo: false
+```
+
+:::
+
+## `arrange()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to see five penguins of the least bill length?
+
+### Code
+
+```{r}
+#| label: arrange-fun2
+#| eval: false
+#| code-line-numbers: "3"
+
+penguins |> 
+  arrange(bill_length_mm) |> 
+  head(5) 
+
+#tail function to see the bottom of the data
+```
+
+### Output
+
+```{r }
+#| label: arrange-fun2
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+> How to see five penguins of the highest bill length?
+
+### Answer
+
+```{r}
+#| label: your-turn11
+#| eval: false
+#| echo: true
+
+penguins |> 
+  arrange(bill_length_mm) |> 
+  tail(5)
+```
+
+### Output
+
+```{r}
+#| label: your-turn11
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `summarise()` Function:
+
+> Reduces multiple values down to a single summary.
+
+![](images/05-summarise.png)
+
+## `summarise()` Function
+
+::: {.panel-tabset}
+### Task
+
+> What is the mean bill length of penguins?
+
+### Code
+
+```{r}
+#| label: summarise-fun1
+#| eval: false
+#| code-line-numbers: "3"
+
+penguins |> 
+  summarise(mean(bill_length_mm))
+```
+
+### Output
+
+```{r }
+#| label: summarise-fun1
+#| echo: false
+```
+
+:::
+
+## `summarise()` Function
+
+::: {.panel-tabset}
+### Task
+
+> What is the mean bill length of penguins after removing the missing values?
+
+### Code
+
+```{r}
+#| label: summarise-fun2
+#| eval: false
+#| code-line-numbers: "2"
+
+penguins |>
+  drop_na() |> 
+  summarise(mean(bill_length_mm))
+```
+
+### Output
+
+```{r }
+#| label: summarise-fun2
+#| echo: false
+```
+
+:::
+
+## `summarise()` Function
+
+::: {.panel-tabset}
+### Task
+
+> What is the species wise mean bill length of penguins?
+
+### Code
+
+```{r}
+#| label: summarise-fun3
+#| eval: false
+#| code-line-numbers: "3"
+
+penguins |>
+  drop_na() |> 
+  group_by(species) |> 
+  summarise(mean(bill_length_mm))
+```
+
+### Output
+
+```{r }
+#| label: summarise-fun3
+#| echo: false
+```
+
+:::
+
+## `summarise()` Function
+
+::: {.panel-tabset}
+### Task
+
+> What is the species wise mean bill length of penguins and total number of penguins in each specie?
+
+### Code
+
+```{r}
+#| label: summarise-fun4
+#| eval: false
+#| code-line-numbers: "3"
+
+penguins |>
+  drop_na() |> 
+  group_by(species) |> 
+  summarise(mean(bill_length_mm),
+            n = n())
+
+# n() function to know the number of observations in the current group
+```
+
+### Output
+
+```{r }
+#| label: summarise-fun4
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+Who are of more weight male or female penguins?
+
+### Answer
+
+```{r}
+#| label: your-turn12
+#| eval: false
+#| echo: true
+
+penguins |>
+  drop_na() |> 
+  group_by(sex) |> 
+  summarise(mean(body_mass_g),
+            n = n())
+```
+
+### Output
+
+```{r}
+#| label: your-turn12
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```

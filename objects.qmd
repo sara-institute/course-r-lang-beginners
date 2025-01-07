@@ -1,0 +1,340 @@
+---
+title: "[R Objects]{.clr-white .r-fit-text}"
+author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+format: revealjs
+execute: 
+  echo: true
+controls: true
+slide-number: true
+scrollable: true
+code-line-numbers: false
+logo: images/logo-sara.png
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+---
+
+# {.inverse}
+
+![](images/heartyr.gif){fig-align="center" width="25%"}
+
+[R Objects]{.r-fit-text}
+
+::: aside
+Artwork by [Alision Horst](https://allisonhorst.com/)
+:::
+
+## R object
+
+<br>
+
+> Just a name that you can use to call up stored data.
+
+<br>
+
+::: {.callout-important}
+R assignment operators: Assignment operators are used to assign values to variables.
+
+`my_var <- 3`
+
+`my_var # print my_var`
+:::
+
+::: aside
+Source: [Garrett Grolemund](https://rstudio-education.github.io/hopr/basics.html#objects)
+:::
+
+## 💡Guidelines to name R objects:
+
+-   a name cannot start with a number.
+
+-   a name cannot use some special symbols, like `^`, `!`, `$`, `@`, `+`, `-`, `/`, or `*`,`:`.
+
+-   avoid caps.
+
+-   avoid space.
+
+-   use dash (like weight-kg) or underscore (like weight_kg).
+
+-   if chronology matters then add date (2020-09-05-file-name).
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: age
+#| eval: false
+age <- c(23, 25, 16, 40, 34)
+
+age
+```
+
+### Output
+
+```{r}
+#| label: age
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: income
+#| eval: false
+income <- c(23000, 25000, 16000, 4000, 34000)
+
+income
+```
+
+### Output
+
+```{r}
+#| label: income
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: name
+#| eval: false
+name <- c("Bhim", "Rama", "Sara", "Phule", "Savitri")
+
+name
+```
+
+### Output
+
+```{r}
+#| label: name
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: place
+#| eval: false
+place <- c("MH", "RJ", "DL", "HR", "HR")
+
+place
+```
+
+### Output
+
+```{r}
+#| label: place
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: weight
+#| eval: false
+weight_kg <- c(50, 52, 61, 40, 70)
+
+weight_kg
+```
+
+### Output
+
+```{r}
+#| label: weight
+#| output: asis
+#| echo: false 
+```
+:::
+
+## RStudio environment window
+
+<br>
+
+![](images/rstd-env.png){fig-align=center}
+
+[🤔 How to combine all these objects and form a data set?]{.r-fit-text .fragment .theme-red}
+
+## 👇 Something like this 😻😻
+
+<br>
+
+```{r}
+#| echo: false
+
+example_df <- data.frame(name, income, age, place, weight_kg)
+
+example_df
+```
+
+## How to create a data object?
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: df
+#| eval: false
+example_df <- data.frame(name, income, age, place, weight_kg)
+
+example_df
+```
+
+### Output
+
+```{r}
+#| label: df
+#| output: true
+#| echo: false 
+```
+:::
+
+## Export data as a `csv` file
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: export-csv
+#| eval: false
+
+library(readr)
+
+# create a folder in wd & name it "data"
+write_csv(example_df, "data/example_df.csv") 
+```
+
+### Output
+
+```{r}
+#| label: export-csv
+#| output: asis
+#| echo: false 
+```
+
+To see the created file, check the "data" folder in your working directory.
+:::
+
+## List of all objects
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: objects-list
+#| eval: false
+
+objects()
+```
+
+### Output
+
+```{r}
+#| label: objects-list
+#| output: asis
+#| echo: false 
+```
+:::
+
+#  {.inverse}
+
+![](images/stormyr.gif){fig-align="center" width=25%}
+
+[Comment]{.r-fit-text .center}
+
+::: aside
+Artwork by [Alision Horst](https://allisonhorst.com/)
+:::
+
+## Comment:
+
+-   "Humans will be able to read the comments, but your computer will pass over them."
+
+-   In R, `#` is used as a commenting symbol.
+
+::: aside
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Comment_computer_programming)
+:::
+
+# {.inverse}
+
+![](images/breakr.gif){fig-align=center width="25%"}
+
+[Community Help]{.r-fit-text}
+
+::: aside
+Artwork by [Alision Horst](https://allisonhorst.com/)
+:::
+
+## Help using console `>`
+
+> in console type `?your query`
+
+-   for example `?knitr`.
+
+-   for example `?mtcars`.
+
+-   for example `?dplyr`.
+
+## RStudio: Package website {.center}
+
+<br>
+
+![](images/help-cran.png){fig-align=center}
+
+## [Posit community](https://community.rstudio.com/latest) {.center}
+
+![](images/help-posit.png){fig-align=center}
+
+## [Stack Overflow](https://stackoverflow.com/) {.center}
+
+![](images/help-stack.png){fig-align=center}
+
+## [GitHub](https://github.com/) {.center}
+
+![](images/help-git.png){fig-align=center}
+
+## Social media #RStats
+
+![](images/code_hero.jpg){fig-align="center" width=55% }
+
+::: aside
+Artwork by [Alision Horst](https://allisonhorst.com/)
+:::
+
+# {.center}
+
+[🧑🏽‍💻👨🏽‍💻<br>Question & Answer]{.r-fit-text}
+
+# {background-image="https://images.unsplash.com/photo-1489249902199-9d713a2c68b5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size=cover}
+
+[Thank You!]{.r-fit-text}
+
+::: aside
+
+Title slide & this slide background source: [Thomas Somme](https://unsplash.com/@tsomme)
+
+:::

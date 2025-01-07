@@ -1,0 +1,1024 @@
+---
+title: "[Data <br> Visualization]{.clr-white .r-fit-text}"
+author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
+format: 
+  revealjs:
+    theme: [default, style.scss]
+execute: 
+  echo: true
+controls: true
+slide-number: true
+scrollable: true
+code-line-numbers: false
+logo: images/logo-sara.png
+#bibliography: references.bib
+#theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+---
+
+##  {.inverse background-image=images/logo-ggplot.png background-size=contain}
+
+## {background-color=#}
+
+<br>
+<br>
+<br>
+<br>
+
+> “The simple graph has brought more information to the data analyst’s mind than any other device.” — John Tukey
+
+```{r}
+#| label: packages-used2
+#| echo: false
+#| warning: false
+#| message: false
+
+#library(palmerpenguins)
+library(emoji)
+library(countdown)
+```
+
+## Goal
+
+How to visualize data using R package ggplot2.
+
+<br>
+
+![](https://r4ds.hadley.nz/data-visualize_files/figure-html/unnamed-chunk-7-1.png)
+
+## {background-image=images/cake-ggplot.png background-size=contain}
+
+::: aside
+
+[Source: [Tanya Shapiro](https://twitter.com/tanya_shapiro/status/1576935152575340544/photo/1)]{.small}
+
+:::
+
+## {background-image=images/layer3d.png background-size=contain background-color=#000}
+
+## ggplot2 Layers {.center}
+
+![](images/layer00.png)
+
+## Import Data
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer1.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-data
+#| eval: false
+
+library(tidyverse)
+library(palmerpenguins)
+
+ggplot(data = penguins)
+```
+
+### Output
+
+```{r }
+#| label: fig-data
+#| echo: false
+```
+
+:::
+
+## Map Variables Aesthetics
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer2.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-var
+#| eval: false
+#| code-line-numbers: "2"
+
+ggplot(data = penguins,
+       mapping = aes(x = species))
+```
+
+### Output
+
+```{r }
+#| label: fig-var
+#| echo: false
+```
+
+:::
+
+## Add Geometric Shapes
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer3.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-geoms
+#| eval: false
+#| code-line-numbers: "3"
+
+ggplot(data = penguins,
+       mapping = aes(x = species)) +
+  geom_bar()
+```
+
+### Output
+
+```{r }
+#| label: fig-geoms
+#| echo: false
+```
+
+:::
+
+## Key Components are:
+
+<br>
+
+1. [data]{.rainbow-orange},
+
+1. A set of [aesthetic mappings]{.rainbow-orange} between variables in the data and visual properties, and
+
+1. At least one layer which describes how to render each observation. Layers are usually created with a [geom]{.rainbow-orange} function.
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+```{r }
+#| label: your-turn1
+#| echo: false
+```
+
+### Answer
+
+```{r}
+#| label: your-turn1
+#| eval: false
+#| echo: true
+
+ggplot(data = penguins,
+       mapping = aes(x = island)) +
+  geom_bar()
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%",
+          font_size = "2em")
+```
+
+## Common Mistakes
+
+-   Make sure that every `(` is matched with a `)` and every `"` is paired with another `"`.
+
+-   Console shows no results but a `+` sign that means your code is incomplete and R is waiting for you to complete the code.
+
+-   in ggplot `+` has to come at the end of the line, not the start
+
+## "Fill" Color
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer3.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-fill-colr
+#| eval: false
+#| code-line-numbers: "3"
+
+ggplot(data = penguins,
+       mapping = aes(x = species)) +
+  geom_bar(fill = "blue")
+```
+
+### Output
+
+```{r }
+#| label: fig-fill-colr
+#| echo: false
+```
+
+:::
+
+## "Fill" Colors
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer3.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-colrs
+#| eval: false
+#| code-line-numbers: "3"
+
+ggplot(data = penguins,
+       mapping = aes(x = species)) +
+  geom_bar(fill = c("blue", "green", "yellow"))
+```
+
+### Output
+
+```{r }
+#| label: fig-colrs
+#| echo: false
+```
+
+:::
+
+## "Fill" & "Color" Colors
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer3.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-color-colr
+#| eval: false
+#| code-line-numbers: "4"
+
+ggplot(data = penguins,
+       mapping = aes(x = species)) +
+  geom_bar(fill = c("blue", "green", "yellow"),
+           color = "black")
+```
+
+### Output
+
+```{r }
+#| label: fig-color-colr
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+```{r }
+#| label: your-turn2
+#| echo: false
+```
+
+### Answer
+
+```{r}
+#| label: your-turn2
+#| eval: false
+#| echo: true
+
+ggplot(data = penguins,
+       mapping = aes(x = island)) +
+  geom_bar(fill = c("red", "yellow", "darkgreen"),
+           color = "black")
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%",
+          font_size = "2em")
+```
+
+## Know Your Data
+
+<br>
+
+```{r}
+glimpse(penguins)
+```
+
+## Plot A Continuous Variable
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer3.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-cont-var
+#| eval: false
+#| code-line-numbers: "4,5"
+
+# bill_length_mm is dbl type variable/column
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm)) +
+  geom_histogram()
+```
+
+### Output
+
+```{r }
+#| label: fig-cont-var
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+```{r }
+#| label: your-turn3
+#| echo: false
+```
+
+### Answer
+
+```{r}
+#| label: your-turn3
+#| eval: false
+#| echo: true
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm)) +
+  geom_histogram(fill = "darkblue",
+                 color = "white")
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%",
+          font_size = "2em")
+```
+
+## Two Continuous Variables
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer3.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-cont-vars
+#| eval: false
+#| code-line-numbers: "2,3"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point()
+```
+
+### Output
+
+```{r }
+#| label: fig-cont-vars
+#| echo: false
+```
+
+:::
+
+## Geom Size
+
+::: {.panel-tabset}
+### Task
+
+```{r echo=FALSE}
+sizes <- expand.grid(size = (0:3) * 2, stroke = (0:3) * 2)
+ggplot(sizes, aes(size, stroke, size = size, stroke = stroke)) +
+  geom_abline(slope = -1, intercept = 6, colour = "white", linewidth = 6) +
+  geom_point(shape = 21, fill = "red") +
+  scale_size_identity()
+```
+
+### Code
+
+```{r}
+#| label: fig-geom-size
+#| eval: false
+#| code-line-numbers: "3"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(size = 5)
+```
+
+### Output
+
+```{r }
+#| label: fig-geom-size
+#| echo: false
+```
+
+:::
+
+## Geom Shape
+
+::: {.panel-tabset}
+### Task
+
+```{r echo=FALSE}
+shapes <- data.frame(
+  shape = c(0:19, 22, 21, 24, 23, 20),
+  x = 0:24 %/% 5,
+  y = -(0:24 %% 5)
+)
+ggplot(shapes, aes(x, y)) +
+  geom_point(aes(shape = shape), size = 5, fill = "red") +
+  geom_text(aes(label = shape), hjust = 0, nudge_x = 0.15) +
+  scale_shape_identity() +
+  expand_limits(x = 4.1) +
+  theme_void()
+```
+
+
+### Code
+
+```{r}
+#| label: fig-geom-shp
+#| eval: false
+#| code-line-numbers: "4"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(size = 5,
+             shape = 8)
+```
+
+### Output
+
+```{r }
+#| label: fig-geom-shp
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+```{r }
+#| label: your-turn4
+#| echo: false
+```
+
+### Answer
+
+```{r}
+#| label: your-turn4
+#| eval: false
+#| echo: true
+
+ggplot(data = penguins,
+       mapping = aes(x = body_mass_g, y = flipper_length_mm)) +
+  geom_point(size = 2, shape = 23, color = "red", fill = "gold")
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%",
+          font_size = "2em")
+```
+
+## Plot A Factor & Factor
+
+::: {.panel-tabset}
+### Task
+
+Sometimes, we want to differentiate values of a factor/category variable on the basis of another factor/category variable.
+
+### Code
+
+```{r}
+#| label: fig-fct-fct
+#| eval: false
+#| code-line-numbers: "4"
+
+ggplot(data = penguins,
+       mapping = aes(x = island)) +
+  geom_bar(aes(fill = sex))
+```
+
+### Output
+
+```{r }
+#| label: fig-fct-fct
+#| echo: false
+```
+
+:::
+
+## Plot A Factor & Continuous
+
+::: {.panel-tabset}
+### Task
+
+Sometimes, we want to differentiate values from a continuous variable on the basis of factor/category variables.
+
+### Code
+
+```{r}
+#| label: fig-fct-int
+#| eval: false
+#| code-line-numbers: "4"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm)) +
+  geom_histogram(aes(fill = sex), color = "black")
+```
+
+### Output
+
+```{r }
+#| label: fig-fct-int
+#| echo: false
+```
+
+:::
+
+## A Factor & Two Cont.
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer3.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-fct-2cont
+#| eval: false
+#| code-line-numbers: "2,3"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = sex))
+```
+
+### Output
+
+```{r }
+#| label: fig-fct-2cont
+#| echo: false
+```
+
+:::
+
+## A Factor & Two Cont.
+
+::: {.panel-tabset}
+### Task
+
+![](images/layer3.png){width=45%}
+
+### Code
+
+```{r}
+#| label: fig-fct-2cont2
+#| eval: false
+#| code-line-numbers: "2,3"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species))
+```
+
+### Output
+
+```{r }
+#| label: fig-fct-2cont2
+#| echo: false
+```
+
+:::
+
+## Write Labels
+
+::: {.panel-tabset}
+### Task
+
+- Title of the plot
+
+- Subtitle of the plot with more information
+
+- Title of the x-axis
+
+- Title of the y-axis
+
+### Code
+
+```{r}
+#| label: fig-lbs
+#| eval: false
+#| code-line-numbers: "4,9"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  )
+```
+
+### Output
+
+```{r }
+#| label: fig-lbs
+#| echo: false
+```
+
+:::
+
+## Different Shapes
+
+::: {.panel-tabset}
+### Task
+
+Each level of the factor/category can be shown using a different shape of different color.
+
+### Code
+
+```{r}
+#| label: fig-fct-shps
+#| eval: false
+#| code-line-numbers: "2,3"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  )
+```
+
+### Output
+
+```{r }
+#| label: fig-fct-shps
+#| echo: false
+```
+
+:::
+
+## Various Themes
+
+::: {.panel-tabset}
+### Task
+
+Source: [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
+
+```{r}
+library(ggthemes)
+```
+
+
+### Code
+
+```{r}
+#| label: fig-theme-eco
+#| eval: false
+#| code-line-numbers: "10"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  ) +
+  theme_economist()
+```
+
+### Output
+
+```{r }
+#| label: fig-theme-eco
+#| echo: false
+```
+
+:::
+
+## Various Themes
+
+::: {.panel-tabset}
+### Task
+
+Source: [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
+
+```{r}
+library(ggthemes)
+```
+
+
+### Code
+
+```{r}
+#| label: fig-theme-solar
+#| eval: false
+#| code-line-numbers: "10"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  ) +
+  theme_solarized_2()
+```
+
+### Output
+
+```{r }
+#| label: fig-theme-solar
+#| echo: false
+```
+
+:::
+
+## Various Themes
+
+::: {.panel-tabset}
+### Task
+
+Source: [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
+
+```{r}
+library(ggthemes)
+```
+
+### Code
+
+```{r}
+#| label: fig-theme-tufte
+#| eval: false
+#| code-line-numbers: "10"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  ) +
+  theme_tufte()
+```
+
+### Output
+
+```{r }
+#| label: fig-theme-tufte
+#| echo: false
+```
+
+:::
+
+## Various Themes
+
+::: {.panel-tabset}
+### Task
+
+Source: [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
+
+```{r}
+library(ggthemes)
+```
+
+
+### Code
+
+```{r}
+#| label: fig-theme-clean
+#| eval: false
+#| code-line-numbers: "10"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  ) +
+  theme_clean()
+```
+
+### Output
+
+```{r }
+#| label: fig-theme-clean
+#| echo: false
+```
+
+:::
+
+## Color Palette {.center}
+
+![](https://r-graph-gallery.com/38-rcolorbrewers-palettes_files/figure-html/thecode-1.png)
+
+## Color Palette
+
+::: {.panel-tabset}
+### Task
+
+R package `ggthemes` have function to use color scheme for colorblindness. [Know more](https://rdrr.io/cran/ggthemes/man/colorblind.html)
+
+### Code
+
+```{r}
+#| label: fig-col-blind
+#| eval: false
+#| code-line-numbers: "11"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  ) +
+  theme_clean() +
+  scale_color_colorblind()
+```
+
+### Output
+
+```{r }
+#| label: fig-col-blind
+#| echo: false
+```
+
+:::
+
+## Color Palette
+
+::: {.panel-tabset}
+### Task
+
+```{r}
+library(RColorBrewer)
+```
+
+### Code
+
+```{r}
+#| label: fig-col-palt
+#| eval: false
+#| code-line-numbers: "11"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  ) +
+  theme_clean() +
+  scale_color_brewer(palette = "Dark2")
+```
+
+### Output
+
+```{r }
+#| label: fig-col-palt
+#| echo: false
+```
+
+:::
+
+## Color Palette
+
+::: {.panel-tabset}
+### Task
+
+```{r}
+library(wesanderson)
+
+names(wes_palettes)
+```
+
+### Code
+
+```{r}
+#| label: fig-col-wes
+#| eval: false
+#| code-line-numbers: "11"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  ) +
+  theme_clean() +
+  scale_color_manual(values = wes_palette("BottleRocket2", n = 3))
+```
+
+### Output
+
+```{r }
+#| label: fig-col-wes
+#| echo: false
+```
+
+:::
+
+## Export Plot
+
+::: {.panel-tabset}
+### Task
+
+Export/save plot as pdf, jpg or png file.
+
+### Code
+
+```{r}
+#| label: fig-save
+#| eval: false
+#| code-line-numbers: "13"
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  labs(
+    title = "The title of the plot",
+    subtitle = "The subtitle of the plot",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)"
+  ) +
+  theme_clean() +
+  scale_color_manual(values = wes_palette("BottleRocket2", n = 3))
+
+ggsave("penguins-plot.pdf")
+```
+
+### Output
+
+```{r }
+#| label: fig-save
+#| echo: false
+```
+
+:::
+
+
+
+# {.center}
+
+[🧑🏽‍💻👨🏽‍💻<br>Question & Answer]{.r-fit-text}
