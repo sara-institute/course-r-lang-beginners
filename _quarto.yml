@@ -4,12 +4,15 @@ project:
     browser: true
     
 website:
-  title: "SARA Institute of Data Science"
+  title: "R4Bee"
   description: "The best data science education is free and open-source. SARA is committed to provide free data science education to under-represented communities in India."
-  image: logo-sara.png
-  favicon: images/logo-sara.png
-  twitter-card: true
-  site-url: https://sara-course-r4b.netlify.app
+  favicon: images/icon.png
+  twitter-card: 
+    creator: "@sara_institute"
+    site: "@sara_institute"
+    card-style: summary_large_image
+    image: social-default.png
+  site-url: https://sara-course-r4b.netlify.app/
   
 
   navbar:
