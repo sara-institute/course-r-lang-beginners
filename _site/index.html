@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R for Beginners</title>
+<title>SARA | The Non-Profit Data Science Institute – SARA Institute of Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./logo-sara.png" rel="icon" type="image/png">
+<link href="./images/logo-sara.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,24 +68,63 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+ 
+  <style>
+  .slide-deck {
+      border: 3px solid #dee2e6;
+      width: 100%;
+  }
+  </style>
+  
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta name="twitter:title" content="R for Beginners">
-<meta name="twitter:image" content="https://sara-course-r4b.netlify.app/images/logo-sara.png">
-<meta name="twitter:image-height" content="631">
-<meta name="twitter:image-width" content="631">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta name="twitter:title" content="SARA | The Non-Profit Data Science Institute">
+<meta name="twitter:description" content="SARA Data Science Bootcamp 2025">
+<meta name="twitter:image" content="https://sara-course-r4b.netlify.app/logo-sara.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logo-sara.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">R for Beginners</span>
+    <span class="navbar-title">SARA Institute of Data Science</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,12 +132,6 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./slides.html"> 
-<span class="menu-text">SLIDES</span></a>
-  </li>  
-</ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/sara-institute"> <i class="bi bi-github" role="img">
@@ -130,36 +163,142 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#session" id="toc-session" class="nav-link" data-scroll-target="#session"><span class="header-section-number">1</span> Session</a></li>
+  <li><a href="#session-1" id="toc-session-1" class="nav-link" data-scroll-target="#session-1"><span class="header-section-number">2</span> Session</a></li>
+  <li><a href="#session-2" id="toc-session-2" class="nav-link" data-scroll-target="#session-2"><span class="header-section-number">3</span> Session</a></li>
+  <li><a href="#session-3" id="toc-session-3" class="nav-link" data-scroll-target="#session-3"><span class="header-section-number">4</span> Session</a></li>
+  <li><a href="#session-4" id="toc-session-4" class="nav-link" data-scroll-target="#session-4"><span class="header-section-number">5</span> Session</a></li>
+  <li><a href="#session-5" id="toc-session-5" class="nav-link" data-scroll-target="#session-5"><span class="header-section-number">6</span> Session</a></li>
+  <li><a href="#session-6" id="toc-session-6" class="nav-link" data-scroll-target="#session-6"><span class="header-section-number">7</span> Session</a></li>
+  <li><a href="#session-7" id="toc-session-7" class="nav-link" data-scroll-target="#session-7"><span class="header-section-number">8</span> Session</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/logo-sara.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:15.0%"></p>
-</figure>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">R for Beginners</h1>
+<p class="subtitle lead">SARA Data Science Bootcamp 2025</p>
 </div>
-<section id="r-for-beginners---sara-bootcamp-2025" class="level1">
-<h1>“R for Beginners” - SARA Bootcamp 2025</h1>
-<span style="text-shadow: none;"><a class="github-button" href="https://github.com/sara-institute/course-r-lang-beginners.git" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub"> Star this Course on GitHub</a>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- ![](images/logo-sara.png){fig-align="center" width="15%"} -->
+<span style="text-shadow: none;"><a class="github-button" href="https://github.com/sara-institute/course-r-lang-beginners" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a>
 <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
 <p></p>
-<p>This program aims to help the participants to overcome the fear of coding.</p>
+<p>SARA is a non-profit organization in India. To know more about SARA, kindly vist our <a href="https://sara-edu.netlify.app/">website</a>.</p>
+<p>This course aims to help the participants to overcome the fear of coding.</p>
 <ul>
 <li><p>It is an annual five days residential training program to learn data science using R programming language.</p></li>
 <li><p>Students from Underrepresented Communities are Prioritized for Selection.</p></li>
-<li><p>There is no tuition fee for any participant. The fee of Rs. 6000 (70 USD) includes only the food and accommodation for five days (December 16 - 20) at the SARA Institute, Dr.&nbsp;Ambedkar Bhawan, Sonipat, Haryana - 131001.</p></li>
+<li><p>There is no tuition fee for any participant. The fee of Rs. 6000 (70 USD) includes only the food and accommodation for five days at the SARA Institute, Dr.&nbsp;Ambedkar Bhawan, Sonipat, Haryana - 131001.</p></li>
 </ul>
-<p>SARA is a non-profit organization in India. To know more about SARA, kindly vist our <a href="https://sara-edu.netlify.app/">website</a>.</p>
-<p>Email us at <code>sara.institute.info@gmail.com</code> | Call us at <code>925 315 2024</code>.</p>
+<p>Email us at <code>sara.institute.info@gmail.com</code> <span class="math inline">\(\cdot\)</span> Call us at <code>925 315 2024</code>.</p>
+<section id="section" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section"></h2>
+    <p><a href="welcome.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="welcome.html" height="500px"></iframe>
+    </div>
+  
+<p><br></p>
+</section>
+<section id="session" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="session"><span class="header-section-number">1</span> Session</h2>
+    <p><a href="r-console.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="r-console.html" height="500px"></iframe>
+    </div>
+  
+<p><br></p>
+</section>
+<section id="session-1" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="session-1"><span class="header-section-number">2</span> Session</h2>
+    <p><a href="rstudio.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="rstudio.html" height="500px"></iframe>
+    </div>
+  
+<p><br></p>
+</section>
+<section id="session-2" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="session-2"><span class="header-section-number">3</span> Session</h2>
+    <p><a href="quarto.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="quarto.html" height="500px"></iframe>
+    </div>
+  
+<p><br></p>
+</section>
+<section id="session-3" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="session-3"><span class="header-section-number">4</span> Session</h2>
+    <p><a href="markdown.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="markdown.html" height="500px"></iframe>
+    </div>
+  
+<p><br></p>
+</section>
+<section id="session-4" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="session-4"><span class="header-section-number">5</span> Session</h2>
+    <p><a href="code-chunk.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="code-chunk.html" height="500px"></iframe>
+    </div>
+  
+<p><br></p>
+</section>
+<section id="session-5" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="session-5"><span class="header-section-number">6</span> Session</h2>
+    <p><a href="objects.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="objects.html" height="500px"></iframe>
+    </div>
+  
+<p><br></p>
+</section>
+<section id="session-6" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="session-6"><span class="header-section-number">7</span> Session</h2>
+    <p><a href="visualization.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="visualization.html" height="500px"></iframe>
+    </div>
+  
+<p><br></p>
+</section>
+<section id="session-7" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="session-7"><span class="header-section-number">8</span> Session</h2>
+    <p><a href="wrangling.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="wrangling.html" height="500px"></iframe>
+    </div>
+  
 
 
-</span></section>
+</section>
 
-</main> <!-- /main -->
+</span></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

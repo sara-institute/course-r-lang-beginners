@@ -588,67 +588,137 @@
     "text": "😏 That’s okay but how to\n\n\ncombine plot, text, tables and images in a single file.\npublish my work online or convert into a word, pdf or html file.\nwork efficiently with my different projects and save, share and track them."
   },
   {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "R for Beginners",
+    "objectID": "markdown.html#section",
+    "href": "markdown.html#section",
+    "title": "Markdown",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "Markdown"
   },
   {
-    "objectID": "slides.html#session",
-    "href": "slides.html#session",
-    "title": "R for Beginners",
-    "section": "1 Session",
-    "text": "1 Session\n    View slides in full screen"
+    "objectID": "markdown.html#text-formatting",
+    "href": "markdown.html#text-formatting",
+    "title": "Markdown",
+    "section": "Text formatting",
+    "text": "Text formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nnormal\nnormal\n\n\n*italics*\nitalics\n\n\n**bold**\nbold\n\n\n***bold italics***\nbold italics\n\n\n\n\n\nSource: Quarto guide"
   },
   {
-    "objectID": "slides.html#session-1",
-    "href": "slides.html#session-1",
-    "title": "R for Beginners",
-    "section": "2 Session",
-    "text": "2 Session\n    View slides in full screen"
+    "objectID": "markdown.html#text-formatting-1",
+    "href": "markdown.html#text-formatting-1",
+    "title": "Markdown",
+    "section": "Text formatting",
+    "text": "Text formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nsuperscript^2^\nsuperscript2\n\n\nsubscript~2~\nsubscript2\n\n\n~~strike through~~\nstrike through\n\n\n`verbatim code`\nverbatim code\n\n\n\n\n\nSource: Quarto guide"
   },
   {
-    "objectID": "slides.html#session-2",
-    "href": "slides.html#session-2",
-    "title": "R for Beginners",
-    "section": "3 Session",
-    "text": "3 Session\n    View slides in full screen"
+    "objectID": "markdown.html#headings",
+    "href": "markdown.html#headings",
+    "title": "Markdown",
+    "section": "Headings",
+    "text": "Headings\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
   },
   {
-    "objectID": "slides.html#session-3",
-    "href": "slides.html#session-3",
-    "title": "R for Beginners",
-    "section": "4 Session",
-    "text": "4 Session\n    View slides in full screen"
+    "objectID": "markdown.html#insert-links",
+    "href": "markdown.html#insert-links",
+    "title": "Markdown",
+    "section": "Insert links",
+    "text": "Insert links\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n&lt;https://saraedu.netlify.app/&gt;\nhttps://saraedu.netlify.app/"
   },
   {
-    "objectID": "slides.html#session-4",
-    "href": "slides.html#session-4",
-    "title": "R for Beginners",
-    "section": "5 Session",
-    "text": "5 Session\n    View slides in full screen"
+    "objectID": "markdown.html#insert-links-1",
+    "href": "markdown.html#insert-links-1",
+    "title": "Markdown",
+    "section": "Insert links",
+    "text": "Insert links\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n[SARA](https://saraedu.netlify.app/)\nSARA"
   },
   {
-    "objectID": "slides.html#session-5",
-    "href": "slides.html#session-5",
-    "title": "R for Beginners",
-    "section": "6 Session",
-    "text": "6 Session\n    View slides in full screen"
+    "objectID": "markdown.html#add-images",
+    "href": "markdown.html#add-images",
+    "title": "Markdown",
+    "section": "Add images",
+    "text": "Add images\n\nIf image is saved in your computer, ![](add image path here)\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n![](rose.jpg)"
   },
   {
-    "objectID": "slides.html#session-6",
-    "href": "slides.html#session-6",
-    "title": "R for Beginners",
-    "section": "7 Session",
-    "text": "7 Session\n    View slides in full screen"
+    "objectID": "markdown.html#add-images-1",
+    "href": "markdown.html#add-images-1",
+    "title": "Markdown",
+    "section": "Add images",
+    "text": "Add images\n\nIf image is taken from the internet, ![](add image link here)\n\n\n\n\n\n![](https://images.unsplash.com/photo-1627130595904-ebeeb6540a93?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
   },
   {
-    "objectID": "slides.html#session-7",
-    "href": "slides.html#session-7",
-    "title": "R for Beginners",
-    "section": "8 Session",
-    "text": "8 Session\n    View slides in full screen"
+    "objectID": "markdown.html#unordered-list",
+    "href": "markdown.html#unordered-list",
+    "title": "Markdown",
+    "section": "Unordered list",
+    "text": "Unordered list\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* Item 1\n* Item 2\n* Item 3\n\nItem 1\nItem 2\nItem 3"
+  },
+  {
+    "objectID": "markdown.html#unordered-list-sub-items",
+    "href": "markdown.html#unordered-list-sub-items",
+    "title": "Markdown",
+    "section": "Unordered list: Sub-items",
+    "text": "Unordered list: Sub-items\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* Main items\n    + Sub-item 1\n    + Sub-item 2\n        - Sub-sub-item 1\n\nMain items\n\nSub-item 1\nSub-item 2\n\nSub-sub-item 1"
+  },
+  {
+    "objectID": "markdown.html#ordered-list",
+    "href": "markdown.html#ordered-list",
+    "title": "Markdown",
+    "section": "Ordered list",
+    "text": "Ordered list\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n1. Eggs\n1. Tea\n1. Fish\n1. Milk\n\nEggs\nTea\nFish\nMilk"
+  },
+  {
+    "objectID": "markdown.html#list",
+    "href": "markdown.html#list",
+    "title": "Markdown",
+    "section": "List",
+    "text": "List\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n(@)  A list whose numbering\n\ncontinues after\n\n(@)  an interruption\n\nA list whose numbering\n\ncontinues after\n\nan interruption"
+  },
+  {
+    "objectID": "markdown.html#list-1",
+    "href": "markdown.html#list-1",
+    "title": "Markdown",
+    "section": "List",
+    "text": "List\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n::: {}\n1. A list\n:::\n\n::: {}\n1. Followed by another list\n:::\n\n\nA list\n\n\n\n\nFollowed by another list"
+  },
+  {
+    "objectID": "markdown.html#definition",
+    "href": "markdown.html#definition",
+    "title": "Markdown",
+    "section": "Definition",
+    "text": "Definition\nterm\n: definition\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nPower\n: Power is power.\n\nPower\n\nPower is power."
+  },
+  {
+    "objectID": "markdown.html#equations",
+    "href": "markdown.html#equations",
+    "title": "Markdown",
+    "section": "Equations",
+    "text": "Equations\n\nUse $ delimiters for inline math.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nIt is a great equation $E = mc^{2}$\nIt is a great equation \\(E=mc^{2}\\)"
+  },
+  {
+    "objectID": "markdown.html#equations-1",
+    "href": "markdown.html#equations-1",
+    "title": "Markdown",
+    "section": "Equations",
+    "text": "Equations\n\nUse $$ delimiters for display math.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nIt is a great equation $$E = mc^{2}$$\nIt is a great equation \\[E=mc^{2}\\]\n\n\n\n\n\n\nLearn more about Latex math expressions"
+  },
+  {
+    "objectID": "markdown.html#in-line-coding",
+    "href": "markdown.html#in-line-coding",
+    "title": "Markdown",
+    "section": "In-line coding",
+    "text": "In-line coding\n\n`r `\n\n\n\n\n\nCode\n`r knitr::inline_expr(\"1+1\")`\n\nOutput\nr 1+1"
+  },
+  {
+    "objectID": "markdown.html#videos",
+    "href": "markdown.html#videos",
+    "title": "Markdown",
+    "section": "Videos",
+    "text": "Videos\n\nYou can include videos in documents using the {{&lt; video &gt;}} short code.\n\n\n\n\n\nCode\n{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}\n\nOutput"
+  },
+  {
+    "objectID": "markdown.html#tables",
+    "href": "markdown.html#tables",
+    "title": "Markdown",
+    "section": "Tables",
+    "text": "Tables\n\nMarkdown Syntax\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nOutput\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
   },
   {
     "objectID": "wrangling.html#data-wrangling",
@@ -875,144 +945,74 @@
     "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nWho are of more weight male or female penguins?\n\n\n\npenguins |&gt;\n  drop_na() |&gt; \n  group_by(sex) |&gt; \n  summarise(mean(body_mass_g),\n            n = n())\n\n\n\n\n\n# A tibble: 2 × 3\n  sex    `mean(body_mass_g)`     n\n  &lt;fct&gt;                &lt;dbl&gt; &lt;int&gt;\n1 female               3862.   165\n2 male                 4546.   168\n\n\n\n\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "markdown.html#section",
-    "href": "markdown.html#section",
-    "title": "Markdown",
-    "section": "",
-    "text": "Markdown"
-  },
-  {
-    "objectID": "markdown.html#text-formatting",
-    "href": "markdown.html#text-formatting",
-    "title": "Markdown",
-    "section": "Text formatting",
-    "text": "Text formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nnormal\nnormal\n\n\n*italics*\nitalics\n\n\n**bold**\nbold\n\n\n***bold italics***\nbold italics\n\n\n\n\n\nSource: Quarto guide"
-  },
-  {
-    "objectID": "markdown.html#text-formatting-1",
-    "href": "markdown.html#text-formatting-1",
-    "title": "Markdown",
-    "section": "Text formatting",
-    "text": "Text formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nsuperscript^2^\nsuperscript2\n\n\nsubscript~2~\nsubscript2\n\n\n~~strike through~~\nstrike through\n\n\n`verbatim code`\nverbatim code\n\n\n\n\n\nSource: Quarto guide"
-  },
-  {
-    "objectID": "markdown.html#headings",
-    "href": "markdown.html#headings",
-    "title": "Markdown",
-    "section": "Headings",
-    "text": "Headings\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
-  },
-  {
-    "objectID": "markdown.html#insert-links",
-    "href": "markdown.html#insert-links",
-    "title": "Markdown",
-    "section": "Insert links",
-    "text": "Insert links\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n&lt;https://saraedu.netlify.app/&gt;\nhttps://saraedu.netlify.app/"
-  },
-  {
-    "objectID": "markdown.html#insert-links-1",
-    "href": "markdown.html#insert-links-1",
-    "title": "Markdown",
-    "section": "Insert links",
-    "text": "Insert links\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n[SARA](https://saraedu.netlify.app/)\nSARA"
-  },
-  {
-    "objectID": "markdown.html#add-images",
-    "href": "markdown.html#add-images",
-    "title": "Markdown",
-    "section": "Add images",
-    "text": "Add images\n\nIf image is saved in your computer, ![](add image path here)\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n![](rose.jpg)"
-  },
-  {
-    "objectID": "markdown.html#add-images-1",
-    "href": "markdown.html#add-images-1",
-    "title": "Markdown",
-    "section": "Add images",
-    "text": "Add images\n\nIf image is taken from the internet, ![](add image link here)\n\n\n\n\n\n![](https://images.unsplash.com/photo-1627130595904-ebeeb6540a93?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
-  },
-  {
-    "objectID": "markdown.html#unordered-list",
-    "href": "markdown.html#unordered-list",
-    "title": "Markdown",
-    "section": "Unordered list",
-    "text": "Unordered list\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* Item 1\n* Item 2\n* Item 3\n\nItem 1\nItem 2\nItem 3"
-  },
-  {
-    "objectID": "markdown.html#unordered-list-sub-items",
-    "href": "markdown.html#unordered-list-sub-items",
-    "title": "Markdown",
-    "section": "Unordered list: Sub-items",
-    "text": "Unordered list: Sub-items\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* Main items\n    + Sub-item 1\n    + Sub-item 2\n        - Sub-sub-item 1\n\nMain items\n\nSub-item 1\nSub-item 2\n\nSub-sub-item 1"
-  },
-  {
-    "objectID": "markdown.html#ordered-list",
-    "href": "markdown.html#ordered-list",
-    "title": "Markdown",
-    "section": "Ordered list",
-    "text": "Ordered list\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n1. Eggs\n1. Tea\n1. Fish\n1. Milk\n\nEggs\nTea\nFish\nMilk"
-  },
-  {
-    "objectID": "markdown.html#list",
-    "href": "markdown.html#list",
-    "title": "Markdown",
-    "section": "List",
-    "text": "List\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n(@)  A list whose numbering\n\ncontinues after\n\n(@)  an interruption\n\nA list whose numbering\n\ncontinues after\n\nan interruption"
-  },
-  {
-    "objectID": "markdown.html#list-1",
-    "href": "markdown.html#list-1",
-    "title": "Markdown",
-    "section": "List",
-    "text": "List\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n::: {}\n1. A list\n:::\n\n::: {}\n1. Followed by another list\n:::\n\n\nA list\n\n\n\n\nFollowed by another list"
-  },
-  {
-    "objectID": "markdown.html#definition",
-    "href": "markdown.html#definition",
-    "title": "Markdown",
-    "section": "Definition",
-    "text": "Definition\nterm\n: definition\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nPower\n: Power is power.\n\nPower\n\nPower is power."
-  },
-  {
-    "objectID": "markdown.html#equations",
-    "href": "markdown.html#equations",
-    "title": "Markdown",
-    "section": "Equations",
-    "text": "Equations\n\nUse $ delimiters for inline math.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nIt is a great equation $E = mc^{2}$\nIt is a great equation \\(E=mc^{2}\\)"
-  },
-  {
-    "objectID": "markdown.html#equations-1",
-    "href": "markdown.html#equations-1",
-    "title": "Markdown",
-    "section": "Equations",
-    "text": "Equations\n\nUse $$ delimiters for display math.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nIt is a great equation $$E = mc^{2}$$\nIt is a great equation \\[E=mc^{2}\\]\n\n\n\n\n\n\nLearn more about Latex math expressions"
-  },
-  {
-    "objectID": "markdown.html#in-line-coding",
-    "href": "markdown.html#in-line-coding",
-    "title": "Markdown",
-    "section": "In-line coding",
-    "text": "In-line coding\n\n`r `\n\n\n\n\n\nCode\n`r knitr::inline_expr(\"1+1\")`\n\nOutput\nr 1+1"
-  },
-  {
-    "objectID": "markdown.html#videos",
-    "href": "markdown.html#videos",
-    "title": "Markdown",
-    "section": "Videos",
-    "text": "Videos\n\nYou can include videos in documents using the {{&lt; video &gt;}} short code.\n\n\n\n\n\nCode\n{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}\n\nOutput"
-  },
-  {
-    "objectID": "markdown.html#tables",
-    "href": "markdown.html#tables",
-    "title": "Markdown",
-    "section": "Tables",
-    "text": "Tables\n\nMarkdown Syntax\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nOutput\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "“R for Beginners” - SARA Bootcamp 2025",
+    "title": "R for Beginners",
     "section": "",
-    "text": "“R for Beginners” - SARA Bootcamp 2025\n Star this Course on GitHub\n\n\nThis program aims to help the participants to overcome the fear of coding.\n\nIt is an annual five days residential training program to learn data science using R programming language.\nStudents from Underrepresented Communities are Prioritized for Selection.\nThere is no tuition fee for any participant. The fee of Rs. 6000 (70 USD) includes only the food and accommodation for five days (December 16 - 20) at the SARA Institute, Dr. Ambedkar Bhawan, Sonipat, Haryana - 131001.\n\nSARA is a non-profit organization in India. To know more about SARA, kindly vist our website.\nEmail us at sara.institute.info@gmail.com | Call us at 925 315 2024."
+    "text": "Star\n\n\nSARA is a non-profit organization in India. To know more about SARA, kindly vist our website.\nThis course aims to help the participants to overcome the fear of coding.\n\nIt is an annual five days residential training program to learn data science using R programming language.\nStudents from Underrepresented Communities are Prioritized for Selection.\nThere is no tuition fee for any participant. The fee of Rs. 6000 (70 USD) includes only the food and accommodation for five days at the SARA Institute, Dr. Ambedkar Bhawan, Sonipat, Haryana - 131001.\n\nEmail us at sara.institute.info@gmail.com \\(\\cdot\\) Call us at 925 315 2024.\n\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "R for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session",
+    "href": "index.html#session",
+    "title": "R for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-1",
+    "href": "index.html#session-1",
+    "title": "R for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-2",
+    "href": "index.html#session-2",
+    "title": "R for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-3",
+    "href": "index.html#session-3",
+    "title": "R for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-4",
+    "href": "index.html#session-4",
+    "title": "R for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-5",
+    "href": "index.html#session-5",
+    "title": "R for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-6",
+    "href": "index.html#session-6",
+    "title": "R for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-7",
+    "href": "index.html#session-7",
+    "title": "R for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
   },
   {
     "objectID": "quarto.html#section",
