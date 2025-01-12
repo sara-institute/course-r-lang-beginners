@@ -4,7 +4,7 @@ project:
     browser: true
     
 website:
-  title: "R4Bee"
+  title: "SARA | The Non-Profit"
   description: "The best data science education is free and open-source. SARA is committed to provide free data science education to under-represented communities in India."
   favicon: images/icon.png
   twitter-card: 

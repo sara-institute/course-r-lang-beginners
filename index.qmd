@@ -1,5 +1,5 @@
 ---
-title: "R for Beginners"
+title: "{{< fa brands r-project >}} for Beginners"
 subtitle: "SARA Data Science Bootcamp 2025"
 format: html
 toc: true
@@ -23,6 +23,8 @@ This course aims to help the participants to overcome the fear of coding.
 Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
 ## {.unnumbered}
+
+<br>
 
 {{< revealjs file="welcome.html" height="500px" class="ratio ratio-16x9" >}}
 
