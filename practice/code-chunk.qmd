@@ -1,0 +1,34 @@
+---
+title: "Hello World"
+author: "Your Name"
+format: html
+date: today
+---
+
+## Hello, World!
+
+Welcome to my first Quarto document. I'm learning how to use Quarto in RStudio.
+
+## About Me
+
+My name is **Your Full Name**.  
+I am from **Your City or Institution**.  
+I am interested in **Your research field or interest area**.
+
+![](images/ajay.jpeg)
+
+## Code Chunk
+
+### Simple Calculation
+
+```{r}
+5 + 7
+```
+
+### Plot
+
+```{r}
+plot(cars)
+```
+
+

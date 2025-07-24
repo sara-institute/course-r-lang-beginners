@@ -1,0 +1,137 @@
+---
+title: "International Guest Speakers"
+subtitle: "R for Researchers"
+author: "2nd SARA Data Science Summer School, 25-29 July 2025" 
+format: typst
+fontsize: "1.4em"
+---
+
+## DAY 1, FRI 25 JULY 2025 AT 4 PM
+
+## Wolf Riepl, Germany 
+
+Wolf Riepl is a Radio and TV technician and a Sociologist by training. At university he worked with SPSS and Stata. 
+
+His first contact to R came in 2007, when he worked for a small company that thought about avoiding the SPSS licence fees. After a 2-day-workshop he vowed to never open the R software again. 
+
+It took seven years to start the next attempt. Since late 2014, Wolf has been working his way into R and never looked back. He now focuses on workshops and trainings, mostly online since 2020 after many in-person-workshops since 2017.
+
+### Topic: "Functional Programming in R and tidyverse"
+
+```{=typst}
+#v(5em)
+```
+
+---
+
+```{=typst}
+#pagebreak()
+```
+
+## DAY 2, SAT 26 JULY 2025 AT 4 PM
+
+## Dr. Cecilia Baldoni
+
+Dr. Cecilia Baldoni is a behavioral ecologist and science communicator with a background in neuroscience. She holds a PhD from the Max Planck Institute of Animal Behavior and currently works as a postdoctoral researcher exploring brain plasticity and cognition in small mammals. 
+
+Cecilia is passionate about making scientific workflows more transparent and accessible, combining her interests in storytelling and community building. She regularly develops resources and gives workshops on reproducible research, R programming, and personal knowledge management.
+
+### Topic: "Data Wrangling using dplyr"
+
+```{=typst}
+#v(5em)
+```
+
+---
+
+```{=typst}
+#pagebreak()
+```
+
+
+## DAY 3, SUN 27 JULY 2025 AT 4 PM
+
+## Anirban Shaw
+
+I'm a data science professional with a strong foundation in AI and deep specialization in R Shiny development. Originally from Kolkata, I’ve lived and worked across India—Chennai, Bangalore, Pune, and now Hyderabad—building scalable, production-grade solutions across domains.
+
+I began my career training AI models, then pivoted into developing interactive analytics tools using R, Python, and Shiny. Over the past few years, I’ve built and led projects for Fortune 500 clients, designed robust, modular Shiny applications, and contributed to open-source tools.
+
+Currently at Bristol Myers Squibb, I work at the intersection of data science and drug development, building data visualization solutions for clinical trials. My work supports regulatory submissions, accelerates insights for clinical teams, and enhances patient data review through reproducible, performant apps aligned with CDISC standards.
+
+I thrive at the crossroads of statistical thinking, engineering discipline, and human-centered design—always aiming to build tools that are not just technically sound, but genuinely useful.
+
+### Topic: "Data Storytelling with R: From CSV to Interactive Visualization using Shiny"
+
+```{=typst}
+#v(5em)
+```
+
+---
+
+```{=typst}
+#pagebreak()
+```
+
+## DAY 4, MON 28 JULY 2025 AT 4 PM
+
+## Dr. Lito P Cruz
+
+Lito Pérez Cruz is a seasoned IT professional with over 25 years of combined academic and industry experience. He has served as a consultant to a range of corporate enterprises, and for the past decade, he has taken on senior roles specializing in data science and advanced analytics.
+
+Dr. Lito has a strong track record of delivering production-grade statistical and machine learning models for mission-critical applications. Known for his ability to bridge the technical and non-technical divide, he excels at communicating complex data concepts in ways that are accessible to newcomers and business stakeholders alike.
+
+In parallel with his consulting work, Lito is an active researcher. He has authored multiple papers presented at international conferences in artificial intelligence and computer science, and regularly shares insights through seminars and academic forums. He is also known for being the author of a mathematics textbook for STEM students entitled “Theoremus: A student’s guide to mathematical proofs”, published by Springer.s
+
+Outside of work, Lito finds balance in nature walks and expresses his love for jazz through the trumpet—often with a tune or two.
+
+### Topic: "Hypothesis Testing & Forecasting by Regression"
+
+```{=typst}
+#v(5em)
+```
+
+---
+
+```{=typst}
+#pagebreak()
+```
+
+
+## DAY 5, TUE 29 JULY 2025 AT 4 PM
+
+## Betsabe Laila Cohen
+
+Betsabé Cohen is a sociologist (University of Buenos Aires), with a diploma in Cultural Management and Policies (IDAES-UNSAM), and is currently pursuing a Master's degree in Generation and Analysis of Statistical Information (UNTREF).
+
+She is an active member of RLadies Buenos Aires, a community of gender-conscious programmers, and co-coordinates the interdisciplinary research and development team at the Social Innovation Center.
+
+With over a decade of experience, Betsabé led the Statistics Department at the Argentine Book Chamber (ISBN) for 10 years. She currently works as a freelance data analyst, specializing in statistics for the cultural and creative industries.
+
+### Topic: "From Code to Paper: Reproducible Research with Quarto"
+
+```{=typst}
+#v(5em)
+```
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

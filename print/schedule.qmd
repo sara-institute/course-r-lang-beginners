@@ -1,0 +1,252 @@
+---
+title: "R FOR RESEARCHERS"
+subtitle: "2nd SARA Data Science Summer School"
+author: "July 25-29, 2025 | Sonipat (HR)"
+format: typst 
+abstract-title: "Welcome!"
+abstract: |
+  |
+  |
+  | **Savitribai Ramabai (SARA) Institute of Data Science** is a non-profit organization dedicated to inclusive education. We offer free and low-cost training in **coding, English, and data skills** for all. Thank you to our students and donors for supporting us. We are proudly supported by **The Ambedkar Educational Society, Sonipat.** 
+  | 
+  | All the best to all the participants.
+  |
+  |
+  | Dr. Ajay & Dr. Kiran
+  | Contact: 925 315 2024
+  | Email: sara.institute.info@gmail.com
+
+
+---
+
+```{=typst}
+#set page(header: [
+  _SARA Institute of Data Science_
+  #h(1fr)
+  #box(image("logo-sara.png", width:5%))
+])
+
+#set page(footer: context [
+  Schedule of SARA Summer School
+  #h(1fr)
+  #counter(page).display(
+  "1/1",
+  both: true,
+)
+])
+```
+
+
+## 📅 DAY 1 - FRIDAY 25 JULY 2025
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+
+#table(
+  columns: (0.9fr, 1fr, 1fr),
+  rows: (0.7cm, 1.5cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Notes*],
+  [08:30 AM to 09:15 AM], [Breakfast], [],
+  [09:30 AM to 10:00 AM], [Welcome Ceremony \ - Candle Lighting], [],
+  [10:00 AM to 11:30 AM], [Class Session 1], [Introdcution to R],
+  [11:30 AM to 11:45 AM], [Break], [],
+  [11:45 AM to 01:30 PM], [Class Session 2], [Research Process],
+  [01:30 PM to 02:30 PM], [Lunch], [],
+  [02:30 PM to 03:45 PM], [Class Session 3], [Research Methods],
+  [03:45 PM to 04:00 PM], [Break with Tea], [],
+  [04:00 PM to 05:30 PM], [Class Session 4 \ Wolf Riepl, Germany], [Functional Programming in R and tidyverse],
+  [07:00 PM to 08:00 PM], [Dinner], [],
+)
+
+#pagebreak()
+```
+
+
+## 📅 DAY 2 - SATURDAY 26 JULY 2025
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+
+#table(
+  columns: (0.9fr, 1fr, 1fr),
+  rows: (0.7cm, 1.85cm),
+  [*Time*], [*Activity*], [*Notes*],
+  [08:30 AM to 09:30 AM], [Breakfast], [], 
+  [10:00 AM to 11:30 AM], [Class Session 1], [Scales of Measurement],
+  [11:30 AM to 12:00 AM], [Break], [],
+  [12:00 AM to 01:30 PM], [Class Session 2], [Scales of Measurement],
+  [01:30 PM to 2:30 PM], [Lunch], [],
+  [02:30 PM to 03:45 PM], [Class Session 3], [Frequency Distribution],
+  [03:45 PM to 04:00 PM], [Break for Tea], [],
+  [04:00 PM to 05:30 PM], [Class Session 4 \ Dr. Cecilia Baldoni Bio-statistician, Germany], [Data Wrangling with the {tidyverse}],
+  [07:00 PM to 08:00 PM], [Dinner], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 3 - SUNDAY 27 JULY 2025
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (0.9fr, 1fr, 1fr),
+  rows: (0.7cm, 1.85cm),
+  [*Time*], [*Activity*], [*Notes*],
+  [08:30 AM to 09:30 AM], [Breakfast], [], 
+  [10:00 AM to 11:30 AM], [Class Session 1], [Presenting Data],
+  [11:30 AM to 12:00 AM], [Break for Tea], [],
+  [12:00 AM to 01:30 PM], [Class Session 2], [Presenting Data],
+  [01:30 PM to 2:30 PM], [Lunch], [],
+  [02:30 PM to 03:45 PM], [Class Session 3], [Probability + Z-score],
+  [03:45 PM to 04:00 PM], [Break for Tea], [],
+  [04:00 PM to 05:30 PM], [Class Session 4 \ Anirban Shaw, R & Shiny Expert, India], [Data Storytelling with R: From CSV to Interactive Visualization using Shiny],
+  [07:00 PM to 08:00 PM], [Dinner], [],
+)
+
+
+#pagebreak()
+```
+
+## 📅 DAY 4 - MONDAY 28 JULY 2025
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+
+#table(
+  columns: (0.9fr, 1fr, 1fr),
+  rows: (0.7cm, 1.85cm),
+  [*Time*], [*Activity*], [*Notes*],
+  [08:30 AM to 09:30 AM], [Breakfast], [], 
+  [10:00 AM to 11:30 AM], [Class Session 1], [Presenting Data],
+  [11:30 AM to 12:00 AM], [Break for Tea], [],
+  [12:00 AM to 01:30 PM], [Class Session 2], [Presenting Data],
+  [01:30 PM to 2:30 PM], [Lunch], [],
+  [02:30 PM to 03:45 PM], [Class Session 3], [Probability + Z-score],
+  [03:45 PM to 04:00 PM], [Break for Tea], [],
+  [04:00 PM to 05:30 PM], [Class Session 4 \ Dr. Lito P Cruz, Principal Data Science Consultant, Australia], [Hypothesis Testing & Forecasting by Regression],
+  [07:00 PM to 08:00 PM], [Dinner], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 5 - TUESADY 29 JULY 2025
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (0.9fr, 1fr, 1fr),
+  rows: (0.7cm, 1.85cm),
+  [*Time*], [*Activity*], [*Notes*],
+  [08:30 AM to 09:30 AM], [Breakfast], [], 
+  [10:00 AM to 11:30 AM], [Class Session 1], [Presenting Data],
+  [11:30 AM to 12:00 AM], [Break for Tea], [],
+  [12:00 AM to 01:30 PM], [Class Session 2], [Presenting Data],
+  [01:30 PM to 2:30 PM], [Lunch], [],
+  [02:30 PM to 03:45 PM], [Class Session 3], [Probability + Z-score],
+  [03:45 PM to 04:00 PM], [Break for Tea], [],
+  [04:00 PM to 05:30 PM], [Class Session 4 \ Betsabe Laila Cohen, Sociologist & R expert, Argentina], [Code to Paper: Reproducible Research with Quarto],
+  [07:00 PM to 08:00 PM], [Dinner], [],
+)
+
+#pagebreak()
+```
+
+# Your Feedback
+
+## Name:
+
+```{=typst}
+#set line(length: 100%)
+
+#stack(
+  spacing: 3.5em,
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+)
+```
+

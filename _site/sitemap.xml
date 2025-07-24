@@ -2,42 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sara-course-r4b.netlify.app/rstudio.html</loc>
-    <lastmod>2025-01-07T05:49:15.158Z</lastmod>
+    <lastmod>2025-07-24T03:01:00.784Z</lastmod>
   </url>
   <url>
-    <loc>https://sara-course-r4b.netlify.app/welcome.html</loc>
-    <lastmod>2025-01-03T07:53:08.825Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/visualization.html</loc>
-    <lastmod>2025-01-07T12:32:20.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/r-console.html</loc>
-    <lastmod>2025-01-07T05:29:27.817Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/markdown.html</loc>
-    <lastmod>2025-01-07T10:12:47.275Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/wrangling.html</loc>
-    <lastmod>2025-01-07T12:56:54.685Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/index.html</loc>
-    <lastmod>2025-01-12T13:10:09.261Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/quarto.html</loc>
-    <lastmod>2025-01-07T09:54:39.662Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/code-chunk.html</loc>
-    <lastmod>2025-01-07T10:23:23.933Z</lastmod>
+    <loc>https://sara-course-r4b.netlify.app/practice/data-frame.html</loc>
+    <lastmod>2025-07-18T07:18:51.142Z</lastmod>
   </url>
   <url>
     <loc>https://sara-course-r4b.netlify.app/objects.html</loc>
-    <lastmod>2025-01-07T10:23:24.067Z</lastmod>
+    <lastmod>2025-07-18T07:18:29.698Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/code-chunk.html</loc>
+    <lastmod>2025-07-17T14:25:27.745Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/quarto.html</loc>
+    <lastmod>2025-07-24T02:31:07.678Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/index.html</loc>
+    <lastmod>2025-07-24T03:08:41.322Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/markdown.html</loc>
+    <lastmod>2025-07-16T09:08:29.424Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/scales.html</loc>
+    <lastmod>2025-07-24T03:26:21.698Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/r-intro.html</loc>
+    <lastmod>2025-07-24T02:59:30.401Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/talk-jnu.html</loc>
+    <lastmod>2025-07-19T02:26:20.775Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/wrangling.html</loc>
+    <lastmod>2025-07-24T02:59:43.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/eda.html</loc>
+    <lastmod>2025-07-24T03:15:25.135Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/visualization.html</loc>
+    <lastmod>2025-07-24T02:59:33.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/welcome.html</loc>
+    <lastmod>2025-07-24T03:01:17.886Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/practice/hello-world.html</loc>
+    <lastmod>2025-07-17T13:52:08.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/practice/code-chunk.html</loc>
+    <lastmod>2025-07-17T13:53:58.967Z</lastmod>
   </url>
 </urlset>

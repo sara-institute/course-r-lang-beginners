@@ -1,9 +1,10 @@
 ---
 title: "{{< fa brands r-project >}} for Beginners"
-subtitle: "SARA Data Science Bootcamp 2025"
+subtitle: "2nd SARA Data Science Summer School 2025"
 format: html
 toc: true
 number-sections: true
+pagetitle: "R4Bee"
 ---
 
 ![](images/logo-bee.png){width="50%"}
@@ -18,7 +19,7 @@ This course aims to help the participants to overcome the fear of coding.
 
 - Students from Underrepresented Communities are Prioritized for Selection. 
 
-- There is no tuition fee for any participant. The fee of Rs. 6000 (70 USD) includes only the food and accommodation for five days at the SARA Institute, Dr. Ambedkar Bhawan, Sonipat, Haryana - 131001.
+- There is no tuition fee for any participant. The fee of Rs. 6000 (around 70 USD) includes the food and accommodation for five days at the SARA Institute, Dr. Ambedkar Bhawan, Sonipat, Haryana - 131001.
 
 Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
@@ -32,7 +33,7 @@ Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
 ## Session
 
-{{< revealjs file="r-console.html" height="500px" class="ratio ratio-16x9" >}}
+{{< revealjs file="r-intro.html" height="500px" class="ratio ratio-16x9" >}}
 
 <br>
 
@@ -68,10 +69,16 @@ Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
 ## Session
 
+{{< revealjs file="wrangling.html" height="500px" class="ratio ratio-16x9" >}}
+
+<br>
+
+## Session
+
 {{< revealjs file="visualization.html" height="500px" class="ratio ratio-16x9" >}}
 
 <br>
 
 ## Session
 
-{{< revealjs file="wrangling.html" height="500px" class="ratio ratio-16x9" >}}
+{{< revealjs file="eda.html" height="500px" class="ratio ratio-16x9" >}}

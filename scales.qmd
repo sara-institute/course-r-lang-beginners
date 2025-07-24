@@ -1,0 +1,259 @@
+---
+title: "[SCALES OF<br>MEASUREMENT]{.r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.r-fit-text}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
+controls: true
+slide-number: true
+scrollable: true
+logo: images/logo-sara.png
+incremental: true
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
+---
+
+# Maths & Statistical Notation
+
+## Simple Maths
+
+$$
+1 + 2\times3^2
+$$
+
+. . .
+
+Answer: 19
+
+## BODMAS
+
+1. Brackets
+
+1. Order (Power)
+
+1. Divide
+
+1. Multiplication
+
+1. Addition
+
+1. Subtraction
+
+## What will be the answer to this?
+
+$$
+10 + \frac{2(3+1)^2}{8} - 5
+$$
+
+. . .
+
+$$
+10 + \frac{2\times16}{8} - 5
+$$
+
+. . . 
+
+Answer: 9
+
+## Let's Understand this
+
+$$
+\sum_{i=1}^n x_i
+$$
+
+## Let's Understand this
+
+$$
+\sum_{i=1}^n x_i \\ = 10 + 6 \\ = 16
+$$
+
+## Let's Try this
+
+$$
+\sum_{i=1}^n x^2_i
+$$
+
+## Let's Try this
+
+$$
+\sum_{i=1}^n x^2_i \\ = 10^2 + 6^2 \\ = 100 + 36 \\ = 136
+$$
+
+## Let's Try this
+
+$$
+\left( \sum_{i=1}^n x_i \right )^2 
+$$
+
+## Let's Try this
+
+$$
+\left( \sum_{i=1}^n x_i \right )^2 \\ = (10+6)^2 \\ = 16^2 \\ = 256
+$$
+
+## Scales of Measurement:
+
+<br>
+
+> The scales of measurement are a way to classify data based on their attributes and the mathematical operations that can be performed on them. 
+
+## Scales of Measurement:
+
+They are classified into four types:
+
+- Nominal scale.
+
+- Ordinal scale.
+
+- Interval scale.
+
+- Ratio scale.
+
+## Nominal Scale
+
+> Categorizes data without any order or rank.
+
+![](https://www.voxco.com/wp-content/uploads/2021/03/Nominal-Scale-14.png){fig-align=center}
+
+::: aside
+Image Source: [Voxco](https://www.voxco.com/wp-content/uploads/2021/03/Nominal-Scale-14.png)
+:::
+
+## 🤯 Practice Sheet {background-color="brown"}
+
+- Creating Nominal Variables.
+
+- **Examples:** Gender (Male, Female), Colors (Red, Blue, Green), or Types of Fruits.
+
+- **Visualization:** Bar chart or Pie chart.
+
+- **Analysis:** Frequency counts, mode, chi-square tests.
+
+## Ordinal Scale
+
+> Data with a meaningful order but unequal intervals.
+
+![](https://www.voxco.com/wp-content/uploads/2021/03/Cover-scale.jpg){width=80% fig-align=center}
+
+::: aside
+Image source: [Voxco](https://www.voxco.com/wp-content/uploads/2021/03/Cover-scale.jpg)
+:::
+
+## 🤯 Practice Sheet {background-color="brown"}
+
+- Creating Ordinal Variables.
+
+- **Examples:** Education level (High School, Bachelor’s, Master’s, Ph.D.), Customer satisfaction (Poor, Fair, Good, Excellent).
+
+- **Visualization:** Bar chart or Box plot.
+
+- **Analysis:** Median, rank correlation.
+    
+## Interval Scale
+
+> Ordered data with equal intervals but no true zero point.
+
+![](https://www.voxco.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-03-02-at-3.58.54-PM.jpeg){width=80% fig-align=center}
+
+::: aside
+Image source: [Voxco](https://www.voxco.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-03-02-at-3.58.54-PM.jpeg)
+:::
+
+## 🤯 Practice Sheet {background-color="brown"}
+
+- Creating Interval Variables
+
+- **Examples:** Temperature in Celsius or Fahrenheit, IQ scores.
+
+- **Visualization:** Histogram, Line graph.
+
+- **Analysis:** Mean, standard deviation, correlation, regression.
+
+## Ratio Scale
+
+- Ordered data with equal intervals and a true zero point.
+
+![](https://www.voxco.com/wp-content/uploads/2021/03/Ratio-Scale--1024x630.jpeg){width=65% fig-align=center}
+
+::: aside
+Image source: [Voxco](https://www.voxco.com/blog/ratio-scale/)
+:::
+
+## 🤯 Practice Sheet {background-color="brown"}
+
+- Creating ratio Variables
+
+- **Examples**: Weight, Height, Income, Age.
+
+- **Visualization:** Histogram, Scatter plot.
+
+- **Analysis:** All statistical methods (mean, median, mode, ratio comparisons).
+
+## Different Types of  Scales
+
+![](https://www.voxco.com/wp-content/uploads/2021/03/Ordinal-Data3.jpg)
+
+::: aside
+Image source: [Voxco](https://www.voxco.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-03-02-at-3.58.54-PM.jpeg)
+:::
+
+## Discrete Variables
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Represent **countable** values, often whole numbers.
+
+- **Examples:** Number of students, dice rolls, cars in a parking lot.
+
+::: aside
+Image source: [Allison Horst](https://github.com/allisonhorst/stats-illustrations?tab=readme-ov-file)
+:::
+
+:::
+
+::: {.column width="50%"}
+![](images/discrete.png){width=65% fig-align=right}
+:::
+
+::::
+
+## Continuous Variables
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Represent **measureable** values, including fractions or decimals.
+
+- **Examples:** Height, weight, time, temperature.
+
+::: aside
+Image source: [Allison Horst](https://github.com/allisonhorst/stats-illustrations?tab=readme-ov-file)
+:::
+
+:::
+
+::: {.column width="50%"}
+![](images/continuous.png){width=65% fig-align=right}
+:::
+
+::::
+
+## 🤯 Practice Sheet {background-color="brown"}
+
+- Discrete Variables, visualization and analysis.
+
+- Continuous Variables, visualization and analysis.
+
+- Combining Discrete and Continuous Variables.
+
+
+

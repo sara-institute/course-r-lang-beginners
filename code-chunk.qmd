@@ -1,47 +1,90 @@
 ---
-title: "[Code Chunk]{.clr-white .r-fit-text}"
-author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
-format: revealjs
-execute: 
-  echo: true
+title: "[CODE CHUNKS]{.r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.r-fit-text}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
 controls: true
 slide-number: true
 scrollable: true
-code-line-numbers: false
 logo: images/logo-sara.png
 #bibliography: references.bib
 theme: style.scss
+code-line-numbers: false
 title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
 ---
 
-# {.inverse}
+## Code Chunk
 
-![](images/rainbowr.gif){fig-align=center width=30%}
+<br>
 
-[Code Chunk]{.r-fit-text}
+> A code chunk is a section of code inside your Quarto (`.qmd`) document that gets **executed when you render** the document. The **output** (like a table or plot) is shown right in the final HTML, PDF, or Word file.
 
-::: aside
-Artwork by [Alision Horst](https://allisonhorst.com/)
-:::
+## Basic Syntax of an R Code Chunk
+
+<br>
+
+````{md}
+```{r}
+
+
+```
+````
+
+- Starts and ends with triple back ticks (```).
+
+- `{r}` tells Quarto it's an R code chunk.
+
+## Simple Calculation
+
+<br>
+
+````{md}
+```{r}
+
+5 + 7
+
+```
+````
+
+This will print the result 12 in the rendered document.
+
+## Plot
+
+<br>
+
+````{md}
+```{r}
+
+plot(cars)
+
+```
+````
+
+This shows a plot of the built-in cars dataset.
 
 ## Code chunks (or cells or blocks)
 
 **Three ways to insert code chunks in the quarto file:**
 
-1. Keyboard shortcuts: 
-    - for {{< fa brands apple >}} `Option` + `Cmd` + `i`.
-    - for {{< fa brands windows >}} `ctrl` + `alt` + `i`.
+1.  Keyboard shortcuts:
 
-1. ![](images/rstudio-insert-chunk.png) **Insert Chunk** button in the editor toolbar. 
+    -   for {{< fa brands apple >}} `Option` + `Cmd` + `i`.
+    -   for {{< fa brands windows >}} `ctrl` + `alt` + `i`.
 
-1. Manually type the chunk delimiters ```` ```{r} ```` and ```` ``` ````.
+2.  ![](images/rstudio-insert-chunk.png) **Insert Chunk** button in the editor toolbar.
+
+3.  Manually type the chunk delimiters ```` ```{r} ```` and ```` ``` ````.
 
 ::: aside
-
 Source: [Jadey Ryan's Talk](https://jadeyryan.quarto.pub/slc-rug-quarto/#/code-chunks-or-cells-or-blocks)
-
 :::
 
 ## Code chunks (or cells or blocks)
@@ -50,239 +93,60 @@ Source: [Jadey Ryan's Talk](https://jadeyryan.quarto.pub/slc-rug-quarto/#/code-c
 
 ![](images/rstudio-code-chunk.png)
 
-1. Use the Run Current Chunk or Run All Chunks Above buttons.
+1.  Use the Run Current Chunk or Run All Chunks Above buttons.
 
-1. Run the current code chunk with `Cmd`/`Ctrl` + `Shift` + `Enter`.
+2.  Run the current code chunk with `Cmd`/`Ctrl` + `Shift` + `Enter`.
 
 ::: aside
-
 Source: [Jadey Ryan's Talk](https://jadeyryan.quarto.pub/slc-rug-quarto/#/code-chunks-or-cells-or-blocks)
-
 :::
 
-## {background-image="images/demo.gif" background-size="50%" background-position="right" background-color=black}
+## 🤯 Your Turn {background-color=brown} 
 
-:::: {.columns}
+![](practice/images/code-chunk.png)
 
-::: {.column width="40%"}
+## 🤩 Your Turn Answers {background-color=seagreen}
 
-[Demo <br> Code <br> Chunk]{.r-fit-text}
+![](practice/images/code-chunk-ans.png)
+
+## Chunk Options
+
+<br>
+
+````{md}
+```{r}
+#| echo: FALSE     
+#| message: F
+
+summary(mtcars)
+
+```
+````
+
+
+## Chunk Options
+
+| Option          | What it does                            |
+| --------------- | --------------------------------------- |
+| `echo=FALSE`    | Hides the **code** in output            |
+| `eval=FALSE`    | Shows the code but **doesn’t run** it   |
+| `message=FALSE` | Hides **messages** (like from packages) |
+| `warning=FALSE` | Hides **warnings**                      |
 
 ::: aside
-[{{< fa download >}} demo_code_chunk.qmd](demo_code_chunk.qmd){.r-fit-text}
-
-GIF Source {{< fa brands instagram >}} [@dolly_ki_tapri_nagpur](https://www.instagram.com/dolly_ki_tapri_nagpur)
+Learn more chunk options [here](https://quarto.org/docs/reference/cells/cells-knitr.html)
 :::
 
-:::
+# R<br>packages {background-image="https://miro.medium.com/v2/resize:fit:732/1*qVn_OyvyHA6AG2gaQkTXfA.png" background-size=contain background-position="right"}
 
-::::
+## R packages 
 
-# {.inverse}
+<br>
 
-![](images/heartyr.gif){width=25% fig-align="center"}
-
-[R Function]{.r-fit-text}
+> "An R package is a collection of **functions, data, and documentation** that extends the capabilities of base R. Using packages is key to the successful use of R."
 
 ::: aside
-Artwork by [Alision Horst](https://allisonhorst.com/)
-:::
-
-## R function
-
--   "A function, in a programming environment, is a set of instructions."
-
--   "A programmer builds a function to avoid repeating the same task, or reduce complexity."
-
-## R function
-
-::: panel-tabset
-### Code
-
-```{r}
-#| label: fun-round1
-#| eval: false
-
-round(24.3454, 3)
-```
-
-<br>
-
-`round(argument 1, argument 2)`
-
-### Output
-
-```{r}
-#| label: fun-round1
-#| echo: false
-#| output: asis
-
-```
-:::
-
-## Structure of R function {.center transition="fade"}
-
-<br>
-
-![](images/function_str1.png)
-
-## Structure of R function {.center transition="fade"}
-
-<br>
-
-![](images/function_str2.png)
-
-## Structure of R function {.center transition="fade"}
-
-<br>
-
-![](images/function_str3.png)
-
-## Structure of R function {.center transition="fade"}
-
-<br>
-
-![](images/function_str4.png)
-
-## Structure of R function {.center transition="fade"}
-
-<br>
-
-![](images/function_str5.png)
-
-<!-- ## Structure of R function {.center background-image="images/function-args.png" background-size="80%"} -->
-
-## Round function
-
-::: panel-tabset
-### Code
-
-Function with default argument.
-
-```{r}
-#| label: fun-round2
-#| eval: false
-
-round(46.487)
-```
-
-### Output
-
-```{r}
-#| label: fun-round2
-#| echo: false
-#| output: asis
-
-```
-:::
-
-## Round function
-
-::: panel-tabset
-### Code
-
-Function with a specific value of an argument.
-
-```{r}
-#| label: fun-round3
-#| eval: false
-
-round(x = 46.587, digits = 2)
-```
-
-### Output
-
-```{r}
-#| label: fun-round3
-#| echo: false
-#| output: asis
-
-```
-:::
-
-## Square root function
-
-::: panel-tabset
-### Code
-
-Function with a specific value of an argument.
-
-```{r}
-#| label: fun-sqrt
-#| eval: false
-
-sqrt(x = 9)
-```
-
-### Output
-
-```{r}
-#| label: fun-sqrt
-#| echo: false
-#| output: asis
-
-```
-:::
-
-## Sequence function
-
-::: panel-tabset
-### Code
-
-Function with a specific value of an argument.
-
-```{r}
-#| label: fun-seq
-#| eval: false
-
-seq.int(from = 10, to = 30, by = 5)
-```
-
-or
-
-```{r}
-#| label: fun-seq1
-#| eval: false
-
-seq.int(from = 10,
-        to = 30,
-        by = 5)
-```
-
-### Output
-
-```{r}
-#| label: fun-seq
-#| echo: false
-#| output: asis
-
-```
-:::
-
-# {.inverse}
-
-![](images/pkgs-space.png){fig-align=center}
-
-[R Packages]{.r-fit-text}
-
-## R packages {background-image="https://miro.medium.com/v2/resize:fit:732/1*qVn_OyvyHA6AG2gaQkTXfA.png" background-size="50%" background-position="right"}
-
-<br>
-
-::: columns
-::: {.column width="60%"}
-
-> "An R package is a collection of functions, data, and documentation that extends the capabilities of base R. Using packages is key to the successful use of R."
-
-:::
-
-::: {.column width="40%"}
-
-:::
-:::
-
-::: aside
-Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)}
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 :::
 
 ## Metacran
@@ -293,55 +157,53 @@ Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)}
 Source: [Metacran](https://www.r-pkg.org/)
 :::
 
-## R packages
+## R Packages
 
-1. Install the R package
+1.  Install the R package
 
-1. Call the R package
+2.  Call the R package
 
-1. Update the R package
+3.  Update the R package
 
-1. Remove the R package
+4.  Remove the R package
 
-1. Write the R package
+## Install Packages {.center}
 
-::: aside
-Demo: demo_code_chunk.qmd
-:::
+![](images/pkg-download1.png){fig-align="center"}
 
-## Install ackages {.center}
+## Name of the Packages {.center}
 
-![](images/pkg-download1.png){fig-align=center}
+![](images/pkg-download2.png){fig-align="center"}
 
-## Name of the packages {.center}
+## Installed Packages {.center}
 
-![](images/pkg-download2.png){fig-align=center}
+![](images/pkg-download3.png){fig-align="center"}
 
-## Installed packages {.center}
-
-![](images/pkg-download3.png){fig-align=center}
-
-## Function to install packages
+## Function to Install Packages
 
 <br>
 
+````{md}
 ```{r}
-#| eval: false
 
 install.packages("tidyverse")
-```
 
-## Function to call package
+```
+````
+
+## Function to Call Package
 
 <br>
 
+````{md}
 ```{r}
-#| eval: false
 
 library(tidyverse)
-```
 
-## Using packages
+```
+````
+
+## Using Packages
 
 -   You need to install package only once like:
 
@@ -349,7 +211,7 @@ library(tidyverse)
 
     -   💡 Fix the bulb once and use it again and again.
 
-## Using packages
+## Using Packages
 
 -   In every R document you need to **call once** the package using function `library()`, for example library(ggplot2).
 
@@ -357,19 +219,107 @@ library(tidyverse)
 
 -   If you un-install R or RStudio, you will lose all installed packages.
 
-## Tools $\rightarrow$ Package updates {.center}
+## Tools $\rightarrow$ Package Updates {.center}
 
-![](images/update-pkg1.png){fig-align=center}
+![](images/update-pkg1.png){fig-align="center"}
 
-## Select packages to update {.center}
+## Select Packages to Update {.center}
 
-![](images/update-pkg2.png){fig-align=center}
+![](images/update-pkg2.png){fig-align="center"}
 
-## Click install updates {.center}
+## Click Install Updates {.center}
 
-![](images/update-pkg3.png){fig-align=center}
+![](images/update-pkg3.png){fig-align="center"}
 
-## To remove packages {.center}
+## To Remove Packages {.center}
 
-![](images/remove-pkg.png){fig-align=center}
+![](images/remove-pkg.png){fig-align="center"}
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 1. What symbol is used to start a code chunk in a Quarto document?
+
+::: {.nonincremental}
+A) `##`
+B) `---`
+C) ```{r}
+D) %%r
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 2. What is an R package?
+
+::: {.nonincremental}
+A) A shortcut to open RStudio
+B) A collection of R functions, data, and documentation
+C) A file format used in Quarto
+D) A type of plot
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 3. Which function is used to install a new R package?
+
+::: {.nonincremental}
+A) install.package()
+B) add.library()
+C) library()
+D) install.packages()
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 4. What does echo=FALSE do in a code chunk?
+
+::: {.nonincremental}
+A) Skips the chunk
+B) Hides the code but shows the result
+C) Stops the chunk from running
+D) Shows both code and output
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 5. Which of the following is a popular R package for data visualization?
+
+::: {.nonincremental}
+A) dplyr
+B) ggplot2
+C) readr
+D) shiny
+:::
+
+## 🤩 Your Turn Answers {background-color=seagreen}
+
+1. Correct answer: C) ```{r}
+
+1. Correct answer: B) A collection of R functions, data, and documentation
+
+1. Correct answer: D) `install.packages()`
+
+1. Correct answer: B) Hides the code but shows the result 
+
+1. Correct answer: B) `ggplot2`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,337 @@
+---
+title: "[EXPLORING<br>YOUR DATA]{.r-fit-text}"
+#subtitle: "Introduction to Exploratory Data Analysis (EDA) using R"
+author: "Dr. Ajay Kumar Koli | SARA Institute of Data Science"
+pagetitle: eda-r
+format: revealjs
+slide-number: true
+logo: images/logo-sara.png
+execute: 
+  echo: fenced
+  eval: false
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+  data-background-color: black
+  data-background-position: top
+  data-background-opacity: "0.6"
+---
+
+## Download & Install
+
+<br>
+
+✅ R Software, <https://cloud.r-project.org/>
+
+✅ RStudio IDE, <https://posit.co/products/open-source/rstudio/?sid=1>
+
+✅ Quarto, <https://quarto.org/docs/get-started/> 
+
+## RStudio 
+
+<br>
+
+✅ Create RStudio Project in your computer
+
+✅ Create quarto document
+
+✅ Create folder `data ` & save file `penguins.csv` 
+
+## Data: `penguins`
+
+Live on three island: Biscoe, Dream, & Torgersen.
+
+<br>
+
+::: {layout="[[60,40], []]"}
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png)
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png)
+:::
+
+
+
+::: aside
+Source: [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/)
+:::
+
+## Exploratory Data Analysis (EDA)
+
+<br>
+
+> "how to use **visualization** and **transformation** to explore your data in a **systematic** way"
+
+::: aside
+Source: [R for Data Science (2e)](https://r4ds.hadley.nz/)
+:::
+
+# EDA using R: <br>10 Basic Steps {background-image=https://images.unsplash.com/photo-1638332907755-38ddf2ff6daf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D background-size=cover background-color=black background-opacity=0.6}
+
+## 📦 Step 1: R Packages
+
+<br>
+
+Install R Packages only once:
+
+```{r}
+#| echo: fenced
+
+install.packages("palmerpenguins") # to get data
+install.packages("tidyverse")      # to collection of R pkgs
+install.packages("skimr")          # summary of data  
+install.packages("janitor")        # data cleaning
+```
+
+. . .
+
+Call/load R packages
+
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+library(skimr)
+library(janitor)
+```
+
+
+## 📁 Step 2: Import the Dataset
+
+You can import from CSV, Excel, or other sources.
+
+<br>
+
+```{r}
+library(readr)
+penguins <- read_csv("session-1/practice/data/penguins.csv", 
+    col_types = cols(sex = col_factor(levels = c("male", 
+        "female"))))
+View(penguins)
+```
+
+
+```{r}
+# Replace with your actual file path
+data <- read_csv("your_dataset.csv")   
+```
+
+## Data Structure {background-color=black}
+
+<br>
+
+![](https://r4ds.hadley.nz/images/tidy-1.png)
+
+
+::: aside
+Source: [R for Data Science (2e)](https://r4ds.hadley.nz/)
+:::
+
+## 📊 Step 3: Explore the Data Structure
+
+<br>
+
+```{r}
+dim(data)          # Dimensions (rows & columns)
+
+names(data)        # Column names
+
+spec(data)         # columns specifications
+
+head(data)         # First few rows
+
+glimpse(data)      # Compact structure
+
+str(data)          # Structure
+```
+
+## Check Data for
+
+<br>
+
+- Missing values
+
+- Duplicate rows
+
+- Inconsistent column names
+
+## ✅ Step 4: Transform & Clean the Data
+
+::: {.panel-tabset}
+### Transform
+
+```{r}
+library(readr)
+
+penguins <- read_csv("data/penguins.csv", 
+    col_types = cols(sex = col_factor(levels = c("male", "female")),
+                     species = col_factor(levels = c("Chinstrap",
+                                                     "Gentoo",
+                                                     "Adelie")),
+                     island  = col_factor(levels = c("Biscoe",
+                                                     "Dream",
+                                                     "Torgersen"))
+                     ))
+```
+
+### Summary
+
+<br>
+
+```{r}
+summary(penguins)         #basic summary
+```
+
+### Missing Values
+
+```{r}
+sum(is.na(penguins))                 # Total missing values
+colSums(is.na(penguins))             # Total column wise missing values       
+```
+:::
+
+## Variation
+
+- "It is the tendency of the values of a variable to change from measurement to measurement or across different subjects or at different times."
+
+- "Every variable has its own pattern of variation, which can reveal interesting information about how it varies between measurements on the same observation as well as across observations."
+
+::: aside
+Source: [R for Data Science (2e)](https://r4ds.hadley.nz/)
+:::
+
+## Variation Types
+
+1. What type of **variation** occurs within my variables?
+
+1. What type of **co-variation** occurs between my variables?
+
+
+## 📈 Step 5: Univariate Analysis
+
+> Explore each variable individually
+
+::: {.panel-tabset}
+### Numerical variables
+
+```{r}
+summary(data$variable)
+hist(data$variable, main="Mass Distribution", col="lightblue")
+```
+
+Use `ggplot2` for more control
+
+```{r}
+ggplot(penguins, aes(x = body_mass_g)) +
+  geom_histogram(fill = "skyblue", bins = 30, color = "white") +
+  labs(title = "Distribution of Body Mass (g)", x = "Body Mass (g)") +
+  theme_minimal()
+```
+
+### Categorical variables
+
+```{r}
+table(data$variable)
+barplot(table(data$variable), col="pink", main="Species Count")
+```
+
+Use `ggplot2` for more control
+
+```{r}
+ggplot(penguins, aes(x = species)) +
+  geom_bar(fill = "steelblue") +
+  labs(title = "Penguin Species Count") +
+  theme_minimal()
+```
+:::
+
+## 🔁 Step 6: Bivariate Analysis
+
+> Explore relationships between variables
+
+::: {.panel-tabset}
+### Numeric vs Numeric:
+
+```{r}
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(aes(color = species)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Flipper Length vs Body Mass") +
+  theme_minimal()
+```
+
+### Numeric vs Categorical
+
+```{r}
+ggplot(penguins, aes(x = species, y = body_mass_g, fill = species)) +
+  geom_boxplot() +
+  labs(title = "Body Mass by Species") +
+  theme_minimal()
+```
+:::
+
+## 📌 Step 7: Summary Statistics
+
+<br>
+
+```{r}
+skimr::skim(data)         # Rich summary
+```
+
+
+## 📉 Step 8: Outlier Detection
+
+> An outlier is a data point that differs markedly from the rest of the data.
+
+. . .
+
+<br>
+
+```{r}
+ggplot(penguins, aes(y = body_mass_g, x = species, fill = species)) +
+  geom_boxplot() +
+  labs(title = "Outliers in Body Mass by Species") +
+  theme_minimal()
+```
+
+## 🧹 Step 9: Handle Missing Data 
+
+<br>
+
+(if needed)
+
+::: {.panel-tabset}
+### Fill missing values
+
+```{r}
+# Fill missing values
+penguins$body_mass_g[is.na(penguins$body_mass_g)] <- median(penguins$body_mass_g, na.rm = TRUE)
+
+summary(penguins$body_mass_g)
+```
+
+
+### Remove missing values
+
+```{r}
+# Remove rows with missing data
+penguins_clean <- penguins %>% drop_na()
+dim(penguins_clean)
+```
+
+
+:::
+
+## 🧾 Step 10: Save Cleaned Data
+
+<br>
+
+```{r}
+write.csv(data_clean, "cleaned_data.csv")
+```
+
+## 🎯 Learnings
+
+1. Installing R, RStudio, Quarto & R packages.
+1. Import & export of Data
+1. View summary & structure of data
+1. Table & plots to see pattern in data
+1. Treating missing & outlier values

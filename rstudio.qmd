@@ -1,41 +1,27 @@
 ---
-title: "[RStudio]{.clr-white .r-fit-text}"
-author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
-format: revealjs
-execute: 
-  echo: true
+title: "[RSTUDIO IDE]{.r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.r-fit-text}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
 controls: true
 slide-number: true
 scrollable: true
+incremental: true
 logo: images/logo-sara.png
 #bibliography: references.bib
 theme: style.scss
 title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
 ---
 
-## [R and RStudio]{.center}
-
-<br>
-
-::: columns
-::: {.column width="50%"}
-### Imagine R as a powerful engine
-
-<br>
-
-[{{< fa gear size=7x >}}]{style="color:tomato"}
-:::
-
-::: {.column width="50%"}
-### and RStudio as a stylish car
-
-<br>
-
-[{{< fa car size=7x >}}]{style="color:navy"}
-:::
-:::
+## {background-image=images/logo_rstd.png background-size=50%}
 
 ## 
 
@@ -51,10 +37,33 @@ title-slide-attributes:
 :::
 
 ::: {.column width="50%"}
-RStudio is an integrated development environment (IDE) for R and Python from [posit](https://posit.co/).
+RStudio is an integrated development environment (IDE) for R and Python from company [posit](https://posit.co/).
 :::
 
 ::::
+
+## [R and RStudio]{.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### Imagine R as a powerful engine
+
+<br>
+
+[{{< fa gear size=7x >}}]{style="color:gray"}
+:::
+
+::: {.column width="50%"}
+### and RStudio as a stylish car
+
+<br>
+
+[{{< fa car size=7x >}}]{style="color:seagreen"}
+:::
+:::
+
 
 ## 
 
@@ -68,37 +77,33 @@ RStudio is an integrated development environment (IDE) for R and Python from [po
 Source: <https://posit.co/products/open-source/rstudio/>
 :::
 
-## RStudio IDE 
+## RStudio IDE {background-color=black}
 
 ![](images/rstd_ide.png){fig-align="center"}
 
-## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center}
+##  [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center} {background-color=black}
 
 ![](images/rstd_options1.png){fig-align="center"}
 
-## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center}
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center} {background-color=black}
 
 ![](images/rstd_options2.png){fig-align="center"}
 
-# {.inverse}
+# RStudio <br>Project <br>in 4 Steps {background-image=images/project-logo.png background-size=50% background-position=right background-color=teal}
 
-![](images/project-logo.png){fig-align=center width=25%}
-
-[RStudio Project]{.r-fit-text}
-
-## Open RStudio
+## Open RStudio {background-color=black}
 
 ![](images/rstd-proj.png){fig-align=center}
 
-## RStudio without project
+## RStudio Without Project {background-color=black}
 
 ![](images/rstd-proj-none.png){fig-align=center}
 
-## RStudio without project 
+## RStudio Without Project {background-color=black}
 
 ![](images/rstd-proj-folders.png){fig-align=center}
 
-## RStudio project helps: {background-image="images/r-projects.jpg" background-size="55%" background-position="bottom right"}
+## RStudio Project Helps: {background-image="images/r-projects.jpg" background-size="55%" background-position="bottom right"}
 
 ::: columns
 ::: {.column width="100%"}
@@ -114,69 +119,55 @@ Source: <https://posit.co/products/open-source/rstudio/>
 Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) & artwork by [Allison Horst](https://www.allisonhorst.com/)
 :::
 
-## Let's do it together {background-image=images/dito.gif background-size="contain" background-position="right" background-color=black}
-
-:::: {.columns}
-
-::: {.column width="40%"}
-[Create <br> RStudio <br> project]{.r-fit-text}
-:::
-
-::::
-
-::: aside
-GIF Source {{< fa brands instagram >}} [@dolly_ki_tapri_nagpur](https://www.instagram.com/dolly_ki_tapri_nagpur)
-:::
-
-## Create RStudio project 
+## Create RStudio project {background-color=black}
 
 ![](images/rstd_proj1.png){fig-align=center}
 
-## Create RStudio project 
+## Create RStudio project {background-color=black}
 
 ![](images/rstd_proj2.png){fig-align=center}
 
-## [In case anything goes wrong$...$]{.theme-red}
+## In case anything goes wrong$...$ {background-color=black}
 
 ![](images/rstd_proj3.1.png){fig-align=center}
 
-## Create RStudio project {.center}
+## Create RStudio Project {background-color=black}
 
 ![](images/rstd_proj3.png){fig-align=center}
 
-## Create RStudio project {.center}
+## Create RStudio project {background-color=black}
 
 ![](images/rstd_proj4.png){fig-align=center}
 
-## Create RStudio project {.center}
+## Create RStudio project {background-color=black}
 
 ![](images/rstd_proj4a.png){fig-align=center}
 
-## Create RStudio project {.center}
+## Create RStudio project {background-color=black}
 
 ![](images/rstd_proj4b.png){fig-align=center}
 
-## Create RStudio project {.center}
+## Create RStudio project {background-color=black}
 
 ![](images/rstd_proj4c.png){fig-align=center}
 
-## RStudio project "name" {.center}
+## RStudio project "name" {background-color=black}
 
 ![](images/rstd_proj_name.png){fig-align=center}
 
-## RStudio project "path" {.center}
+## RStudio project "path" {background-color=black}
 
 ![](images/rstd_proj_path1.png){fig-align=center}
 
-## RStudio project {.center}
+## RStudio project {background-color=black}
 
 ![](images/rstd_proj_path2.png){fig-align=center}
 
-## Write codes in R console
+## Write codes in RStudio console {background-color=black}
 
 ![](images/code-console.png){fig-align=center}
 
-## Write codes in R script
+## Write codes in R script {background-color=black}
 
 ![](images/code-script.png){fig-align=center}
 
@@ -204,3 +195,140 @@ GIF Source {{< fa brands instagram >}} [@dolly_ki_tapri_nagpur](https://www.inst
 ::: aside
 Source: [Marius Mather](https://bookdown.org/marius_mather/Rad/tips-for-effective-r-programming.html) also [Tomaž Kaštrun](https://tomaztsql.wordpress.com/2023/01/31/tips-for-organising-your-r-code/)
 :::
+
+## {background-image=images/logo_quarto.png background-size=25%}
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 1. What is R mainly used for? 
+
+::: {.nonincremental}
+A) Web browsing.    
+B) Gaming.   
+C) Data analysis and statistics.    
+D) Drawing cartoons.    
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 2. What is RStudio?
+
+::: {.nonincremental}
+A) A video editing software
+B) A web browser
+C) An integrated development environment (IDE) for R
+D) A spreadsheet tool    
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 3. What will 2 + 3 return in R?
+
+::: {.nonincremental}
+A) 5
+B) 6
+C) 23
+D) Error    
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 4. Which of the following is used to create a sequence in R?
+
+::: {.nonincremental}
+A) list()
+B) seq()
+C) loop()
+D) run()    
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 5. Where do you usually type your code in RStudio?
+
+::: {.nonincremental}
+A) Console or Script Editor
+B) File Explorer
+C) Toolbar
+D) Help tab    
+:::
+
+## 🤩 Your Turn Answers {background-color=seagreen}
+
+1. Correct answer: C) Data analysis and statistics
+
+1. Correct answer: C) An integrated development environment (IDE) for R
+
+1. Correct answer: A) 5
+
+1. Correct answer: B) seq()
+
+1. Correct answer: A) Console or Script Editor
+
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 6. What symbol is used to assign a value to a variable in R?
+
+::: {.nonincremental}
+A) =
+B) :=
+C) <-
+D) ==
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 7. Which function is used to view the structure of a dataset?
+
+::: {.nonincremental}
+A) str()
+B) data()
+C) view()
+D) layout()
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 8. How do you read a CSV file into R?
+
+::: {.nonincremental}
+A) read.excel()
+B) open.csv()
+C) read.csv()
+D) import()
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 9. Which package is commonly used for data visualization in R?
+
+::: {.nonincremental}
+A) dplyr
+B) tidyr
+C) ggplot2
+D) readr
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 10. What is the shortcut to run a line of code in RStudio (on Windows)?
+
+::: {.nonincremental}
+A) Ctrl + C
+B) Ctrl + Enter
+C) Ctrl + R
+D) Ctrl + S
+:::
+
+## 🤩 Your Turn Answers {background-color=seagreen}
+
+1. Correct answer: C) <-
+
+1. Correct answer: A) str()
+
+1. Correct answer: C) read.csv()
+
+1. Correct answer: C) ggplot2
+
+1. Correct answer: B) Ctrl + Enter

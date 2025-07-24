@@ -7,10 +7,15 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.30">
 
-  <title>SARA | The Non-Profit – Welcome</title>
+  <title>SARA | The Non-Profit – R Intro</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,7 +34,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-b4dcdb8198789f886ac7023fab9d7e6b.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f2db8eaa6aed2c9a8a42e2e6372fc449.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -122,8 +127,8 @@
       margin-right: 0; 
     }
   </style>
-<meta name="twitter:title" content="Welcome – SARA | The Non-Profit">
-<meta name="twitter:description" content="SARA R Bootcamp, Oct 2025  Sonipat, Haryana">
+<meta name="twitter:title" content="R Intro">
+<meta name="twitter:description" content="2nd SARA Data Science Summer School 25-29 July 2025, Sonipat (HR)">
 <meta name="twitter:image" content="https://sara-course-r4b.netlify.app/social-default.png">
 <meta name="twitter:creator" content="@sara_institute">
 <meta name="twitter:site" content="@sara_institute">
@@ -135,19 +140,383 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&amp;w=2069&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover" class="quarto-title-block center">
-  <h1 class="title"><span class="clr-white r-fit-text">Welcome</span></h1>
-  <p class="subtitle"><span class="clr-white r-fit-text">SARA R Bootcamp, Oct 2025 <br> Sonipat, Haryana</span></p>
+<section id="title-slide" data-background-color="black" data-background-image="https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-opacity="0.7" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title"><span class="r-fit-text clr-white">WELCOME</span></h1>
+  <p class="subtitle"><span class="r-fit-text clr-white">2nd SARA Data Science Summer School<br> 25-29 July 2025, Sonipat (HR)</span></p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section class="slide level2">
+<section id="section" class="slide level2" data-background-image="images/sara-banner.jpg" data-background-size="cover" data-background-position="bottom">
+<h2></h2>
+<p><br> <br></p>
+<div class="centering">
+<div class="columns">
+<div class="column" style="width:36%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/savitrimai.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="GYAN JYOTI SAVITRIBAI PHULE (1831-1897) 🌺 🙏🏽 🌼"><img data-src="images/savitrimai.png" style="width:70.0%" alt="GYAN JYOTI SAVITRIBAI PHULE (1831-1897) 🌺 🙏🏽 🌼"></a></p>
+<figcaption><strong>GYAN JYOTI <span class="clr-red">SA</span>VITRIBAI PHULE (1831-1897)</strong><br>🌺 🙏🏽 🌼</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:29%;">
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/logo-sara.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/logo-sara.png" class="quarto-figure quarto-figure-center" style="width:2in"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:34.75%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/ramai.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="MATA RAMABAI AMBEDKAR (1898-1935) 🌺 🙏🏽 🌼"><img data-src="images/ramai.png" style="width:70.0%" alt="MATA RAMABAI AMBEDKAR (1898-1935) 🌺 🙏🏽 🌼"></a></p>
+<figcaption><strong>MATA <span class="clr-red">RA</span>MABAI AMBEDKAR (1898-1935)</strong><br>🌺 🙏🏽 🌼</figcaption>
+</figure>
+</div>
+</div></div>
+<p><span class="r-fit-text"><strong>Savitribai Ramabai (SARA) Institute of Data Science, Sonipat</strong></span></p>
+</div>
+</section>
+<section id="section-1" class="slide level2" data-background-image="images/flyer2.png" data-background-size="contain" data-background-color="black">
+<h2></h2>
+</section>
+<section id="section-2" class="slide level2" data-background-image="images/mission.png" data-background-size="cover">
+<h2></h2>
+</section>
+<section id="sara-education-trust-reg." class="slide level2" data-background-image="images/sparks.jpg" data-background-size="cover" data-background-position="bottom">
+<h2>SARA Education Trust (Reg.)</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://sara-edu.netlify.app/images/launch-sara.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="05 April 2023, SARA Institute inauguration at Terra City, Bhiwadi, Rajasthan."><img data-src="https://sara-edu.netlify.app/images/launch-sara.jpg" alt="05 April 2023, SARA Institute inauguration at Terra City, Bhiwadi, Rajasthan."></a></p>
+<figcaption>05 April 2023, SARA Institute inauguration at Terra City, Bhiwadi, Rajasthan.</figcaption>
+</figure>
+</div>
+</section>
+<section id="dr.-ambedkar-bhawan-sonipat" class="slide level2" data-background-image="images/sparks.jpg" data-background-size="cover" data-background-position="bottom">
+<h2>Dr.&nbsp;Ambedkar Bhawan, Sonipat</h2>
+<div class="quarto-layout-panel" data-layout="[15,16]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 48.4%;justify-content: center;">
+<p><a href="images/sonipat1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/sonipat1.png"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 51.6%;justify-content: center;">
+<p><a href="images/sonipat2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="images/sonipat2.png"></a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="section-3" class="slide level2" data-background-image="images/sparks.jpg" data-background-size="cover" data-background-position="bottom">
+<h2></h2>
+<div class="centering">
+<p><a href="images/sonipat-bhawan.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="images/sonipat-bhawan.png"></a></p>
+<p><span class="r-fit-text"><strong><em>The Ambedkar <br> Educational Society Sonipat</em></strong></span></p>
+<p><br></p>
+<p><span class="r-fit-text">President Mr.&nbsp;Satyawan Bhatia &amp; all respected Executive Members.</span></p>
+</div>
+</section>
+<section id="our-online-courses" class="slide level2" data-background-image="images/sparks.jpg" data-background-size="cover" data-background-position="bottom">
+<h2>Our Online Courses</h2>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/logo-sara-studio.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="images/logo-sara-studio.png" class="quarto-figure quarto-figure-center" style="width:45.0%"></a></p>
+</figure>
+</div>
+</section>
+<section id="our-offline-courses" class="slide level2" data-background-image="images/sparks.jpg" data-background-size="cover" data-background-position="bottom">
+<h2>Our Offline Courses</h2>
+<p><br></p>
+<div class="layout-grid">
+<div class="col">
+<div class="card">
+<p><a href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a></p>
+<p>Data Science</p>
+</div>
+</div>
+<div class="col">
+<div class="card">
+<p><a href="https://images.unsplash.com/photo-1649433391420-542fcd3835ea?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="https://images.unsplash.com/photo-1649433391420-542fcd3835ea?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a></p>
+<p>Computer Skills</p>
+</div>
+</div>
+<div class="col">
+<div class="card">
+<p><a href="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&amp;w=2922&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&amp;w=2922&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a></p>
+<p>English Language</p>
+</div>
+</div>
+<div class="col">
 
+</div>
+</div>
+</section>
+<section id="data-science-training---r" class="slide level2" data-background-image="images/sparks.jpg" data-background-size="cover" data-background-position="bottom">
+<h2>Data Science Training - R</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/summer-school.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="22-26 July 2024, 1st SARA Data Science Summer School “Reproducible Research using R”."><img data-src="images/summer-school.jpg" alt="22-26 July 2024, 1st SARA Data Science Summer School “Reproducible Research using R”."></a></p>
+<figcaption>22-26 July 2024, 1st SARA Data Science Summer School “Reproducible Research using R”.</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-science-training---statistics" class="slide level2" data-background-image="images/sparks.jpg" data-background-size="cover" data-background-position="bottom">
+<h2>Data Science Training - Statistics</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/winter-school.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="16-20 December 2024, SARA Data Science Winter School “Statistics using R”."><img data-src="images/winter-school.jpg" alt="16-20 December 2024, SARA Data Science Winter School “Statistics using R”."></a></p>
+<figcaption>16-20 December 2024, SARA Data Science Winter School “Statistics using R”.</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-science-training---quarto" class="slide level2" data-background-image="images/sparks.jpg" data-background-size="cover" data-background-position="bottom">
+<h2>Data Science Training - Quarto</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/quarto-bootcamp.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="3-7 March 2025, SARA Data Science Bootcamp “Publish using Quarto”."><img data-src="images/quarto-bootcamp.jpeg" alt="3-7 March 2025, SARA Data Science Bootcamp “Publish using Quarto”."></a></p>
+<figcaption>3-7 March 2025, SARA Data Science Bootcamp “Publish using Quarto”.</figcaption>
+</figure>
+</div>
+</section>
+<section id="section-4" class="slide level2" data-background-image="images/flyers.png" data-background-size="cover">
+<h2></h2>
+</section>
+<section id="facts-figures" class="slide level2" data-background-image="images/flyers.png" data-background-size="cover" data-background-color="white" data-background-opacity="0.05">
+<h2>Facts &amp; Figures</h2>
+<ul>
+<li><p>178 students of which 64 are women.</p></li>
+<li><p>6 residential data science trainings.</p></li>
+<li><p>7 international speakers.</p></li>
+<li><p>6 invited talks/workshops in other institutes.</p></li>
+<li><p>1 event in collaboration with Spain.</p></li>
+</ul>
+</section>
+<section id="support-sara" class="slide level2" data-background-image="images/babasaheb.jpg" data-background-size="contain" data-background-position="right">
+<h2>Support SARA</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Teach at SARA.</p></li>
+<li><p>Donate to SARA.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/qr-code-sara.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="images/qr-code-sara.png" class="quarto-figure quarto-figure-center" style="width:55.0%"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
 
+</div></div>
+</section>
+<section id="why" class="title-slide slide level1 center" data-background-image="images/transports.png" data-background-size="contain" data-background-position="right">
+<h1>Why?</h1>
 
 </section>
+
+<section id="why-1" class="title-slide slide level1 center" data-background-image="images/langs.png" data-background-size="contain" data-background-position="right">
+<h1>Why?</h1>
+
+</section>
+
+<section>
+<section id="nd-sara-data-science-summer-school" class="title-slide slide level1 center" data-background-image="images/flyer-summer.png" data-background-size="35%" data-background-position="right" data-background-color="#003262">
+<h1>2nd SARA <br> Data Science <br> Summer School</h1>
+
+</section>
+<section id="data-science-project" class="slide level2">
+<h2>Data Science Project</h2>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://r4ds.hadley.nz/diagrams/data-science/base.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="https://r4ds.hadley.nz/diagrams/data-science/base.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Image source: <span class="citation" data-cites="wickhamDataScienceImport2023">@wickhamDataScienceImport2023</span></p>
+</div></aside></section>
+<section id="course-modules" class="slide level2">
+<h2>Course Modules</h2>
+<ul>
+<li><p>Day 1: Introduction to R &amp; RStudio</p></li>
+<li><p>Day 2: Data Wrangling with <code>dplyr</code> &amp; <code>tidyr</code></p></li>
+<li><p>Day 3: Data Visualization using <code>ggplot2</code></p></li>
+<li><p>Day 4: Quantitative Data Analysis</p></li>
+<li><p>Day 5: Reproducible Research using Quarto</p></li>
+</ul>
+</section>
+<section id="course-overview" class="slide level2">
+<h2>Course Overview</h2>
+<ul>
+<li><p>Total <strong>30 hours</strong> of residential teaching for 5 days.</p></li>
+<li><p>Open for all, admission priority for <strong>marginalized communities</strong>.</p></li>
+<li><p>Your <strong>feedback</strong> on the last day of the course.</p></li>
+<li><p><strong>Thank You!! Ceremony</strong> will be on the evening of Tue 29.</p></li>
+<li><p>Participation <strong>e-Certificate</strong> via email after a week.</p></li>
+</ul>
+</section>
+<section id="schedule" class="slide level2">
+<h2>Schedule</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1"><i class="fa-solid fa-utensils" aria-label="utensils"></i> Food</a></li><li><a href="#tabset-1-2"><i class="fa-solid fa-laptop" aria-label="laptop"></i> Lectures</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>08:30 AM to 09:30 AM</td>
+<td>Breakfast</td>
+</tr>
+<tr class="even">
+<td>01:30 PM to 02:30 PM</td>
+<td>Lunch</td>
+</tr>
+<tr class="odd">
+<td>07:30 PM to 08:30 PM</td>
+<td>Dinner</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-2">
+<div class=".r-fit-text">
+<table class="caption-top">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10:00 AM to 11:30 AM</td>
+<td>Class 1</td>
+</tr>
+<tr class="even">
+<td><p><i class="fa-solid fa-mug-hot" aria-label="mug-hot"></i></p></td>
+<td>Discussion</td>
+</tr>
+<tr class="odd">
+<td>12:00 AM to 01:30 PM</td>
+<td>Class 2</td>
+</tr>
+<tr class="even">
+<td><p><i class="fa-solid fa-utensils" aria-label="utensils"></i></p></td>
+<td>Lunch</td>
+</tr>
+<tr class="odd">
+<td>02:30 PM to 03:45 PM</td>
+<td>Class 3</td>
+</tr>
+<tr class="even">
+<td><p><i class="fa-solid fa-mug-hot" aria-label="mug-hot"></i></p></td>
+<td>Discussion</td>
+</tr>
+<tr class="odd">
+<td>04:00 PM to 05:30 PM</td>
+<td>Guest Talk</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="guidelines" class="slide level2">
+<h2>Guidelines</h2>
+<ul>
+<li><p>Don’t be late for the class ~5 minutes</p></li>
+<li><p>Ask questions, clear your doubts.</p></li>
+<li><p>Classes will be in the Mata Ramabai Auditorium, 1st Floor, Dr.&nbsp;Ambedkar Bhawan.</p></li>
+<li><p>You will have to use your own internet.</p></li>
+<li><p>Be kind to each and everyone.</p></li>
+</ul>
+</section>
+<section id="contact" class="slide level2">
+<h2>Contact</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 66%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Mobile</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mr.&nbsp;Raj Pal (Supervisor, Dr.&nbsp;Ambedkar Bhawan)</td>
+<td>93063 42596</td>
+</tr>
+<tr class="even">
+<td>SARA Institute Office</td>
+<td>925 315 2024</td>
+</tr>
+<tr class="odd">
+<td>Dr.&nbsp;Ajay Kumar (Ex. Director, SARA)</td>
+<td>88868 10879</td>
+</tr>
+<tr class="even">
+<td>Dr.&nbsp;Kiran Koli (Director, SARA)</td>
+<td>81680 60500</td>
+</tr>
+<tr class="odd">
+<td>Mr.&nbsp;Satyawan Bhatia <br>(President, Dr.&nbsp;Ambedkar Bhawan)</td>
+<td>94165 40721</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column centering" style="width:25%;">
+<p><br> <br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/logo-sara.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Savitribai Ramabai (SARA) Institute of Data Science"><img data-src="images/logo-sara.png" alt="Savitribai Ramabai (SARA) Institute of Data Science"></a></p>
+<figcaption>Savitribai Ramabai (SARA) Institute of Data Science</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column r-fit-text" style="width:30%;">
+<p><br> <br><br><br></p>
+<h3 id="follow-sara">Follow SARA</h3>
+<p><br><span class="clr-black"><a href="https://twitter.com/sara_institute"><i class="fa-brands fa-twitter" aria-label="twitter"></i></a></span> <a href="https://twitter.com/sara_institute">@sara_institute</a></p>
+<p><span class="clr-black"><a href="https://www.linkedin.com/company/sara-institute/"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a></span> <a href="https://www.linkedin.com/company/sara-institute/">SARA LinkedIn Page</a></p>
+<p><span class="clr-black"><a href="https://www.youtube.com/@SARADataScience"><i class="fa-brands fa-youtube" aria-label="youtube"></i></a></span> <a href="https://www.youtube.com/@SARADataScience">@SARADataScience</a></p>
+<p><span class="clr-black"><a href="https://www.facebook.com/profile.php?id=61564043738390"><i class="fa-brands fa-facebook" aria-label="facebook"></i></a></span> <a href="https://www.facebook.com/profile.php?id=61564043738390">SARA Facebook Page</a></p>
+<p><span class="clr-black"><a href="https://whatsapp.com/channel/0029Va4r7rGLCoWycMwThl2J"><i class="fa-brands fa-whatsapp" aria-label="whatsapp"></i></a></span> <a href="https://whatsapp.com/channel/0029Va4r7rGLCoWycMwThl2J">SARA Institute WhatsApp Channel</a></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column r-fit-text" style="width:35%;">
+<p><br> <br> <br><br></p>
+<h3 id="contact-sara">Contact SARA</h3>
+<p><br><i class="fa-solid fa-mobile-screen" aria-label="mobile-screen"></i> 925 315 2024</p>
+<p><i class="fa-solid fa-envelope" aria-label="envelope"></i> <a href="mailto:%20sara.institute.info@gmail.com">sara.institute.info@gmail.com</a></p>
+<p><i class="fa-solid fa-globe" aria-label="globe"></i> <a href="https://sara-edu.netlify.app/">www.sara-edu.netlify.app/</a></p>
+<p><i class="fa-solid fa-location-dot" aria-label="location-dot"></i> SARA Institute of Data Science, <br>Dr.&nbsp;Ambedkar Bhawan, Kakroi Road, Near Dayanand Hospital, <br>Sonipat - 131001, Haryana, India.</p>
+</div></div>
+
+
+
+<aside><div>
+<p>Title slide image by <a href="https://unsplash.com/photos/orange-blue-and-white-textile-NLgqFA9Lg_E">Stephane Gagnon</a></p>
+</div></aside></section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/logo-sara.png" class="slide-logo"></p>
@@ -365,190 +734,204 @@
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
             }
           }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/sara-course-r4b\.netlify\.app\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          return false;
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
             }
-          }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
         }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
               }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/sara-course-r4b\.netlify\.app\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>

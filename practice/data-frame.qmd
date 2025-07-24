@@ -1,0 +1,27 @@
+---
+title: "Hello World"
+author: "Your Name"
+format: html
+date: today
+---
+
+```{r}
+age <- c(23, 25, 16, 40, 34)
+age
+
+income <- c(23000, 25000, 16000, 4000, 34000)
+income
+
+name <- c("Bhim", "Rama", "Sara", "Phule", "Savitri")
+name
+
+place <- c("MH", "RJ", "DL", "HR", "HR")
+place
+
+weight_kg <- c(50, 52, 61, 40, 70)
+weight_kg
+
+example_df <- data.frame(name, income, age, place, weight_kg)
+example_df
+```
+

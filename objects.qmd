@@ -1,66 +1,142 @@
 ---
-title: "[R Objects]{.clr-white .r-fit-text}"
-author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
-format: revealjs
-execute: 
-  echo: true
+title: "[R OBJECTS]{.r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.r-fit-text}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
 controls: true
 slide-number: true
 scrollable: true
-code-line-numbers: false
 logo: images/logo-sara.png
 #bibliography: references.bib
 theme: style.scss
 title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
 ---
 
-# {.inverse}
+# R Objects {background-image=images/heartyr.gif background-position=right background-size=50% background-color=black visibility=hidden}
 
-![](images/heartyr.gif){fig-align="center" width="25%"}
-
-[R Objects]{.r-fit-text}
+<br>
 
 ::: aside
 Artwork by [Alision Horst](https://allisonhorst.com/)
 :::
 
-## R object
+## R Object
+
+- In R, **everything you create or work with is stored as an object.**
+
+- Objects can be numbers, text, data tables, functions, or even plots.
+
+- Think of an object as a **named container** that stores information in your R environment.
+
+## Common Types of R Objects
+
+1. Vector – a sequence of values (same type)
+
+```{r}
+numbers <- c(1, 2, 3, 4, 5)     # Numeric vector
+
+names <- c("Asha", "Raj", "Zara")  # Character vector
+
+names
+```
+
+. . .
 
 <br>
 
-> Just a name that you can use to call up stored data.
+::: {.callout-caution icon=false title="Curious Candy 🍬🍭🍬 "}
+*Why are we not seeing numbers in the results?*
+:::
+
+## Common Types of R Objects
+
+2. Matrix – 2D table of numbers
+
+```{r}
+mymatrix <- matrix(1:6, nrow = 2)
+
+mymatrix
+```
+
+## Common Types of R Objects
+
+3. Data Frame – table with rows and columns (like Excel)
+
+```{r}
+mydata <- data.frame(
+  Name = c("Ali", "Beena"),
+  Age = c(25, 30)
+)
+
+```
+
+. . .
 
 <br>
 
-::: {.callout-important}
-R assignment operators: Assignment operators are used to assign values to variables.
+```{r}
+mydata
+```
 
-`my_var <- 3`
 
-`my_var # print my_var`
-:::
+## Common Types of R Objects
 
-::: aside
-Source: [Garrett Grolemund](https://rstudio-education.github.io/hopr/basics.html#objects)
-:::
+4. List – collection of different types of objects
 
-## 💡Guidelines to name R objects:
+    - A list can contain vectors, numbers, strings, even other lists.
+    
+. . .    
 
--   a name cannot start with a number.
+```{r}
+mylist <- list(name = "Sara", scores = c(90, 85, 88), passed = TRUE)
 
--   a name cannot use some special symbols, like `^`, `!`, `$`, `@`, `+`, `-`, `/`, or `*`,`:`.
+mylist
+```
 
--   avoid caps.
+## Common Types of R Objects
 
--   avoid space.
+5. Function – reusable set of instructions
 
--   use dash (like weight-kg) or underscore (like weight_kg).
+```{r}
+add <- function(x, y) {
+  return(x + y)
+}
 
--   if chronology matters then add date (2020-09-05-file-name).
+add(3, 4)   # Output: 7
+```
 
-## Create object
+## 💡Guidelines to "name" R Objects: {background-color=teal}
+
+-   A name cannot start with a number.
+
+-   A name cannot use some special symbols, like `^`, `!`, `$`, `@`, `+`, `-`, `/`, or `*`,`:`.
+
+-   Avoid caps.
+
+-   Avoid space.
+
+-   Use dash (like weight-kg) or underscore (like weight_kg).
+
+-   If chronology matters then add date (2020-09-05-file-name).
+
+## 🤯 Your Turn: Create this dataset {background-color=brown} 
+
+![](practice/images/data-frame.png)
+
+## 🤩 Your Turn Answer {background-color=seagreen}
+
+![](practice/images/data-frame-ans.png)
+
+
+## Create Object
 
 ::: panel-tabset
 ### Code
@@ -68,6 +144,7 @@ Source: [Garrett Grolemund](https://rstudio-education.github.io/hopr/basics.html
 ```{r}
 #| label: age
 #| eval: false
+
 age <- c(23, 25, 16, 40, 34)
 
 age
@@ -80,6 +157,18 @@ age
 #| output: asis
 #| echo: false 
 ```
+:::
+
+## Assignment Operator
+
+<br>
+
+::: {.callout-important}
+R assignment operators: Assignment operators are used to assign values to variables.
+
+`object_name <- c(2, 3, 4, 5)`
+
+`object_name` 
 :::
 
 ## Create object
@@ -170,15 +259,26 @@ weight_kg
 ```
 :::
 
-## RStudio environment window
+## RStudio Environment Window
 
 <br>
 
 ![](images/rstd-env.png){fig-align=center}
 
-[🤔 How to combine all these objects and form a data set?]{.r-fit-text .fragment .theme-red}
+## Basic Object Types 
 
-## 👇 Something like this 😻😻
+<br>
+
+| Type        | Description              | Example           |
+| ----------- | ------------------------ | ----------------- |
+| `numeric`   | Numbers (floating point) | `3.14`, `2`, `-5` |
+| `integer`   | Whole numbers            | `2L`, `100L`      |
+| `character` | Text strings             | `"R is great"`    |
+| `logical`   | Boolean values           | `TRUE`, `FALSE`   |
+
+## 🤔 How to combine all these objects and form a data set?
+
+👇 Something Like This 😻😻
 
 <br>
 
@@ -259,11 +359,9 @@ objects()
 ```
 :::
 
-#  {.inverse}
+# R Comments {background-image=images/stormyr.gif background-position=right background-size=35% background-color=black }
 
-![](images/stormyr.gif){fig-align="center" width=25%}
-
-[Comment]{.r-fit-text .center}
+<br>
 
 ::: aside
 Artwork by [Alision Horst](https://allisonhorst.com/)
@@ -271,19 +369,84 @@ Artwork by [Alision Horst](https://allisonhorst.com/)
 
 ## Comment:
 
--   "Humans will be able to read the comments, but your computer will pass over them."
+- Writing **comments** in R code (or any programming language) is essential for making your code **understandable, maintainable, and collaborative.** 
 
--   In R, `#` is used as a commenting symbol.
+- Comments are lines in the code that are not executed; they’re used to **explain what the code does, why certain decisions were made, and how to use or modify the code.**
 
-::: aside
-Source: [Wikipedia](https://en.wikipedia.org/wiki/Comment_computer_programming)
+## How to Write Comments in R
+
+- Use `#` to begin a comment.
+
+- R ignores everything after the `#` on that line.
+
+. . .
+
+```{r}
+# This is a comment
+
+x <- 5  # This sets x to 5
+```
+
+
+## Why Comments Are Important in R
+
+(@) **Improves Readability**
+    - Helps you and others understand the logic quickly, especially after some time.
+
+(@) **Supports Collaboration**
+    - Team members can follow your logic and contribute more easily.
+
+(@) **Eases Debugging and Maintenance**
+    - Clear comments make it easier to find and fix issues or update code.
+
+(@) **Documents Assumptions and Logic**
+    - Explains why certain steps are performed in a specific way.
+    
+## Examples
+
+:::: {.columns}
+
+::: {.column width="50%"}
+🛑 Bad Practice: No Comments
+
+```{r}
+#| eval: false
+#| echo: fenced
+
+a <- read.csv("data.csv")
+b <- a[a$score > 80, ]
+c <- mean(b$score)
+```
+
+🙁 This code works, but it's not clear what it's doing or why.
 :::
 
-# {.inverse}
+::: {.column width="50%"}
 
-![](images/breakr.gif){fig-align=center width="25%"}
+✅ Better Version With Comments
 
-[Community Help]{.r-fit-text}
+```{r}
+#| echo: fenced
+#| eval: false
+
+# Read data from CSV file
+data <- read.csv("data.csv")
+
+# Filter rows where score is greater than 80
+high_scores <- data[data$score > 80, ]
+
+# Calculate average of the high scores
+avg_score <- mean(high_scores$score)
+```
+
+
+:::
+
+::::
+
+# RStats <br> Community {background-image=images/breakr.gif background-position=right background-size=35% background-color=black }
+
+<br>
 
 ::: aside
 Artwork by [Alision Horst](https://allisonhorst.com/)
@@ -325,16 +488,7 @@ Artwork by [Alision Horst](https://allisonhorst.com/)
 Artwork by [Alision Horst](https://allisonhorst.com/)
 :::
 
-# {.center}
+# {.center visibility=hidden}
 
 [🧑🏽‍💻👨🏽‍💻<br>Question & Answer]{.r-fit-text}
 
-# {background-image="https://images.unsplash.com/photo-1489249902199-9d713a2c68b5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size=cover}
-
-[Thank You!]{.r-fit-text}
-
-::: aside
-
-Title slide & this slide background source: [Thomas Somme](https://unsplash.com/@tsomme)
-
-:::

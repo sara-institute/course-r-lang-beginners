@@ -1,26 +1,27 @@
 ---
-title: "[Markdown]{.clr-white .r-fit-text}"
-author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
-format: revealjs
-execute: 
-  echo: true
+title: "[MARKDOWN]{.r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.r-fit-text}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
 controls: true
 slide-number: true
 scrollable: true
-code-line-numbers: false
 logo: images/logo-sara.png
+lightbox: true
 #bibliography: references.bib
 theme: style.scss
 title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
 ---
 
-## {background-color=black}
-
-![](https://logowik.com/content/uploads/images/markdown1678.logowik.com.webp){fig-align=center}
-
-[Markdown]{.r-fit-text}
+# Markdown <br> Language {background-color=black background-image=https://logowik.com/content/uploads/images/markdown1678.logowik.com.webp background-size=35% background-position=right}
 
 ## Text formatting
 
@@ -251,7 +252,7 @@ Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
 
 :::
 
-## List {.scrollable} 
+## List {.scrollable visibility="hidden"} 
 
 <br>
 
@@ -273,7 +274,7 @@ Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
 
 :::
 
-## Definition {.scrollable} 
+## Definition {.scrollable visibility="hidden"} 
 
 ```markdown
 term
@@ -334,7 +335,7 @@ term
 Learn more about [Latex](https://www.overleaf.com/learn/latex/Mathematical_expressions) math expressions
 :::
 
-## In-line coding
+## In-line coding {visibility="hidden"} 
 
 > `` `r ` ``
 
@@ -354,7 +355,7 @@ Learn more about [Latex](https://www.overleaf.com/learn/latex/Mathematical_expre
 
 ### Output
 
-`r 1+1`
+`r sqrt(9)`
 
 :::
 
@@ -407,3 +408,82 @@ Learn more about [Latex](https://www.overleaf.com/learn/latex/Mathematical_expre
 |    12 | 12   | 12      |   12   |
 |   123 | 123  | 123     |  123   |
 |     1 | 1    | 1       |   1    |
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 1. What is Quarto used for in RStudio?
+
+::: {.nonincremental}
+A) Playing games
+B) Creating visualizations only
+C) Writing documents that combine code and text
+D) Installing R packages    
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 2. What is the default file extension for a Quarto file?
+
+::: {.nonincremental}
+A) .rmd
+B) .qmd
+C) .txt
+D) .csv    
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 3. Which symbol is used to start a code chunk in Quarto?
+
+::: {.nonincremental}
+A) `$$`
+B) `//`
+C) ````{r}`
+D) `--code--    `
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 4. What does the “Render” button in RStudio do in a Quarto file?
+
+::: {.nonincremental}
+A) Deletes the file
+B) Saves the script as a PDF
+C) Converts the Quarto file into a formatted document (HTML, PDF, etc.)
+D) Compiles the R packages    
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+### 5. Which of these formats can Quarto generate?
+
+::: {.nonincremental}
+A) Video files
+B) HTML, PDF, Word documents
+C) MP3 audio  
+D) Executable files
+:::
+
+## 🤩 Your Turn Answers {background-color=seagreen} 
+
+::: {.nonincremental}
+1. Correct answer: C) Writing documents that combine code and text
+
+1. Correct answer: B) .qmd
+
+1. Correct answer: C) ```{r}
+
+1. Correct answer: C) Converts the Quarto file into a formatted document (HTML, PDF, etc.)
+
+1. Correct answer: B) HTML, PDF, Word documents
+:::
+
+## 🤯 Your Turn {background-color=brown} 
+
+Create and render a basic Quarto HTML document with a personal introduction.
+
+![](practice/images/hello-world.png)
+
+## 🤩 Your Turn Answer {background-color=seagreen} 
+
+![](practice/images/hello-world-answer.png)

@@ -1,0 +1,817 @@
+---
+title: "[R LANGUAGE]{.r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.r-fit-text}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
+controls: true
+slide-number: true
+scrollable: true
+logo: images/logo-sara.png
+incremental: true
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
+---
+
+## Data Science Project {background-color=seagreen}
+
+<br>
+
+![](https://r4ds.hadley.nz/diagrams/data-science/base.png){fig-align="center"}
+
+::: aside
+Image source: @wickhamDataScienceImport2023
+:::
+
+## R Programming Language
+
+<br> <br>
+
+::::: columns
+::: {.column width="30%"}
+![](https://www.r-project.org/logo/Rlogo.png)
+:::
+
+::: {.column width="70%"}
+<br>
+
+"R is a free software environment for statistical computing and graphics."
+:::
+:::::
+
+::: aside
+R website link: <https://www.r-project.org/>
+:::
+
+## History of R
+
+- Intially developed as **S** language by Bells Labs.
+
+- First appeared in **August 1993** as R language by:
+
+. . .
+
+::: {layout-ncol=2 }
+![Ross Ihaka, New Zealand Statistician](images/ross.jpg){width=2.50in}
+
+![Robert Gentleman, Canadian Statistician](images/robert.jpg){width=2.50in}
+:::
+
+## Download R from CRAN {background-color=teal}
+
+<https://www.r-project.org/>
+
+![](images/cran.png)
+
+## R Console
+
+::: columns
+::: {.column width="50%"}
+
+<br>
+
+-   R version 4.5.0 (2025-04-11)
+
+-   R name "How About a Twenty-Six"
+
+-   R licence "ABSOLUTELY NO WARRANTY"
+
+-   R prompt `>`
+:::
+
+::: {.column width="50%"}
+
+![](images/console-r.png){width=75% fig-align='center'}
+:::
+:::
+
+## Workspace Image
+
+:::: columns
+::: {.column width="50%"}
+
+<br>
+
+[- Don't save workspace image.]{.clr-tom}
+
+-   It helps in "freshly minted R sessions".
+
+-   "put more trust in your script than in your memory".
+:::
+
+::: {.column width="50%"}
+![](images/workspace-image.png){width=75% fig-align='center'}
+:::
+::::
+
+::: aside
+Source: [R Bloggers](https://www.r-bloggers.com/2017/04/using-r-dont-save-your-workspace/)
+:::
+
+# Coding in <br>R Console {background-image="images/code_hero.gif" background-size="40%" background-position="right" background-color=black}
+
+<br>
+
+::: aside
+Artwork by [Allison Horst](https://allisonhorst.com/)
+:::
+
+## R Console
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: number
+#| eval: false
+7
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: number
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R Console: Addition 
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: add
+#| eval: false
+2 + 1
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: add
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+
+
+## Operators
+
+<br>
+
+`12 + 3` in this code `+` is an operator.
+
+<br>
+
+. . . 
+
+> "Operators are used to perform operations on **variables** and **values.**"
+
+::: aside
+Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+:::
+
+
+## Arithmetic Operators
+
+<br>
+
+> "Arithmetic operators are used with numeric values to perform common mathematical operations."
+
+<br>
+
+. . . 
+
+::: {.callout-tip}
+- Put spaces between and around operators (`= + - * /`)
+
+- Increase screen font size for better view.
+:::
+
+## Arithmetic Operators
+
+<br>
+
+| Operator | Name           | Example |
+|----------|----------------|---------|
+| `+`      | Addition       | x + y   |
+| `-`      | Subtraction    | x - y   |
+| `*`      | Multiplication | x * y  |
+| `/`      | Division       | x / y   |
+| `^`      | Exponent       | x ^ y  |
+
+::: aside
+Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+:::
+
+
+## R Console: Subtraction 
+
+<br>
+
+::: columns
+
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: subtract
+#| eval: false
+10 - 2
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: subtract
+#| echo: false
+#| output: asis
+```
+:::
+
+:::
+
+## R Console: Multiplication
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: multiply
+#| eval: false
+12 * 4
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: multiply
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R Console: Division 
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: division
+#| eval: false
+25 / 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: division
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R Console 
+
+<br>
+
+::: columns
+::: {.column width="75%"}
+### [Code]{.center}
+
+```{r}
+#| label: calci5
+#| eval: false
+3434 + 343453 * 2323 / 534 - 1000
+```
+:::
+
+::: {.column width="25%"}
+### [Output]{.center}
+
+```{r}
+#| label: calci5
+#| echo: false
+#| output: asis
+```
+:::
+
+<br> 
+<br>
+
+::: callout-important
+R follows the BODMAS (bracket, order, division, multiplication, addition and subtraction) rule to solve mathematical equations.
+:::
+:::
+
+## R Comparison Operators
+
+<br>
+
+> "Comparison operators are used to compare two values."
+
+## R Comparison Operators
+
+<br>
+
+| Operator | Name                     | Example |
+|----------|--------------------------|---------|
+| `==`     | Equal                    | x == y  |
+| `!=`     | Not equal                | x != y  |
+| `>`      | Greater than             | x > y   |
+| `<`      | Less than                | x < y   |
+| `>=`     | Greater than or equal to | x >= y  |
+| `<=`     | Less than or equal to    | x <= y  |
+
+<!-- ::: aside -->
+<!-- [Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)]{.small} -->
+<!-- ::: -->
+
+## R Console
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: logic1
+#| eval: false
+4 == 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: logic1
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R Console
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: logic2
+#| eval: false
+67 > 60
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: logic2
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R Miscellaneous Operator 
+
+> "Miscellaneous operators are used to manipulate data."
+
+<br>
+
+. . .
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: misc1
+#| eval: false
+12:36
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: misc1
+#| echo: false
+#| output: asis
+```
+
+:::
+:::
+
+::: aside
+Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+:::
+
+## [What if we want to add all these values in R?]{.clr-tom}
+
+<br>
+
+```{r}
+#| label: misc1
+#| echo: false
+#| output: asis
+```
+
+# Functions {background-image="images/function-r.png" background-size="55%" background-position="right" background-color=black}
+
+<br>
+
+::: aside
+Artwork by [Allison Horst](https://allisonhorst.com/)
+:::
+
+## R Function
+
+-   "A function, in a programming environment, is a set of **instructions**."
+
+-   "A programmer builds a function to **avoid repeating** the same task, or reduce complexity."
+
+## R Function
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: fun-sum1
+#| eval: false
+
+sum(2, 4, 6) 
+```
+
+### Output
+
+```{r}
+#| label: fun-sum1
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str1.png)
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str2.png)
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str3.png)
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str4.png)
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str5.png)
+
+<!-- ## Structure of R function {.center background-image="images/function-args.png" background-size="80%"} -->
+
+## R Function `sum()`
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: fun-sum2
+#| eval: false
+
+sum(12:36) 
+```
+
+### Output
+
+```{r}
+#| label: fun-sum2
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Round function
+
+::: panel-tabset
+### Code
+
+Function with default argument.
+
+```{r}
+#| label: fun-round2
+#| eval: false
+
+round(x = 42.58756)
+```
+
+or 
+
+```{r}
+#| label: fun-round22
+#| eval: false
+
+round(42.58756)
+```
+
+### Output
+
+```{r}
+#| label: fun-round2
+#| echo: false
+#| output: asis
+
+```
+
+or
+
+```{r}
+#| label: fun-round22
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Round function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-round3
+#| eval: false
+
+round(x = 46.58754, digits = 2)
+```
+
+or
+
+```{r}
+#| label: fun-round33
+#| eval: false
+
+round(46.58754, 2)
+```
+
+### Output
+
+```{r}
+#| label: fun-round3
+#| echo: false
+#| output: asis
+
+```
+
+or
+
+```{r}
+#| label: fun-round33
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Square Root Function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-sqrt
+#| eval: false
+
+sqrt(x = 9)
+```
+
+### Output
+
+```{r}
+#| label: fun-sqrt
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Sequence Function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-seq
+#| eval: false
+
+seq.int(from = 10, to = 30, by = 5)
+```
+
+or
+
+```{r}
+#| label: fun-seq1
+#| eval: false
+
+seq.int(from = 10,
+        to = 30,
+        by = 5)
+```
+
+or
+
+```{r}
+#| label: fun-seq11
+#| eval: false
+
+seq.int(10, 30, 5)
+```
+
+### Output
+
+```{r}
+#| label: fun-seq
+#| echo: false
+#| output: asis
+
+```
+
+or 
+
+```{r}
+#| label: fun-seq1
+#| echo: false
+#| output: asis
+
+```
+
+or
+
+```{r}
+#| label: fun-seq11
+#| echo: false
+#| output: asis
+
+```
+
+:::
+
+
+## Plot using R
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: plot1
+#| eval: false
+plot(1:100)
+```
+
+### Output
+
+```{r}
+#| label: plot1
+#| echo: false
+#| output: asis
+```
+:::
+
+
+## Getting Help with R
+
+::: {.callout-tip}
+- The `help()` function and `?` help operator in R. 
+
+- Use `args()` function to the get the list of arguments of a function.
+:::
+
+::: aside
+[R Website](https://www.r-project.org/help.html)
+:::
+
+## 😏 That's okay but how to ...
+
+::: nonincremental
+-   combine plot, text, tables and images in a single file,
+
+-   publish my work online or convert into a word, pdf or html file, and
+
+-   work efficiently with my different projects and save, share and track them.
+:::
+
+# {transition="zoom" transition-speed="slow" .center background-color=black}
+
+![](https://media3.giphy.com/media/o6FWop1Gbuyly/giphy.gif?cid=ecf05e474i92dhzes35zr0jtervmdixne1moeehvvtnntmm8&ep=v1_gifs_related&rid=giphy.gif&ct=g){fig-align="center" width=75%}
+
+[🔥 WE NEED A SUPERHERO - RStudio 🔥]{.r-fit-text}
+
+## {background-image=images/logo_rstd.png background-size=50%}
+
+## 🤯 Your Turn {background-color=brown} 
+
+```{r}
+#| echo: false
+library(countdown)
+
+countdown(minutes = 15, play_sound = TRUE, top = 0)
+```
+
+
+::: {.nonincremental}
+1. Add two numbers: 15 + 27
+
+1. Create a sequence of numbers from 1 to 10
+
+1. Create a sequence from 5 to 50, increasing by 5
+
+1. Find the square root of 81
+
+1. Round the number 3.786 to 2 decimal places
+:::
+
+## 🤩 Your Turn {background-color=seagreen} 
+
+1. Add two numbers: 15 + 27,
+`15 + 27`
+
+1. Create a sequence of numbers from 1 to 10,
+`seq(1, 10)`
+
+
+1. Create a sequence from 5 to 50, increasing by 5,
+`seq(5, 50, by = 5)`
+
+
+1. Find the square root of 81,
+`sqrt(81)`
+
+
+1. Round the number 3.786 to 2 decimal places,
+`round(3.786, 2)`

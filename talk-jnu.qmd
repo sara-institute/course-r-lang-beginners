@@ -1,0 +1,113 @@
+---
+title: "[Space for Marginalized <br>Communities in AI]{.r-fit-text}"
+#author: "[Dr. Ajay & Dr. Kiran | SARA Institute of Data Science, Sonipat]{.r-fit-text}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
+controls: true
+slide-number: true
+scrollable: true
+logo: images/logo-sara.png
+incremental: true
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1614062388233-2e45bbcce648?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
+---
+
+## {background-image="https://media.licdn.com/dms/image/v2/D4D22AQHS_Hc4hpNFAw/feedshare-shrink_1280/B4DZgcuZABH8Ak-/0/1752828581496?e=1755734400&v=beta&t=Y3k6wLPDGnuYPMPPOYWu6GxZ2VQ6lH0YlCUfXhdEsD0" background-position=middle background-size=contain background-color=black}  
+
+## AI
+
+<br>
+
+> "systems that can learn, predict, and automate decisions."
+
+. . .
+
+<br>
+
+> "AI is not neutral — it reflects power structures, values, and inequalities of its creators."
+
+## AI is increasingly used in:
+
+- Hiring decisions
+
+- Policing and surveillance
+
+- Access to loans, education, and welfare
+
+- Healthcare
+
+## Dr. Joy Buolamwini {background-image="https://media.licdn.com/dms/image/v2/D4E22AQHstgjNcuZCHQ/feedshare-shrink_800/feedshare-shrink_800/0/1713552721546?e=1755734400&v=beta&t=54EdClYjRv39HfTkjaYWXsPE42rkMzSVXIjRIfYHFdY" background-position=right background-size=contain}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- "**coded gaze:** a reflection of the priorities, preferences, and prejudices of those who have the power to shape technology" 
+
+- "current systems already fail marginalized groups, leading to **false arrests, biased policing, and flawed medical diagnoses**"
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+::: aside
+Source: [Stanford University](https://ojs.stanford.edu/ojs/index.php/grace/article/view/3813)
+:::
+
+## Dr. Joy Buolamwini {background-image="https://media.licdn.com/dms/image/v2/D4E22AQHstgjNcuZCHQ/feedshare-shrink_800/feedshare-shrink_800/0/1713552721546?e=1755734400&v=beta&t=54EdClYjRv39HfTkjaYWXsPE42rkMzSVXIjRIfYHFdY" background-position=right background-size=contain}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- "existential risk comes not from **hypothetical AI super intelligence,** but from current human decisions"
+
+- "explore intellectual terrain **beyond computer science"**
+ 
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+::: aside
+Source: [Stanford University](https://ojs.stanford.edu/ojs/index.php/grace/article/view/3813)
+:::
+
+## SARA, Sonipat {background-image="https://sara-edu.netlify.app/summer/2025-r4b/flyer.png" background-position=right background-size=contain}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Remove fear of coding
+
+- How to include data science tools in your research
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+::: aside
+Source: [Course Details](https://sara-edu.netlify.app/summer/2025-r4b/)
+:::
+
+## [Thank You!]{.r-fit-text} {background-image="https://images.unsplash.com/photo-1614062388233-2e45bbcce648?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-position=middle background-size=cover  background-opacity=0.5}  
+
+::: aside
+Source of title slide image: [Engin Akyurt](https://unsplash.com/photos/red-padded-couch-on-beach-shore-during-daytime-BO14dozU-EU)
+:::

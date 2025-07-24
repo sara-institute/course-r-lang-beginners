@@ -1,0 +1,47 @@
+/*-- scss:defaults --*/
+
+.centering {
+  text-align: center;
+}
+
+.clr-white {
+  color: white;
+}
+
+.card {
+  padding: 2rem;
+  border-top: 8px solid;
+  border-radius: 0.5rem; 
+  box-shadow: 0 1rem 1.5rem -0.5rem rgba(0 50 100 / 0.15);
+  background: #eaedf0;
+  text-align: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(137, 207, 240);
+}
+
+.layout-grid {
+  --gap: 0.85rem;
+  display: grid;
+  gap: var(--gap);
+}
+
+@media (min-width: 800px) {
+  .layout-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.layout-grid > * {
+  flex: 1;
+}
+
+.col {
+  display: grid;
+  gap: var(--gap);
+  align-content: center;
+}
+
+

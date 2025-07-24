@@ -1,9 +1,11 @@
 ---
-title: "[Quarto]{.clr-white .r-fit-text}"
-author: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.clr-white .r-fit-text}"
-format: revealjs
-execute: 
-  echo: true
+title: "[QUARTO]{.r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.r-fit-text}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
 controls: true
 slide-number: true
 scrollable: true
@@ -11,9 +13,14 @@ logo: images/logo-sara.png
 #bibliography: references.bib
 theme: style.scss
 title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
 ---
+
+## {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b041d35c-5117-4dd0-9b08-d2d0f7a77f9a.png?h=21528b7e9f1a2e24c9ec3d46cfca8653" background-size=cover}
 
 ##  
 
@@ -67,7 +74,7 @@ Quarto can produce a wide variety of output formats:
 Source: [Quarto website](https://quarto.org/)
 :::
 
-##  [Analyze. Share. Reproduce. You have a story to tell with data --- tell it with Quarto.]{.r-fit-text}
+##  [Analyze. Share. Reproduce.]{.r-fit-text} {background-color=black}
 
 <br>
 
@@ -95,19 +102,9 @@ Source: [Quarto website](https://quarto.org/)
 
 ![](images/start_quarto2.png)
 
-## Let's do it together {background-image=images/dito.gif background-size="contain" background-position="right" background-color=black}
+## Let's Create Quarto File {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/596ce690-7bab-4a5f-b319-e0e0c79d8a22.png?h=11bf95fbc83053b176f82bc2daacf689" background-size=cover background-color=black}
 
-:::: {.columns}
 
-::: {.column width="40%"}
-[Create <br> Quarto <br> File]{.r-fit-text}
-:::
-
-::::
-
-::: aside
-GIF Source {{< fa brands instagram >}} [@dolly_ki_tapri_nagpur](https://www.instagram.com/dolly_ki_tapri_nagpur)
-:::
 
 ## Create a new Quarto document 
 
@@ -198,4 +195,4 @@ Source: Artwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çeti
 
 ##  {background-image="images/source_visual_quarto.png" background-size="contain" background-position="center middle"}
 
-
+# {background-color=black background-image=https://logowik.com/content/uploads/images/markdown1678.logowik.com.webp background-size=35% background-position=middle}

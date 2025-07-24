@@ -1,6 +1,6 @@
 ---
-title: "[Welcome]{.clr-white .r-fit-text}"
-subtitle: "[SARA R Bootcamp, Oct 2025 <br> Sonipat, Haryana]{.clr-white .r-fit-text}"
+title: "[WELCOME]{.r-fit-text .clr-white}"
+subtitle: "[2nd SARA Data Science Summer School<br> 25-29 July 2025,  Sonipat (HR)]{.r-fit-text .clr-white}"
 #author: "[SARA Institute of Data Science, Sonipat, Haryana, India]{.clr-white .r-fit-text}"
 format: revealjs
 progress: true
@@ -11,8 +11,313 @@ menu: true
 logo: images/logo-sara.png
 #bibliography: references.bib
 theme: style.scss
+lightbox: true
+pagetitle: "R Intro"
 title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
 ---
 
+##  {background-image=images/sara-banner.jpg background-size=cover background-position=bottom}
+
+<br>
+<br>
+
+::::::: centering
+:::::: columns
+::: {.column width="36%"}
+![**GYAN JYOTI [SA]{.clr-red}VITRIBAI PHULE (1831-1897)**<br>🌺 🙏🏽
+🌼](images/savitrimai.png){width=70%}
+:::
+
+::: {.column width="29%"}
+
+<br>
+
+![](images/logo-sara.png){width="2.0in" fig-align="center"}
+:::
+
+::: {.column width="34.75%"}
+![**MATA [RA]{.clr-red}MABAI AMBEDKAR (1898-1935)**<br>🌺 🙏🏽
+🌼](images/ramai.png){width=70%}
+:::
+::::::
+
+[**Savitribai Ramabai (SARA) Institute of Data Science, Sonipat**]{.r-fit-text}
+:::::::
+
+## {background-image=images/flyer2.png background-size=contain background-color=black}
+
+## {background-image=images/mission.png background-size=cover}
+
+## SARA Education Trust (Reg.) {background-image=images/sparks.jpg background-size=cover background-position=bottom}
+
+![05 April 2023, SARA Institute inauguration at Terra City, Bhiwadi, Rajasthan.](https://sara-edu.netlify.app/images/launch-sara.jpg)
+
+## Dr. Ambedkar Bhawan, Sonipat {background-image=images/sparks.jpg background-size=cover background-position=bottom}
+
+::: {layout="[15,16]"}
+
+![](images/sonipat1.png)
+
+![](images/sonipat2.png){width=85%}
+:::
+
+## {background-image=images/sparks.jpg background-size=cover background-position=bottom}
+
+::: {.centering}
+
+![](images/sonipat-bhawan.png)
+
+[***The Ambedkar <br> Educational Society Sonipat***]{.r-fit-text}
+
+<br>
+
+[President Mr. Satyawan Bhatia & all respected Executive Members.]{.r-fit-text}
+
+:::
+
+## Our Online Courses {background-image=images/sparks.jpg background-size=cover background-position=bottom}
+
+<br>
+
+![](images/logo-sara-studio.png){width=45% fig-align=center}
+
+## Our Offline Courses {background-image=images/sparks.jpg background-size=cover background-position=bottom}
+
+<br>
+
+:::: {.layout-grid}
+
+::: {.col}
+::: {.card}
+
+![](https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+Data Science
+
+:::
+:::
+
+::: {.col}
+::: {.card}
+
+![](https://images.unsplash.com/photo-1649433391420-542fcd3835ea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+Computer Skills
+
+:::
+:::
+
+::: {.col}
+::: {.card}
+
+![](https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+English Language
+
+:::
+:::
+
+::: {.col}
+:::
+
+
+::::
+
+## Data Science Training - R {background-image=images/sparks.jpg background-size=cover background-position=bottom}
+
+![22-26 July 2024, 1st SARA Data Science Summer School "Reproducible Research using R".](images/summer-school.jpg)
+
+## Data Science Training - Statistics {background-image=images/sparks.jpg background-size=cover background-position=bottom}
+
+![16-20 December 2024, SARA Data Science Winter School "Statistics using R".](images/winter-school.jpg)
+
+## Data Science Training - Quarto {background-image=images/sparks.jpg background-size=cover background-position=bottom}
+
+![3-7 March 2025, SARA Data Science Bootcamp "Publish using Quarto".](images/quarto-bootcamp.jpeg)
+
+## {background-image=images/flyers.png background-size=cover}
+
+
+
+## Facts & Figures {background-image=images/flyers.png background-size=cover background-color=white background-opacity=0.05}
+
+- 178 students of which 64 are women.
+
+- 6 residential data science trainings.
+
+- 7 international speakers.
+
+- 6 invited talks/workshops in other institutes.
+
+- 1 event in collaboration with Spain.
+
+## Support SARA {background-image=images/babasaheb.jpg background-size=contain background-position="right"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Teach at SARA.
+
+- Donate to SARA.
+
+![](images/qr-code-sara.png){width=55% fig-align=center}
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+
+# Why? {background-image=images/transports.png background-size=contain background-position=right}
+
+# Why? {background-image=images/langs.png background-size=contain background-position=right}
+
+# 2nd SARA <br> Data Science <br> Summer School  {background-image=images/flyer-summer.png background-size=35% background-position=right background-color="#003262"}
+
+## Data Science Project
+
+<br>
+
+![](https://r4ds.hadley.nz/diagrams/data-science/base.png){fig-align="center"}
+
+::: aside
+Image source: @wickhamDataScienceImport2023
+:::
+
+## Course Modules
+
+- Day 1: Introduction to R & RStudio
+
+- Day 2: Data Wrangling with `dplyr` & `tidyr`
+
+- Day 3: Data Visualization using `ggplot2`
+
+- Day 4: Quantitative Data Analysis
+
+- Day 5: Reproducible Research using Quarto
+
+## Course Overview
+
+- Total **30 hours** of residential teaching for 5 days.
+
+- Open for all, admission priority for **marginalized communities**.
+
+- Your **feedback** on the last day of the course.
+
+- **Thank You!! Ceremony** will be on the evening of Tue 29.
+
+- Participation **e-Certificate** via email after a week.
+
+## Schedule
+
+::: panel-tabset
+### {{< fa utensils >}} Food
+
+| Time                 | Activity  |
+|----------------------|-----------|
+| 08:30 AM to 09:30 AM | Breakfast |
+| 01:30 PM to 02:30 PM | Lunch     |
+| 07:30 PM to 08:30 PM | Dinner    |
+
+### {{< fa laptop >}} Lectures
+
+::: .r-fit-text
+
+| Time                 | Activity    |
+|----------------------|-------------|
+| 10:00 AM to 11:30 AM | Class 1     |
+| {{< fa mug-hot >}}   | Discussion  |
+| 12:00 AM to 01:30 PM | Class 2     |
+| {{< fa utensils >}}  | Lunch       |
+| 02:30 PM to 03:45 PM | Class 3     |
+| {{< fa mug-hot >}}   | Discussion  |
+| 04:00 PM to 05:30 PM | Guest Talk  |
+
+:::
+
+:::
+
+
+## Guidelines
+
+- Don’t be late for the class ~5 minutes
+
+- Ask questions, clear your doubts.
+
+- Classes will be in the Mata Ramabai Auditorium, 1st Floor, Dr. Ambedkar Bhawan.
+
+- You will have to use your own internet.
+
+- Be kind to each and everyone.
+
+## Contact
+
+| Name                                                | Mobile |
+|-------------------------------------------|----------------------|
+| Mr. Raj Pal (Supervisor, Dr. Ambedkar Bhawan)      | 93063 42596   |
+| SARA Institute Office                              | 925 315 2024  |
+| Dr. Ajay Kumar (Ex. Director, SARA)                | 88868 10879   |
+| Dr. Kiran Koli (Director, SARA)                    | 81680 60500   |
+| Mr. Satyawan Bhatia <br>(President, Dr. Ambedkar Bhawan) | 94165 40721   |
+
+## 
+
+:::::: columns
+::: {.column .centering width="25%"}
+<br> <br>
+
+![Savitribai Ramabai (SARA) Institute of Data Science](images/logo-sara.png)
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="30%" .r-fit-text}
+<br> <br><br><br>
+
+### Follow SARA
+<br>[[{{< fa brands twitter >}}](https://twitter.com/sara_institute)]{.clr-black} [\@sara_institute](https://twitter.com/sara_institute)
+
+[[{{< fa brands linkedin >}}](https://www.linkedin.com/company/sara-institute/)]{.clr-black} [SARA LinkedIn Page](https://www.linkedin.com/company/sara-institute/)
+
+[[{{< fa brands youtube >}}](https://www.youtube.com/@SARADataScience)]{.clr-black} [\@SARADataScience](https://www.youtube.com/@SARADataScience)
+
+[[{{< fa brands facebook >}}](https://www.facebook.com/profile.php?id=61564043738390)]{.clr-black} [SARA Facebook
+Page](https://www.facebook.com/profile.php?id=61564043738390)
+
+[[{{< fa brands whatsapp >}}](https://whatsapp.com/channel/0029Va4r7rGLCoWycMwThl2J)]{.clr-black} [SARA Institute WhatsApp
+Channel](https://whatsapp.com/channel/0029Va4r7rGLCoWycMwThl2J)
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column .r-fit-text width="35%"}
+<br> <br> <br><br>
+
+### Contact SARA
+
+<br>{{< fa mobile-screen >}} 925 315 2024
+
+{{< fa envelope >}} [sara.institute.info\@gmail.com](mailto:%20sara.institute.info@gmail.com)
+
+{{< fa globe >}} [www.sara-edu.netlify.app/](https://sara-edu.netlify.app/)
+
+{{< fa location-dot >}} SARA Institute of Data Science, <br>Dr. Ambedkar Bhawan, Kakroi Road, Near
+Dayanand Hospital, <br>Sonipat - 131001, Haryana, India.
+:::
+::::::
+
+::: {.aside}
+Title slide image by [Stephane Gagnon](https://unsplash.com/photos/orange-blue-and-white-textile-NLgqFA9Lg_E)
+:::
