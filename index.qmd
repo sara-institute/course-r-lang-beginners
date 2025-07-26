@@ -43,6 +43,12 @@ Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
 <br>
 
+<br>
+
+## Session
+
+{{< revealjs file="objects.html" height="500px" class="ratio ratio-16x9" >}}
+
 ## Session
 
 {{< revealjs file="quarto.html" height="500px" class="ratio ratio-16x9" >}}
@@ -58,12 +64,6 @@ Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 ## Session
 
 {{< revealjs file="code-chunk.html" height="500px" class="ratio ratio-16x9" >}}
-
-<br>
-
-## Session
-
-{{< revealjs file="objects.html" height="500px" class="ratio ratio-16x9" >}}
 
 <br>
 
