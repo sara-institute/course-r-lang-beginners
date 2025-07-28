@@ -71,6 +71,11 @@ Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
 {{< revealjs file="markdown.html" height="500px" class="ratio ratio-16x9" >}}
 
+<br>
+
+## Session
+
+{{< revealjs file="scales.html" height="500px" class="ratio ratio-16x9" >}}
 
 <br>
 
@@ -83,3 +88,9 @@ Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 ## Session
 
 {{< revealjs file="eda.html" height="500px" class="ratio ratio-16x9" >}}
+
+<br>
+
+## Session
+
+{{< revealjs file="hypothesis-formulation.html" height="500px" class="ratio ratio-16x9" >}}

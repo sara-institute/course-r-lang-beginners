@@ -1,0 +1,241 @@
+---
+title: "[HYPOTHESIS<br>FORMULATION]{.r-fit-text}"
+subtitle: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.r-fit-text}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
+controls: true
+slide-number: true
+scrollable: true
+logo: images/logo-sara.png
+incremental: true
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
+---
+
+## Variable
+
+<br>
+
+> A variable is a characteristic or attribute that can take on different values.
+
+## Independent Variables
+
+> The variable that is manipulated or controlled by the researcher to observe its **effect** on another variable.
+
+- IV is also called as predictor variable.
+
+## Dependent Variables
+
+> The variable that is measured or observed to assess the impact of the independent variable.
+
+- DV is also called as Effect or output or outcome variable.
+    
+## Example
+
+*Example 1: Education Study*
+
+  - **Independent Variable**: Teaching method (traditional vs. interactive).
+  - **Dependent Variable**: Student performance on a test.
+  
+## Example
+
+*Example 2: Health Study*
+
+  - **Independent Variable**: Amount of daily exercise (30 mins, 60 mins, 90 mins).
+  - **Dependent Variable:** Weight loss (in kilograms).
+  
+## Example  
+
+*Example 3: Marketing Study*
+
+  - **Independent Variable:** Type of advertisement (video, banner, text).
+  - **Dependent Variable:** Number of clicks or purchases.
+
+## Practice {background-color="teal"}
+
+We’ll use data to demonstrate the **relationship** between independent and dependent variables. Examples are:
+
+1. Direct Relationship
+
+1. Inverse Relationship
+
+1. No-Relation Example
+
+## Hypothesis
+
+> A hypothesis is a **testable statement or prediction** about the relationship between two or more variables.
+
+## Types of Hypotheses
+
+-   **Null Hypothesis** ($H_0$): The null hypothesis states that there is **no effect, no difference**, or **no relationship** between the variables being studied. It assumes that any observed differences are due to chance.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): The alternative hypothesis suggests that there is **an effect** or **relationship** between the variables. It is the hypothesis that is supported if the null hypothesis is rejected.
+
+## Formulate Hypotheses
+
+📚 **Education Scenario:** Investigating whether a new teaching method improves student test scores compared to the traditional method.
+
+. . .
+
+::: panel-tabset
+### Non-Directional
+
+-   **Null Hypothesis** ($H_0$):: The new teaching method has no effect on student test scores.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): The new teaching method affects student test scores.
+
+### Directional
+
+-   **Null Hypothesis** ($H_0$):: The new teaching method does not improve student test scores.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): The new teaching method improves student test scores.
+:::
+
+## Key Points
+
+-   **Non-Directional Hypotheses** are used when you are testing for any effect, regardless of the direction (e.g., an increase or decrease).
+
+-   **Directional Hypotheses** are used when you have a specific prediction about the direction of the effect (e.g., an improvement or reduction).
+
+## Formulate Hypotheses
+
+**💉 Medicine Scenario:** Evaluating whether Drug A lowers blood pressure more effectively than a placebo.
+
+. . .
+
+::: panel-tabset
+### Non-Directional
+
+-   **Null Hypothesis** ($H_0$): Drug A has no effect on blood pressure compared to the placebo.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): Drug A affects blood pressure compared to the placebo.
+
+### Directional
+
+-   **Null Hypothesis** ($H_0$): Drug A does not lower blood pressure more effectively than the placebo.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): Drug A lowers blood pressure more effectively than the placebo.
+:::
+
+## Formulate Hypotheses
+
+**🌱 Environment Scenario:** Determining whether an area’s air quality index (AQI) changes after implementing stricter pollution regulations.
+
+. . .
+
+::: panel-tabset
+### Non-Directional
+
+-   **Null Hypothesis** ($H_0$): Stricter pollution regulations have no effect on the AQI.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): Stricter pollution regulations affect the AQI.
+
+### Directional
+
+-   **Null Hypothesis** ($H_0$): Stricter pollution regulations do not improve the AQI.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): Stricter pollution regulations improve the AQI.
+:::
+
+## Formulate Hypotheses
+
+**💭 Psychology Scenario:** Testing whether mindfulness training reduces stress levels among participants.
+
+. . .
+
+::: panel-tabset
+### Non-Directional
+
+-   **Null Hypothesis** ($H_0$): Mindfulness training has no effect on stress levels.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): Mindfulness training affects stress levels.
+
+### Directional
+
+-   **Null Hypothesis** ($H_0$): Mindfulness training does not reduce stress levels.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): Mindfulness training reduces stress levels.
+:::
+
+## Formulate Hypotheses
+
+**🧬 Biology Scenario:** Investigating whether a specific fertilizer increases plant growth compared to no fertilizer.
+
+. . .
+
+::: panel-tabset
+### Non-Directional
+
+-   **Null Hypothesis** ($H_0$): The fertilizer has no effect on plant growth.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): The fertilizer affects plant growth.
+
+### Directional
+
+-   **Null Hypothesis** ($H_0$): The fertilizer does not increase plant growth.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): The fertilizer increases plant growth.
+:::
+
+## Formulate Hypotheses
+
+**🚀 Technology Scenario:** Examining whether a new smartphone app decreases the average time users spend on their phones daily.
+
+. . .
+
+::: panel-tabset
+### Non-Directional
+
+-   **Null Hypothesis** ($H_0$): The app has no effect on the average time users spend on their phones.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): The app affects the average time users spend on their phones.
+
+### Directional
+
+-   **Null Hypothesis** ($H_0$): The app does not decrease the average time users spend on their phones.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): The app decreases the average time users spend on their phones.
+:::
+
+## Formulate Hypotheses
+
+**💰 Economics Scenario:** Testing whether increasing the minimum wage influences unemployment rates.
+
+. . .
+
+::: panel-tabset
+### Non-Directional
+
+-   **Null Hypothesis** ($H_0$): Increasing the minimum wage has no effect on unemployment rates.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): Increasing the minimum wage affects unemployment rates.
+
+### Directional
+
+-   **Null Hypothesis** ($H_0$): Increasing the minimum wage does not increase unemployment rates.
+
+-   **Alternative Hypothesis** ($H_a$ or $H_1$): Increasing the minimum wage increases unemployment rates.
+:::
+
+## Key Differences
+
+<br>
+
+::: r-fit-text
+| Aspect | Directional Hypothesis | Non-Directional Hypothesis |
+|------------------------|------------------------|------------------------|
+| **Prediction** | Specifies the direction of the effect (e.g., increase, decrease). | Predicts an effect but no specific direction. |
+| **Test Type** | One-tailed test | Two-tailed test |
+| **Use Case** | When prior research or theory suggests a specific outcome. | When unsure of the outcome's direction. |
+| **Hypothesis Example** | $H_a$: Group A scores are higher than Group B scores. | $H_a$: Group A scores are different from Group B scores. |
+| **Null Hypothesis** ($H_0$) | No effect in the predicted direction. | No effect or difference. |
+:::

@@ -1,269 +1,164 @@
 [
   {
-    "objectID": "rstudio.html#section-1",
-    "href": "rstudio.html#section-1",
-    "title": "RSTUDIO IDE",
+    "objectID": "practice-stats/practice-hypo.html",
+    "href": "practice-stats/practice-hypo.html",
+    "title": "Practice Sheet Day 5",
     "section": "",
-    "text": "RStudio is an integrated development environment (IDE) for R and Python from company posit."
+    "text": "We’ll simulate data to demonstrate the relationship between independent and dependent variables.\n\n\n\n# Simulate data\nset.seed(123)\nhours_of_study &lt;- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) # Independent Variable\ntest_scores &lt;- 50 + 5 * hours_of_study + rnorm(10, mean = 0, sd = 5) # Dependent Variable\n\n# Combine into a data frame\ndata &lt;- data.frame(Hours = hours_of_study, Scores = test_scores)\n\n# Visualize the relationship\nlibrary(ggplot2)\n\nggplot(data, aes(x = Hours, y = Scores)) +\n  geom_point(color = \"blue\", size = 3) +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"red\") +\n  labs(\n    title = \"Effect of Hours of Study on Test Scores\",\n    x = \"Hours of Study (Independent Variable)\",\n    y = \"Test Scores (Dependent Variable)\"\n  ) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nInterpretation of the Graph\n\nX-axis (Independent Variable): Hours of study.\nY-axis (Dependent Variable): Test scores.\nAs hours of study increase, test scores generally increase, showing a positive relationship.\n\n\n\n\nAn inverse relationship occurs when one variable increases while the other decreases. For instance, the more time spent on social media, the lower the grades a student might achieve.\n\n# Simulate data\nset.seed(42)\nsocial_media_hours &lt;- seq(1, 10, by = 1)  # Independent Variable\ngrades &lt;- 100 - 5 * social_media_hours + rnorm(10, mean = 0, sd = 2)  # Dependent Variable\n\n# Combine into a data frame\ninverse_data &lt;- data.frame(SocialMediaHours = social_media_hours, Grades = grades)\n\n# Visualize the inverse relationship\nlibrary(ggplot2)\n\nggplot(inverse_data, aes(x = SocialMediaHours, y = Grades)) +\n  geom_point(color = \"red\", size = 3) +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"blue\") +\n  labs(\n    title = \"Inverse Relationship: Social Media Hours vs. Grades\",\n    x = \"Social Media Hours (Independent Variable)\",\n    y = \"Grades (Dependent Variable)\"\n  ) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n\nA no-relation scenario means that changes in one variable do not systematically affect the other. For instance, the number of books read by a person and their shoe size typically have no relationship.\n\n# Simulate data\nset.seed(123)\nbooks_read &lt;- seq(1, 10, by = 1)  # Independent Variable\nshoe_size &lt;- rnorm(10, mean = 9, sd = 1)  # Random data with no relation to books_read\n\n# Combine into a data frame\nno_relation_data &lt;- data.frame(BooksRead = books_read, ShoeSize = shoe_size)\n\n# Visualize the no-relation scenario\nggplot(no_relation_data, aes(x = BooksRead, y = ShoeSize)) +\n  geom_point(color = \"green\", size = 3) +\n  labs(\n    title = \"No Relationship: Books Read vs. Shoe Size\",\n    x = \"Books Read (Independent Variable)\",\n    y = \"Shoe Size (Dependent Variable)\"\n  ) +\n  theme_minimal()"
   },
   {
-    "objectID": "rstudio.html#r-and-rstudio",
-    "href": "rstudio.html#r-and-rstudio",
-    "title": "RSTUDIO IDE",
-    "section": "R and RStudio",
-    "text": "R and RStudio\n\n\n\nImagine R as a powerful engine\n\n\n\nand RStudio as a stylish car"
-  },
-  {
-    "objectID": "rstudio.html#section-2",
-    "href": "rstudio.html#section-2",
-    "title": "RSTUDIO IDE",
+    "objectID": "practice-stats/practice-hypo.html#variables",
+    "href": "practice-stats/practice-hypo.html#variables",
+    "title": "Practice Sheet Day 5",
     "section": "",
-    "text": "It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management.\nDownload RStudio.\n\n\n\nSource: https://posit.co/products/open-source/rstudio/"
+    "text": "We’ll simulate data to demonstrate the relationship between independent and dependent variables.\n\n\n\n# Simulate data\nset.seed(123)\nhours_of_study &lt;- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) # Independent Variable\ntest_scores &lt;- 50 + 5 * hours_of_study + rnorm(10, mean = 0, sd = 5) # Dependent Variable\n\n# Combine into a data frame\ndata &lt;- data.frame(Hours = hours_of_study, Scores = test_scores)\n\n# Visualize the relationship\nlibrary(ggplot2)\n\nggplot(data, aes(x = Hours, y = Scores)) +\n  geom_point(color = \"blue\", size = 3) +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"red\") +\n  labs(\n    title = \"Effect of Hours of Study on Test Scores\",\n    x = \"Hours of Study (Independent Variable)\",\n    y = \"Test Scores (Dependent Variable)\"\n  ) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nInterpretation of the Graph\n\nX-axis (Independent Variable): Hours of study.\nY-axis (Dependent Variable): Test scores.\nAs hours of study increase, test scores generally increase, showing a positive relationship.\n\n\n\n\nAn inverse relationship occurs when one variable increases while the other decreases. For instance, the more time spent on social media, the lower the grades a student might achieve.\n\n# Simulate data\nset.seed(42)\nsocial_media_hours &lt;- seq(1, 10, by = 1)  # Independent Variable\ngrades &lt;- 100 - 5 * social_media_hours + rnorm(10, mean = 0, sd = 2)  # Dependent Variable\n\n# Combine into a data frame\ninverse_data &lt;- data.frame(SocialMediaHours = social_media_hours, Grades = grades)\n\n# Visualize the inverse relationship\nlibrary(ggplot2)\n\nggplot(inverse_data, aes(x = SocialMediaHours, y = Grades)) +\n  geom_point(color = \"red\", size = 3) +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"blue\") +\n  labs(\n    title = \"Inverse Relationship: Social Media Hours vs. Grades\",\n    x = \"Social Media Hours (Independent Variable)\",\n    y = \"Grades (Dependent Variable)\"\n  ) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n\nA no-relation scenario means that changes in one variable do not systematically affect the other. For instance, the number of books read by a person and their shoe size typically have no relationship.\n\n# Simulate data\nset.seed(123)\nbooks_read &lt;- seq(1, 10, by = 1)  # Independent Variable\nshoe_size &lt;- rnorm(10, mean = 9, sd = 1)  # Random data with no relation to books_read\n\n# Combine into a data frame\nno_relation_data &lt;- data.frame(BooksRead = books_read, ShoeSize = shoe_size)\n\n# Visualize the no-relation scenario\nggplot(no_relation_data, aes(x = BooksRead, y = ShoeSize)) +\n  geom_point(color = \"green\", size = 3) +\n  labs(\n    title = \"No Relationship: Books Read vs. Shoe Size\",\n    x = \"Books Read (Independent Variable)\",\n    y = \"Shoe Size (Dependent Variable)\"\n  ) +\n  theme_minimal()"
   },
   {
-    "objectID": "rstudio.html#rstudio-ide",
-    "href": "rstudio.html#rstudio-ide",
-    "title": "RSTUDIO IDE",
-    "section": "RStudio IDE",
-    "text": "RStudio IDE"
+    "objectID": "practice-stats/practice-hypo.html#nhst",
+    "href": "practice-stats/practice-hypo.html#nhst",
+    "title": "Practice Sheet Day 5",
+    "section": "2 NHST",
+    "text": "2 NHST\n\n2.1 One-Sample t-Test\nScenario: A teacher claims that the average test score in a class is 70. You want to test if the actual average is different from 70.\n\n\\(H_0\\): The mean test score is 70 (\\(\\mu\\) = 70).\n\\(H_a\\): The mean test score is not 70 (\\(\\mu \\neq\\) 70).\n\n\n# Simulated data: Test scores of students\nset.seed(123)\ntest_scores &lt;- rnorm(30, mean = 72, sd = 5)\n\n# Perform a one-sample t-test\nt_test_result &lt;- t.test(test_scores, mu = 70)\n\n# Print the result\nprint(t_test_result)\n\n\n    One Sample t-test\n\ndata:  test_scores\nt = 1.9703, df = 29, p-value = 0.05842\nalternative hypothesis: true mean is not equal to 70\n95 percent confidence interval:\n 69.93287 73.59610\nsample estimates:\nmean of x \n 71.76448 \n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This means the average test score is significantly different from 70.\n\n\n\n2.2 Two-Sample t-Test\nScenario: Compare the average test scores of two groups: one that received tutoring and one that did not.\n\n\\(H_0\\): The mean test scores the two groups are equal (\\(\\mu_1 = \\mu_2\\)).\n\\(H_a\\): The mean test scores of the two groups are not equal (\\(\\mu_1 \\neq  \\mu_2\\)).\n\n\n# Simulated data\nset.seed(456)\ngroup_A &lt;- rnorm(30, mean = 75, sd = 5)  # Tutored group\ngroup_B &lt;- rnorm(30, mean = 70, sd = 5)  # Non-tutored group\n\n# Perform a two-sample t-test\ntwo_sample_test &lt;- t.test(group_A, group_B, alternative = \"two.sided\")\n\n# Print the result\nprint(two_sample_test)\n\n\n    Welch Two Sample t-test\n\ndata:  group_A and group_B\nt = 4.1181, df = 53.018, p-value = 0.0001344\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n 2.758615 7.997380\nsample estimates:\nmean of x mean of y \n 76.15872  70.78072 \n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This indicates a significant difference between the two groups.\n\n\n\n2.3 Chi-Square Test\nScenario: Test if there is an association between gender and preference for two types of beverages.\n\n\\(H_0\\): Gender and beverage preference are independent.\n\\(H-a\\): Gender and beverage preference are not independent.\n\n\n# Simulated data\ngender &lt;- c(\"Male\", \"Male\", \"Female\", \"Female\", \"Male\", \"Female\", \"Male\", \"Female\")\nbeverage &lt;- c(\"Tea\", \"Coffee\", \"Tea\", \"Coffee\", \"Coffee\", \"Tea\", \"Coffee\", \"Tea\")\n\n# Create a contingency table\ntable_data &lt;- table(gender, beverage)\n\n# Perform a chi-square test\nchi_sq_test &lt;- chisq.test(table_data)\n\nWarning in chisq.test(table_data): Chi-squared approximation may be incorrect\n\n# Print the result\nprint(chi_sq_test)\n\n\n    Pearson's Chi-squared test with Yates' continuity correction\n\ndata:  table_data\nX-squared = 0.5, df = 1, p-value = 0.4795\n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This suggests that gender and beverage preference are associated.\n\n\n\n2.4 ANOVA (Analysis of Variance)\nScenario: Test if three different fertilizers lead to different crop yields.\n\n\\(H_0\\): The mean yields are the same for all fertilizers (\\(\\mu_1 = \\mu_2 = \\mu_3\\)).\n\\(H_a\\): At least one fertilizer leads to a different mean yield\n\n\n# Simulated data\nset.seed(789)\nfertilizer &lt;- factor(rep(c(\"Fert1\", \"Fert2\", \"Fert3\"), each = 10))\nyield &lt;- c(rnorm(10, mean = 50, sd = 5), rnorm(10, mean = 55, sd = 5), rnorm(10, mean = 60, sd = 5))\n\n# Perform ANOVA\nanova_result &lt;- aov(yield ~ fertilizer)\nsummary(anova_result)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nfertilizer   2  567.3   283.7   21.16 2.96e-06 ***\nResiduals   27  361.9    13.4                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This means at least one fertilizer has a significantly different effect.\n\n\n\n2.5 Correlation Test\nScenario: Test if there is a significant correlation between hours studied and test scores.\n\n\\(H_0\\): There is no correlation between hours studied and test scores (\\(r = 0\\)).\n\\(H_a\\): There is a correlation between hours studied and test scores (\\(r \\neq 0\\)).\n\n\n# Simulated data\nset.seed(101)\nhours_studied &lt;- rnorm(50, mean = 5, sd = 2)\ntest_scores &lt;- hours_studied * 10 + rnorm(50, mean = 50, sd = 10)\n\n# Perform correlation test\ncor_test &lt;- cor.test(hours_studied, test_scores)\n\n# Print the result\nprint(cor_test)\n\n\n    Pearson's product-moment correlation\n\ndata:  hours_studied and test_scores\nt = 14.407, df = 48, p-value &lt; 2.2e-16\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n 0.8314306 0.9430071\nsample estimates:\n      cor \n0.9012134 \n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This indicates a significant correlation."
   },
   {
-    "objectID": "rstudio.html#rstudio-rightarrow-tools-rightarrow-global-options",
-    "href": "rstudio.html#rstudio-rightarrow-tools-rightarrow-global-options",
-    "title": "RSTUDIO IDE",
-    "section": "RStudio \\(\\rightarrow\\) Tools \\(\\rightarrow\\) Global Options",
-    "text": "RStudio \\(\\rightarrow\\) Tools \\(\\rightarrow\\) Global Options"
+    "objectID": "practice-stats/practice-hypo.html#correlation",
+    "href": "practice-stats/practice-hypo.html#correlation",
+    "title": "Practice Sheet Day 5",
+    "section": "3 Correlation",
+    "text": "3 Correlation\n\n3.1 Positive Correlation\nWhen one variable increases, the other variable also increases.\nExample: Height and weight of individuals.\n\n# Simulated data\nset.seed(123)\nheight &lt;- rnorm(50, mean = 160, sd = 10)  # Heights in cm\nweight &lt;- height * 0.5 + rnorm(50, mean = 50, sd = 5)  # Weights in kg\n\n# Calculate correlation\ncorrelation_positive &lt;- cor(height, weight)\n\n# Visualization\nlibrary(ggplot2)\nggplot(data.frame(height, weight), aes(x = height, y = weight)) +\n  geom_point(color = \"blue\") +\n  geom_smooth(method = \"lm\", color = \"red\") +\n  ggtitle(paste(\"Positive Correlation: r =\", round(correlation_positive, 2))) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n3.2 Negative Correlation\nWhen one variable increases, the other variable decreases.\nExample: Hours spent on social media vs. academic performance.\n\n# Simulated data\nset.seed(456)\nsocial_media_hours &lt;- rnorm(50, mean = 5, sd = 1.5)\nacademic_performance &lt;- 100 - (social_media_hours * 10) + rnorm(50, mean = 0, sd = 5)\n\n# Calculate correlation\ncorrelation_negative &lt;- cor(social_media_hours, academic_performance)\n\n# Visualization\nggplot(data.frame(social_media_hours, academic_performance), aes(x = social_media_hours, y = academic_performance)) +\n  geom_point(color = \"blue\") +\n  geom_smooth(method = \"lm\", color = \"red\") +\n  ggtitle(paste(\"Negative Correlation: r =\", round(correlation_negative, 2))) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n3.3 Zero Correlation\nNo relationship exists between the variables.\nExample: Shoe size and IQ.\n\n# Simulated data\nset.seed(789)\nshoe_size &lt;- rnorm(50, mean = 8, sd = 1.5)\niq_scores &lt;- rnorm(50, mean = 100, sd = 15)\n\n# Calculate correlation\ncorrelation_zero &lt;- cor(shoe_size, iq_scores)\n\n# Visualization\nggplot(data.frame(shoe_size, iq_scores), aes(x = shoe_size, y = iq_scores)) +\n  geom_point(color = \"blue\") +\n  geom_smooth(method = \"lm\", color = \"red\", se = FALSE) +\n  ggtitle(paste(\"Zero Correlation: r =\", round(correlation_zero, 2))) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n3.4 Perfect Positive Correlation\nBoth variables move together with the same ratio.\nExample: Temperature in Celsius and Fahrenheit.\n\n# Simulated data\ncelsius &lt;- seq(0, 100, by = 2)\nfahrenheit &lt;- celsius * 1.8 + 32\n\n# Calculate correlation\ncorrelation_perfect_positive &lt;- cor(celsius, fahrenheit)\n\n# Visualization\nggplot(data.frame(celsius, fahrenheit), aes(x = celsius, y = fahrenheit)) +\n  geom_point(color = \"blue\") +\n  geom_smooth(method = \"lm\", color = \"red\", se = FALSE) +\n  ggtitle(paste(\"Perfect Positive Correlation: r =\", round(correlation_perfect_positive, 2))) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n3.5 Non-Linear Correlation\nThe relationship between variables is non-linear.\nExample: Age and happiness level.\n\n# Simulated data\nset.seed(101)\nage &lt;- seq(1, 80, length.out = 100)\nhappiness &lt;- -0.02 * (age - 40)^2 + 80 + rnorm(100, sd = 3)\n\n# Visualization\nggplot(data.frame(age, happiness), aes(x = age, y = happiness)) +\n  geom_point(color = \"blue\") +\n  geom_smooth(method = \"loess\", color = \"red\") +\n  ggtitle(\"Non-Linear Correlation\") +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n3.6 Perfect Negative Correlation\nOne variable increases while the other decreases in a perfect ratio.\nExample: Number of hours spent studying and hours spent on leisure.\n\n# Simulated data\nstudy_hours &lt;- seq(1, 10, length.out = 50)\nleisure_hours &lt;- 20 - study_hours\n\n# Calculate correlation\ncorrelation_perfect_negative &lt;- cor(study_hours, leisure_hours)\n\n# Visualization\nggplot(data.frame(study_hours, leisure_hours), aes(x = study_hours, y = leisure_hours)) +\n  geom_point(color = \"blue\") +\n  geom_smooth(method = \"lm\", color = \"red\", se = FALSE) +\n  ggtitle(paste(\"Perfect Negative Correlation: r =\", round(correlation_perfect_negative, 2))) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'"
   },
   {
-    "objectID": "rstudio.html#rstudio-rightarrow-tools-rightarrow-global-options-1",
-    "href": "rstudio.html#rstudio-rightarrow-tools-rightarrow-global-options-1",
-    "title": "RSTUDIO IDE",
-    "section": "RStudio \\(\\rightarrow\\) Tools \\(\\rightarrow\\) Global Options",
-    "text": "RStudio \\(\\rightarrow\\) Tools \\(\\rightarrow\\) Global Options"
+    "objectID": "practice-stats/practice-hypo.html#regression",
+    "href": "practice-stats/practice-hypo.html#regression",
+    "title": "Practice Sheet Day 5",
+    "section": "4 Regression",
+    "text": "4 Regression\n\n4.1 Simple Linear Regression\nScenario: Predict a student’s test score based on the number of hours studied.\n\n# Simulated data\nset.seed(123)\nhours_studied &lt;- rnorm(100, mean = 5, sd = 2)\ntest_score &lt;- 50 + 10 * hours_studied + rnorm(100, mean = 0, sd = 5)\n\n# Data preparation\ndata_simple &lt;- data.frame(hours_studied, test_score)\n\n# Fit Simple Linear Regression\nmodel_simple &lt;- lm(test_score ~ hours_studied, data = data_simple)\n\n# Summary of the model\nsummary(model_simple)\n\n\nCall:\nlm(formula = test_score ~ hours_studied, data = data_simple)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-9.5367 -3.4175 -0.4375  2.9032 16.4520 \n\nCoefficients:\n              Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    50.1419     1.4669   34.18   &lt;2e-16 ***\nhours_studied   9.8688     0.2672   36.94   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 4.854 on 98 degrees of freedom\nMultiple R-squared:  0.933, Adjusted R-squared:  0.9323 \nF-statistic:  1364 on 1 and 98 DF,  p-value: &lt; 2.2e-16\n\n# Visualization\nlibrary(ggplot2)\nggplot(data_simple, aes(x = hours_studied, y = test_score)) +\n  geom_point() +\n  geom_smooth(method = \"lm\", color = \"blue\") +\n  ggtitle(\"Simple Linear Regression: Hours Studied vs Test Score\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\nIntercept: The average test score when hours studied = 0.\nCoefficient (hours_studied): For each additional hour studied, test score increases by approximately the coefficient value.\nR-squared: Indicates how much of the variability in test scores is explained by hours studied. A value close to 1 suggests a strong relationship.\nP-value: If significant (typically p &lt; 0.05), hours studied significantly predicts test scores.\n\nInterpretation:\n\nStudents who study more hours tend to achieve higher test scores. The model can explain a substantial portion of the variation in scores through study time.\n\n\n\n4.2 Multiple Linear Regression\nScenario: Predict house price based on square footage and number of bedrooms.\n\n# Simulated data\nset.seed(456)\nsquare_footage &lt;- rnorm(100, mean = 1500, sd = 300)\nbedrooms &lt;- sample(2:5, 100, replace = TRUE)\nhouse_price &lt;- 50000 + 100 * square_footage + 10000 * bedrooms + rnorm(100, mean = 0, sd = 20000)\n\n# Data preparation\ndata_multiple &lt;- data.frame(square_footage, bedrooms, house_price)\n\n# Fit Multiple Linear Regression\nmodel_multiple &lt;- lm(house_price ~ square_footage + bedrooms, data = data_multiple)\n\n# Summary of the model\nsummary(model_multiple)\n\n\nCall:\nlm(formula = house_price ~ square_footage + bedrooms, data = data_multiple)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-41628 -14765   1413  14674  43071 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    61626.704  11546.090   5.337 6.19e-07 ***\nsquare_footage    89.182      6.481  13.760  &lt; 2e-16 ***\nbedrooms       11610.356   1754.323   6.618 2.01e-09 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 19360 on 97 degrees of freedom\nMultiple R-squared:  0.7134,    Adjusted R-squared:  0.7075 \nF-statistic: 120.7 on 2 and 97 DF,  p-value: &lt; 2.2e-16\n\n# Visualization\nggplot(data_multiple, aes(x = square_footage, y = house_price, color = as.factor(bedrooms))) +\n  geom_point() +\n  geom_smooth(method = \"lm\", aes(group = bedrooms), se = FALSE) +\n  ggtitle(\"Multiple Linear Regression: House Price vs Square Footage & Bedrooms\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\nIntercept: Baseline house price when square footage and bedrooms are 0.\nCoefficients: Each unit increase in square footage or additional bedroom increases house price by the respective coefficient.\nR-squared: Shows the proportion of variance in house price explained by square footage and bedrooms.\n\nInterpretation:\n\nLarger homes (in square footage) and more bedrooms are associated with higher house prices. Both variables are significant predictors, but additional bedrooms might have a stronger influence.\n\n\n\n4.3 Time Series Regression\nScenario: Predict sales based on time trends and promotions.\n\n# Simulated data\nset.seed(303)\ntime &lt;- 1:100\npromotions &lt;- sample(0:1, 100, replace = TRUE)\nsales &lt;- 50 + 2 * time + 10 * promotions + rnorm(100, mean = 0, sd = 5)\n\n# Data preparation\ndata_time &lt;- data.frame(time, promotions, sales)\n\n# Fit Time Series Regression\nmodel_time &lt;- lm(sales ~ time + promotions, data = data_time)\n\n# Summary of the model\nsummary(model_time)\n\n\nCall:\nlm(formula = sales ~ time + promotions, data = data_time)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-13.7319  -3.2999   0.0154   3.7220  12.5617 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 50.05265    1.11623  44.841  &lt; 2e-16 ***\ntime         2.00671    0.01785 112.450  &lt; 2e-16 ***\npromotions   9.47772    1.04050   9.109 1.13e-14 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 5.147 on 97 degrees of freedom\nMultiple R-squared:  0.9925,    Adjusted R-squared:  0.9923 \nF-statistic:  6413 on 2 and 97 DF,  p-value: &lt; 2.2e-16\n\n# Visualization\nggplot(data_time, aes(x = time, y = sales)) +\n  geom_point() +\n  geom_line(aes(y = predict(model_time)), color = \"blue\") +\n  facet_wrap(~promotions, scales = \"free\", ncol = 1) +\n  ggtitle(\"Time Series Regression: Sales Over Time\")\n\n\n\n\n\n\n\n\n\nTime Coefficient: Represents the trend over time.\nPromotions Coefficient: Indicates the additional impact of running a promotion on sales.\nR-squared: Measures how well time and promotions explain sales variability.\n\nInterpretation:\n\nSales increase over time, possibly due to market growth or product popularity. Promotions have a significant positive impact on sales, validating their effectiveness."
   },
   {
-    "objectID": "rstudio.html#open-rstudio",
-    "href": "rstudio.html#open-rstudio",
-    "title": "RSTUDIO IDE",
-    "section": "Open RStudio",
-    "text": "Open RStudio"
+    "objectID": "hypothesis-formulation.html#variable",
+    "href": "hypothesis-formulation.html#variable",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Variable",
+    "text": "Variable\n\n\nA variable is a characteristic or attribute that can take on different values."
   },
   {
-    "objectID": "rstudio.html#rstudio-without-project",
-    "href": "rstudio.html#rstudio-without-project",
-    "title": "RSTUDIO IDE",
-    "section": "RStudio Without Project",
-    "text": "RStudio Without Project"
+    "objectID": "hypothesis-formulation.html#independent-variables",
+    "href": "hypothesis-formulation.html#independent-variables",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Independent Variables",
+    "text": "Independent Variables\n\nThe variable that is manipulated or controlled by the researcher to observe its effect on another variable.\n\n\nIV is also called as predictor variable."
   },
   {
-    "objectID": "rstudio.html#rstudio-without-project-1",
-    "href": "rstudio.html#rstudio-without-project-1",
-    "title": "RSTUDIO IDE",
-    "section": "RStudio Without Project",
-    "text": "RStudio Without Project"
+    "objectID": "hypothesis-formulation.html#dependent-variables",
+    "href": "hypothesis-formulation.html#dependent-variables",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Dependent Variables",
+    "text": "Dependent Variables\n\nThe variable that is measured or observed to assess the impact of the independent variable.\n\n\nDV is also called as Effect or output or outcome variable."
   },
   {
-    "objectID": "rstudio.html#rstudio-project-helps",
-    "href": "rstudio.html#rstudio-project-helps",
-    "title": "RSTUDIO IDE",
-    "section": "RStudio Project Helps:",
-    "text": "RStudio Project Helps:\n\n\n\n“to divide your work into multiple contexts, each with their own”\n\nworking directory,\nworkspace,\nhistory, and\nsource documents.”\n\n\n\n\n\nSource: RStudio & artwork by Allison Horst"
+    "objectID": "hypothesis-formulation.html#example",
+    "href": "hypothesis-formulation.html#example",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Example",
+    "text": "Example\nExample 1: Education Study\n\nIndependent Variable: Teaching method (traditional vs. interactive).\nDependent Variable: Student performance on a test."
   },
   {
-    "objectID": "rstudio.html#create-rstudio-project",
-    "href": "rstudio.html#create-rstudio-project",
-    "title": "RSTUDIO IDE",
-    "section": "Create RStudio project",
-    "text": "Create RStudio project"
+    "objectID": "hypothesis-formulation.html#example-1",
+    "href": "hypothesis-formulation.html#example-1",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Example",
+    "text": "Example\nExample 2: Health Study\n\nIndependent Variable: Amount of daily exercise (30 mins, 60 mins, 90 mins).\nDependent Variable: Weight loss (in kilograms)."
   },
   {
-    "objectID": "rstudio.html#create-rstudio-project-1",
-    "href": "rstudio.html#create-rstudio-project-1",
-    "title": "RSTUDIO IDE",
-    "section": "Create RStudio project",
-    "text": "Create RStudio project"
+    "objectID": "hypothesis-formulation.html#example-2",
+    "href": "hypothesis-formulation.html#example-2",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Example",
+    "text": "Example\nExample 3: Marketing Study\n\nIndependent Variable: Type of advertisement (video, banner, text).\nDependent Variable: Number of clicks or purchases."
   },
   {
-    "objectID": "rstudio.html#in-case-anything-goes-wrong...",
-    "href": "rstudio.html#in-case-anything-goes-wrong...",
-    "title": "RSTUDIO IDE",
-    "section": "In case anything goes wrong\\(...\\)",
-    "text": "In case anything goes wrong\\(...\\)"
+    "objectID": "hypothesis-formulation.html#practice",
+    "href": "hypothesis-formulation.html#practice",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Practice",
+    "text": "Practice\nWe’ll use data to demonstrate the relationship between independent and dependent variables. Examples are:\n\nDirect Relationship\nInverse Relationship\nNo-Relation Example"
   },
   {
-    "objectID": "rstudio.html#create-rstudio-project-2",
-    "href": "rstudio.html#create-rstudio-project-2",
-    "title": "RSTUDIO IDE",
-    "section": "Create RStudio Project",
-    "text": "Create RStudio Project"
+    "objectID": "hypothesis-formulation.html#hypothesis",
+    "href": "hypothesis-formulation.html#hypothesis",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Hypothesis",
+    "text": "Hypothesis\n\nA hypothesis is a testable statement or prediction about the relationship between two or more variables."
   },
   {
-    "objectID": "rstudio.html#create-rstudio-project-3",
-    "href": "rstudio.html#create-rstudio-project-3",
-    "title": "RSTUDIO IDE",
-    "section": "Create RStudio project",
-    "text": "Create RStudio project"
+    "objectID": "hypothesis-formulation.html#types-of-hypotheses",
+    "href": "hypothesis-formulation.html#types-of-hypotheses",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Types of Hypotheses",
+    "text": "Types of Hypotheses\n\nNull Hypothesis (\\(H_0\\)): The null hypothesis states that there is no effect, no difference, or no relationship between the variables being studied. It assumes that any observed differences are due to chance.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): The alternative hypothesis suggests that there is an effect or relationship between the variables. It is the hypothesis that is supported if the null hypothesis is rejected."
   },
   {
-    "objectID": "rstudio.html#create-rstudio-project-4",
-    "href": "rstudio.html#create-rstudio-project-4",
-    "title": "RSTUDIO IDE",
-    "section": "Create RStudio project",
-    "text": "Create RStudio project"
+    "objectID": "hypothesis-formulation.html#formulate-hypotheses",
+    "href": "hypothesis-formulation.html#formulate-hypotheses",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Formulate Hypotheses",
+    "text": "Formulate Hypotheses\n📚 Education Scenario: Investigating whether a new teaching method improves student test scores compared to the traditional method.\n\n\nNon-DirectionalDirectional\n\n\n\nNull Hypothesis (\\(H_0\\)):: The new teaching method has no effect on student test scores.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): The new teaching method affects student test scores.\n\n\n\n\nNull Hypothesis (\\(H_0\\)):: The new teaching method does not improve student test scores.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): The new teaching method improves student test scores."
   },
   {
-    "objectID": "rstudio.html#create-rstudio-project-5",
-    "href": "rstudio.html#create-rstudio-project-5",
-    "title": "RSTUDIO IDE",
-    "section": "Create RStudio project",
-    "text": "Create RStudio project"
+    "objectID": "hypothesis-formulation.html#key-points",
+    "href": "hypothesis-formulation.html#key-points",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Key Points",
+    "text": "Key Points\n\nNon-Directional Hypotheses are used when you are testing for any effect, regardless of the direction (e.g., an increase or decrease).\nDirectional Hypotheses are used when you have a specific prediction about the direction of the effect (e.g., an improvement or reduction)."
   },
   {
-    "objectID": "rstudio.html#create-rstudio-project-6",
-    "href": "rstudio.html#create-rstudio-project-6",
-    "title": "RSTUDIO IDE",
-    "section": "Create RStudio project",
-    "text": "Create RStudio project"
+    "objectID": "hypothesis-formulation.html#formulate-hypotheses-1",
+    "href": "hypothesis-formulation.html#formulate-hypotheses-1",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Formulate Hypotheses",
+    "text": "Formulate Hypotheses\n💉 Medicine Scenario: Evaluating whether Drug A lowers blood pressure more effectively than a placebo.\n\n\nNon-DirectionalDirectional\n\n\n\nNull Hypothesis (\\(H_0\\)): Drug A has no effect on blood pressure compared to the placebo.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): Drug A affects blood pressure compared to the placebo.\n\n\n\n\nNull Hypothesis (\\(H_0\\)): Drug A does not lower blood pressure more effectively than the placebo.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): Drug A lowers blood pressure more effectively than the placebo."
   },
   {
-    "objectID": "rstudio.html#rstudio-project-name",
-    "href": "rstudio.html#rstudio-project-name",
-    "title": "RSTUDIO IDE",
-    "section": "RStudio project “name”",
-    "text": "RStudio project “name”"
+    "objectID": "hypothesis-formulation.html#formulate-hypotheses-2",
+    "href": "hypothesis-formulation.html#formulate-hypotheses-2",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Formulate Hypotheses",
+    "text": "Formulate Hypotheses\n🌱 Environment Scenario: Determining whether an area’s air quality index (AQI) changes after implementing stricter pollution regulations.\n\n\nNon-DirectionalDirectional\n\n\n\nNull Hypothesis (\\(H_0\\)): Stricter pollution regulations have no effect on the AQI.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): Stricter pollution regulations affect the AQI.\n\n\n\n\nNull Hypothesis (\\(H_0\\)): Stricter pollution regulations do not improve the AQI.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): Stricter pollution regulations improve the AQI."
   },
   {
-    "objectID": "rstudio.html#rstudio-project-path",
-    "href": "rstudio.html#rstudio-project-path",
-    "title": "RSTUDIO IDE",
-    "section": "RStudio project “path”",
-    "text": "RStudio project “path”"
+    "objectID": "hypothesis-formulation.html#formulate-hypotheses-3",
+    "href": "hypothesis-formulation.html#formulate-hypotheses-3",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Formulate Hypotheses",
+    "text": "Formulate Hypotheses\n💭 Psychology Scenario: Testing whether mindfulness training reduces stress levels among participants.\n\n\nNon-DirectionalDirectional\n\n\n\nNull Hypothesis (\\(H_0\\)): Mindfulness training has no effect on stress levels.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): Mindfulness training affects stress levels.\n\n\n\n\nNull Hypothesis (\\(H_0\\)): Mindfulness training does not reduce stress levels.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): Mindfulness training reduces stress levels."
   },
   {
-    "objectID": "rstudio.html#rstudio-project",
-    "href": "rstudio.html#rstudio-project",
-    "title": "RSTUDIO IDE",
-    "section": "RStudio project",
-    "text": "RStudio project"
+    "objectID": "hypothesis-formulation.html#formulate-hypotheses-4",
+    "href": "hypothesis-formulation.html#formulate-hypotheses-4",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Formulate Hypotheses",
+    "text": "Formulate Hypotheses\n🧬 Biology Scenario: Investigating whether a specific fertilizer increases plant growth compared to no fertilizer.\n\n\nNon-DirectionalDirectional\n\n\n\nNull Hypothesis (\\(H_0\\)): The fertilizer has no effect on plant growth.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): The fertilizer affects plant growth.\n\n\n\n\nNull Hypothesis (\\(H_0\\)): The fertilizer does not increase plant growth.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): The fertilizer increases plant growth."
   },
   {
-    "objectID": "rstudio.html#write-codes-in-rstudio-console",
-    "href": "rstudio.html#write-codes-in-rstudio-console",
-    "title": "RSTUDIO IDE",
-    "section": "Write codes in RStudio console",
-    "text": "Write codes in RStudio console"
+    "objectID": "hypothesis-formulation.html#formulate-hypotheses-5",
+    "href": "hypothesis-formulation.html#formulate-hypotheses-5",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Formulate Hypotheses",
+    "text": "Formulate Hypotheses\n🚀 Technology Scenario: Examining whether a new smartphone app decreases the average time users spend on their phones daily.\n\n\nNon-DirectionalDirectional\n\n\n\nNull Hypothesis (\\(H_0\\)): The app has no effect on the average time users spend on their phones.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): The app affects the average time users spend on their phones.\n\n\n\n\nNull Hypothesis (\\(H_0\\)): The app does not decrease the average time users spend on their phones.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): The app decreases the average time users spend on their phones."
   },
   {
-    "objectID": "rstudio.html#write-codes-in-r-script",
-    "href": "rstudio.html#write-codes-in-r-script",
-    "title": "RSTUDIO IDE",
-    "section": "Write codes in R script",
-    "text": "Write codes in R script"
+    "objectID": "hypothesis-formulation.html#formulate-hypotheses-6",
+    "href": "hypothesis-formulation.html#formulate-hypotheses-6",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Formulate Hypotheses",
+    "text": "Formulate Hypotheses\n💰 Economics Scenario: Testing whether increasing the minimum wage influences unemployment rates.\n\n\nNon-DirectionalDirectional\n\n\n\nNull Hypothesis (\\(H_0\\)): Increasing the minimum wage has no effect on unemployment rates.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): Increasing the minimum wage affects unemployment rates.\n\n\n\n\nNull Hypothesis (\\(H_0\\)): Increasing the minimum wage does not increase unemployment rates.\nAlternative Hypothesis (\\(H_a\\) or \\(H_1\\)): Increasing the minimum wage increases unemployment rates."
   },
   {
-    "objectID": "rstudio.html#r-script-.r",
-    "href": "rstudio.html#r-script-.r",
-    "title": "RSTUDIO IDE",
-    "section": "R script .R",
-    "text": "R script .R\n\nWrite codes in the R script \\(\\rightarrow\\) Console will show the results.\n\n\nBenefits of writing codes in R script:\n\nYou can save it for later use and revision.\nYou can share with others.\nA better track of codes."
-  },
-  {
-    "objectID": "rstudio.html#tips-for-r-script",
-    "href": "rstudio.html#tips-for-r-script",
-    "title": "RSTUDIO IDE",
-    "section": "💡 Tips for R script:",
-    "text": "💡 Tips for R script:\n\nWriting readable code because other people might need to use your code.\nWriting readable code because you might need to use your code, a few weeks/months/years after you’ve written it.\nPut spaces between and around variable names and operators (=+-*/).\nBreak up long lines of code.\nKeeping a consistent style.\n\n\n\nSource: Marius Mather also Tomaž Kaštrun"
-  },
-  {
-    "objectID": "rstudio.html#your-turn",
-    "href": "rstudio.html#your-turn",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n1. What is R mainly used for?\n\nWeb browsing.\n\nGaming.\n\nData analysis and statistics.\n\nDrawing cartoons."
-  },
-  {
-    "objectID": "rstudio.html#your-turn-1",
-    "href": "rstudio.html#your-turn-1",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n2. What is RStudio?\n\nA video editing software\nA web browser\nAn integrated development environment (IDE) for R\nA spreadsheet tool"
-  },
-  {
-    "objectID": "rstudio.html#your-turn-2",
-    "href": "rstudio.html#your-turn-2",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n3. What will 2 + 3 return in R?\n\n5\n6\n23\nError"
-  },
-  {
-    "objectID": "rstudio.html#your-turn-3",
-    "href": "rstudio.html#your-turn-3",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n4. Which of the following is used to create a sequence in R?\n\nlist()\nseq()\nloop()\nrun()"
-  },
-  {
-    "objectID": "rstudio.html#your-turn-4",
-    "href": "rstudio.html#your-turn-4",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n5. Where do you usually type your code in RStudio?\n\nConsole or Script Editor\nFile Explorer\nToolbar\nHelp tab"
-  },
-  {
-    "objectID": "rstudio.html#your-turn-answers",
-    "href": "rstudio.html#your-turn-answers",
-    "title": "RSTUDIO IDE",
-    "section": "🤩 Your Turn Answers",
-    "text": "🤩 Your Turn Answers\n\nCorrect answer: C) Data analysis and statistics\nCorrect answer: C) An integrated development environment (IDE) for R\nCorrect answer: A) 5\nCorrect answer: B) seq()\nCorrect answer: A) Console or Script Editor"
-  },
-  {
-    "objectID": "rstudio.html#your-turn-5",
-    "href": "rstudio.html#your-turn-5",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n6. What symbol is used to assign a value to a variable in R?\n\n=\n:=\n&lt;-\n=="
-  },
-  {
-    "objectID": "rstudio.html#your-turn-6",
-    "href": "rstudio.html#your-turn-6",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n7. Which function is used to view the structure of a dataset?\n\nstr()\ndata()\nview()\nlayout()"
-  },
-  {
-    "objectID": "rstudio.html#your-turn-7",
-    "href": "rstudio.html#your-turn-7",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n8. How do you read a CSV file into R?\n\nread.excel()\nopen.csv()\nread.csv()\nimport()"
-  },
-  {
-    "objectID": "rstudio.html#your-turn-8",
-    "href": "rstudio.html#your-turn-8",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n9. Which package is commonly used for data visualization in R?\n\ndplyr\ntidyr\nggplot2\nreadr"
-  },
-  {
-    "objectID": "rstudio.html#your-turn-9",
-    "href": "rstudio.html#your-turn-9",
-    "title": "RSTUDIO IDE",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n10. What is the shortcut to run a line of code in RStudio (on Windows)?\n\nCtrl + C\nCtrl + Enter\nCtrl + R\nCtrl + S"
-  },
-  {
-    "objectID": "rstudio.html#your-turn-answers-1",
-    "href": "rstudio.html#your-turn-answers-1",
-    "title": "RSTUDIO IDE",
-    "section": "🤩 Your Turn Answers",
-    "text": "🤩 Your Turn Answers\n\nCorrect answer: C) &lt;-\nCorrect answer: A) str()\nCorrect answer: C) read.csv()\nCorrect answer: C) ggplot2\nCorrect answer: B) Ctrl + Enter"
-  },
-  {
-    "objectID": "practice/data-frame.html",
-    "href": "practice/data-frame.html",
-    "title": "Hello World",
-    "section": "",
-    "text": "age &lt;- c(23, 25, 16, 40, 34)\nage\n\n[1] 23 25 16 40 34\n\nincome &lt;- c(23000, 25000, 16000, 4000, 34000)\nincome\n\n[1] 23000 25000 16000  4000 34000\n\nname &lt;- c(\"Bhim\", \"Rama\", \"Sara\", \"Phule\", \"Savitri\")\nname\n\n[1] \"Bhim\"    \"Rama\"    \"Sara\"    \"Phule\"   \"Savitri\"\n\nplace &lt;- c(\"MH\", \"RJ\", \"DL\", \"HR\", \"HR\")\nplace\n\n[1] \"MH\" \"RJ\" \"DL\" \"HR\" \"HR\"\n\nweight_kg &lt;- c(50, 52, 61, 40, 70)\nweight_kg\n\n[1] 50 52 61 40 70\n\nexample_df &lt;- data.frame(name, income, age, place, weight_kg)\nexample_df\n\n     name income age place weight_kg\n1    Bhim  23000  23    MH        50\n2    Rama  25000  25    RJ        52\n3    Sara  16000  16    DL        61\n4   Phule   4000  40    HR        40\n5 Savitri  34000  34    HR        70"
+    "objectID": "hypothesis-formulation.html#key-differences",
+    "href": "hypothesis-formulation.html#key-differences",
+    "title": "HYPOTHESISFORMULATION",
+    "section": "Key Differences",
+    "text": "Key Differences\n\n\n\n\n\n\n\n\n\n\nAspect\nDirectional Hypothesis\nNon-Directional Hypothesis\n\n\n\n\nPrediction\nSpecifies the direction of the effect (e.g., increase, decrease).\nPredicts an effect but no specific direction.\n\n\nTest Type\nOne-tailed test\nTwo-tailed test\n\n\nUse Case\nWhen prior research or theory suggests a specific outcome.\nWhen unsure of the outcome’s direction.\n\n\nHypothesis Example\n\\(H_a\\): Group A scores are higher than Group B scores.\n\\(H_a\\): Group A scores are different from Group B scores.\n\n\nNull Hypothesis (\\(H_0\\))\nNo effect in the predicted direction.\nNo effect or difference."
   },
   {
     "objectID": "objects.html#r-object",
@@ -945,6 +840,20 @@
     "text": "9 Session\n    View slides in full screen"
   },
   {
+    "objectID": "index.html#session-9",
+    "href": "index.html#session-9",
+    "title": " for Beginners",
+    "section": "10 Session",
+    "text": "10 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-10",
+    "href": "index.html#session-10",
+    "title": " for Beginners",
+    "section": "11 Session",
+    "text": "11 Session\n    View slides in full screen"
+  },
+  {
     "objectID": "markdown.html#text-formatting",
     "href": "markdown.html#text-formatting",
     "title": "MARKDOWN",
@@ -1106,69 +1015,6 @@
     "text": "🤩 Your Turn Answer"
   },
   {
-    "objectID": "scales.html#simple-maths",
-    "href": "scales.html#simple-maths",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Simple Maths",
-    "text": "Simple Maths\n\\[\n1 + 2\\times3^2\n\\]\n\nAnswer: 19"
-  },
-  {
-    "objectID": "scales.html#bodmas",
-    "href": "scales.html#bodmas",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "BODMAS",
-    "text": "BODMAS\n\nBrackets\nOrder (Power)\nDivide\nMultiplication\nAddition\nSubtraction"
-  },
-  {
-    "objectID": "scales.html#what-will-be-the-answer-to-this",
-    "href": "scales.html#what-will-be-the-answer-to-this",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "What will be the answer to this?",
-    "text": "What will be the answer to this?\n\\[\n10 + \\frac{2(3+1)^2}{8} - 5\n\\]\n\n\\[\n10 + \\frac{2\\times16}{8} - 5\n\\]\n\n\nAnswer: 9"
-  },
-  {
-    "objectID": "scales.html#lets-understand-this",
-    "href": "scales.html#lets-understand-this",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Let’s Understand this",
-    "text": "Let’s Understand this\n\\[\n\\sum_{i=1}^n x_i\n\\]"
-  },
-  {
-    "objectID": "scales.html#lets-understand-this-1",
-    "href": "scales.html#lets-understand-this-1",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Let’s Understand this",
-    "text": "Let’s Understand this\n\\[\n\\sum_{i=1}^n x_i \\\\ = 10 + 6 \\\\ = 16\n\\]"
-  },
-  {
-    "objectID": "scales.html#lets-try-this",
-    "href": "scales.html#lets-try-this",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Let’s Try this",
-    "text": "Let’s Try this\n\\[\n\\sum_{i=1}^n x^2_i\n\\]"
-  },
-  {
-    "objectID": "scales.html#lets-try-this-1",
-    "href": "scales.html#lets-try-this-1",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Let’s Try this",
-    "text": "Let’s Try this\n\\[\n\\sum_{i=1}^n x^2_i \\\\ = 10^2 + 6^2 \\\\ = 100 + 36 \\\\ = 136\n\\]"
-  },
-  {
-    "objectID": "scales.html#lets-try-this-2",
-    "href": "scales.html#lets-try-this-2",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Let’s Try this",
-    "text": "Let’s Try this\n\\[\n\\left( \\sum_{i=1}^n x_i \\right )^2\n\\]"
-  },
-  {
-    "objectID": "scales.html#lets-try-this-3",
-    "href": "scales.html#lets-try-this-3",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Let’s Try this",
-    "text": "Let’s Try this\n\\[\n\\left( \\sum_{i=1}^n x_i \\right )^2 \\\\ = (10+6)^2 \\\\ = 16^2 \\\\ = 256\n\\]"
-  },
-  {
     "objectID": "scales.html#scales-of-measurement",
     "href": "scales.html#scales-of-measurement",
     "title": "SCALES OFMEASUREMENT",
@@ -1187,84 +1033,56 @@
     "href": "scales.html#nominal-scale",
     "title": "SCALES OFMEASUREMENT",
     "section": "Nominal Scale",
-    "text": "Nominal Scale\n\nCategorizes data without any order or rank.\n\n\n\n\n\n\n\n\nImage Source: Voxco"
+    "text": "Nominal Scale\n\nCategorizes data without any order or rank."
   },
   {
-    "objectID": "scales.html#practice-sheet",
-    "href": "scales.html#practice-sheet",
+    "objectID": "scales.html#nominal-scale-examples",
+    "href": "scales.html#nominal-scale-examples",
     "title": "SCALES OFMEASUREMENT",
-    "section": "🤯 Practice Sheet",
-    "text": "🤯 Practice Sheet\n\nCreating Nominal Variables.\nExamples: Gender (Male, Female), Colors (Red, Blue, Green), or Types of Fruits.\nVisualization: Bar chart or Pie chart.\nAnalysis: Frequency counts, mode, chi-square tests."
+    "section": "Nominal Scale Examples",
+    "text": "Nominal Scale Examples\n\n\n\nVariable\nExample Values\n\n\n\n\nGender\nMale, Female, Non-binary\n\n\nReligion\nHindu, Muslim, Christian, Sikh, Buddhist\n\n\nMarital Status\nSingle, Married, Divorced, Widowed\n\n\nPolitical Party\nBJP, Congress, AAP, CPI\n\n\nBlood Type\nA, B, AB, O\n\n\nNationality\nIndian, German, Australian, Argentinian\n\n\nColor Names\nRed, Blue, Green, Yellow\n\n\nTypes of Transport\nBus, Train, Bicycle, Car\n\n\nAcademic Discipline\nSociology, Physics, History, Economics"
   },
   {
     "objectID": "scales.html#ordinal-scale",
     "href": "scales.html#ordinal-scale",
     "title": "SCALES OFMEASUREMENT",
     "section": "Ordinal Scale",
-    "text": "Ordinal Scale\n\nData with a meaningful order but unequal intervals.\n\n\n\n\n\n\n\n\nImage source: Voxco"
+    "text": "Ordinal Scale\n\nData with a meaningful order but unequal intervals."
   },
   {
-    "objectID": "scales.html#practice-sheet-1",
-    "href": "scales.html#practice-sheet-1",
+    "objectID": "scales.html#ordinal-scale-examples",
+    "href": "scales.html#ordinal-scale-examples",
     "title": "SCALES OFMEASUREMENT",
-    "section": "🤯 Practice Sheet",
-    "text": "🤯 Practice Sheet\n\nCreating Ordinal Variables.\nExamples: Education level (High School, Bachelor’s, Master’s, Ph.D.), Customer satisfaction (Poor, Fair, Good, Excellent).\nVisualization: Bar chart or Box plot.\nAnalysis: Median, rank correlation."
+    "section": "Ordinal Scale Examples",
+    "text": "Ordinal Scale Examples\n\n\n\n\n\n\n\n\nVariable\nExample Values\nNotes\n\n\n\n\nEducation Level\nPrimary &lt; Secondary &lt; Graduate &lt; Postgraduate\nRank exists, but interval not equal\n\n\nSocioeconomic Status\nLow &lt; Middle &lt; High\nOrdered categories\n\n\nAgreement Level\nStrongly Disagree &lt; Disagree &lt; Neutral &lt; Agree &lt; Strongly Agree\nLikert scale\n\n\nCustomer Satisfaction\nVery Unsatisfied &lt; Unsatisfied &lt; Neutral &lt; Satisfied &lt; Very Satisfied\nCommon in surveys\n\n\nMilitary Ranks\nCaptain &lt; Major &lt; Colonel\nHierarchical but no fixed interval\n\n\nClass Position\nFirst &lt; Second &lt; Third\nRanks exist, differences unknown\n\n\nPain Level (self-reported)\nNo pain &lt; Mild &lt; Moderate &lt; Severe\nOrdered, subjective"
   },
   {
     "objectID": "scales.html#interval-scale",
     "href": "scales.html#interval-scale",
     "title": "SCALES OFMEASUREMENT",
     "section": "Interval Scale",
-    "text": "Interval Scale\n\nOrdered data with equal intervals but no true zero point.\n\n\n\n\n\n\n\n\nImage source: Voxco"
+    "text": "Interval Scale\n\nOrdered data with equal intervals but no true zero point."
   },
   {
-    "objectID": "scales.html#practice-sheet-2",
-    "href": "scales.html#practice-sheet-2",
+    "objectID": "scales.html#interval-scale-examples",
+    "href": "scales.html#interval-scale-examples",
     "title": "SCALES OFMEASUREMENT",
-    "section": "🤯 Practice Sheet",
-    "text": "🤯 Practice Sheet\n\nCreating Interval Variables\nExamples: Temperature in Celsius or Fahrenheit, IQ scores.\nVisualization: Histogram, Line graph.\nAnalysis: Mean, standard deviation, correlation, regression."
+    "section": "Interval Scale Examples",
+    "text": "Interval Scale Examples\n\n\n\n\n\n\n\nVariable\nExplanation\n\n\n\n\nTemperature in °C or °F\nThe difference between 20°C and 30°C is the same as between 30°C and 40°C, but 0°C ≠ no temperature.\n\n\nIQ Scores\nAn IQ of 120 is 20 points more than 100, but not “twice as intelligent” as someone with 60.\n\n\nCalendar Years\n2020 and 2025 are 5 years apart, but 0 AD is not the start of time.\n\n\nTime of Day (on a 12-hr or 24-hr clock)\n6 PM is 3 hours after 3 PM, but 0:00 (midnight) is not a true zero.\n\n\nStandardized Test Scores\nE.g., SAT or GRE scores — differences are meaningful, but zero doesn’t mean “no knowledge.”"
   },
   {
     "objectID": "scales.html#ratio-scale",
     "href": "scales.html#ratio-scale",
     "title": "SCALES OFMEASUREMENT",
     "section": "Ratio Scale",
-    "text": "Ratio Scale\n\nOrdered data with equal intervals and a true zero point.\n\n\n\n\n\n\n\n\nImage source: Voxco"
+    "text": "Ratio Scale\n\nOrdered data with equal intervals and a true zero point."
   },
   {
-    "objectID": "scales.html#practice-sheet-3",
-    "href": "scales.html#practice-sheet-3",
+    "objectID": "scales.html#ratio-scale-examples",
+    "href": "scales.html#ratio-scale-examples",
     "title": "SCALES OFMEASUREMENT",
-    "section": "🤯 Practice Sheet",
-    "text": "🤯 Practice Sheet\n\nCreating ratio Variables\nExamples: Weight, Height, Income, Age.\nVisualization: Histogram, Scatter plot.\nAnalysis: All statistical methods (mean, median, mode, ratio comparisons)."
-  },
-  {
-    "objectID": "scales.html#different-types-of-scales",
-    "href": "scales.html#different-types-of-scales",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Different Types of Scales",
-    "text": "Different Types of Scales\n\n\n\nImage source: Voxco"
-  },
-  {
-    "objectID": "scales.html#discrete-variables",
-    "href": "scales.html#discrete-variables",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Discrete Variables",
-    "text": "Discrete Variables\n\n\n\nRepresent countable values, often whole numbers.\nExamples: Number of students, dice rolls, cars in a parking lot.\n\n\n\n\n\n\n\n\n\n\nImage source: Allison Horst"
-  },
-  {
-    "objectID": "scales.html#continuous-variables",
-    "href": "scales.html#continuous-variables",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Continuous Variables",
-    "text": "Continuous Variables\n\n\n\nRepresent measureable values, including fractions or decimals.\nExamples: Height, weight, time, temperature.\n\n\n\n\n\n\n\n\n\n\nImage source: Allison Horst"
-  },
-  {
-    "objectID": "scales.html#practice-sheet-4",
-    "href": "scales.html#practice-sheet-4",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "🤯 Practice Sheet",
-    "text": "🤯 Practice Sheet\n\nDiscrete Variables, visualization and analysis.\nContinuous Variables, visualization and analysis.\nCombining Discrete and Continuous Variables."
+    "section": "Ratio Scale Examples",
+    "text": "Ratio Scale Examples\n\n\n\n\n\n\n\n\n\nVariable\nExample Values\nTrue Zero?\nNotes\n\n\n\n\nHeight\n160 cm, 170 cm, 180 cm\nYes\n0 cm = no height\n\n\nWeight\n50 kg, 70 kg, 0 kg\nYes\nYou can say 70 kg is twice as heavy as 35 kg\n\n\nIncome\n₹0, ₹10,000, ₹50,000\nYes\n0 = no income\n\n\nAge\n0 years, 25 years, 50 years\nYes\n0 = no age\n\n\nDistance\n0 km, 5 km, 10 km\nYes\n0 = no distance\n\n\nDuration (time)\n0 minutes, 30 minutes, 1 hour\nYes\n0 = no time elapsed\n\n\nNumber of Children\n0, 1, 2, 3\nYes\n0 = no children\n\n\nCalories consumed\n0 kcal, 500 kcal, 2000 kcal\nYes\n0 = no calories\n\n\nMarks or Scores (raw)\n0 to 100\nYes\n0 = no correct answers"
   },
   {
     "objectID": "r-intro.html#data-science-project",
@@ -2310,52 +2128,290 @@
     "text": "Savitribai Ramabai (SARA) Institute of Data Science\n\n\n\n\n\n \nFollow SARA\n @sara_institute\n SARA LinkedIn Page\n @SARADataScience\n SARA Facebook Page\n SARA Institute WhatsApp Channel\n\n\n\n  \nContact SARA\n 925 315 2024\n sara.institute.info@gmail.com\n www.sara-edu.netlify.app/\n SARA Institute of Data Science, Dr. Ambedkar Bhawan, Kakroi Road, Near Dayanand Hospital, Sonipat - 131001, Haryana, India.\n\n\n\n\n\nTitle slide image by Stephane Gagnon"
   },
   {
-    "objectID": "practice/hello-world.html",
-    "href": "practice/hello-world.html",
-    "title": "Hello World",
+    "objectID": "practice/practice-hypo.html",
+    "href": "practice/practice-hypo.html",
+    "title": "Practice Sheet Day 4",
     "section": "",
-    "text": "Welcome to my first Quarto document. I’m learning how to use Quarto in RStudio."
+    "text": "We’ll simulate data to demonstrate the relationship between independent and dependent variables.\n\n\n\n# Simulate data\nset.seed(123)\nhours_of_study &lt;- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) # Independent Variable\ntest_scores &lt;- 50 + 5 * hours_of_study + rnorm(10, mean = 0, sd = 5) # Dependent Variable\n\n# Combine into a data frame\ndata &lt;- data.frame(Hours = hours_of_study, Scores = test_scores)\n\n# Visualize the relationship\nlibrary(ggplot2)\n\nggplot(data, aes(x = Hours, y = Scores)) +\n  geom_point(color = \"blue\", size = 3) +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"red\") +\n  labs(\n    title = \"Effect of Hours of Study on Test Scores\",\n    x = \"Hours of Study (Independent Variable)\",\n    y = \"Test Scores (Dependent Variable)\"\n  ) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nInterpretation of the Graph\n\nX-axis (Independent Variable): Hours of study.\nY-axis (Dependent Variable): Test scores.\nAs hours of study increase, test scores generally increase, showing a positive relationship.\n\n\n\n\nAn inverse relationship occurs when one variable increases while the other decreases. For instance, the more time spent on social media, the lower the grades a student might achieve.\n\n# Simulate data\nset.seed(42)\nsocial_media_hours &lt;- seq(1, 10, by = 1)  # Independent Variable\ngrades &lt;- 100 - 5 * social_media_hours + rnorm(10, mean = 0, sd = 2)  # Dependent Variable\n\n# Combine into a data frame\ninverse_data &lt;- data.frame(SocialMediaHours = social_media_hours, Grades = grades)\n\n# Visualize the inverse relationship\nlibrary(ggplot2)\n\nggplot(inverse_data, aes(x = SocialMediaHours, y = Grades)) +\n  geom_point(color = \"red\", size = 3) +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"blue\") +\n  labs(\n    title = \"Inverse Relationship: Social Media Hours vs. Grades\",\n    x = \"Social Media Hours (Independent Variable)\",\n    y = \"Grades (Dependent Variable)\"\n  ) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n\nA no-relation scenario means that changes in one variable do not systematically affect the other. For instance, the number of books read by a person and their shoe size typically have no relationship.\n\n# Simulate data\nset.seed(123)\nbooks_read &lt;- seq(1, 10, by = 1)  # Independent Variable\nshoe_size &lt;- rnorm(10, mean = 9, sd = 1)  # Random data with no relation to books_read\n\n# Combine into a data frame\nno_relation_data &lt;- data.frame(BooksRead = books_read, ShoeSize = shoe_size)\n\n# Visualize the no-relation scenario\nggplot(no_relation_data, aes(x = BooksRead, y = ShoeSize)) +\n  geom_point(color = \"green\", size = 3) +\n  labs(\n    title = \"No Relationship: Books Read vs. Shoe Size\",\n    x = \"Books Read (Independent Variable)\",\n    y = \"Shoe Size (Dependent Variable)\"\n  ) +\n  theme_minimal()"
   },
   {
-    "objectID": "practice/hello-world.html#hello-world",
-    "href": "practice/hello-world.html#hello-world",
-    "title": "Hello World",
+    "objectID": "practice/practice-hypo.html#variables",
+    "href": "practice/practice-hypo.html#variables",
+    "title": "Practice Sheet Day 4",
     "section": "",
-    "text": "Welcome to my first Quarto document. I’m learning how to use Quarto in RStudio."
+    "text": "We’ll simulate data to demonstrate the relationship between independent and dependent variables.\n\n\n\n# Simulate data\nset.seed(123)\nhours_of_study &lt;- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) # Independent Variable\ntest_scores &lt;- 50 + 5 * hours_of_study + rnorm(10, mean = 0, sd = 5) # Dependent Variable\n\n# Combine into a data frame\ndata &lt;- data.frame(Hours = hours_of_study, Scores = test_scores)\n\n# Visualize the relationship\nlibrary(ggplot2)\n\nggplot(data, aes(x = Hours, y = Scores)) +\n  geom_point(color = \"blue\", size = 3) +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"red\") +\n  labs(\n    title = \"Effect of Hours of Study on Test Scores\",\n    x = \"Hours of Study (Independent Variable)\",\n    y = \"Test Scores (Dependent Variable)\"\n  ) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nInterpretation of the Graph\n\nX-axis (Independent Variable): Hours of study.\nY-axis (Dependent Variable): Test scores.\nAs hours of study increase, test scores generally increase, showing a positive relationship.\n\n\n\n\nAn inverse relationship occurs when one variable increases while the other decreases. For instance, the more time spent on social media, the lower the grades a student might achieve.\n\n# Simulate data\nset.seed(42)\nsocial_media_hours &lt;- seq(1, 10, by = 1)  # Independent Variable\ngrades &lt;- 100 - 5 * social_media_hours + rnorm(10, mean = 0, sd = 2)  # Dependent Variable\n\n# Combine into a data frame\ninverse_data &lt;- data.frame(SocialMediaHours = social_media_hours, Grades = grades)\n\n# Visualize the inverse relationship\nlibrary(ggplot2)\n\nggplot(inverse_data, aes(x = SocialMediaHours, y = Grades)) +\n  geom_point(color = \"red\", size = 3) +\n  geom_smooth(method = \"lm\", se = FALSE, color = \"blue\") +\n  labs(\n    title = \"Inverse Relationship: Social Media Hours vs. Grades\",\n    x = \"Social Media Hours (Independent Variable)\",\n    y = \"Grades (Dependent Variable)\"\n  ) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n\nA no-relation scenario means that changes in one variable do not systematically affect the other. For instance, the number of books read by a person and their shoe size typically have no relationship.\n\n# Simulate data\nset.seed(123)\nbooks_read &lt;- seq(1, 10, by = 1)  # Independent Variable\nshoe_size &lt;- rnorm(10, mean = 9, sd = 1)  # Random data with no relation to books_read\n\n# Combine into a data frame\nno_relation_data &lt;- data.frame(BooksRead = books_read, ShoeSize = shoe_size)\n\n# Visualize the no-relation scenario\nggplot(no_relation_data, aes(x = BooksRead, y = ShoeSize)) +\n  geom_point(color = \"green\", size = 3) +\n  labs(\n    title = \"No Relationship: Books Read vs. Shoe Size\",\n    x = \"Books Read (Independent Variable)\",\n    y = \"Shoe Size (Dependent Variable)\"\n  ) +\n  theme_minimal()"
   },
   {
-    "objectID": "practice/hello-world.html#about-me",
-    "href": "practice/hello-world.html#about-me",
-    "title": "Hello World",
-    "section": "About Me",
-    "text": "About Me\nMy name is Your Full Name.\nI am from Your City or Institution.\nI am interested in Your research field or interest area."
+    "objectID": "practice/practice-hypo.html#nhst",
+    "href": "practice/practice-hypo.html#nhst",
+    "title": "Practice Sheet Day 4",
+    "section": "2 NHST",
+    "text": "2 NHST\n\n2.1 One-Sample t-Test\nScenario: A teacher claims that the average test score in a class is 70. You want to test if the actual average is different from 70.\n\n\\(H_0\\): The mean test score is 70 (\\(\\mu\\) = 70).\n\\(H_a\\): The mean test score is not 70 (\\(\\mu \\neq\\) 70).\n\n\n# Simulated data: Test scores of students\nset.seed(123)\ntest_scores &lt;- rnorm(30, mean = 72, sd = 5)\n\n# Perform a one-sample t-test\nt_test_result &lt;- t.test(test_scores, mu = 70)\n\n# Print the result\nprint(t_test_result)\n\n\n    One Sample t-test\n\ndata:  test_scores\nt = 1.9703, df = 29, p-value = 0.05842\nalternative hypothesis: true mean is not equal to 70\n95 percent confidence interval:\n 69.93287 73.59610\nsample estimates:\nmean of x \n 71.76448 \n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This means the average test score is significantly different from 70.\n\n\n\n2.2 Two-Sample t-Test\nScenario: Compare the average test scores of two groups: one that received tutoring and one that did not.\n\n\\(H_0\\): The mean test scores the two groups are equal (\\(\\mu_1 = \\mu_2\\)).\n\\(H_a\\): The mean test scores of the two groups are not equal (\\(\\mu_1 \\neq  \\mu_2\\)).\n\n\n# Simulated data\nset.seed(456)\ngroup_A &lt;- rnorm(30, mean = 75, sd = 5)  # Tutored group\ngroup_B &lt;- rnorm(30, mean = 70, sd = 5)  # Non-tutored group\n\n# Perform a two-sample t-test\ntwo_sample_test &lt;- t.test(group_A, group_B, alternative = \"two.sided\")\n\n# Print the result\nprint(two_sample_test)\n\n\n    Welch Two Sample t-test\n\ndata:  group_A and group_B\nt = 4.1181, df = 53.018, p-value = 0.0001344\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n 2.758615 7.997380\nsample estimates:\nmean of x mean of y \n 76.15872  70.78072 \n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This indicates a significant difference between the two groups.\n\n\n\n2.3 Chi-Square Test\nScenario: Test if there is an association between gender and preference for two types of beverages.\n\n\\(H_0\\): Gender and beverage preference are independent.\n\\(H-a\\): Gender and beverage preference are not independent.\n\n\n# Simulated data\ngender &lt;- c(\"Male\", \"Male\", \"Female\", \"Female\", \"Male\", \"Female\", \"Male\", \"Female\")\nbeverage &lt;- c(\"Tea\", \"Coffee\", \"Tea\", \"Coffee\", \"Coffee\", \"Tea\", \"Coffee\", \"Tea\")\n\n# Create a contingency table\ntable_data &lt;- table(gender, beverage)\n\n# Perform a chi-square test\nchi_sq_test &lt;- chisq.test(table_data)\n\nWarning in chisq.test(table_data): Chi-squared approximation may be incorrect\n\n# Print the result\nprint(chi_sq_test)\n\n\n    Pearson's Chi-squared test with Yates' continuity correction\n\ndata:  table_data\nX-squared = 0.5, df = 1, p-value = 0.4795\n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This suggests that gender and beverage preference are associated.\n\n\n\n2.4 ANOVA (Analysis of Variance)\nScenario: Test if three different fertilizers lead to different crop yields.\n\n\\(H_0\\): The mean yields are the same for all fertilizers (\\(\\mu_1 = \\mu_2 = \\mu_3\\)).\n\\(H_a\\): At least one fertilizer leads to a different mean yield\n\n\n# Simulated data\nset.seed(789)\nfertilizer &lt;- factor(rep(c(\"Fert1\", \"Fert2\", \"Fert3\"), each = 10))\nyield &lt;- c(rnorm(10, mean = 50, sd = 5), rnorm(10, mean = 55, sd = 5), rnorm(10, mean = 60, sd = 5))\n\n# Perform ANOVA\nanova_result &lt;- aov(yield ~ fertilizer)\nsummary(anova_result)\n\n            Df Sum Sq Mean Sq F value   Pr(&gt;F)    \nfertilizer   2  567.3   283.7   21.16 2.96e-06 ***\nResiduals   27  361.9    13.4                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This means at least one fertilizer has a significantly different effect.\n\n\n\n2.5 Correlation Test\nScenario: Test if there is a significant correlation between hours studied and test scores.\n\n\\(H_0\\): There is no correlation between hours studied and test scores (\\(r = 0\\)).\n\\(H_a\\): There is a correlation between hours studied and test scores (\\(r \\neq 0\\)).\n\n\n# Simulated data\nset.seed(101)\nhours_studied &lt;- rnorm(50, mean = 5, sd = 2)\ntest_scores &lt;- hours_studied * 10 + rnorm(50, mean = 50, sd = 10)\n\n# Perform correlation test\ncor_test &lt;- cor.test(hours_studied, test_scores)\n\n# Print the result\nprint(cor_test)\n\n\n    Pearson's product-moment correlation\n\ndata:  hours_studied and test_scores\nt = 14.407, df = 48, p-value &lt; 2.2e-16\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n 0.8314306 0.9430071\nsample estimates:\n      cor \n0.9012134 \n\n\nInterpretation:\n\nIf the p-value is less than 0.05, reject \\(H_0\\). This indicates a significant correlation."
   },
   {
-    "objectID": "practice/code-chunk.html",
-    "href": "practice/code-chunk.html",
-    "title": "Hello World",
+    "objectID": "practice/practice-hypo.html#correlation",
+    "href": "practice/practice-hypo.html#correlation",
+    "title": "Practice Sheet Day 4",
+    "section": "3 Correlation",
+    "text": "3 Correlation\n\n3.1 Positive Correlation\nWhen one variable increases, the other variable also increases.\nExample: Height and weight of individuals.\n\n# Simulated data\nset.seed(123)\nheight &lt;- rnorm(50, mean = 160, sd = 10)  # Heights in cm\nweight &lt;- height * 0.5 + rnorm(50, mean = 50, sd = 5)  # Weights in kg\n\n# Calculate correlation\ncorrelation_positive &lt;- cor(height, weight)\n\n# Visualization\nlibrary(ggplot2)\nggplot(data.frame(height, weight), aes(x = height, y = weight)) +\n  geom_point(color = \"blue\") +\n  geom_smooth(method = \"lm\", color = \"red\") +\n  ggtitle(paste(\"Positive Correlation: r =\", round(correlation_positive, 2))) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n3.2 Negative Correlation\nWhen one variable increases, the other variable decreases.\nExample: Hours spent on social media vs. academic performance.\n\n# Simulated data\nset.seed(456)\nsocial_media_hours &lt;- rnorm(50, mean = 5, sd = 1.5)\nacademic_performance &lt;- 100 - (social_media_hours * 10) + rnorm(50, mean = 0, sd = 5)\n\n# Calculate correlation\ncorrelation_negative &lt;- cor(social_media_hours, academic_performance)\n\n# Visualization\nggplot(data.frame(social_media_hours, academic_performance), aes(x = social_media_hours, y = academic_performance)) +\n  geom_point(color = \"blue\") +\n  geom_smooth(method = \"lm\", color = \"red\") +\n  ggtitle(paste(\"Negative Correlation: r =\", round(correlation_negative, 2))) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n3.3 Zero Correlation\nNo relationship exists between the variables.\nExample: Shoe size and IQ.\n\n# Simulated data\nset.seed(789)\nshoe_size &lt;- rnorm(50, mean = 8, sd = 1.5)\niq_scores &lt;- rnorm(50, mean = 100, sd = 15)\n\n# Calculate correlation\ncorrelation_zero &lt;- cor(shoe_size, iq_scores)\n\n# Visualization\nggplot(data.frame(shoe_size, iq_scores), aes(x = shoe_size, y = iq_scores)) +\n  geom_point(color = \"blue\") +\n  geom_smooth(method = \"lm\", color = \"red\", se = FALSE) +\n  ggtitle(paste(\"Zero Correlation: r =\", round(correlation_zero, 2))) +\n  theme_minimal()\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "rstudio.html#section-1",
+    "href": "rstudio.html#section-1",
+    "title": "RSTUDIO IDE",
     "section": "",
-    "text": "Welcome to my first Quarto document. I’m learning how to use Quarto in RStudio."
+    "text": "RStudio is an integrated development environment (IDE) for R and Python from company posit."
   },
   {
-    "objectID": "practice/code-chunk.html#hello-world",
-    "href": "practice/code-chunk.html#hello-world",
-    "title": "Hello World",
+    "objectID": "rstudio.html#r-and-rstudio",
+    "href": "rstudio.html#r-and-rstudio",
+    "title": "RSTUDIO IDE",
+    "section": "R and RStudio",
+    "text": "R and RStudio\n\n\n\nImagine R as a powerful engine\n\n\n\nand RStudio as a stylish car"
+  },
+  {
+    "objectID": "rstudio.html#section-2",
+    "href": "rstudio.html#section-2",
+    "title": "RSTUDIO IDE",
     "section": "",
-    "text": "Welcome to my first Quarto document. I’m learning how to use Quarto in RStudio."
+    "text": "It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management.\nDownload RStudio.\n\n\n\nSource: https://posit.co/products/open-source/rstudio/"
   },
   {
-    "objectID": "practice/code-chunk.html#about-me",
-    "href": "practice/code-chunk.html#about-me",
-    "title": "Hello World",
-    "section": "About Me",
-    "text": "About Me\nMy name is Your Full Name.\nI am from Your City or Institution.\nI am interested in Your research field or interest area."
+    "objectID": "rstudio.html#rstudio-ide",
+    "href": "rstudio.html#rstudio-ide",
+    "title": "RSTUDIO IDE",
+    "section": "RStudio IDE",
+    "text": "RStudio IDE"
   },
   {
-    "objectID": "practice/code-chunk.html#code-chunk",
-    "href": "practice/code-chunk.html#code-chunk",
-    "title": "Hello World",
-    "section": "Code Chunk",
-    "text": "Code Chunk\n\nSimple Calculation\n\n5 + 7\n\n[1] 12\n\n\n\n\nPlot\n\nplot(cars)"
+    "objectID": "rstudio.html#rstudio-rightarrow-tools-rightarrow-global-options",
+    "href": "rstudio.html#rstudio-rightarrow-tools-rightarrow-global-options",
+    "title": "RSTUDIO IDE",
+    "section": "RStudio \\(\\rightarrow\\) Tools \\(\\rightarrow\\) Global Options",
+    "text": "RStudio \\(\\rightarrow\\) Tools \\(\\rightarrow\\) Global Options"
+  },
+  {
+    "objectID": "rstudio.html#rstudio-rightarrow-tools-rightarrow-global-options-1",
+    "href": "rstudio.html#rstudio-rightarrow-tools-rightarrow-global-options-1",
+    "title": "RSTUDIO IDE",
+    "section": "RStudio \\(\\rightarrow\\) Tools \\(\\rightarrow\\) Global Options",
+    "text": "RStudio \\(\\rightarrow\\) Tools \\(\\rightarrow\\) Global Options"
+  },
+  {
+    "objectID": "rstudio.html#open-rstudio",
+    "href": "rstudio.html#open-rstudio",
+    "title": "RSTUDIO IDE",
+    "section": "Open RStudio",
+    "text": "Open RStudio"
+  },
+  {
+    "objectID": "rstudio.html#rstudio-without-project",
+    "href": "rstudio.html#rstudio-without-project",
+    "title": "RSTUDIO IDE",
+    "section": "RStudio Without Project",
+    "text": "RStudio Without Project"
+  },
+  {
+    "objectID": "rstudio.html#rstudio-without-project-1",
+    "href": "rstudio.html#rstudio-without-project-1",
+    "title": "RSTUDIO IDE",
+    "section": "RStudio Without Project",
+    "text": "RStudio Without Project"
+  },
+  {
+    "objectID": "rstudio.html#rstudio-project-helps",
+    "href": "rstudio.html#rstudio-project-helps",
+    "title": "RSTUDIO IDE",
+    "section": "RStudio Project Helps:",
+    "text": "RStudio Project Helps:\n\n\n\n“to divide your work into multiple contexts, each with their own”\n\nworking directory,\nworkspace,\nhistory, and\nsource documents.”\n\n\n\n\n\nSource: RStudio & artwork by Allison Horst"
+  },
+  {
+    "objectID": "rstudio.html#create-rstudio-project",
+    "href": "rstudio.html#create-rstudio-project",
+    "title": "RSTUDIO IDE",
+    "section": "Create RStudio project",
+    "text": "Create RStudio project"
+  },
+  {
+    "objectID": "rstudio.html#create-rstudio-project-1",
+    "href": "rstudio.html#create-rstudio-project-1",
+    "title": "RSTUDIO IDE",
+    "section": "Create RStudio project",
+    "text": "Create RStudio project"
+  },
+  {
+    "objectID": "rstudio.html#in-case-anything-goes-wrong...",
+    "href": "rstudio.html#in-case-anything-goes-wrong...",
+    "title": "RSTUDIO IDE",
+    "section": "In case anything goes wrong\\(...\\)",
+    "text": "In case anything goes wrong\\(...\\)"
+  },
+  {
+    "objectID": "rstudio.html#create-rstudio-project-2",
+    "href": "rstudio.html#create-rstudio-project-2",
+    "title": "RSTUDIO IDE",
+    "section": "Create RStudio Project",
+    "text": "Create RStudio Project"
+  },
+  {
+    "objectID": "rstudio.html#create-rstudio-project-3",
+    "href": "rstudio.html#create-rstudio-project-3",
+    "title": "RSTUDIO IDE",
+    "section": "Create RStudio project",
+    "text": "Create RStudio project"
+  },
+  {
+    "objectID": "rstudio.html#create-rstudio-project-4",
+    "href": "rstudio.html#create-rstudio-project-4",
+    "title": "RSTUDIO IDE",
+    "section": "Create RStudio project",
+    "text": "Create RStudio project"
+  },
+  {
+    "objectID": "rstudio.html#create-rstudio-project-5",
+    "href": "rstudio.html#create-rstudio-project-5",
+    "title": "RSTUDIO IDE",
+    "section": "Create RStudio project",
+    "text": "Create RStudio project"
+  },
+  {
+    "objectID": "rstudio.html#create-rstudio-project-6",
+    "href": "rstudio.html#create-rstudio-project-6",
+    "title": "RSTUDIO IDE",
+    "section": "Create RStudio project",
+    "text": "Create RStudio project"
+  },
+  {
+    "objectID": "rstudio.html#rstudio-project-name",
+    "href": "rstudio.html#rstudio-project-name",
+    "title": "RSTUDIO IDE",
+    "section": "RStudio project “name”",
+    "text": "RStudio project “name”"
+  },
+  {
+    "objectID": "rstudio.html#rstudio-project-path",
+    "href": "rstudio.html#rstudio-project-path",
+    "title": "RSTUDIO IDE",
+    "section": "RStudio project “path”",
+    "text": "RStudio project “path”"
+  },
+  {
+    "objectID": "rstudio.html#rstudio-project",
+    "href": "rstudio.html#rstudio-project",
+    "title": "RSTUDIO IDE",
+    "section": "RStudio project",
+    "text": "RStudio project"
+  },
+  {
+    "objectID": "rstudio.html#write-codes-in-rstudio-console",
+    "href": "rstudio.html#write-codes-in-rstudio-console",
+    "title": "RSTUDIO IDE",
+    "section": "Write codes in RStudio console",
+    "text": "Write codes in RStudio console"
+  },
+  {
+    "objectID": "rstudio.html#write-codes-in-r-script",
+    "href": "rstudio.html#write-codes-in-r-script",
+    "title": "RSTUDIO IDE",
+    "section": "Write codes in R script",
+    "text": "Write codes in R script"
+  },
+  {
+    "objectID": "rstudio.html#r-script-.r",
+    "href": "rstudio.html#r-script-.r",
+    "title": "RSTUDIO IDE",
+    "section": "R script .R",
+    "text": "R script .R\n\nWrite codes in the R script \\(\\rightarrow\\) Console will show the results.\n\n\nBenefits of writing codes in R script:\n\nYou can save it for later use and revision.\nYou can share with others.\nA better track of codes."
+  },
+  {
+    "objectID": "rstudio.html#tips-for-r-script",
+    "href": "rstudio.html#tips-for-r-script",
+    "title": "RSTUDIO IDE",
+    "section": "💡 Tips for R script:",
+    "text": "💡 Tips for R script:\n\nWriting readable code because other people might need to use your code.\nWriting readable code because you might need to use your code, a few weeks/months/years after you’ve written it.\nPut spaces between and around variable names and operators (=+-*/).\nBreak up long lines of code.\nKeeping a consistent style.\n\n\n\nSource: Marius Mather also Tomaž Kaštrun"
+  },
+  {
+    "objectID": "rstudio.html#your-turn",
+    "href": "rstudio.html#your-turn",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n1. What is R mainly used for?\n\nWeb browsing.\n\nGaming.\n\nData analysis and statistics.\n\nDrawing cartoons."
+  },
+  {
+    "objectID": "rstudio.html#your-turn-1",
+    "href": "rstudio.html#your-turn-1",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n2. What is RStudio?\n\nA video editing software\nA web browser\nAn integrated development environment (IDE) for R\nA spreadsheet tool"
+  },
+  {
+    "objectID": "rstudio.html#your-turn-2",
+    "href": "rstudio.html#your-turn-2",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n3. What will 2 + 3 return in R?\n\n5\n6\n23\nError"
+  },
+  {
+    "objectID": "rstudio.html#your-turn-3",
+    "href": "rstudio.html#your-turn-3",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n4. Which of the following is used to create a sequence in R?\n\nlist()\nseq()\nloop()\nrun()"
+  },
+  {
+    "objectID": "rstudio.html#your-turn-4",
+    "href": "rstudio.html#your-turn-4",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n5. Where do you usually type your code in RStudio?\n\nConsole or Script Editor\nFile Explorer\nToolbar\nHelp tab"
+  },
+  {
+    "objectID": "rstudio.html#your-turn-answers",
+    "href": "rstudio.html#your-turn-answers",
+    "title": "RSTUDIO IDE",
+    "section": "🤩 Your Turn Answers",
+    "text": "🤩 Your Turn Answers\n\nCorrect answer: C) Data analysis and statistics\nCorrect answer: C) An integrated development environment (IDE) for R\nCorrect answer: A) 5\nCorrect answer: B) seq()\nCorrect answer: A) Console or Script Editor"
+  },
+  {
+    "objectID": "rstudio.html#your-turn-5",
+    "href": "rstudio.html#your-turn-5",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n6. What symbol is used to assign a value to a variable in R?\n\n=\n:=\n&lt;-\n=="
+  },
+  {
+    "objectID": "rstudio.html#your-turn-6",
+    "href": "rstudio.html#your-turn-6",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n7. Which function is used to view the structure of a dataset?\n\nstr()\ndata()\nview()\nlayout()"
+  },
+  {
+    "objectID": "rstudio.html#your-turn-7",
+    "href": "rstudio.html#your-turn-7",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n8. How do you read a CSV file into R?\n\nread.excel()\nopen.csv()\nread.csv()\nimport()"
+  },
+  {
+    "objectID": "rstudio.html#your-turn-8",
+    "href": "rstudio.html#your-turn-8",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n9. Which package is commonly used for data visualization in R?\n\ndplyr\ntidyr\nggplot2\nreadr"
+  },
+  {
+    "objectID": "rstudio.html#your-turn-9",
+    "href": "rstudio.html#your-turn-9",
+    "title": "RSTUDIO IDE",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n10. What is the shortcut to run a line of code in RStudio (on Windows)?\n\nCtrl + C\nCtrl + Enter\nCtrl + R\nCtrl + S"
+  },
+  {
+    "objectID": "rstudio.html#your-turn-answers-1",
+    "href": "rstudio.html#your-turn-answers-1",
+    "title": "RSTUDIO IDE",
+    "section": "🤩 Your Turn Answers",
+    "text": "🤩 Your Turn Answers\n\nCorrect answer: C) &lt;-\nCorrect answer: A) str()\nCorrect answer: C) read.csv()\nCorrect answer: C) ggplot2\nCorrect answer: B) Ctrl + Enter"
   }
 ]

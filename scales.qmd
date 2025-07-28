@@ -21,84 +21,6 @@ title-slide-attributes:
   #data-background-repeat: yes
 ---
 
-# Maths & Statistical Notation
-
-## Simple Maths
-
-$$
-1 + 2\times3^2
-$$
-
-. . .
-
-Answer: 19
-
-## BODMAS
-
-1. Brackets
-
-1. Order (Power)
-
-1. Divide
-
-1. Multiplication
-
-1. Addition
-
-1. Subtraction
-
-## What will be the answer to this?
-
-$$
-10 + \frac{2(3+1)^2}{8} - 5
-$$
-
-. . .
-
-$$
-10 + \frac{2\times16}{8} - 5
-$$
-
-. . . 
-
-Answer: 9
-
-## Let's Understand this
-
-$$
-\sum_{i=1}^n x_i
-$$
-
-## Let's Understand this
-
-$$
-\sum_{i=1}^n x_i \\ = 10 + 6 \\ = 16
-$$
-
-## Let's Try this
-
-$$
-\sum_{i=1}^n x^2_i
-$$
-
-## Let's Try this
-
-$$
-\sum_{i=1}^n x^2_i \\ = 10^2 + 6^2 \\ = 100 + 36 \\ = 136
-$$
-
-## Let's Try this
-
-$$
-\left( \sum_{i=1}^n x_i \right )^2 
-$$
-
-## Let's Try this
-
-$$
-\left( \sum_{i=1}^n x_i \right )^2 \\ = (10+6)^2 \\ = 16^2 \\ = 256
-$$
-
 ## Scales of Measurement:
 
 <br>
@@ -121,139 +43,64 @@ They are classified into four types:
 
 > Categorizes data without any order or rank.
 
-![](https://www.voxco.com/wp-content/uploads/2021/03/Nominal-Scale-14.png){fig-align=center}
+## Nominal Scale Examples {background-color=teal}
 
-::: aside
-Image Source: [Voxco](https://www.voxco.com/wp-content/uploads/2021/03/Nominal-Scale-14.png)
-:::
-
-## 🤯 Practice Sheet {background-color="brown"}
-
-- Creating Nominal Variables.
-
-- **Examples:** Gender (Male, Female), Colors (Red, Blue, Green), or Types of Fruits.
-
-- **Visualization:** Bar chart or Pie chart.
-
-- **Analysis:** Frequency counts, mode, chi-square tests.
+| Variable                | Example Values                           |
+| ----------------------- | ---------------------------------------- |
+| **Gender**              | Male, Female, Non-binary                 |
+| **Religion**            | Hindu, Muslim, Christian, Sikh, Buddhist |
+| **Marital Status**      | Single, Married, Divorced, Widowed       |
+| **Political Party**     | BJP, Congress, AAP, CPI                  |
+| **Blood Type**          | A, B, AB, O                              |
+| **Nationality**         | Indian, German, Australian, Argentinian  |
+| **Color Names**         | Red, Blue, Green, Yellow                 |
+| **Types of Transport**  | Bus, Train, Bicycle, Car                 |
+| **Academic Discipline** | Sociology, Physics, History, Economics   |
 
 ## Ordinal Scale
 
 > Data with a meaningful order but unequal intervals.
 
-![](https://www.voxco.com/wp-content/uploads/2021/03/Cover-scale.jpg){width=80% fig-align=center}
+## Ordinal Scale Examples {background-color=teal}
 
-::: aside
-Image source: [Voxco](https://www.voxco.com/wp-content/uploads/2021/03/Cover-scale.jpg)
-:::
+| Variable                       | Example Values                                                        | Notes                               |
+| ------------------------------ | --------------------------------------------------------------------- | ----------------------------------- |
+| **Education Level**            | Primary < Secondary < Graduate < Postgraduate                         | Rank exists, but interval not equal |
+| **Socioeconomic Status**       | Low < Middle < High                                                   | Ordered categories                  |
+| **Agreement Level**            | Strongly Disagree < Disagree < Neutral < Agree < Strongly Agree       | Likert scale                        |
+| **Customer Satisfaction**      | Very Unsatisfied < Unsatisfied < Neutral < Satisfied < Very Satisfied | Common in surveys                   |
+| **Military Ranks**             | Captain < Major < Colonel                                             | Hierarchical but no fixed interval  |
+| **Class Position**             | First < Second < Third                                                | Ranks exist, differences unknown    |
+| **Pain Level (self-reported)** | No pain < Mild < Moderate < Severe                                    | Ordered, subjective                 |
 
-## 🤯 Practice Sheet {background-color="brown"}
-
-- Creating Ordinal Variables.
-
-- **Examples:** Education level (High School, Bachelor’s, Master’s, Ph.D.), Customer satisfaction (Poor, Fair, Good, Excellent).
-
-- **Visualization:** Bar chart or Box plot.
-
-- **Analysis:** Median, rank correlation.
-    
 ## Interval Scale
 
 > Ordered data with equal intervals but no true zero point.
 
-![](https://www.voxco.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-03-02-at-3.58.54-PM.jpeg){width=80% fig-align=center}
+## Interval Scale Examples {background-color=teal}
 
-::: aside
-Image source: [Voxco](https://www.voxco.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-03-02-at-3.58.54-PM.jpeg)
-:::
-
-## 🤯 Practice Sheet {background-color="brown"}
-
-- Creating Interval Variables
-
-- **Examples:** Temperature in Celsius or Fahrenheit, IQ scores.
-
-- **Visualization:** Histogram, Line graph.
-
-- **Analysis:** Mean, standard deviation, correlation, regression.
+| Variable                                    | Explanation                                                                                          |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Temperature in °C or °F**                 | The difference between 20°C and 30°C is the same as between 30°C and 40°C, but 0°C ≠ no temperature. |
+| **IQ Scores**                               | An IQ of 120 is 20 points more than 100, but not "twice as intelligent" as someone with 60.          |
+| **Calendar Years**                          | 2020 and 2025 are 5 years apart, but 0 AD is not the start of time.                                  |
+| **Time of Day (on a 12-hr or 24-hr clock)** | 6 PM is 3 hours after 3 PM, but 0:00 (midnight) is not a true zero.                                  |
+| **Standardized Test Scores**                | E.g., SAT or GRE scores — differences are meaningful, but zero doesn’t mean “no knowledge.”          |
 
 ## Ratio Scale
 
-- Ordered data with equal intervals and a true zero point.
+> Ordered data with equal intervals and a true zero point.
 
-![](https://www.voxco.com/wp-content/uploads/2021/03/Ratio-Scale--1024x630.jpeg){width=65% fig-align=center}
+## Ratio Scale Examples {background-color=teal}
 
-::: aside
-Image source: [Voxco](https://www.voxco.com/blog/ratio-scale/)
-:::
-
-## 🤯 Practice Sheet {background-color="brown"}
-
-- Creating ratio Variables
-
-- **Examples**: Weight, Height, Income, Age.
-
-- **Visualization:** Histogram, Scatter plot.
-
-- **Analysis:** All statistical methods (mean, median, mode, ratio comparisons).
-
-## Different Types of  Scales
-
-![](https://www.voxco.com/wp-content/uploads/2021/03/Ordinal-Data3.jpg)
-
-::: aside
-Image source: [Voxco](https://www.voxco.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-03-02-at-3.58.54-PM.jpeg)
-:::
-
-## Discrete Variables
-
-:::: {.columns}
-
-::: {.column width="50%"}
-- Represent **countable** values, often whole numbers.
-
-- **Examples:** Number of students, dice rolls, cars in a parking lot.
-
-::: aside
-Image source: [Allison Horst](https://github.com/allisonhorst/stats-illustrations?tab=readme-ov-file)
-:::
-
-:::
-
-::: {.column width="50%"}
-![](images/discrete.png){width=65% fig-align=right}
-:::
-
-::::
-
-## Continuous Variables
-
-:::: {.columns}
-
-::: {.column width="50%"}
-- Represent **measureable** values, including fractions or decimals.
-
-- **Examples:** Height, weight, time, temperature.
-
-::: aside
-Image source: [Allison Horst](https://github.com/allisonhorst/stats-illustrations?tab=readme-ov-file)
-:::
-
-:::
-
-::: {.column width="50%"}
-![](images/continuous.png){width=65% fig-align=right}
-:::
-
-::::
-
-## 🤯 Practice Sheet {background-color="brown"}
-
-- Discrete Variables, visualization and analysis.
-
-- Continuous Variables, visualization and analysis.
-
-- Combining Discrete and Continuous Variables.
-
-
-
+| Variable                  | Example Values                | True Zero? | Notes                                        |
+| ------------------------- | ----------------------------- | ---------- | -------------------------------------------- |
+| **Height**                | 160 cm, 170 cm, 180 cm        | Yes        | 0 cm = no height                             |
+| **Weight**                | 50 kg, 70 kg, 0 kg            | Yes        | You can say 70 kg is twice as heavy as 35 kg |
+| **Income**                | ₹0, ₹10,000, ₹50,000          | Yes        | 0 = no income                                |
+| **Age**                   | 0 years, 25 years, 50 years   | Yes        | 0 = no age                                   |
+| **Distance**              | 0 km, 5 km, 10 km             | Yes        | 0 = no distance                              |
+| **Duration (time)**       | 0 minutes, 30 minutes, 1 hour | Yes        | 0 = no time elapsed                          |
+| **Number of Children**    | 0, 1, 2, 3                    | Yes        | 0 = no children                              |
+| **Calories consumed**     | 0 kcal, 500 kcal, 2000 kcal   | Yes        | 0 = no calories                              |
+| **Marks or Scores (raw)** | 0 to 100                      | Yes        | 0 = no correct answers                       |
