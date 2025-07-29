@@ -588,501 +588,655 @@
     "text": "🤩 Your Turn Answers\n\nCorrect answer: C) ```{r}\nCorrect answer: B) A collection of R functions, data, and documentation\nCorrect answer: D) install.packages()\nCorrect answer: B) Hides the code but shows the result\nCorrect answer: B) ggplot2"
   },
   {
-    "objectID": "quarto.html#section-1",
-    "href": "quarto.html#section-1",
-    "title": "QUARTO",
+    "objectID": "visualization.html#section-1",
+    "href": "visualization.html#section-1",
+    "title": "DATA  VISUALIZATION",
     "section": "",
-    "text": "Quarto"
+    "text": "“The simple graph has brought more information to the data analyst’s mind than any other device.” — John Tukey"
   },
   {
-    "objectID": "quarto.html#quarto-is-the-next-generation-of-r-markdown",
-    "href": "quarto.html#quarto-is-the-next-generation-of-r-markdown",
-    "title": "QUARTO",
-    "section": "Quarto is the next generation of R Markdown",
-    "text": "Quarto is the next generation of R Markdown\n\n\n\n\n\n  \n\n\n\n\n\nRead more here From R Markdown to Quarto"
+    "objectID": "visualization.html#goal",
+    "href": "visualization.html#goal",
+    "title": "DATA  VISUALIZATION",
+    "section": "Goal",
+    "text": "Goal\nHow to visualize data using R package ggplot2."
   },
   {
-    "objectID": "quarto.html#quarto",
-    "href": "quarto.html#quarto",
-    "title": "QUARTO",
-    "section": "Quarto",
-    "text": "Quarto\n\n“An open-source scientific and technical publishing system”\n\n\nQuarto can produce a wide variety of output formats:\n\n Articles & Reports\n Presentations\n Interactive Docs\n Websites\n Books\n\n\n\n\nSource: Quarto website"
-  },
-  {
-    "objectID": "quarto.html#analyze.-share.-reproduce.",
-    "href": "quarto.html#analyze.-share.-reproduce.",
-    "title": "QUARTO",
-    "section": "Analyze. Share. Reproduce.",
-    "text": "Analyze. Share. Reproduce."
-  },
-  {
-    "objectID": "quarto.html#download-quarto",
-    "href": "quarto.html#download-quarto",
-    "title": "QUARTO",
-    "section": "Download Quarto",
-    "text": "Download Quarto"
-  },
-  {
-    "objectID": "quarto.html#get-started-choose-ide",
-    "href": "quarto.html#get-started-choose-ide",
-    "title": "QUARTO",
-    "section": "Get started: Choose IDE",
-    "text": "Get started: Choose IDE"
-  },
-  {
-    "objectID": "quarto.html#lets-create-quarto-file",
-    "href": "quarto.html#lets-create-quarto-file",
-    "title": "QUARTO",
-    "section": "Let’s Create Quarto File",
-    "text": "Let’s Create Quarto File"
-  },
-  {
-    "objectID": "quarto.html#create-a-new-quarto-document",
-    "href": "quarto.html#create-a-new-quarto-document",
-    "title": "QUARTO",
-    "section": "Create a new Quarto document",
-    "text": "Create a new Quarto document"
-  },
-  {
-    "objectID": "quarto.html#file-rightarrow-new-file-rightarrow-quarto-document",
-    "href": "quarto.html#file-rightarrow-new-file-rightarrow-quarto-document",
-    "title": "QUARTO",
-    "section": "File \\(\\rightarrow\\) New file \\(\\rightarrow\\) Quarto document",
-    "text": "File \\(\\rightarrow\\) New file \\(\\rightarrow\\) Quarto document"
-  },
-  {
-    "objectID": "quarto.html#new-quarto-document",
-    "href": "quarto.html#new-quarto-document",
-    "title": "QUARTO",
-    "section": "New Quarto document",
-    "text": "New Quarto document"
-  },
-  {
-    "objectID": "quarto.html#new-quarto-document-1",
-    "href": "quarto.html#new-quarto-document-1",
-    "title": "QUARTO",
-    "section": "New Quarto document",
-    "text": "New Quarto document"
-  },
-  {
-    "objectID": "quarto.html#new-quarto-document-2",
-    "href": "quarto.html#new-quarto-document-2",
-    "title": "QUARTO",
-    "section": "New Quarto document",
-    "text": "New Quarto document"
-  },
-  {
-    "objectID": "quarto.html#new-quarto-document-3",
-    "href": "quarto.html#new-quarto-document-3",
-    "title": "QUARTO",
-    "section": "New Quarto document",
-    "text": "New Quarto document"
-  },
-  {
-    "objectID": "quarto.html#new-quarto-document-4",
-    "href": "quarto.html#new-quarto-document-4",
-    "title": "QUARTO",
-    "section": "New Quarto document",
-    "text": "New Quarto document"
-  },
-  {
-    "objectID": "quarto.html#new-quarto-document-5",
-    "href": "quarto.html#new-quarto-document-5",
-    "title": "QUARTO",
-    "section": "New Quarto document",
-    "text": "New Quarto document"
-  },
-  {
-    "objectID": "quarto.html#new-quarto-document-6",
-    "href": "quarto.html#new-quarto-document-6",
-    "title": "QUARTO",
-    "section": "New Quarto document",
-    "text": "New Quarto document"
-  },
-  {
-    "objectID": "quarto.html#new-quarto-document-7",
-    "href": "quarto.html#new-quarto-document-7",
-    "title": "QUARTO",
-    "section": "New Quarto document",
-    "text": "New Quarto document"
-  },
-  {
-    "objectID": "quarto.html#save-quarto-document",
-    "href": "quarto.html#save-quarto-document",
-    "title": "QUARTO",
-    "section": "Save Quarto document",
-    "text": "Save Quarto document"
-  },
-  {
-    "objectID": "quarto.html#save-quarto-document-1",
-    "href": "quarto.html#save-quarto-document-1",
-    "title": "QUARTO",
-    "section": "Save Quarto document",
-    "text": "Save Quarto document"
-  },
-  {
-    "objectID": "quarto.html#process-when-you-render-the-quarto-document",
-    "href": "quarto.html#process-when-you-render-the-quarto-document",
-    "title": "QUARTO",
-    "section": "Process When You Render the Quarto Document",
-    "text": "Process When You Render the Quarto Document\n\nQuarto sends the .qmd file to knitr, which executes all of the code chunks and creates a new markdown (.md) document which includes the code and its output. The markdown file generated by knitr is then processed by pandoc, which is responsible for creating the finished file."
-  },
-  {
-    "objectID": "quarto.html#process-when-you-render-quarto",
-    "href": "quarto.html#process-when-you-render-quarto",
-    "title": "QUARTO",
-    "section": "Process When You Render Quarto",
-    "text": "Process When You Render Quarto\n\n\n\n\nSource: Artwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio::Conf(2022). Illustrated by Allison Horst."
-  },
-  {
-    "objectID": "quarto.html#source-editor-visual-editor",
-    "href": "quarto.html#source-editor-visual-editor",
-    "title": "QUARTO",
-    "section": "Source editor & Visual editor",
-    "text": "Source editor & Visual editor"
-  },
-  {
-    "objectID": "quarto.html#visual-editor",
-    "href": "quarto.html#visual-editor",
-    "title": "QUARTO",
-    "section": "Visual editor",
-    "text": "Visual editor"
-  },
-  {
-    "objectID": "quarto.html#visual-editor-1",
-    "href": "quarto.html#visual-editor-1",
-    "title": "QUARTO",
-    "section": "Visual editor",
-    "text": "Visual editor"
-  },
-  {
-    "objectID": "quarto.html#visual-editor-2",
-    "href": "quarto.html#visual-editor-2",
-    "title": "QUARTO",
-    "section": "Visual editor",
-    "text": "Visual editor"
-  },
-  {
-    "objectID": "quarto.html#source-editor",
-    "href": "quarto.html#source-editor",
-    "title": "QUARTO",
-    "section": "Source editor",
-    "text": "Source editor"
-  },
-  {
-    "objectID": "index.html#section",
-    "href": "index.html#section",
-    "title": " for Beginners",
+    "objectID": "visualization.html#section-2",
+    "href": "visualization.html#section-2",
+    "title": "DATA  VISUALIZATION",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "Source: Tanya Shapiro"
   },
   {
-    "objectID": "index.html#session",
-    "href": "index.html#session",
-    "title": " for Beginners",
-    "section": "1 Session",
-    "text": "1 Session\n    View slides in full screen"
+    "objectID": "visualization.html#ggplot2-layers",
+    "href": "visualization.html#ggplot2-layers",
+    "title": "DATA  VISUALIZATION",
+    "section": "ggplot2 Layers",
+    "text": "ggplot2 Layers"
   },
   {
-    "objectID": "index.html#session-1",
-    "href": "index.html#session-1",
-    "title": " for Beginners",
-    "section": "2 Session",
-    "text": "2 Session\n    View slides in full screen"
+    "objectID": "visualization.html#import-data",
+    "href": "visualization.html#import-data",
+    "title": "DATA  VISUALIZATION",
+    "section": "Import Data",
+    "text": "Import Data\n\nTaskCodeOutput\n\n\n\n\n\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nggplot(data = penguins)\n\n\n\n\n\n\n\n\n\n\n\nFigure 1"
   },
   {
-    "objectID": "index.html#session-2",
-    "href": "index.html#session-2",
-    "title": " for Beginners",
-    "section": "3 Session",
-    "text": "3 Session\n    View slides in full screen"
+    "objectID": "visualization.html#map-variables-aesthetics",
+    "href": "visualization.html#map-variables-aesthetics",
+    "title": "DATA  VISUALIZATION",
+    "section": "Map Variables Aesthetics",
+    "text": "Map Variables Aesthetics\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species))\n\n\n\n\n\n\n\n\n\n\n\nFigure 2"
   },
   {
-    "objectID": "index.html#session-3",
-    "href": "index.html#session-3",
-    "title": " for Beginners",
-    "section": "4 Session",
-    "text": "4 Session\n    View slides in full screen"
+    "objectID": "visualization.html#add-geometric-shapes",
+    "href": "visualization.html#add-geometric-shapes",
+    "title": "DATA  VISUALIZATION",
+    "section": "Add Geometric Shapes",
+    "text": "Add Geometric Shapes\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar()\n\n\n\n\n\n\n\n\n\n\n\nFigure 3"
   },
   {
-    "objectID": "index.html#session-4",
-    "href": "index.html#session-4",
-    "title": " for Beginners",
-    "section": "5 Session",
-    "text": "5 Session\n    View slides in full screen"
+    "objectID": "visualization.html#key-components-are",
+    "href": "visualization.html#key-components-are",
+    "title": "DATA  VISUALIZATION",
+    "section": "Key Components are:",
+    "text": "Key Components are:\n\n\ndata,\nA set of aesthetic mappings between variables in the data and visual properties, and\nAt least one layer which describes how to render each observation. Layers are usually created with a geom function."
   },
   {
-    "objectID": "index.html#session-5",
-    "href": "index.html#session-5",
-    "title": " for Beginners",
-    "section": "6 Session",
-    "text": "6 Session\n    View slides in full screen"
+    "objectID": "visualization.html#your-turn",
+    "href": "visualization.html#your-turn",
+    "title": "DATA  VISUALIZATION",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = island)) +\n  geom_bar()\n\n\n\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "index.html#session-6",
-    "href": "index.html#session-6",
-    "title": " for Beginners",
-    "section": "7 Session",
-    "text": "7 Session\n    View slides in full screen"
+    "objectID": "visualization.html#common-mistakes",
+    "href": "visualization.html#common-mistakes",
+    "title": "DATA  VISUALIZATION",
+    "section": "Common Mistakes",
+    "text": "Common Mistakes\n\nMake sure that every ( is matched with a ) and every \" is paired with another \".\nConsole shows no results but a + sign that means your code is incomplete and R is waiting for you to complete the code.\nin ggplot + has to come at the end of the line, not the start"
   },
   {
-    "objectID": "index.html#session-7",
-    "href": "index.html#session-7",
-    "title": " for Beginners",
-    "section": "8 Session",
-    "text": "8 Session\n    View slides in full screen"
+    "objectID": "visualization.html#fill-color",
+    "href": "visualization.html#fill-color",
+    "title": "DATA  VISUALIZATION",
+    "section": "“Fill” Color",
+    "text": "“Fill” Color\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar(fill = \"blue\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 4"
   },
   {
-    "objectID": "index.html#session-8",
-    "href": "index.html#session-8",
-    "title": " for Beginners",
-    "section": "9 Session",
-    "text": "9 Session\n    View slides in full screen"
+    "objectID": "visualization.html#fill-colors",
+    "href": "visualization.html#fill-colors",
+    "title": "DATA  VISUALIZATION",
+    "section": "“Fill” Colors",
+    "text": "“Fill” Colors\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar(fill = c(\"blue\", \"green\", \"yellow\"))\n\n\n\n\n\n\n\n\n\n\n\nFigure 5"
   },
   {
-    "objectID": "index.html#session-9",
-    "href": "index.html#session-9",
-    "title": " for Beginners",
-    "section": "10 Session",
-    "text": "10 Session\n    View slides in full screen"
+    "objectID": "visualization.html#fill-color-colors",
+    "href": "visualization.html#fill-color-colors",
+    "title": "DATA  VISUALIZATION",
+    "section": "“Fill” & “Color” Colors",
+    "text": "“Fill” & “Color” Colors\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar(fill = c(\"blue\", \"green\", \"yellow\"),\n           color = \"black\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 6"
   },
   {
-    "objectID": "index.html#session-10",
-    "href": "index.html#session-10",
-    "title": " for Beginners",
-    "section": "11 Session",
-    "text": "11 Session\n    View slides in full screen"
+    "objectID": "visualization.html#your-turn-1",
+    "href": "visualization.html#your-turn-1",
+    "title": "DATA  VISUALIZATION",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = island)) +\n  geom_bar(fill = c(\"red\", \"yellow\", \"darkgreen\"),\n           color = \"black\")\n\n\n\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "markdown.html#text-formatting",
-    "href": "markdown.html#text-formatting",
-    "title": "MARKDOWN",
-    "section": "Text formatting",
-    "text": "Text formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nnormal\nnormal\n\n\n*italics*\nitalics\n\n\n**bold**\nbold\n\n\n***bold italics***\nbold italics\n\n\n\n\n\nSource: Quarto guide"
+    "objectID": "visualization.html#know-your-data",
+    "href": "visualization.html#know-your-data",
+    "title": "DATA  VISUALIZATION",
+    "section": "Know Your Data",
+    "text": "Know Your Data\n\n\nglimpse(penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
   },
   {
-    "objectID": "markdown.html#text-formatting-1",
-    "href": "markdown.html#text-formatting-1",
-    "title": "MARKDOWN",
-    "section": "Text formatting",
-    "text": "Text formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nsuperscript^2^\nsuperscript2\n\n\nsubscript~2~\nsubscript2\n\n\n~~strike through~~\nstrike through\n\n\n`verbatim code`\nverbatim code\n\n\n\n\n\nSource: Quarto guide"
+    "objectID": "visualization.html#plot-a-continuous-variable",
+    "href": "visualization.html#plot-a-continuous-variable",
+    "title": "DATA  VISUALIZATION",
+    "section": "Plot A Continuous Variable",
+    "text": "Plot A Continuous Variable\n\nTaskCodeOutput\n\n\n\n\n\n\n# bill_length_mm is dbl type variable/column\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_histogram()\n\n\n\n\n\n\n\n\n\n\n\nFigure 7"
   },
   {
-    "objectID": "markdown.html#headings",
-    "href": "markdown.html#headings",
-    "title": "MARKDOWN",
-    "section": "Headings",
-    "text": "Headings\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+    "objectID": "visualization.html#your-turn-2",
+    "href": "visualization.html#your-turn-2",
+    "title": "DATA  VISUALIZATION",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_histogram(fill = \"darkblue\",\n                 color = \"white\")\n\n\n\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "markdown.html#insert-links",
-    "href": "markdown.html#insert-links",
-    "title": "MARKDOWN",
-    "section": "Insert links",
-    "text": "Insert links\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n&lt;https://saraedu.netlify.app/&gt;\nhttps://saraedu.netlify.app/"
+    "objectID": "visualization.html#two-continuous-variables",
+    "href": "visualization.html#two-continuous-variables",
+    "title": "DATA  VISUALIZATION",
+    "section": "Two Continuous Variables",
+    "text": "Two Continuous Variables\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\n\n\nFigure 8"
   },
   {
-    "objectID": "markdown.html#insert-links-1",
-    "href": "markdown.html#insert-links-1",
-    "title": "MARKDOWN",
-    "section": "Insert links",
-    "text": "Insert links\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n[SARA](https://saraedu.netlify.app/)\nSARA"
+    "objectID": "visualization.html#geom-size",
+    "href": "visualization.html#geom-size",
+    "title": "DATA  VISUALIZATION",
+    "section": "Geom Size",
+    "text": "Geom Size\n\nTaskCodeOutput\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(size = 5)\n\n\n\n\n\n\n\n\n\n\n\nFigure 9"
   },
   {
-    "objectID": "markdown.html#add-images",
-    "href": "markdown.html#add-images",
-    "title": "MARKDOWN",
-    "section": "Add images",
-    "text": "Add images\n\nIf image is saved in your computer, ![](add image path here)\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n![](rose.jpg)"
+    "objectID": "visualization.html#geom-shape",
+    "href": "visualization.html#geom-shape",
+    "title": "DATA  VISUALIZATION",
+    "section": "Geom Shape",
+    "text": "Geom Shape\n\nTaskCodeOutput\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(size = 5,\n             shape = 8)\n\n\n\n\n\n\n\n\n\n\n\nFigure 10"
   },
   {
-    "objectID": "markdown.html#add-images-1",
-    "href": "markdown.html#add-images-1",
-    "title": "MARKDOWN",
-    "section": "Add images",
-    "text": "Add images\n\nIf image is taken from the internet, ![](add image link here)\n\n\n\n\n\n![](https://images.unsplash.com/photo-1627130595904-ebeeb6540a93?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+    "objectID": "visualization.html#your-turn-3",
+    "href": "visualization.html#your-turn-3",
+    "title": "DATA  VISUALIZATION",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g, y = flipper_length_mm)) +\n  geom_point(size = 2, shape = 23, color = \"red\", fill = \"gold\")\n\n\n\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "markdown.html#unordered-list",
-    "href": "markdown.html#unordered-list",
-    "title": "MARKDOWN",
-    "section": "Unordered list",
-    "text": "Unordered list\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* Item 1\n* Item 2\n* Item 3\n\nItem 1\nItem 2\nItem 3"
+    "objectID": "visualization.html#plot-a-factor-factor",
+    "href": "visualization.html#plot-a-factor-factor",
+    "title": "DATA  VISUALIZATION",
+    "section": "Plot A Factor & Factor",
+    "text": "Plot A Factor & Factor\n\nTaskCodeOutput\n\n\nSometimes, we want to differentiate values of a factor/category variable on the basis of another factor/category variable.\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = island)) +\n  geom_bar(aes(fill = sex))\n\n\n\n\n\n\n\n\n\n\n\nFigure 11"
   },
   {
-    "objectID": "markdown.html#unordered-list-sub-items",
-    "href": "markdown.html#unordered-list-sub-items",
-    "title": "MARKDOWN",
-    "section": "Unordered list: Sub-items",
-    "text": "Unordered list: Sub-items\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* Main items\n    + Sub-item 1\n    + Sub-item 2\n        - Sub-sub-item 1\n\nMain items\n\nSub-item 1\nSub-item 2\n\nSub-sub-item 1"
+    "objectID": "visualization.html#plot-a-factor-continuous",
+    "href": "visualization.html#plot-a-factor-continuous",
+    "title": "DATA  VISUALIZATION",
+    "section": "Plot A Factor & Continuous",
+    "text": "Plot A Factor & Continuous\n\nTaskCodeOutput\n\n\nSometimes, we want to differentiate values from a continuous variable on the basis of factor/category variables.\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_histogram(aes(fill = sex), color = \"black\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 12"
   },
   {
-    "objectID": "markdown.html#ordered-list",
-    "href": "markdown.html#ordered-list",
-    "title": "MARKDOWN",
-    "section": "Ordered list",
-    "text": "Ordered list\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n1. Eggs\n1. Tea\n1. Fish\n1. Milk\n\nEggs\nTea\nFish\nMilk"
+    "objectID": "visualization.html#a-factor-two-cont.",
+    "href": "visualization.html#a-factor-two-cont.",
+    "title": "DATA  VISUALIZATION",
+    "section": "A Factor & Two Cont.",
+    "text": "A Factor & Two Cont.\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = sex))\n\n\n\n\n\n\n\n\n\n\n\nFigure 13"
   },
   {
-    "objectID": "markdown.html#list",
-    "href": "markdown.html#list",
-    "title": "MARKDOWN",
-    "section": "List",
-    "text": "List\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n(@)  A list whose numbering\n\ncontinues after\n\n(@)  an interruption\n\nA list whose numbering\n\ncontinues after\n\nan interruption"
+    "objectID": "visualization.html#a-factor-two-cont.-1",
+    "href": "visualization.html#a-factor-two-cont.-1",
+    "title": "DATA  VISUALIZATION",
+    "section": "A Factor & Two Cont.",
+    "text": "A Factor & Two Cont.\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species))\n\n\n\n\n\n\n\n\n\n\n\nFigure 14"
   },
   {
-    "objectID": "markdown.html#equations",
-    "href": "markdown.html#equations",
-    "title": "MARKDOWN",
-    "section": "Equations",
-    "text": "Equations\n\nUse $ delimiters for inline math.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nIt is a great equation $E = mc^{2}$\nIt is a great equation \\(E=mc^{2}\\)"
+    "objectID": "visualization.html#write-labels",
+    "href": "visualization.html#write-labels",
+    "title": "DATA  VISUALIZATION",
+    "section": "Write Labels",
+    "text": "Write Labels\n\nTaskCodeOutput\n\n\n\nTitle of the plot\nSubtitle of the plot with more information\nTitle of the x-axis\nTitle of the y-axis\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  )\n\n\n\n\n\n\n\n\n\n\n\nFigure 15"
   },
   {
-    "objectID": "markdown.html#equations-1",
-    "href": "markdown.html#equations-1",
-    "title": "MARKDOWN",
-    "section": "Equations",
-    "text": "Equations\n\nUse $$ delimiters for display math.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nIt is a great equation $$E = mc^{2}$$\nIt is a great equation \\[E=mc^{2}\\]\n\n\n\n\n\n\nLearn more about Latex math expressions"
+    "objectID": "visualization.html#different-shapes",
+    "href": "visualization.html#different-shapes",
+    "title": "DATA  VISUALIZATION",
+    "section": "Different Shapes",
+    "text": "Different Shapes\n\nTaskCodeOutput\n\n\nEach level of the factor/category can be shown using a different shape of different color.\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  )\n\n\n\n\n\n\n\n\n\n\n\nFigure 16"
   },
   {
-    "objectID": "markdown.html#videos",
-    "href": "markdown.html#videos",
-    "title": "MARKDOWN",
-    "section": "Videos",
-    "text": "Videos\n\nYou can include videos in documents using the {{&lt; video &gt;}} short code.\n\n\n\n\n\nCode\n{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}\n\nOutput"
+    "objectID": "visualization.html#various-themes",
+    "href": "visualization.html#various-themes",
+    "title": "DATA  VISUALIZATION",
+    "section": "Various Themes",
+    "text": "Various Themes\n\nTaskCodeOutput\n\n\nSource: ggthemes\n\nlibrary(ggthemes)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_economist()\n\n\n\n\n\n\n\n\n\n\n\nFigure 17"
   },
   {
-    "objectID": "markdown.html#tables",
-    "href": "markdown.html#tables",
-    "title": "MARKDOWN",
-    "section": "Tables",
-    "text": "Tables\n\nMarkdown Syntax\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nOutput\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+    "objectID": "visualization.html#various-themes-1",
+    "href": "visualization.html#various-themes-1",
+    "title": "DATA  VISUALIZATION",
+    "section": "Various Themes",
+    "text": "Various Themes\n\nTaskCodeOutput\n\n\nSource: ggthemes\n\nlibrary(ggthemes)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_solarized_2()\n\n\n\n\n\n\n\n\n\n\n\nFigure 18"
   },
   {
-    "objectID": "markdown.html#your-turn",
-    "href": "markdown.html#your-turn",
-    "title": "MARKDOWN",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n1. What is Quarto used for in RStudio?\n\nPlaying games\nCreating visualizations only\nWriting documents that combine code and text\nInstalling R packages"
+    "objectID": "visualization.html#various-themes-2",
+    "href": "visualization.html#various-themes-2",
+    "title": "DATA  VISUALIZATION",
+    "section": "Various Themes",
+    "text": "Various Themes\n\nTaskCodeOutput\n\n\nSource: ggthemes\n\nlibrary(ggthemes)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_tufte()\n\n\n\n\n\n\n\n\n\n\n\nFigure 19"
   },
   {
-    "objectID": "markdown.html#your-turn-1",
-    "href": "markdown.html#your-turn-1",
-    "title": "MARKDOWN",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n2. What is the default file extension for a Quarto file?\n\n.rmd\n.qmd\n.txt\n.csv"
+    "objectID": "visualization.html#various-themes-3",
+    "href": "visualization.html#various-themes-3",
+    "title": "DATA  VISUALIZATION",
+    "section": "Various Themes",
+    "text": "Various Themes\n\nTaskCodeOutput\n\n\nSource: ggthemes\n\nlibrary(ggthemes)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean()\n\n\n\n\n\n\n\n\n\n\n\nFigure 20"
   },
   {
-    "objectID": "markdown.html#your-turn-2",
-    "href": "markdown.html#your-turn-2",
-    "title": "MARKDOWN",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n3. Which symbol is used to start a code chunk in Quarto?\n\n$$\n//\n```{r}\n--code--"
+    "objectID": "visualization.html#color-palette",
+    "href": "visualization.html#color-palette",
+    "title": "DATA  VISUALIZATION",
+    "section": "Color Palette",
+    "text": "Color Palette"
   },
   {
-    "objectID": "markdown.html#your-turn-3",
-    "href": "markdown.html#your-turn-3",
-    "title": "MARKDOWN",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n4. What does the “Render” button in RStudio do in a Quarto file?\n\nDeletes the file\nSaves the script as a PDF\nConverts the Quarto file into a formatted document (HTML, PDF, etc.)\nCompiles the R packages"
+    "objectID": "visualization.html#color-palette-1",
+    "href": "visualization.html#color-palette-1",
+    "title": "DATA  VISUALIZATION",
+    "section": "Color Palette",
+    "text": "Color Palette\n\nTaskCodeOutput\n\n\nR package ggthemes have function to use color scheme for colorblindness. Know more\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean() +\n  scale_color_colorblind()\n\n\n\n\n\n\n\n\n\n\n\nFigure 21"
   },
   {
-    "objectID": "markdown.html#your-turn-4",
-    "href": "markdown.html#your-turn-4",
-    "title": "MARKDOWN",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\n5. Which of these formats can Quarto generate?\n\nVideo files\nHTML, PDF, Word documents\nMP3 audio\n\nExecutable files"
+    "objectID": "visualization.html#color-palette-2",
+    "href": "visualization.html#color-palette-2",
+    "title": "DATA  VISUALIZATION",
+    "section": "Color Palette",
+    "text": "Color Palette\n\nTaskCodeOutput\n\n\n\nlibrary(RColorBrewer)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean() +\n  scale_color_brewer(palette = \"Dark2\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 22"
   },
   {
-    "objectID": "markdown.html#your-turn-answers",
-    "href": "markdown.html#your-turn-answers",
-    "title": "MARKDOWN",
-    "section": "🤩 Your Turn Answers",
-    "text": "🤩 Your Turn Answers\n\nCorrect answer: C) Writing documents that combine code and text\nCorrect answer: B) .qmd\nCorrect answer: C) ```{r}\nCorrect answer: C) Converts the Quarto file into a formatted document (HTML, PDF, etc.)\nCorrect answer: B) HTML, PDF, Word documents"
+    "objectID": "visualization.html#color-palette-3",
+    "href": "visualization.html#color-palette-3",
+    "title": "DATA  VISUALIZATION",
+    "section": "Color Palette",
+    "text": "Color Palette\n\nTaskCodeOutput\n\n\n\nlibrary(wesanderson)\n\nnames(wes_palettes)\n\n [1] \"BottleRocket1\"     \"BottleRocket2\"     \"Rushmore1\"        \n [4] \"Rushmore\"          \"Royal1\"            \"Royal2\"           \n [7] \"Zissou1\"           \"Zissou1Continuous\" \"Darjeeling1\"      \n[10] \"Darjeeling2\"       \"Chevalier1\"        \"FantasticFox1\"    \n[13] \"Moonrise1\"         \"Moonrise2\"         \"Moonrise3\"        \n[16] \"Cavalcanti1\"       \"GrandBudapest1\"    \"GrandBudapest2\"   \n[19] \"IsleofDogs1\"       \"IsleofDogs2\"       \"FrenchDispatch\"   \n[22] \"AsteroidCity1\"     \"AsteroidCity2\"     \"AsteroidCity3\"    \n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean() +\n  scale_color_manual(values = wes_palette(\"BottleRocket2\", n = 3))\n\n\n\n\n\n\n\n\n\n\n\nFigure 23"
   },
   {
-    "objectID": "markdown.html#your-turn-5",
-    "href": "markdown.html#your-turn-5",
-    "title": "MARKDOWN",
-    "section": "🤯 Your Turn",
-    "text": "🤯 Your Turn\nCreate and render a basic Quarto HTML document with a personal introduction."
+    "objectID": "visualization.html#export-plot",
+    "href": "visualization.html#export-plot",
+    "title": "DATA  VISUALIZATION",
+    "section": "Export Plot",
+    "text": "Export Plot\n\nTaskCodeOutput\n\n\nExport/save plot as pdf, jpg or png file.\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean() +\n  scale_color_manual(values = wes_palette(\"BottleRocket2\", n = 3))\n\nggsave(\"penguins-plot.pdf\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 24"
   },
   {
-    "objectID": "markdown.html#your-turn-answer",
-    "href": "markdown.html#your-turn-answer",
-    "title": "MARKDOWN",
-    "section": "🤩 Your Turn Answer",
-    "text": "🤩 Your Turn Answer"
+    "objectID": "eda.html#download-install",
+    "href": "eda.html#download-install",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "Download & Install",
+    "text": "Download & Install\n\n✅ R Software, https://cloud.r-project.org/\n✅ RStudio IDE, https://posit.co/products/open-source/rstudio/?sid=1\n✅ Quarto, https://quarto.org/docs/get-started/"
   },
   {
-    "objectID": "scales.html#scales-of-measurement",
-    "href": "scales.html#scales-of-measurement",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Scales of Measurement:",
-    "text": "Scales of Measurement:\n\n\nThe scales of measurement are a way to classify data based on their attributes and the mathematical operations that can be performed on them."
+    "objectID": "eda.html#rstudio",
+    "href": "eda.html#rstudio",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "RStudio",
+    "text": "RStudio\n\n✅ Create RStudio Project in your computer\n✅ Create quarto document\n✅ Create folder data & save file penguins.csv"
   },
   {
-    "objectID": "scales.html#scales-of-measurement-1",
-    "href": "scales.html#scales-of-measurement-1",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Scales of Measurement:",
-    "text": "Scales of Measurement:\nThey are classified into four types:\n\nNominal scale.\nOrdinal scale.\nInterval scale.\nRatio scale."
+    "objectID": "eda.html#data-penguins",
+    "href": "eda.html#data-penguins",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "Data: penguins",
+    "text": "Data: penguins\nLive on three island: Biscoe, Dream, & Torgersen.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource: palmerpenguins"
   },
   {
-    "objectID": "scales.html#nominal-scale",
-    "href": "scales.html#nominal-scale",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Nominal Scale",
-    "text": "Nominal Scale\n\nCategorizes data without any order or rank."
+    "objectID": "eda.html#exploratory-data-analysis-eda",
+    "href": "eda.html#exploratory-data-analysis-eda",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "Exploratory Data Analysis (EDA)",
+    "text": "Exploratory Data Analysis (EDA)\n\n\n“how to use visualization and transformation to explore your data in a systematic way”\n\n\n\nSource: R for Data Science (2e)"
   },
   {
-    "objectID": "scales.html#nominal-scale-examples",
-    "href": "scales.html#nominal-scale-examples",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Nominal Scale Examples",
-    "text": "Nominal Scale Examples\n\n\n\nVariable\nExample Values\n\n\n\n\nGender\nMale, Female, Non-binary\n\n\nReligion\nHindu, Muslim, Christian, Sikh, Buddhist\n\n\nMarital Status\nSingle, Married, Divorced, Widowed\n\n\nPolitical Party\nBJP, Congress, AAP, CPI\n\n\nBlood Type\nA, B, AB, O\n\n\nNationality\nIndian, German, Australian, Argentinian\n\n\nColor Names\nRed, Blue, Green, Yellow\n\n\nTypes of Transport\nBus, Train, Bicycle, Car\n\n\nAcademic Discipline\nSociology, Physics, History, Economics"
+    "objectID": "eda.html#step-1-r-packages",
+    "href": "eda.html#step-1-r-packages",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "📦 Step 1: R Packages",
+    "text": "📦 Step 1: R Packages\n\nInstall R Packages only once:\n\n```{r}\ninstall.packages(\"palmerpenguins\") # to get data\ninstall.packages(\"tidyverse\")      # to collection of R pkgs\ninstall.packages(\"skimr\")          # summary of data  \ninstall.packages(\"janitor\")        # data cleaning\n```\n\n\nCall/load R packages\n\n```{r}\nlibrary(palmerpenguins)\nlibrary(tidyverse)\nlibrary(skimr)\nlibrary(janitor)\n```"
   },
   {
-    "objectID": "scales.html#ordinal-scale",
-    "href": "scales.html#ordinal-scale",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Ordinal Scale",
-    "text": "Ordinal Scale\n\nData with a meaningful order but unequal intervals."
+    "objectID": "eda.html#step-2-import-the-dataset",
+    "href": "eda.html#step-2-import-the-dataset",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "📁 Step 2: Import the Dataset",
+    "text": "📁 Step 2: Import the Dataset\nYou can import from CSV, Excel, or other sources.\n\n\n```{r}\nlibrary(readr)\npenguins &lt;- read_csv(\"session-1/practice/data/penguins.csv\", \n    col_types = cols(sex = col_factor(levels = c(\"male\", \n        \"female\"))))\nView(penguins)\n```\n\n\n```{r}\n# Replace with your actual file path\ndata &lt;- read_csv(\"your_dataset.csv\")   \n```"
   },
   {
-    "objectID": "scales.html#ordinal-scale-examples",
-    "href": "scales.html#ordinal-scale-examples",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Ordinal Scale Examples",
-    "text": "Ordinal Scale Examples\n\n\n\n\n\n\n\n\nVariable\nExample Values\nNotes\n\n\n\n\nEducation Level\nPrimary &lt; Secondary &lt; Graduate &lt; Postgraduate\nRank exists, but interval not equal\n\n\nSocioeconomic Status\nLow &lt; Middle &lt; High\nOrdered categories\n\n\nAgreement Level\nStrongly Disagree &lt; Disagree &lt; Neutral &lt; Agree &lt; Strongly Agree\nLikert scale\n\n\nCustomer Satisfaction\nVery Unsatisfied &lt; Unsatisfied &lt; Neutral &lt; Satisfied &lt; Very Satisfied\nCommon in surveys\n\n\nMilitary Ranks\nCaptain &lt; Major &lt; Colonel\nHierarchical but no fixed interval\n\n\nClass Position\nFirst &lt; Second &lt; Third\nRanks exist, differences unknown\n\n\nPain Level (self-reported)\nNo pain &lt; Mild &lt; Moderate &lt; Severe\nOrdered, subjective"
+    "objectID": "eda.html#data-structure",
+    "href": "eda.html#data-structure",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "Data Structure",
+    "text": "Data Structure\n\n\n\n\nSource: R for Data Science (2e)"
   },
   {
-    "objectID": "scales.html#interval-scale",
-    "href": "scales.html#interval-scale",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Interval Scale",
-    "text": "Interval Scale\n\nOrdered data with equal intervals but no true zero point."
+    "objectID": "eda.html#step-3-explore-the-data-structure",
+    "href": "eda.html#step-3-explore-the-data-structure",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "📊 Step 3: Explore the Data Structure",
+    "text": "📊 Step 3: Explore the Data Structure\n\n\n```{r}\ndim(data)          # Dimensions (rows & columns)\n\nnames(data)        # Column names\n\nspec(data)         # columns specifications\n\nhead(data)         # First few rows\n\nglimpse(data)      # Compact structure\n\nstr(data)          # Structure\n```"
   },
   {
-    "objectID": "scales.html#interval-scale-examples",
-    "href": "scales.html#interval-scale-examples",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Interval Scale Examples",
-    "text": "Interval Scale Examples\n\n\n\n\n\n\n\nVariable\nExplanation\n\n\n\n\nTemperature in °C or °F\nThe difference between 20°C and 30°C is the same as between 30°C and 40°C, but 0°C ≠ no temperature.\n\n\nIQ Scores\nAn IQ of 120 is 20 points more than 100, but not “twice as intelligent” as someone with 60.\n\n\nCalendar Years\n2020 and 2025 are 5 years apart, but 0 AD is not the start of time.\n\n\nTime of Day (on a 12-hr or 24-hr clock)\n6 PM is 3 hours after 3 PM, but 0:00 (midnight) is not a true zero.\n\n\nStandardized Test Scores\nE.g., SAT or GRE scores — differences are meaningful, but zero doesn’t mean “no knowledge.”"
+    "objectID": "eda.html#check-data-for",
+    "href": "eda.html#check-data-for",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "Check Data for",
+    "text": "Check Data for\n\n\nMissing values\nDuplicate rows\nInconsistent column names"
   },
   {
-    "objectID": "scales.html#ratio-scale",
-    "href": "scales.html#ratio-scale",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Ratio Scale",
-    "text": "Ratio Scale\n\nOrdered data with equal intervals and a true zero point."
+    "objectID": "eda.html#step-4-transform-clean-the-data",
+    "href": "eda.html#step-4-transform-clean-the-data",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "✅ Step 4: Transform & Clean the Data",
+    "text": "✅ Step 4: Transform & Clean the Data\n\nTransformSummaryMissing Values\n\n\n\n```{r}\nlibrary(readr)\n\npenguins &lt;- read_csv(\"data/penguins.csv\", \n    col_types = cols(sex = col_factor(levels = c(\"male\", \"female\")),\n                     species = col_factor(levels = c(\"Chinstrap\",\n                                                     \"Gentoo\",\n                                                     \"Adelie\")),\n                     island  = col_factor(levels = c(\"Biscoe\",\n                                                     \"Dream\",\n                                                     \"Torgersen\"))\n                     ))\n```\n\n\n\n\n\n```{r}\nsummary(penguins)         #basic summary\n```\n\n\n\n\n```{r}\nsum(is.na(penguins))                 # Total missing values\ncolSums(is.na(penguins))             # Total column wise missing values       \n```"
   },
   {
-    "objectID": "scales.html#ratio-scale-examples",
-    "href": "scales.html#ratio-scale-examples",
-    "title": "SCALES OFMEASUREMENT",
-    "section": "Ratio Scale Examples",
-    "text": "Ratio Scale Examples\n\n\n\n\n\n\n\n\n\nVariable\nExample Values\nTrue Zero?\nNotes\n\n\n\n\nHeight\n160 cm, 170 cm, 180 cm\nYes\n0 cm = no height\n\n\nWeight\n50 kg, 70 kg, 0 kg\nYes\nYou can say 70 kg is twice as heavy as 35 kg\n\n\nIncome\n₹0, ₹10,000, ₹50,000\nYes\n0 = no income\n\n\nAge\n0 years, 25 years, 50 years\nYes\n0 = no age\n\n\nDistance\n0 km, 5 km, 10 km\nYes\n0 = no distance\n\n\nDuration (time)\n0 minutes, 30 minutes, 1 hour\nYes\n0 = no time elapsed\n\n\nNumber of Children\n0, 1, 2, 3\nYes\n0 = no children\n\n\nCalories consumed\n0 kcal, 500 kcal, 2000 kcal\nYes\n0 = no calories\n\n\nMarks or Scores (raw)\n0 to 100\nYes\n0 = no correct answers"
+    "objectID": "eda.html#variation",
+    "href": "eda.html#variation",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "Variation",
+    "text": "Variation\n\n“It is the tendency of the values of a variable to change from measurement to measurement or across different subjects or at different times.”\n“Every variable has its own pattern of variation, which can reveal interesting information about how it varies between measurements on the same observation as well as across observations.”\n\n\n\nSource: R for Data Science (2e)"
+  },
+  {
+    "objectID": "eda.html#variation-types",
+    "href": "eda.html#variation-types",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "Variation Types",
+    "text": "Variation Types\n\nWhat type of variation occurs within my variables?\nWhat type of co-variation occurs between my variables?"
+  },
+  {
+    "objectID": "eda.html#step-5-univariate-analysis",
+    "href": "eda.html#step-5-univariate-analysis",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "📈 Step 5: Univariate Analysis",
+    "text": "📈 Step 5: Univariate Analysis\n\nExplore each variable individually\n\n\nNumerical variablesCategorical variables\n\n\n\n```{r}\nsummary(data$variable)\nhist(data$variable, main=\"Mass Distribution\", col=\"lightblue\")\n```\n\nUse ggplot2 for more control\n\n```{r}\nggplot(penguins, aes(x = body_mass_g)) +\n  geom_histogram(fill = \"skyblue\", bins = 30, color = \"white\") +\n  labs(title = \"Distribution of Body Mass (g)\", x = \"Body Mass (g)\") +\n  theme_minimal()\n```\n\n\n\n\n```{r}\ntable(data$variable)\nbarplot(table(data$variable), col=\"pink\", main=\"Species Count\")\n```\n\nUse ggplot2 for more control\n\n```{r}\nggplot(penguins, aes(x = species)) +\n  geom_bar(fill = \"steelblue\") +\n  labs(title = \"Penguin Species Count\") +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "eda.html#step-6-bivariate-analysis",
+    "href": "eda.html#step-6-bivariate-analysis",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "🔁 Step 6: Bivariate Analysis",
+    "text": "🔁 Step 6: Bivariate Analysis\n\nExplore relationships between variables\n\n\nNumeric vs Numeric:Numeric vs Categorical\n\n\n\n```{r}\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +\n  geom_point(aes(color = species)) +\n  geom_smooth(method = \"lm\", se = FALSE) +\n  labs(title = \"Flipper Length vs Body Mass\") +\n  theme_minimal()\n```\n\n\n\n\n```{r}\nggplot(penguins, aes(x = species, y = body_mass_g, fill = species)) +\n  geom_boxplot() +\n  labs(title = \"Body Mass by Species\") +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "eda.html#step-7-summary-statistics",
+    "href": "eda.html#step-7-summary-statistics",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "📌 Step 7: Summary Statistics",
+    "text": "📌 Step 7: Summary Statistics\n\n\n```{r}\nskimr::skim(data)         # Rich summary\n```"
+  },
+  {
+    "objectID": "eda.html#step-8-outlier-detection",
+    "href": "eda.html#step-8-outlier-detection",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "📉 Step 8: Outlier Detection",
+    "text": "📉 Step 8: Outlier Detection\n\nAn outlier is a data point that differs markedly from the rest of the data.\n\n\n\n\n```{r}\nggplot(penguins, aes(y = body_mass_g, x = species, fill = species)) +\n  geom_boxplot() +\n  labs(title = \"Outliers in Body Mass by Species\") +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "eda.html#step-9-handle-missing-data",
+    "href": "eda.html#step-9-handle-missing-data",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "🧹 Step 9: Handle Missing Data",
+    "text": "🧹 Step 9: Handle Missing Data\n\n(if needed)\n\nFill missing valuesRemove missing values\n\n\n\n```{r}\n# Fill missing values\npenguins$body_mass_g[is.na(penguins$body_mass_g)] &lt;- median(penguins$body_mass_g, na.rm = TRUE)\n\nsummary(penguins$body_mass_g)\n```\n\n\n\n\n```{r}\n# Remove rows with missing data\npenguins_clean &lt;- penguins %&gt;% drop_na()\ndim(penguins_clean)\n```"
+  },
+  {
+    "objectID": "eda.html#step-10-save-cleaned-data",
+    "href": "eda.html#step-10-save-cleaned-data",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "🧾 Step 10: Save Cleaned Data",
+    "text": "🧾 Step 10: Save Cleaned Data\n\n\n```{r}\nwrite.csv(data_clean, \"cleaned_data.csv\")\n```"
+  },
+  {
+    "objectID": "eda.html#learnings",
+    "href": "eda.html#learnings",
+    "title": "EXPLORINGYOUR DATA",
+    "section": "🎯 Learnings",
+    "text": "🎯 Learnings\n\nInstalling R, RStudio, Quarto & R packages.\nImport & export of Data\nView summary & structure of data\nTable & plots to see pattern in data\nTreating missing & outlier values"
+  },
+  {
+    "objectID": "wrangling.html#data-wrangling",
+    "href": "wrangling.html#data-wrangling",
+    "title": "DATAWRANGLING",
+    "section": "Data Wrangling",
+    "text": "Data Wrangling\n\n“data exploration and data manipulation” by Jesse Mostipak\n“tidying and transforming” by Hadley & Garrett"
+  },
+  {
+    "objectID": "wrangling.html#transforming-data",
+    "href": "wrangling.html#transforming-data",
+    "title": "DATAWRANGLING",
+    "section": "Transforming Data",
+    "text": "Transforming Data\n\n“narrowing in on observations of interest …\ncreating new variables that are functions of existing variables and …\ncalculating a set of summary statistics.”\n\n\n\nSource: https://r4ds.had.co.nz/index.html"
+  },
+  {
+    "objectID": "wrangling.html#dplyr-package",
+    "href": "wrangling.html#dplyr-package",
+    "title": "DATAWRANGLING",
+    "section": "dplyr Package",
+    "text": "dplyr Package\n\n“dplyr is a grammar of data manipulation”\n“providing a consistent set of verbs that help you solve the most common data manipulation challenges:”"
+  },
+  {
+    "objectID": "wrangling.html#dplyr-functions",
+    "href": "wrangling.html#dplyr-functions",
+    "title": "DATAWRANGLING",
+    "section": "dplyr Functions:",
+    "text": "dplyr Functions:\n\nfilter()\nselect()\nmutate()\narrange()\nsummarise()\n\n\n\nSource: https://dplyr.tidyverse.org/"
+  },
+  {
+    "objectID": "wrangling.html#filter-function",
+    "href": "wrangling.html#filter-function",
+    "title": "DATAWRANGLING",
+    "section": "filter() Function:",
+    "text": "filter() Function:\n\nPicks cases/observations based on their values."
+  },
+  {
+    "objectID": "wrangling.html#filter-function-1",
+    "href": "wrangling.html#filter-function-1",
+    "title": "DATAWRANGLING",
+    "section": "filter() Function",
+    "text": "filter() Function\n\nTaskCodeOutput\n\n\n\nHow to have a data of only Gentoo penguins?\n\n\n\n\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(countdown)\n\npenguins |&gt; \n  filter(species == \"Gentoo\")\n\n\n\n\n\n# A tibble: 124 × 8\n   species island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Gentoo  Biscoe           46.1          13.2               211        4500\n 2 Gentoo  Biscoe           50            16.3               230        5700\n 3 Gentoo  Biscoe           48.7          14.1               210        4450\n 4 Gentoo  Biscoe           50            15.2               218        5700\n 5 Gentoo  Biscoe           47.6          14.5               215        5400\n 6 Gentoo  Biscoe           46.5          13.5               210        4550\n 7 Gentoo  Biscoe           45.4          14.6               211        4800\n 8 Gentoo  Biscoe           46.7          15.3               219        5200\n 9 Gentoo  Biscoe           43.3          13.4               209        4400\n10 Gentoo  Biscoe           46.8          15.4               215        5150\n# ℹ 114 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "wrangling.html#wait-what-is",
+    "href": "wrangling.html#wait-what-is",
+    "title": "DATAWRANGLING",
+    "section": "Wait! What is |>",
+    "text": "Wait! What is |&gt;\n\nThis is called native pipe operator\n|&gt; let you “pipe” an object forward to a function or call expression\nallowing you to express a sequence of operations that transform an object.\nctrl + shift + m = |&gt;\n\n\n\nRead more about pipes here"
+  },
+  {
+    "objectID": "wrangling.html#filter-function-2",
+    "href": "wrangling.html#filter-function-2",
+    "title": "DATAWRANGLING",
+    "section": "filter() Function",
+    "text": "filter() Function\n\nTaskCodeOutput\n\n\n\nHow to have a data of penguins of bill length more than 43 mm?\n\n\n\n\n\npenguins |&gt; \n  filter(bill_length_mm &gt; 43)\n\n\n\n\n\n# A tibble: 188 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           46            21.5               194        4200\n 2 Adelie  Dream               44.1          19.7               196        4400\n 3 Adelie  Torgersen           45.8          18.9               197        4150\n 4 Adelie  Dream               43.2          18.5               192        4100\n 5 Adelie  Biscoe              43.2          19                 197        4775\n 6 Adelie  Biscoe              45.6          20.3               191        4600\n 7 Adelie  Torgersen           44.1          18                 210        4000\n 8 Adelie  Torgersen           43.1          19.2               197        3500\n 9 Gentoo  Biscoe              46.1          13.2               211        4500\n10 Gentoo  Biscoe              50            16.3               230        5700\n# ℹ 178 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "wrangling.html#your-turn",
+    "href": "wrangling.html#your-turn",
+    "title": "DATAWRANGLING",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\n\nHow to have a data of only Adele penguins?\nHow to have a data of penguins of bill depth more than 10 mm?\n\n\n\n\n# question number 1\npenguins |&gt; \n  filter(species == \"Adelie\")\n\n# question number 2\npenguins |&gt; \n  filter(bill_depth_mm &gt; 10)\n\n\n\n\n\n# A tibble: 152 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 142 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n# A tibble: 342 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           36.7          19.3               193        3450\n 5 Adelie  Torgersen           39.3          20.6               190        3650\n 6 Adelie  Torgersen           38.9          17.8               181        3625\n 7 Adelie  Torgersen           39.2          19.6               195        4675\n 8 Adelie  Torgersen           34.1          18.1               193        3475\n 9 Adelie  Torgersen           42            20.2               190        4250\n10 Adelie  Torgersen           37.8          17.1               186        3300\n# ℹ 332 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "wrangling.html#filter-function-3",
+    "href": "wrangling.html#filter-function-3",
+    "title": "DATAWRANGLING",
+    "section": "filter() Function",
+    "text": "filter() Function\n\nTaskCodeOutput\n\n\n\nHow to have a data of Gentoo penguins of bill length more than 50 mm?\n\n\n\n\npenguins |&gt; \n  filter(species == \"Gentoo\",\n         bill_length_mm &gt; 50)\n\n\n\n\n\n# A tibble: 22 × 8\n   species island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Gentoo  Biscoe           50.2          14.3               218        5700\n 2 Gentoo  Biscoe           59.6          17                 230        6050\n 3 Gentoo  Biscoe           50.5          15.9               222        5550\n 4 Gentoo  Biscoe           50.5          15.9               225        5400\n 5 Gentoo  Biscoe           50.1          15                 225        5000\n 6 Gentoo  Biscoe           50.4          15.3               224        5550\n 7 Gentoo  Biscoe           54.3          15.7               231        5650\n 8 Gentoo  Biscoe           50.7          15                 223        5550\n 9 Gentoo  Biscoe           51.1          16.3               220        6000\n10 Gentoo  Biscoe           52.5          15.6               221        5450\n# ℹ 12 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "wrangling.html#filter-function-4",
+    "href": "wrangling.html#filter-function-4",
+    "title": "DATAWRANGLING",
+    "section": "filter() Function",
+    "text": "filter() Function\n\nTaskCodeOutput\n\n\n\nHow to have a data of non-Gentoo penguins of bill length more than 50 mm and weight more than 4 kg?\n\n\n\n\npenguins |&gt; \n  filter(species != \"Gentoo\",\n         bill_length_mm &gt; 50,\n         body_mass_g &gt; 4000)\n\n\n\n\n\n# A tibble: 11 × 8\n   species   island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;     &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Chinstrap Dream            52            18.1               201        4050\n 2 Chinstrap Dream            50.5          19.6               201        4050\n 3 Chinstrap Dream            52            19                 197        4150\n 4 Chinstrap Dream            52.8          20                 205        4550\n 5 Chinstrap Dream            54.2          20.8               201        4300\n 6 Chinstrap Dream            51            18.8               203        4100\n 7 Chinstrap Dream            52            20.7               210        4800\n 8 Chinstrap Dream            53.5          19.9               205        4500\n 9 Chinstrap Dream            50.8          18.5               201        4450\n10 Chinstrap Dream            50.7          19.7               203        4050\n11 Chinstrap Dream            50.8          19                 210        4100\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "wrangling.html#your-turn-1",
+    "href": "wrangling.html#your-turn-1",
+    "title": "DATAWRANGLING",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nHow to have a data of penguins only from the Dream island which have bill depth more than 7 mm and weight more than 3 kg?\n\n\n\npenguins |&gt; \n  filter(island == \"Dream\",\n         bill_depth_mm &gt; 7,\n         body_mass_g &gt; 3000)\n\n\n\n\n\n# A tibble: 118 × 8\n   species island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Dream            39.5          16.7               178        3250\n 2 Adelie  Dream            37.2          18.1               178        3900\n 3 Adelie  Dream            39.5          17.8               188        3300\n 4 Adelie  Dream            40.9          18.9               184        3900\n 5 Adelie  Dream            36.4          17                 195        3325\n 6 Adelie  Dream            39.2          21.1               196        4150\n 7 Adelie  Dream            38.8          20                 190        3950\n 8 Adelie  Dream            42.2          18.5               180        3550\n 9 Adelie  Dream            37.6          19.3               181        3300\n10 Adelie  Dream            39.8          19.1               184        4650\n# ℹ 108 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "wrangling.html#select-function",
+    "href": "wrangling.html#select-function",
+    "title": "DATAWRANGLING",
+    "section": "select() Function:",
+    "text": "select() Function:\n\nPicks variables/columns based on their names."
+  },
+  {
+    "objectID": "wrangling.html#select-function-1",
+    "href": "wrangling.html#select-function-1",
+    "title": "DATAWRANGLING",
+    "section": "select() Function",
+    "text": "select() Function\n\nTaskCodeOutput\n\n\n\nHow to keep only species variable in the data?\n\n\n\n\npenguins |&gt; \n  select(species)\n\n\n\n\n\n# A tibble: 344 × 1\n   species\n   &lt;fct&gt;  \n 1 Adelie \n 2 Adelie \n 3 Adelie \n 4 Adelie \n 5 Adelie \n 6 Adelie \n 7 Adelie \n 8 Adelie \n 9 Adelie \n10 Adelie \n# ℹ 334 more rows"
+  },
+  {
+    "objectID": "wrangling.html#select-function-2",
+    "href": "wrangling.html#select-function-2",
+    "title": "DATAWRANGLING",
+    "section": "select() Function",
+    "text": "select() Function\n\nTaskCodeOutput\n\n\n\nHow to keep only bill related variables in the data?\n\n\n\n\npenguins |&gt; \n  select(bill_length_mm, bill_depth_mm)\n\n\n\n\n\n# A tibble: 344 × 2\n   bill_length_mm bill_depth_mm\n            &lt;dbl&gt;         &lt;dbl&gt;\n 1           39.1          18.7\n 2           39.5          17.4\n 3           40.3          18  \n 4           NA            NA  \n 5           36.7          19.3\n 6           39.3          20.6\n 7           38.9          17.8\n 8           39.2          19.6\n 9           34.1          18.1\n10           42            20.2\n# ℹ 334 more rows"
+  },
+  {
+    "objectID": "wrangling.html#your-turn-2",
+    "href": "wrangling.html#your-turn-2",
+    "title": "DATAWRANGLING",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nHow to have a data of variables sex, year, island and flipper length?\n\n\n\npenguins |&gt; \n  select(sex, year, island, flipper_length_mm)\n\n\n\n\n\n# A tibble: 344 × 4\n   sex     year island    flipper_length_mm\n   &lt;fct&gt;  &lt;int&gt; &lt;fct&gt;                 &lt;int&gt;\n 1 male    2007 Torgersen               181\n 2 female  2007 Torgersen               186\n 3 female  2007 Torgersen               195\n 4 &lt;NA&gt;    2007 Torgersen                NA\n 5 female  2007 Torgersen               193\n 6 male    2007 Torgersen               190\n 7 female  2007 Torgersen               181\n 8 male    2007 Torgersen               195\n 9 &lt;NA&gt;    2007 Torgersen               193\n10 &lt;NA&gt;    2007 Torgersen               190\n# ℹ 334 more rows\n\n\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "wrangling.html#tips-for-variable-selection",
+    "href": "wrangling.html#tips-for-variable-selection",
+    "title": "DATAWRANGLING",
+    "section": "💡 Tips for variable selection",
+    "text": "💡 Tips for variable selection\n\nUse names() function to see the exact names and the order of the variables.\nUse : operator to select the range of variables.\n\n\npenguins |&gt; \n  select(island : flipper_length_mm)\n\n\nUse location value of the variable.\n\n\npenguins |&gt; \n  select(3 : 7)\n\n\nUse - operator to not to select the range of variables.\n\n\n# results: hide\n\npenguins |&gt; \n  select(-c(island : flipper_length_mm))\n\n# A tibble: 344 × 4\n   species body_mass_g sex     year\n   &lt;fct&gt;         &lt;int&gt; &lt;fct&gt;  &lt;int&gt;\n 1 Adelie         3750 male    2007\n 2 Adelie         3800 female  2007\n 3 Adelie         3250 female  2007\n 4 Adelie           NA &lt;NA&gt;    2007\n 5 Adelie         3450 female  2007\n 6 Adelie         3650 male    2007\n 7 Adelie         3625 female  2007\n 8 Adelie         4675 male    2007\n 9 Adelie         3475 &lt;NA&gt;    2007\n10 Adelie         4250 &lt;NA&gt;    2007\n# ℹ 334 more rows"
+  },
+  {
+    "objectID": "wrangling.html#your-turn-3",
+    "href": "wrangling.html#your-turn-3",
+    "title": "DATAWRANGLING",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nHow to have a data of variables from location first to fifth but without the variable island?\n\n\n\npenguins |&gt; \n  select(c(1, 3:5))\n\n\n\n\n\n# A tibble: 344 × 4\n   species bill_length_mm bill_depth_mm flipper_length_mm\n   &lt;fct&gt;            &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;\n 1 Adelie            39.1          18.7               181\n 2 Adelie            39.5          17.4               186\n 3 Adelie            40.3          18                 195\n 4 Adelie            NA            NA                  NA\n 5 Adelie            36.7          19.3               193\n 6 Adelie            39.3          20.6               190\n 7 Adelie            38.9          17.8               181\n 8 Adelie            39.2          19.6               195\n 9 Adelie            34.1          18.1               193\n10 Adelie            42            20.2               190\n# ℹ 334 more rows\n\n\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "wrangling.html#mutate-function",
+    "href": "wrangling.html#mutate-function",
+    "title": "DATAWRANGLING",
+    "section": "mutate() Function:",
+    "text": "mutate() Function:\n\nAdds new variables that are functions of existing variables."
+  },
+  {
+    "objectID": "wrangling.html#mutate-function-1",
+    "href": "wrangling.html#mutate-function-1",
+    "title": "DATAWRANGLING",
+    "section": "mutate() Function",
+    "text": "mutate() Function\n\nTaskCodeOutput\n\n\n\nHow to convert body mass of penguins from grams to kilograms?\n\n\n\n\npenguins |&gt; \n  select(body_mass_g) |&gt; \n  mutate(body_mass_kg = body_mass_g / 1000)\n\n\n\n\n\n# A tibble: 344 × 2\n   body_mass_g body_mass_kg\n         &lt;int&gt;        &lt;dbl&gt;\n 1        3750         3.75\n 2        3800         3.8 \n 3        3250         3.25\n 4          NA        NA   \n 5        3450         3.45\n 6        3650         3.65\n 7        3625         3.62\n 8        4675         4.68\n 9        3475         3.48\n10        4250         4.25\n# ℹ 334 more rows"
+  },
+  {
+    "objectID": "wrangling.html#mutate-function-2",
+    "href": "wrangling.html#mutate-function-2",
+    "title": "DATAWRANGLING",
+    "section": "mutate() Function",
+    "text": "mutate() Function\n\nTaskCodeOutput\n\n\n\nHow to measure the penguin’s bill size using length and depth?\n\n\n\n\npenguins |&gt; \n  mutate(bill_size = bill_length_mm * bill_depth_mm) |&gt; \n  select(bill_size)\n\n\n\n\n\n# A tibble: 344 × 1\n   bill_size\n       &lt;dbl&gt;\n 1      731.\n 2      687.\n 3      725.\n 4       NA \n 5      708.\n 6      810.\n 7      692.\n 8      768.\n 9      617.\n10      848.\n# ℹ 334 more rows"
+  },
+  {
+    "objectID": "wrangling.html#your-turn-4",
+    "href": "wrangling.html#your-turn-4",
+    "title": "DATAWRANGLING",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nHow to convert the bill dimensions from mm to cm?\n\n\n\npenguins |&gt; \n  select(bill_length_mm, bill_depth_mm) |&gt; \n  mutate(bill_length_cm = bill_length_mm / 10, bill_depth_mm / 10)\n\n\n\n\n\n# A tibble: 344 × 4\n   bill_length_mm bill_depth_mm bill_length_cm `bill_depth_mm/10`\n            &lt;dbl&gt;         &lt;dbl&gt;          &lt;dbl&gt;              &lt;dbl&gt;\n 1           39.1          18.7           3.91               1.87\n 2           39.5          17.4           3.95               1.74\n 3           40.3          18             4.03               1.8 \n 4           NA            NA            NA                 NA   \n 5           36.7          19.3           3.67               1.93\n 6           39.3          20.6           3.93               2.06\n 7           38.9          17.8           3.89               1.78\n 8           39.2          19.6           3.92               1.96\n 9           34.1          18.1           3.41               1.81\n10           42            20.2           4.2                2.02\n# ℹ 334 more rows\n\n\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "wrangling.html#arrange-function",
+    "href": "wrangling.html#arrange-function",
+    "title": "DATAWRANGLING",
+    "section": "arrange() Function:",
+    "text": "arrange() Function:\n\nChanges the ordering of the rows."
+  },
+  {
+    "objectID": "wrangling.html#arrange-function-1",
+    "href": "wrangling.html#arrange-function-1",
+    "title": "DATAWRANGLING",
+    "section": "arrange() Function",
+    "text": "arrange() Function\n\nTaskCodeOutput\n\n\n\nHow to arrange data as per the bill length of the penguins?\n\n\n\n\npenguins |&gt; \n  arrange(bill_length_mm) #default is ascending order\n\n\n\n\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Dream               32.1          15.5               188        3050\n 2 Adelie  Dream               33.1          16.1               178        2900\n 3 Adelie  Torgersen           33.5          19                 190        3600\n 4 Adelie  Dream               34            17.1               185        3400\n 5 Adelie  Torgersen           34.1          18.1               193        3475\n 6 Adelie  Torgersen           34.4          18.4               184        3325\n 7 Adelie  Biscoe              34.5          18.1               187        2900\n 8 Adelie  Torgersen           34.6          21.1               198        4400\n 9 Adelie  Torgersen           34.6          17.2               189        3200\n10 Adelie  Biscoe              35            17.9               190        3450\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "wrangling.html#arrange-function-2",
+    "href": "wrangling.html#arrange-function-2",
+    "title": "DATAWRANGLING",
+    "section": "arrange() Function",
+    "text": "arrange() Function\n\nTaskCodeOutput\n\n\n\nHow to see five penguins of the least bill length?\n\n\n\n\npenguins |&gt; \n  arrange(bill_length_mm) |&gt; \n  head(5) \n\n#tail function to see the bottom of the data\n\n\n\n\n\n# A tibble: 5 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Dream               32.1          15.5               188        3050\n2 Adelie  Dream               33.1          16.1               178        2900\n3 Adelie  Torgersen           33.5          19                 190        3600\n4 Adelie  Dream               34            17.1               185        3400\n5 Adelie  Torgersen           34.1          18.1               193        3475\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "wrangling.html#your-turn-5",
+    "href": "wrangling.html#your-turn-5",
+    "title": "DATAWRANGLING",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\n\nHow to see five penguins of the highest bill length?\n\n\n\n\npenguins |&gt; \n  arrange(bill_length_mm) |&gt; \n  tail(5)\n\n\n\n\n\n# A tibble: 5 × 8\n  species   island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;     &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Gentoo    Biscoe              55.9          17                 228        5600\n2 Chinstrap Dream               58            17.8               181        3700\n3 Gentoo    Biscoe              59.6          17                 230        6050\n4 Adelie    Torgersen           NA            NA                  NA          NA\n5 Gentoo    Biscoe              NA            NA                  NA          NA\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "wrangling.html#summarise-function",
+    "href": "wrangling.html#summarise-function",
+    "title": "DATAWRANGLING",
+    "section": "summarise() Function:",
+    "text": "summarise() Function:\n\nReduces multiple values down to a single summary."
+  },
+  {
+    "objectID": "wrangling.html#summarise-function-1",
+    "href": "wrangling.html#summarise-function-1",
+    "title": "DATAWRANGLING",
+    "section": "summarise() Function",
+    "text": "summarise() Function\n\nTaskCodeOutput\n\n\n\nWhat is the mean bill length of penguins?\n\n\n\n\npenguins |&gt; \n  summarise(mean(bill_length_mm))\n\n\n\n\n\n# A tibble: 1 × 1\n  `mean(bill_length_mm)`\n                   &lt;dbl&gt;\n1                     NA"
+  },
+  {
+    "objectID": "wrangling.html#summarise-function-2",
+    "href": "wrangling.html#summarise-function-2",
+    "title": "DATAWRANGLING",
+    "section": "summarise() Function",
+    "text": "summarise() Function\n\nTaskCodeOutput\n\n\n\nWhat is the mean bill length of penguins after removing the missing values?\n\n\n\n\npenguins |&gt;\n  drop_na() |&gt; \n  summarise(mean(bill_length_mm))\n\n\n\n\n\n# A tibble: 1 × 1\n  `mean(bill_length_mm)`\n                   &lt;dbl&gt;\n1                   44.0"
+  },
+  {
+    "objectID": "wrangling.html#summarise-function-3",
+    "href": "wrangling.html#summarise-function-3",
+    "title": "DATAWRANGLING",
+    "section": "summarise() Function",
+    "text": "summarise() Function\n\nTaskCodeOutput\n\n\n\nWhat is the species wise mean bill length of penguins?\n\n\n\n\npenguins |&gt;\n  drop_na() |&gt; \n  group_by(species) |&gt; \n  summarise(mean(bill_length_mm))\n\n\n\n\n\n# A tibble: 3 × 2\n  species   `mean(bill_length_mm)`\n  &lt;fct&gt;                      &lt;dbl&gt;\n1 Adelie                      38.8\n2 Chinstrap                   48.8\n3 Gentoo                      47.6"
+  },
+  {
+    "objectID": "wrangling.html#summarise-function-4",
+    "href": "wrangling.html#summarise-function-4",
+    "title": "DATAWRANGLING",
+    "section": "summarise() Function",
+    "text": "summarise() Function\n\nTaskCodeOutput\n\n\n\nWhat is the species wise mean bill length of penguins and total number of penguins in each specie?\n\n\n\n\npenguins |&gt;\n  drop_na() |&gt; \n  group_by(species) |&gt; \n  summarise(mean(bill_length_mm),\n            n = n())\n\n# n() function to know the number of observations in the current group\n\n\n\n\n\n# A tibble: 3 × 3\n  species   `mean(bill_length_mm)`     n\n  &lt;fct&gt;                      &lt;dbl&gt; &lt;int&gt;\n1 Adelie                      38.8   146\n2 Chinstrap                   48.8    68\n3 Gentoo                      47.6   119"
+  },
+  {
+    "objectID": "wrangling.html#your-turn-6",
+    "href": "wrangling.html#your-turn-6",
+    "title": "DATAWRANGLING",
+    "section": "🧠 YOUR TURN",
+    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nWho are of more weight male or female penguins?\n\n\n\npenguins |&gt;\n  drop_na() |&gt; \n  group_by(sex) |&gt; \n  summarise(mean(body_mass_g),\n            n = n())\n\n\n\n\n\n# A tibble: 2 × 3\n  sex    `mean(body_mass_g)`     n\n  &lt;fct&gt;                &lt;dbl&gt; &lt;int&gt;\n1 female               3862.   165\n2 male                 4546.   168\n\n\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "talk-jnu.html#ai",
+    "href": "talk-jnu.html#ai",
+    "title": "Space for Marginalized Communities in AI",
+    "section": "AI",
+    "text": "AI\n\n\n“systems that can learn, predict, and automate decisions.”\n\n\n\n\n“AI is not neutral — it reflects power structures, values, and inequalities of its creators.”"
+  },
+  {
+    "objectID": "talk-jnu.html#ai-is-increasingly-used-in",
+    "href": "talk-jnu.html#ai-is-increasingly-used-in",
+    "title": "Space for Marginalized Communities in AI",
+    "section": "AI is increasingly used in:",
+    "text": "AI is increasingly used in:\n\nHiring decisions\nPolicing and surveillance\nAccess to loans, education, and welfare\nHealthcare"
+  },
+  {
+    "objectID": "talk-jnu.html#dr.-joy-buolamwini",
+    "href": "talk-jnu.html#dr.-joy-buolamwini",
+    "title": "Space for Marginalized Communities in AI",
+    "section": "Dr. Joy Buolamwini",
+    "text": "Dr. Joy Buolamwini\n\n\n\n“coded gaze: a reflection of the priorities, preferences, and prejudices of those who have the power to shape technology”\n“current systems already fail marginalized groups, leading to false arrests, biased policing, and flawed medical diagnoses”\n\n\n\n\n\n\nSource: Stanford University"
+  },
+  {
+    "objectID": "talk-jnu.html#dr.-joy-buolamwini-1",
+    "href": "talk-jnu.html#dr.-joy-buolamwini-1",
+    "title": "Space for Marginalized Communities in AI",
+    "section": "Dr. Joy Buolamwini",
+    "text": "Dr. Joy Buolamwini\n\n\n\n“existential risk comes not from hypothetical AI super intelligence, but from current human decisions”\n“explore intellectual terrain beyond computer science”\n\n\n\n\n\n\nSource: Stanford University"
+  },
+  {
+    "objectID": "talk-jnu.html#sara-sonipat",
+    "href": "talk-jnu.html#sara-sonipat",
+    "title": "Space for Marginalized Communities in AI",
+    "section": "SARA, Sonipat",
+    "text": "SARA, Sonipat\n\n\n\nRemove fear of coding\nHow to include data science tools in your research\n\n\n\n\n\n\nSource: Course Details"
+  },
+  {
+    "objectID": "talk-jnu.html#thank-you",
+    "href": "talk-jnu.html#thank-you",
+    "title": "Space for Marginalized Communities in AI",
+    "section": "Thank You!",
+    "text": "Thank You!\n\n\n\n\nSource of title slide image: Engin Akyurt"
   },
   {
     "objectID": "r-intro.html#data-science-project",
@@ -1351,655 +1505,557 @@
     "text": "🤩 Your Turn\n\nAdd two numbers: 15 + 27, 15 + 27\nCreate a sequence of numbers from 1 to 10, seq(1, 10)\nCreate a sequence from 5 to 50, increasing by 5, seq(5, 50, by = 5)\nFind the square root of 81, sqrt(81)\nRound the number 3.786 to 2 decimal places, round(3.786, 2)"
   },
   {
-    "objectID": "talk-jnu.html#ai",
-    "href": "talk-jnu.html#ai",
-    "title": "Space for Marginalized Communities in AI",
-    "section": "AI",
-    "text": "AI\n\n\n“systems that can learn, predict, and automate decisions.”\n\n\n\n\n“AI is not neutral — it reflects power structures, values, and inequalities of its creators.”"
+    "objectID": "scales.html#scales-of-measurement",
+    "href": "scales.html#scales-of-measurement",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Scales of Measurement:",
+    "text": "Scales of Measurement:\n\n\nThe scales of measurement are a way to classify data based on their attributes and the mathematical operations that can be performed on them."
   },
   {
-    "objectID": "talk-jnu.html#ai-is-increasingly-used-in",
-    "href": "talk-jnu.html#ai-is-increasingly-used-in",
-    "title": "Space for Marginalized Communities in AI",
-    "section": "AI is increasingly used in:",
-    "text": "AI is increasingly used in:\n\nHiring decisions\nPolicing and surveillance\nAccess to loans, education, and welfare\nHealthcare"
+    "objectID": "scales.html#scales-of-measurement-1",
+    "href": "scales.html#scales-of-measurement-1",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Scales of Measurement:",
+    "text": "Scales of Measurement:\nThey are classified into four types:\n\nNominal scale.\nOrdinal scale.\nInterval scale.\nRatio scale."
   },
   {
-    "objectID": "talk-jnu.html#dr.-joy-buolamwini",
-    "href": "talk-jnu.html#dr.-joy-buolamwini",
-    "title": "Space for Marginalized Communities in AI",
-    "section": "Dr. Joy Buolamwini",
-    "text": "Dr. Joy Buolamwini\n\n\n\n“coded gaze: a reflection of the priorities, preferences, and prejudices of those who have the power to shape technology”\n“current systems already fail marginalized groups, leading to false arrests, biased policing, and flawed medical diagnoses”\n\n\n\n\n\n\nSource: Stanford University"
+    "objectID": "scales.html#nominal-scale",
+    "href": "scales.html#nominal-scale",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Nominal Scale",
+    "text": "Nominal Scale\n\nCategorizes data without any order or rank."
   },
   {
-    "objectID": "talk-jnu.html#dr.-joy-buolamwini-1",
-    "href": "talk-jnu.html#dr.-joy-buolamwini-1",
-    "title": "Space for Marginalized Communities in AI",
-    "section": "Dr. Joy Buolamwini",
-    "text": "Dr. Joy Buolamwini\n\n\n\n“existential risk comes not from hypothetical AI super intelligence, but from current human decisions”\n“explore intellectual terrain beyond computer science”\n\n\n\n\n\n\nSource: Stanford University"
+    "objectID": "scales.html#nominal-scale-examples",
+    "href": "scales.html#nominal-scale-examples",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Nominal Scale Examples",
+    "text": "Nominal Scale Examples\n\n\n\nVariable\nExample Values\n\n\n\n\nGender\nMale, Female, Non-binary\n\n\nReligion\nHindu, Muslim, Christian, Sikh, Buddhist\n\n\nMarital Status\nSingle, Married, Divorced, Widowed\n\n\nPolitical Party\nBJP, Congress, AAP, CPI\n\n\nBlood Type\nA, B, AB, O\n\n\nNationality\nIndian, German, Australian, Argentinian\n\n\nColor Names\nRed, Blue, Green, Yellow\n\n\nTypes of Transport\nBus, Train, Bicycle, Car\n\n\nAcademic Discipline\nSociology, Physics, History, Economics"
   },
   {
-    "objectID": "talk-jnu.html#sara-sonipat",
-    "href": "talk-jnu.html#sara-sonipat",
-    "title": "Space for Marginalized Communities in AI",
-    "section": "SARA, Sonipat",
-    "text": "SARA, Sonipat\n\n\n\nRemove fear of coding\nHow to include data science tools in your research\n\n\n\n\n\n\nSource: Course Details"
+    "objectID": "scales.html#ordinal-scale",
+    "href": "scales.html#ordinal-scale",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Ordinal Scale",
+    "text": "Ordinal Scale\n\nData with a meaningful order but unequal intervals."
   },
   {
-    "objectID": "talk-jnu.html#thank-you",
-    "href": "talk-jnu.html#thank-you",
-    "title": "Space for Marginalized Communities in AI",
+    "objectID": "scales.html#ordinal-scale-examples",
+    "href": "scales.html#ordinal-scale-examples",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Ordinal Scale Examples",
+    "text": "Ordinal Scale Examples\n\n\n\n\n\n\n\n\nVariable\nExample Values\nNotes\n\n\n\n\nEducation Level\nPrimary &lt; Secondary &lt; Graduate &lt; Postgraduate\nRank exists, but interval not equal\n\n\nSocioeconomic Status\nLow &lt; Middle &lt; High\nOrdered categories\n\n\nAgreement Level\nStrongly Disagree &lt; Disagree &lt; Neutral &lt; Agree &lt; Strongly Agree\nLikert scale\n\n\nCustomer Satisfaction\nVery Unsatisfied &lt; Unsatisfied &lt; Neutral &lt; Satisfied &lt; Very Satisfied\nCommon in surveys\n\n\nMilitary Ranks\nCaptain &lt; Major &lt; Colonel\nHierarchical but no fixed interval\n\n\nClass Position\nFirst &lt; Second &lt; Third\nRanks exist, differences unknown\n\n\nPain Level (self-reported)\nNo pain &lt; Mild &lt; Moderate &lt; Severe\nOrdered, subjective"
+  },
+  {
+    "objectID": "scales.html#interval-scale",
+    "href": "scales.html#interval-scale",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Interval Scale",
+    "text": "Interval Scale\n\nOrdered data with equal intervals but no true zero point."
+  },
+  {
+    "objectID": "scales.html#interval-scale-examples",
+    "href": "scales.html#interval-scale-examples",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Interval Scale Examples",
+    "text": "Interval Scale Examples\n\n\n\n\n\n\n\nVariable\nExplanation\n\n\n\n\nTemperature in °C or °F\nThe difference between 20°C and 30°C is the same as between 30°C and 40°C, but 0°C ≠ no temperature.\n\n\nIQ Scores\nAn IQ of 120 is 20 points more than 100, but not “twice as intelligent” as someone with 60.\n\n\nCalendar Years\n2020 and 2025 are 5 years apart, but 0 AD is not the start of time.\n\n\nTime of Day (on a 12-hr or 24-hr clock)\n6 PM is 3 hours after 3 PM, but 0:00 (midnight) is not a true zero.\n\n\nStandardized Test Scores\nE.g., SAT or GRE scores — differences are meaningful, but zero doesn’t mean “no knowledge.”"
+  },
+  {
+    "objectID": "scales.html#ratio-scale",
+    "href": "scales.html#ratio-scale",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Ratio Scale",
+    "text": "Ratio Scale\n\nOrdered data with equal intervals and a true zero point."
+  },
+  {
+    "objectID": "scales.html#ratio-scale-examples",
+    "href": "scales.html#ratio-scale-examples",
+    "title": "SCALES OFMEASUREMENT",
+    "section": "Ratio Scale Examples",
+    "text": "Ratio Scale Examples\n\n\n\n\n\n\n\n\n\nVariable\nExample Values\nTrue Zero?\nNotes\n\n\n\n\nHeight\n160 cm, 170 cm, 180 cm\nYes\n0 cm = no height\n\n\nWeight\n50 kg, 70 kg, 0 kg\nYes\nYou can say 70 kg is twice as heavy as 35 kg\n\n\nIncome\n₹0, ₹10,000, ₹50,000\nYes\n0 = no income\n\n\nAge\n0 years, 25 years, 50 years\nYes\n0 = no age\n\n\nDistance\n0 km, 5 km, 10 km\nYes\n0 = no distance\n\n\nDuration (time)\n0 minutes, 30 minutes, 1 hour\nYes\n0 = no time elapsed\n\n\nNumber of Children\n0, 1, 2, 3\nYes\n0 = no children\n\n\nCalories consumed\n0 kcal, 500 kcal, 2000 kcal\nYes\n0 = no calories\n\n\nMarks or Scores (raw)\n0 to 100\nYes\n0 = no correct answers"
+  },
+  {
+    "objectID": "markdown.html#text-formatting",
+    "href": "markdown.html#text-formatting",
+    "title": "MARKDOWN",
+    "section": "Text formatting",
+    "text": "Text formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nnormal\nnormal\n\n\n*italics*\nitalics\n\n\n**bold**\nbold\n\n\n***bold italics***\nbold italics\n\n\n\n\n\nSource: Quarto guide"
+  },
+  {
+    "objectID": "markdown.html#text-formatting-1",
+    "href": "markdown.html#text-formatting-1",
+    "title": "MARKDOWN",
+    "section": "Text formatting",
+    "text": "Text formatting\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nsuperscript^2^\nsuperscript2\n\n\nsubscript~2~\nsubscript2\n\n\n~~strike through~~\nstrike through\n\n\n`verbatim code`\nverbatim code\n\n\n\n\n\nSource: Quarto guide"
+  },
+  {
+    "objectID": "markdown.html#headings",
+    "href": "markdown.html#headings",
+    "title": "MARKDOWN",
+    "section": "Headings",
+    "text": "Headings\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+  },
+  {
+    "objectID": "markdown.html#insert-links",
+    "href": "markdown.html#insert-links",
+    "title": "MARKDOWN",
+    "section": "Insert links",
+    "text": "Insert links\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n&lt;https://saraedu.netlify.app/&gt;\nhttps://saraedu.netlify.app/"
+  },
+  {
+    "objectID": "markdown.html#insert-links-1",
+    "href": "markdown.html#insert-links-1",
+    "title": "MARKDOWN",
+    "section": "Insert links",
+    "text": "Insert links\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n[SARA](https://saraedu.netlify.app/)\nSARA"
+  },
+  {
+    "objectID": "markdown.html#add-images",
+    "href": "markdown.html#add-images",
+    "title": "MARKDOWN",
+    "section": "Add images",
+    "text": "Add images\n\nIf image is saved in your computer, ![](add image path here)\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n![](rose.jpg)"
+  },
+  {
+    "objectID": "markdown.html#add-images-1",
+    "href": "markdown.html#add-images-1",
+    "title": "MARKDOWN",
+    "section": "Add images",
+    "text": "Add images\n\nIf image is taken from the internet, ![](add image link here)\n\n\n\n\n\n![](https://images.unsplash.com/photo-1627130595904-ebeeb6540a93?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+  },
+  {
+    "objectID": "markdown.html#unordered-list",
+    "href": "markdown.html#unordered-list",
+    "title": "MARKDOWN",
+    "section": "Unordered list",
+    "text": "Unordered list\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* Item 1\n* Item 2\n* Item 3\n\nItem 1\nItem 2\nItem 3"
+  },
+  {
+    "objectID": "markdown.html#unordered-list-sub-items",
+    "href": "markdown.html#unordered-list-sub-items",
+    "title": "MARKDOWN",
+    "section": "Unordered list: Sub-items",
+    "text": "Unordered list: Sub-items\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* Main items\n    + Sub-item 1\n    + Sub-item 2\n        - Sub-sub-item 1\n\nMain items\n\nSub-item 1\nSub-item 2\n\nSub-sub-item 1"
+  },
+  {
+    "objectID": "markdown.html#ordered-list",
+    "href": "markdown.html#ordered-list",
+    "title": "MARKDOWN",
+    "section": "Ordered list",
+    "text": "Ordered list\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n1. Eggs\n1. Tea\n1. Fish\n1. Milk\n\nEggs\nTea\nFish\nMilk"
+  },
+  {
+    "objectID": "markdown.html#list",
+    "href": "markdown.html#list",
+    "title": "MARKDOWN",
+    "section": "List",
+    "text": "List\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n(@)  A list whose numbering\n\ncontinues after\n\n(@)  an interruption\n\nA list whose numbering\n\ncontinues after\n\nan interruption"
+  },
+  {
+    "objectID": "markdown.html#equations",
+    "href": "markdown.html#equations",
+    "title": "MARKDOWN",
+    "section": "Equations",
+    "text": "Equations\n\nUse $ delimiters for inline math.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nIt is a great equation $E = mc^{2}$\nIt is a great equation \\(E=mc^{2}\\)"
+  },
+  {
+    "objectID": "markdown.html#equations-1",
+    "href": "markdown.html#equations-1",
+    "title": "MARKDOWN",
+    "section": "Equations",
+    "text": "Equations\n\nUse $$ delimiters for display math.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nIt is a great equation $$E = mc^{2}$$\nIt is a great equation \\[E=mc^{2}\\]\n\n\n\n\n\n\nLearn more about Latex math expressions"
+  },
+  {
+    "objectID": "markdown.html#videos",
+    "href": "markdown.html#videos",
+    "title": "MARKDOWN",
+    "section": "Videos",
+    "text": "Videos\n\nYou can include videos in documents using the {{&lt; video &gt;}} short code.\n\n\n\n\n\nCode\n{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}\n\nOutput"
+  },
+  {
+    "objectID": "markdown.html#tables",
+    "href": "markdown.html#tables",
+    "title": "MARKDOWN",
+    "section": "Tables",
+    "text": "Tables\n\nMarkdown Syntax\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nOutput\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+  },
+  {
+    "objectID": "markdown.html#your-turn",
+    "href": "markdown.html#your-turn",
+    "title": "MARKDOWN",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n1. What is Quarto used for in RStudio?\n\nPlaying games\nCreating visualizations only\nWriting documents that combine code and text\nInstalling R packages"
+  },
+  {
+    "objectID": "markdown.html#your-turn-1",
+    "href": "markdown.html#your-turn-1",
+    "title": "MARKDOWN",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n2. What is the default file extension for a Quarto file?\n\n.rmd\n.qmd\n.txt\n.csv"
+  },
+  {
+    "objectID": "markdown.html#your-turn-2",
+    "href": "markdown.html#your-turn-2",
+    "title": "MARKDOWN",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n3. Which symbol is used to start a code chunk in Quarto?\n\n$$\n//\n```{r}\n--code--"
+  },
+  {
+    "objectID": "markdown.html#your-turn-3",
+    "href": "markdown.html#your-turn-3",
+    "title": "MARKDOWN",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n4. What does the “Render” button in RStudio do in a Quarto file?\n\nDeletes the file\nSaves the script as a PDF\nConverts the Quarto file into a formatted document (HTML, PDF, etc.)\nCompiles the R packages"
+  },
+  {
+    "objectID": "markdown.html#your-turn-4",
+    "href": "markdown.html#your-turn-4",
+    "title": "MARKDOWN",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\n5. Which of these formats can Quarto generate?\n\nVideo files\nHTML, PDF, Word documents\nMP3 audio\n\nExecutable files"
+  },
+  {
+    "objectID": "markdown.html#your-turn-answers",
+    "href": "markdown.html#your-turn-answers",
+    "title": "MARKDOWN",
+    "section": "🤩 Your Turn Answers",
+    "text": "🤩 Your Turn Answers\n\nCorrect answer: C) Writing documents that combine code and text\nCorrect answer: B) .qmd\nCorrect answer: C) ```{r}\nCorrect answer: C) Converts the Quarto file into a formatted document (HTML, PDF, etc.)\nCorrect answer: B) HTML, PDF, Word documents"
+  },
+  {
+    "objectID": "markdown.html#your-turn-5",
+    "href": "markdown.html#your-turn-5",
+    "title": "MARKDOWN",
+    "section": "🤯 Your Turn",
+    "text": "🤯 Your Turn\nCreate and render a basic Quarto HTML document with a personal introduction."
+  },
+  {
+    "objectID": "markdown.html#your-turn-answer",
+    "href": "markdown.html#your-turn-answer",
+    "title": "MARKDOWN",
+    "section": "🤩 Your Turn Answer",
+    "text": "🤩 Your Turn Answer"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": " for Beginners",
+    "section": "",
+    "text": "View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session",
+    "href": "index.html#session",
+    "title": " for Beginners",
+    "section": "1 Session",
+    "text": "1 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-1",
+    "href": "index.html#session-1",
+    "title": " for Beginners",
+    "section": "2 Session",
+    "text": "2 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-2",
+    "href": "index.html#session-2",
+    "title": " for Beginners",
+    "section": "3 Session",
+    "text": "3 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-3",
+    "href": "index.html#session-3",
+    "title": " for Beginners",
+    "section": "4 Session",
+    "text": "4 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-4",
+    "href": "index.html#session-4",
+    "title": " for Beginners",
+    "section": "5 Session",
+    "text": "5 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-5",
+    "href": "index.html#session-5",
+    "title": " for Beginners",
+    "section": "6 Session",
+    "text": "6 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-6",
+    "href": "index.html#session-6",
+    "title": " for Beginners",
+    "section": "7 Session",
+    "text": "7 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-7",
+    "href": "index.html#session-7",
+    "title": " for Beginners",
+    "section": "8 Session",
+    "text": "8 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-8",
+    "href": "index.html#session-8",
+    "title": " for Beginners",
+    "section": "9 Session",
+    "text": "9 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-9",
+    "href": "index.html#session-9",
+    "title": " for Beginners",
+    "section": "10 Session",
+    "text": "10 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-10",
+    "href": "index.html#session-10",
+    "title": " for Beginners",
+    "section": "11 Session",
+    "text": "11 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "index.html#session-11",
+    "href": "index.html#session-11",
+    "title": " for Beginners",
+    "section": "12 Session",
+    "text": "12 Session\n    View slides in full screen"
+  },
+  {
+    "objectID": "quarto.html#section-1",
+    "href": "quarto.html#section-1",
+    "title": "QUARTO",
+    "section": "",
+    "text": "Quarto"
+  },
+  {
+    "objectID": "quarto.html#quarto-is-the-next-generation-of-r-markdown",
+    "href": "quarto.html#quarto-is-the-next-generation-of-r-markdown",
+    "title": "QUARTO",
+    "section": "Quarto is the next generation of R Markdown",
+    "text": "Quarto is the next generation of R Markdown\n\n\n\n\n\n  \n\n\n\n\n\nRead more here From R Markdown to Quarto"
+  },
+  {
+    "objectID": "quarto.html#quarto",
+    "href": "quarto.html#quarto",
+    "title": "QUARTO",
+    "section": "Quarto",
+    "text": "Quarto\n\n“An open-source scientific and technical publishing system”\n\n\nQuarto can produce a wide variety of output formats:\n\n Articles & Reports\n Presentations\n Interactive Docs\n Websites\n Books\n\n\n\n\nSource: Quarto website"
+  },
+  {
+    "objectID": "quarto.html#analyze.-share.-reproduce.",
+    "href": "quarto.html#analyze.-share.-reproduce.",
+    "title": "QUARTO",
+    "section": "Analyze. Share. Reproduce.",
+    "text": "Analyze. Share. Reproduce."
+  },
+  {
+    "objectID": "quarto.html#download-quarto",
+    "href": "quarto.html#download-quarto",
+    "title": "QUARTO",
+    "section": "Download Quarto",
+    "text": "Download Quarto"
+  },
+  {
+    "objectID": "quarto.html#get-started-choose-ide",
+    "href": "quarto.html#get-started-choose-ide",
+    "title": "QUARTO",
+    "section": "Get started: Choose IDE",
+    "text": "Get started: Choose IDE"
+  },
+  {
+    "objectID": "quarto.html#lets-create-quarto-file",
+    "href": "quarto.html#lets-create-quarto-file",
+    "title": "QUARTO",
+    "section": "Let’s Create Quarto File",
+    "text": "Let’s Create Quarto File"
+  },
+  {
+    "objectID": "quarto.html#create-a-new-quarto-document",
+    "href": "quarto.html#create-a-new-quarto-document",
+    "title": "QUARTO",
+    "section": "Create a new Quarto document",
+    "text": "Create a new Quarto document"
+  },
+  {
+    "objectID": "quarto.html#file-rightarrow-new-file-rightarrow-quarto-document",
+    "href": "quarto.html#file-rightarrow-new-file-rightarrow-quarto-document",
+    "title": "QUARTO",
+    "section": "File \\(\\rightarrow\\) New file \\(\\rightarrow\\) Quarto document",
+    "text": "File \\(\\rightarrow\\) New file \\(\\rightarrow\\) Quarto document"
+  },
+  {
+    "objectID": "quarto.html#new-quarto-document",
+    "href": "quarto.html#new-quarto-document",
+    "title": "QUARTO",
+    "section": "New Quarto document",
+    "text": "New Quarto document"
+  },
+  {
+    "objectID": "quarto.html#new-quarto-document-1",
+    "href": "quarto.html#new-quarto-document-1",
+    "title": "QUARTO",
+    "section": "New Quarto document",
+    "text": "New Quarto document"
+  },
+  {
+    "objectID": "quarto.html#new-quarto-document-2",
+    "href": "quarto.html#new-quarto-document-2",
+    "title": "QUARTO",
+    "section": "New Quarto document",
+    "text": "New Quarto document"
+  },
+  {
+    "objectID": "quarto.html#new-quarto-document-3",
+    "href": "quarto.html#new-quarto-document-3",
+    "title": "QUARTO",
+    "section": "New Quarto document",
+    "text": "New Quarto document"
+  },
+  {
+    "objectID": "quarto.html#new-quarto-document-4",
+    "href": "quarto.html#new-quarto-document-4",
+    "title": "QUARTO",
+    "section": "New Quarto document",
+    "text": "New Quarto document"
+  },
+  {
+    "objectID": "quarto.html#new-quarto-document-5",
+    "href": "quarto.html#new-quarto-document-5",
+    "title": "QUARTO",
+    "section": "New Quarto document",
+    "text": "New Quarto document"
+  },
+  {
+    "objectID": "quarto.html#new-quarto-document-6",
+    "href": "quarto.html#new-quarto-document-6",
+    "title": "QUARTO",
+    "section": "New Quarto document",
+    "text": "New Quarto document"
+  },
+  {
+    "objectID": "quarto.html#new-quarto-document-7",
+    "href": "quarto.html#new-quarto-document-7",
+    "title": "QUARTO",
+    "section": "New Quarto document",
+    "text": "New Quarto document"
+  },
+  {
+    "objectID": "quarto.html#save-quarto-document",
+    "href": "quarto.html#save-quarto-document",
+    "title": "QUARTO",
+    "section": "Save Quarto document",
+    "text": "Save Quarto document"
+  },
+  {
+    "objectID": "quarto.html#save-quarto-document-1",
+    "href": "quarto.html#save-quarto-document-1",
+    "title": "QUARTO",
+    "section": "Save Quarto document",
+    "text": "Save Quarto document"
+  },
+  {
+    "objectID": "quarto.html#process-when-you-render-the-quarto-document",
+    "href": "quarto.html#process-when-you-render-the-quarto-document",
+    "title": "QUARTO",
+    "section": "Process When You Render the Quarto Document",
+    "text": "Process When You Render the Quarto Document\n\nQuarto sends the .qmd file to knitr, which executes all of the code chunks and creates a new markdown (.md) document which includes the code and its output. The markdown file generated by knitr is then processed by pandoc, which is responsible for creating the finished file."
+  },
+  {
+    "objectID": "quarto.html#process-when-you-render-quarto",
+    "href": "quarto.html#process-when-you-render-quarto",
+    "title": "QUARTO",
+    "section": "Process When You Render Quarto",
+    "text": "Process When You Render Quarto\n\n\n\n\nSource: Artwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio::Conf(2022). Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "quarto.html#source-editor-visual-editor",
+    "href": "quarto.html#source-editor-visual-editor",
+    "title": "QUARTO",
+    "section": "Source editor & Visual editor",
+    "text": "Source editor & Visual editor"
+  },
+  {
+    "objectID": "quarto.html#visual-editor",
+    "href": "quarto.html#visual-editor",
+    "title": "QUARTO",
+    "section": "Visual editor",
+    "text": "Visual editor"
+  },
+  {
+    "objectID": "quarto.html#visual-editor-1",
+    "href": "quarto.html#visual-editor-1",
+    "title": "QUARTO",
+    "section": "Visual editor",
+    "text": "Visual editor"
+  },
+  {
+    "objectID": "quarto.html#visual-editor-2",
+    "href": "quarto.html#visual-editor-2",
+    "title": "QUARTO",
+    "section": "Visual editor",
+    "text": "Visual editor"
+  },
+  {
+    "objectID": "quarto.html#source-editor",
+    "href": "quarto.html#source-editor",
+    "title": "QUARTO",
+    "section": "Source editor",
+    "text": "Source editor"
+  },
+  {
+    "objectID": "thanks.html#section",
+    "href": "thanks.html#section",
+    "title": "THANKSCEREMONY",
+    "section": "",
+    "text": "GYAN JYOTI SAVITRIBAI PHULE (1831-1897)🌺 🙏🏽 🌼\n\n\n\n\n\n\n\n\n\n\n\n\n\nMATA RAMABAI AMBEDKAR (1898-1935)🌺 🙏🏽 🌼\n\n\n\nSavitribai Ramabai (SARA) Institute of Data Science"
+  },
+  {
+    "objectID": "thanks.html#event-overview",
+    "href": "thanks.html#event-overview",
+    "title": "THANKSCEREMONY",
+    "section": "Event Overview",
+    "text": "Event Overview\n\nOpen to Everyone\nParticipants\n\n12 registered.\n09 attended.\n\n30-35 hours of teaching data science."
+  },
+  {
+    "objectID": "thanks.html#international-guest-speaker",
+    "href": "thanks.html#international-guest-speaker",
+    "title": "THANKSCEREMONY",
+    "section": "International Guest Speaker 🇩🇪🇦🇺🇦🇷🇮🇳",
+    "text": "International Guest Speaker 🇩🇪🇦🇺🇦🇷🇮🇳"
+  },
+  {
+    "objectID": "thanks.html#five-sara-scholarship",
+    "href": "thanks.html#five-sara-scholarship",
+    "title": "THANKSCEREMONY",
+    "section": "Five SARA Scholarship",
+    "text": "Five SARA Scholarship"
+  },
+  {
+    "objectID": "thanks.html#section-5",
+    "href": "thanks.html#section-5",
+    "title": "THANKSCEREMONY",
+    "section": "",
+    "text": "The Ambedkar Educational Society Sonipat"
+  },
+  {
+    "objectID": "thanks.html#support-sara",
+    "href": "thanks.html#support-sara",
+    "title": "THANKSCEREMONY",
+    "section": "Support SARA",
+    "text": "Support SARA\n\n\n\nTeach at SARA.\nDonate to SARA."
+  },
+  {
+    "objectID": "thanks.html#thank-you",
+    "href": "thanks.html#thank-you",
+    "title": "THANKSCEREMONY",
     "section": "Thank You!",
-    "text": "Thank You!\n\n\n\n\nSource of title slide image: Engin Akyurt"
-  },
-  {
-    "objectID": "wrangling.html#data-wrangling",
-    "href": "wrangling.html#data-wrangling",
-    "title": "DATAWRANGLING",
-    "section": "Data Wrangling",
-    "text": "Data Wrangling\n\n“data exploration and data manipulation” by Jesse Mostipak\n“tidying and transforming” by Hadley & Garrett"
-  },
-  {
-    "objectID": "wrangling.html#transforming-data",
-    "href": "wrangling.html#transforming-data",
-    "title": "DATAWRANGLING",
-    "section": "Transforming Data",
-    "text": "Transforming Data\n\n“narrowing in on observations of interest …\ncreating new variables that are functions of existing variables and …\ncalculating a set of summary statistics.”\n\n\n\nSource: https://r4ds.had.co.nz/index.html"
-  },
-  {
-    "objectID": "wrangling.html#dplyr-package",
-    "href": "wrangling.html#dplyr-package",
-    "title": "DATAWRANGLING",
-    "section": "dplyr Package",
-    "text": "dplyr Package\n\n“dplyr is a grammar of data manipulation”\n“providing a consistent set of verbs that help you solve the most common data manipulation challenges:”"
-  },
-  {
-    "objectID": "wrangling.html#dplyr-functions",
-    "href": "wrangling.html#dplyr-functions",
-    "title": "DATAWRANGLING",
-    "section": "dplyr Functions:",
-    "text": "dplyr Functions:\n\nfilter()\nselect()\nmutate()\narrange()\nsummarise()\n\n\n\nSource: https://dplyr.tidyverse.org/"
-  },
-  {
-    "objectID": "wrangling.html#filter-function",
-    "href": "wrangling.html#filter-function",
-    "title": "DATAWRANGLING",
-    "section": "filter() Function:",
-    "text": "filter() Function:\n\nPicks cases/observations based on their values."
-  },
-  {
-    "objectID": "wrangling.html#filter-function-1",
-    "href": "wrangling.html#filter-function-1",
-    "title": "DATAWRANGLING",
-    "section": "filter() Function",
-    "text": "filter() Function\n\nTaskCodeOutput\n\n\n\nHow to have a data of only Gentoo penguins?\n\n\n\n\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\nlibrary(countdown)\n\npenguins |&gt; \n  filter(species == \"Gentoo\")\n\n\n\n\n\n# A tibble: 124 × 8\n   species island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Gentoo  Biscoe           46.1          13.2               211        4500\n 2 Gentoo  Biscoe           50            16.3               230        5700\n 3 Gentoo  Biscoe           48.7          14.1               210        4450\n 4 Gentoo  Biscoe           50            15.2               218        5700\n 5 Gentoo  Biscoe           47.6          14.5               215        5400\n 6 Gentoo  Biscoe           46.5          13.5               210        4550\n 7 Gentoo  Biscoe           45.4          14.6               211        4800\n 8 Gentoo  Biscoe           46.7          15.3               219        5200\n 9 Gentoo  Biscoe           43.3          13.4               209        4400\n10 Gentoo  Biscoe           46.8          15.4               215        5150\n# ℹ 114 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
-  },
-  {
-    "objectID": "wrangling.html#wait-what-is",
-    "href": "wrangling.html#wait-what-is",
-    "title": "DATAWRANGLING",
-    "section": "Wait! What is |>",
-    "text": "Wait! What is |&gt;\n\nThis is called native pipe operator\n|&gt; let you “pipe” an object forward to a function or call expression\nallowing you to express a sequence of operations that transform an object.\nctrl + shift + m = |&gt;\n\n\n\nRead more about pipes here"
-  },
-  {
-    "objectID": "wrangling.html#filter-function-2",
-    "href": "wrangling.html#filter-function-2",
-    "title": "DATAWRANGLING",
-    "section": "filter() Function",
-    "text": "filter() Function\n\nTaskCodeOutput\n\n\n\nHow to have a data of penguins of bill length more than 43 mm?\n\n\n\n\n\npenguins |&gt; \n  filter(bill_length_mm &gt; 43)\n\n\n\n\n\n# A tibble: 188 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           46            21.5               194        4200\n 2 Adelie  Dream               44.1          19.7               196        4400\n 3 Adelie  Torgersen           45.8          18.9               197        4150\n 4 Adelie  Dream               43.2          18.5               192        4100\n 5 Adelie  Biscoe              43.2          19                 197        4775\n 6 Adelie  Biscoe              45.6          20.3               191        4600\n 7 Adelie  Torgersen           44.1          18                 210        4000\n 8 Adelie  Torgersen           43.1          19.2               197        3500\n 9 Gentoo  Biscoe              46.1          13.2               211        4500\n10 Gentoo  Biscoe              50            16.3               230        5700\n# ℹ 178 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
-  },
-  {
-    "objectID": "wrangling.html#your-turn",
-    "href": "wrangling.html#your-turn",
-    "title": "DATAWRANGLING",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\n\nHow to have a data of only Adele penguins?\nHow to have a data of penguins of bill depth more than 10 mm?\n\n\n\n\n# question number 1\npenguins |&gt; \n  filter(species == \"Adelie\")\n\n# question number 2\npenguins |&gt; \n  filter(bill_depth_mm &gt; 10)\n\n\n\n\n\n# A tibble: 152 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 142 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n# A tibble: 342 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           36.7          19.3               193        3450\n 5 Adelie  Torgersen           39.3          20.6               190        3650\n 6 Adelie  Torgersen           38.9          17.8               181        3625\n 7 Adelie  Torgersen           39.2          19.6               195        4675\n 8 Adelie  Torgersen           34.1          18.1               193        3475\n 9 Adelie  Torgersen           42            20.2               190        4250\n10 Adelie  Torgersen           37.8          17.1               186        3300\n# ℹ 332 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "wrangling.html#filter-function-3",
-    "href": "wrangling.html#filter-function-3",
-    "title": "DATAWRANGLING",
-    "section": "filter() Function",
-    "text": "filter() Function\n\nTaskCodeOutput\n\n\n\nHow to have a data of Gentoo penguins of bill length more than 50 mm?\n\n\n\n\npenguins |&gt; \n  filter(species == \"Gentoo\",\n         bill_length_mm &gt; 50)\n\n\n\n\n\n# A tibble: 22 × 8\n   species island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Gentoo  Biscoe           50.2          14.3               218        5700\n 2 Gentoo  Biscoe           59.6          17                 230        6050\n 3 Gentoo  Biscoe           50.5          15.9               222        5550\n 4 Gentoo  Biscoe           50.5          15.9               225        5400\n 5 Gentoo  Biscoe           50.1          15                 225        5000\n 6 Gentoo  Biscoe           50.4          15.3               224        5550\n 7 Gentoo  Biscoe           54.3          15.7               231        5650\n 8 Gentoo  Biscoe           50.7          15                 223        5550\n 9 Gentoo  Biscoe           51.1          16.3               220        6000\n10 Gentoo  Biscoe           52.5          15.6               221        5450\n# ℹ 12 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
-  },
-  {
-    "objectID": "wrangling.html#filter-function-4",
-    "href": "wrangling.html#filter-function-4",
-    "title": "DATAWRANGLING",
-    "section": "filter() Function",
-    "text": "filter() Function\n\nTaskCodeOutput\n\n\n\nHow to have a data of non-Gentoo penguins of bill length more than 50 mm and weight more than 4 kg?\n\n\n\n\npenguins |&gt; \n  filter(species != \"Gentoo\",\n         bill_length_mm &gt; 50,\n         body_mass_g &gt; 4000)\n\n\n\n\n\n# A tibble: 11 × 8\n   species   island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;     &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Chinstrap Dream            52            18.1               201        4050\n 2 Chinstrap Dream            50.5          19.6               201        4050\n 3 Chinstrap Dream            52            19                 197        4150\n 4 Chinstrap Dream            52.8          20                 205        4550\n 5 Chinstrap Dream            54.2          20.8               201        4300\n 6 Chinstrap Dream            51            18.8               203        4100\n 7 Chinstrap Dream            52            20.7               210        4800\n 8 Chinstrap Dream            53.5          19.9               205        4500\n 9 Chinstrap Dream            50.8          18.5               201        4450\n10 Chinstrap Dream            50.7          19.7               203        4050\n11 Chinstrap Dream            50.8          19                 210        4100\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
-  },
-  {
-    "objectID": "wrangling.html#your-turn-1",
-    "href": "wrangling.html#your-turn-1",
-    "title": "DATAWRANGLING",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nHow to have a data of penguins only from the Dream island which have bill depth more than 7 mm and weight more than 3 kg?\n\n\n\npenguins |&gt; \n  filter(island == \"Dream\",\n         bill_depth_mm &gt; 7,\n         body_mass_g &gt; 3000)\n\n\n\n\n\n# A tibble: 118 × 8\n   species island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Dream            39.5          16.7               178        3250\n 2 Adelie  Dream            37.2          18.1               178        3900\n 3 Adelie  Dream            39.5          17.8               188        3300\n 4 Adelie  Dream            40.9          18.9               184        3900\n 5 Adelie  Dream            36.4          17                 195        3325\n 6 Adelie  Dream            39.2          21.1               196        4150\n 7 Adelie  Dream            38.8          20                 190        3950\n 8 Adelie  Dream            42.2          18.5               180        3550\n 9 Adelie  Dream            37.6          19.3               181        3300\n10 Adelie  Dream            39.8          19.1               184        4650\n# ℹ 108 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\n\n\n\n\n−+\n07:00"
-  },
-  {
-    "objectID": "wrangling.html#select-function",
-    "href": "wrangling.html#select-function",
-    "title": "DATAWRANGLING",
-    "section": "select() Function:",
-    "text": "select() Function:\n\nPicks variables/columns based on their names."
-  },
-  {
-    "objectID": "wrangling.html#select-function-1",
-    "href": "wrangling.html#select-function-1",
-    "title": "DATAWRANGLING",
-    "section": "select() Function",
-    "text": "select() Function\n\nTaskCodeOutput\n\n\n\nHow to keep only species variable in the data?\n\n\n\n\npenguins |&gt; \n  select(species)\n\n\n\n\n\n# A tibble: 344 × 1\n   species\n   &lt;fct&gt;  \n 1 Adelie \n 2 Adelie \n 3 Adelie \n 4 Adelie \n 5 Adelie \n 6 Adelie \n 7 Adelie \n 8 Adelie \n 9 Adelie \n10 Adelie \n# ℹ 334 more rows"
-  },
-  {
-    "objectID": "wrangling.html#select-function-2",
-    "href": "wrangling.html#select-function-2",
-    "title": "DATAWRANGLING",
-    "section": "select() Function",
-    "text": "select() Function\n\nTaskCodeOutput\n\n\n\nHow to keep only bill related variables in the data?\n\n\n\n\npenguins |&gt; \n  select(bill_length_mm, bill_depth_mm)\n\n\n\n\n\n# A tibble: 344 × 2\n   bill_length_mm bill_depth_mm\n            &lt;dbl&gt;         &lt;dbl&gt;\n 1           39.1          18.7\n 2           39.5          17.4\n 3           40.3          18  \n 4           NA            NA  \n 5           36.7          19.3\n 6           39.3          20.6\n 7           38.9          17.8\n 8           39.2          19.6\n 9           34.1          18.1\n10           42            20.2\n# ℹ 334 more rows"
-  },
-  {
-    "objectID": "wrangling.html#your-turn-2",
-    "href": "wrangling.html#your-turn-2",
-    "title": "DATAWRANGLING",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nHow to have a data of variables sex, year, island and flipper length?\n\n\n\npenguins |&gt; \n  select(sex, year, island, flipper_length_mm)\n\n\n\n\n\n# A tibble: 344 × 4\n   sex     year island    flipper_length_mm\n   &lt;fct&gt;  &lt;int&gt; &lt;fct&gt;                 &lt;int&gt;\n 1 male    2007 Torgersen               181\n 2 female  2007 Torgersen               186\n 3 female  2007 Torgersen               195\n 4 &lt;NA&gt;    2007 Torgersen                NA\n 5 female  2007 Torgersen               193\n 6 male    2007 Torgersen               190\n 7 female  2007 Torgersen               181\n 8 male    2007 Torgersen               195\n 9 &lt;NA&gt;    2007 Torgersen               193\n10 &lt;NA&gt;    2007 Torgersen               190\n# ℹ 334 more rows\n\n\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "wrangling.html#tips-for-variable-selection",
-    "href": "wrangling.html#tips-for-variable-selection",
-    "title": "DATAWRANGLING",
-    "section": "💡 Tips for variable selection",
-    "text": "💡 Tips for variable selection\n\nUse names() function to see the exact names and the order of the variables.\nUse : operator to select the range of variables.\n\n\npenguins |&gt; \n  select(island : flipper_length_mm)\n\n\nUse location value of the variable.\n\n\npenguins |&gt; \n  select(3 : 7)\n\n\nUse - operator to not to select the range of variables.\n\n\n# results: hide\n\npenguins |&gt; \n  select(-c(island : flipper_length_mm))\n\n# A tibble: 344 × 4\n   species body_mass_g sex     year\n   &lt;fct&gt;         &lt;int&gt; &lt;fct&gt;  &lt;int&gt;\n 1 Adelie         3750 male    2007\n 2 Adelie         3800 female  2007\n 3 Adelie         3250 female  2007\n 4 Adelie           NA &lt;NA&gt;    2007\n 5 Adelie         3450 female  2007\n 6 Adelie         3650 male    2007\n 7 Adelie         3625 female  2007\n 8 Adelie         4675 male    2007\n 9 Adelie         3475 &lt;NA&gt;    2007\n10 Adelie         4250 &lt;NA&gt;    2007\n# ℹ 334 more rows"
-  },
-  {
-    "objectID": "wrangling.html#your-turn-3",
-    "href": "wrangling.html#your-turn-3",
-    "title": "DATAWRANGLING",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nHow to have a data of variables from location first to fifth but without the variable island?\n\n\n\npenguins |&gt; \n  select(c(1, 3:5))\n\n\n\n\n\n# A tibble: 344 × 4\n   species bill_length_mm bill_depth_mm flipper_length_mm\n   &lt;fct&gt;            &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;\n 1 Adelie            39.1          18.7               181\n 2 Adelie            39.5          17.4               186\n 3 Adelie            40.3          18                 195\n 4 Adelie            NA            NA                  NA\n 5 Adelie            36.7          19.3               193\n 6 Adelie            39.3          20.6               190\n 7 Adelie            38.9          17.8               181\n 8 Adelie            39.2          19.6               195\n 9 Adelie            34.1          18.1               193\n10 Adelie            42            20.2               190\n# ℹ 334 more rows\n\n\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "wrangling.html#mutate-function",
-    "href": "wrangling.html#mutate-function",
-    "title": "DATAWRANGLING",
-    "section": "mutate() Function:",
-    "text": "mutate() Function:\n\nAdds new variables that are functions of existing variables."
-  },
-  {
-    "objectID": "wrangling.html#mutate-function-1",
-    "href": "wrangling.html#mutate-function-1",
-    "title": "DATAWRANGLING",
-    "section": "mutate() Function",
-    "text": "mutate() Function\n\nTaskCodeOutput\n\n\n\nHow to convert body mass of penguins from grams to kilograms?\n\n\n\n\npenguins |&gt; \n  select(body_mass_g) |&gt; \n  mutate(body_mass_kg = body_mass_g / 1000)\n\n\n\n\n\n# A tibble: 344 × 2\n   body_mass_g body_mass_kg\n         &lt;int&gt;        &lt;dbl&gt;\n 1        3750         3.75\n 2        3800         3.8 \n 3        3250         3.25\n 4          NA        NA   \n 5        3450         3.45\n 6        3650         3.65\n 7        3625         3.62\n 8        4675         4.68\n 9        3475         3.48\n10        4250         4.25\n# ℹ 334 more rows"
-  },
-  {
-    "objectID": "wrangling.html#mutate-function-2",
-    "href": "wrangling.html#mutate-function-2",
-    "title": "DATAWRANGLING",
-    "section": "mutate() Function",
-    "text": "mutate() Function\n\nTaskCodeOutput\n\n\n\nHow to measure the penguin’s bill size using length and depth?\n\n\n\n\npenguins |&gt; \n  mutate(bill_size = bill_length_mm * bill_depth_mm) |&gt; \n  select(bill_size)\n\n\n\n\n\n# A tibble: 344 × 1\n   bill_size\n       &lt;dbl&gt;\n 1      731.\n 2      687.\n 3      725.\n 4       NA \n 5      708.\n 6      810.\n 7      692.\n 8      768.\n 9      617.\n10      848.\n# ℹ 334 more rows"
-  },
-  {
-    "objectID": "wrangling.html#your-turn-4",
-    "href": "wrangling.html#your-turn-4",
-    "title": "DATAWRANGLING",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nHow to convert the bill dimensions from mm to cm?\n\n\n\npenguins |&gt; \n  select(bill_length_mm, bill_depth_mm) |&gt; \n  mutate(bill_length_cm = bill_length_mm / 10, bill_depth_mm / 10)\n\n\n\n\n\n# A tibble: 344 × 4\n   bill_length_mm bill_depth_mm bill_length_cm `bill_depth_mm/10`\n            &lt;dbl&gt;         &lt;dbl&gt;          &lt;dbl&gt;              &lt;dbl&gt;\n 1           39.1          18.7           3.91               1.87\n 2           39.5          17.4           3.95               1.74\n 3           40.3          18             4.03               1.8 \n 4           NA            NA            NA                 NA   \n 5           36.7          19.3           3.67               1.93\n 6           39.3          20.6           3.93               2.06\n 7           38.9          17.8           3.89               1.78\n 8           39.2          19.6           3.92               1.96\n 9           34.1          18.1           3.41               1.81\n10           42            20.2           4.2                2.02\n# ℹ 334 more rows\n\n\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "wrangling.html#arrange-function",
-    "href": "wrangling.html#arrange-function",
-    "title": "DATAWRANGLING",
-    "section": "arrange() Function:",
-    "text": "arrange() Function:\n\nChanges the ordering of the rows."
-  },
-  {
-    "objectID": "wrangling.html#arrange-function-1",
-    "href": "wrangling.html#arrange-function-1",
-    "title": "DATAWRANGLING",
-    "section": "arrange() Function",
-    "text": "arrange() Function\n\nTaskCodeOutput\n\n\n\nHow to arrange data as per the bill length of the penguins?\n\n\n\n\npenguins |&gt; \n  arrange(bill_length_mm) #default is ascending order\n\n\n\n\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Dream               32.1          15.5               188        3050\n 2 Adelie  Dream               33.1          16.1               178        2900\n 3 Adelie  Torgersen           33.5          19                 190        3600\n 4 Adelie  Dream               34            17.1               185        3400\n 5 Adelie  Torgersen           34.1          18.1               193        3475\n 6 Adelie  Torgersen           34.4          18.4               184        3325\n 7 Adelie  Biscoe              34.5          18.1               187        2900\n 8 Adelie  Torgersen           34.6          21.1               198        4400\n 9 Adelie  Torgersen           34.6          17.2               189        3200\n10 Adelie  Biscoe              35            17.9               190        3450\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
-  },
-  {
-    "objectID": "wrangling.html#arrange-function-2",
-    "href": "wrangling.html#arrange-function-2",
-    "title": "DATAWRANGLING",
-    "section": "arrange() Function",
-    "text": "arrange() Function\n\nTaskCodeOutput\n\n\n\nHow to see five penguins of the least bill length?\n\n\n\n\npenguins |&gt; \n  arrange(bill_length_mm) |&gt; \n  head(5) \n\n#tail function to see the bottom of the data\n\n\n\n\n\n# A tibble: 5 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Dream               32.1          15.5               188        3050\n2 Adelie  Dream               33.1          16.1               178        2900\n3 Adelie  Torgersen           33.5          19                 190        3600\n4 Adelie  Dream               34            17.1               185        3400\n5 Adelie  Torgersen           34.1          18.1               193        3475\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
-  },
-  {
-    "objectID": "wrangling.html#your-turn-5",
-    "href": "wrangling.html#your-turn-5",
-    "title": "DATAWRANGLING",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\n\nHow to see five penguins of the highest bill length?\n\n\n\n\npenguins |&gt; \n  arrange(bill_length_mm) |&gt; \n  tail(5)\n\n\n\n\n\n# A tibble: 5 × 8\n  species   island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;     &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Gentoo    Biscoe              55.9          17                 228        5600\n2 Chinstrap Dream               58            17.8               181        3700\n3 Gentoo    Biscoe              59.6          17                 230        6050\n4 Adelie    Torgersen           NA            NA                  NA          NA\n5 Gentoo    Biscoe              NA            NA                  NA          NA\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "wrangling.html#summarise-function",
-    "href": "wrangling.html#summarise-function",
-    "title": "DATAWRANGLING",
-    "section": "summarise() Function:",
-    "text": "summarise() Function:\n\nReduces multiple values down to a single summary."
-  },
-  {
-    "objectID": "wrangling.html#summarise-function-1",
-    "href": "wrangling.html#summarise-function-1",
-    "title": "DATAWRANGLING",
-    "section": "summarise() Function",
-    "text": "summarise() Function\n\nTaskCodeOutput\n\n\n\nWhat is the mean bill length of penguins?\n\n\n\n\npenguins |&gt; \n  summarise(mean(bill_length_mm))\n\n\n\n\n\n# A tibble: 1 × 1\n  `mean(bill_length_mm)`\n                   &lt;dbl&gt;\n1                     NA"
-  },
-  {
-    "objectID": "wrangling.html#summarise-function-2",
-    "href": "wrangling.html#summarise-function-2",
-    "title": "DATAWRANGLING",
-    "section": "summarise() Function",
-    "text": "summarise() Function\n\nTaskCodeOutput\n\n\n\nWhat is the mean bill length of penguins after removing the missing values?\n\n\n\n\npenguins |&gt;\n  drop_na() |&gt; \n  summarise(mean(bill_length_mm))\n\n\n\n\n\n# A tibble: 1 × 1\n  `mean(bill_length_mm)`\n                   &lt;dbl&gt;\n1                   44.0"
-  },
-  {
-    "objectID": "wrangling.html#summarise-function-3",
-    "href": "wrangling.html#summarise-function-3",
-    "title": "DATAWRANGLING",
-    "section": "summarise() Function",
-    "text": "summarise() Function\n\nTaskCodeOutput\n\n\n\nWhat is the species wise mean bill length of penguins?\n\n\n\n\npenguins |&gt;\n  drop_na() |&gt; \n  group_by(species) |&gt; \n  summarise(mean(bill_length_mm))\n\n\n\n\n\n# A tibble: 3 × 2\n  species   `mean(bill_length_mm)`\n  &lt;fct&gt;                      &lt;dbl&gt;\n1 Adelie                      38.8\n2 Chinstrap                   48.8\n3 Gentoo                      47.6"
-  },
-  {
-    "objectID": "wrangling.html#summarise-function-4",
-    "href": "wrangling.html#summarise-function-4",
-    "title": "DATAWRANGLING",
-    "section": "summarise() Function",
-    "text": "summarise() Function\n\nTaskCodeOutput\n\n\n\nWhat is the species wise mean bill length of penguins and total number of penguins in each specie?\n\n\n\n\npenguins |&gt;\n  drop_na() |&gt; \n  group_by(species) |&gt; \n  summarise(mean(bill_length_mm),\n            n = n())\n\n# n() function to know the number of observations in the current group\n\n\n\n\n\n# A tibble: 3 × 3\n  species   `mean(bill_length_mm)`     n\n  &lt;fct&gt;                      &lt;dbl&gt; &lt;int&gt;\n1 Adelie                      38.8   146\n2 Chinstrap                   48.8    68\n3 Gentoo                      47.6   119"
-  },
-  {
-    "objectID": "wrangling.html#your-turn-6",
-    "href": "wrangling.html#your-turn-6",
-    "title": "DATAWRANGLING",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswerOutput\n\n\nWho are of more weight male or female penguins?\n\n\n\npenguins |&gt;\n  drop_na() |&gt; \n  group_by(sex) |&gt; \n  summarise(mean(body_mass_g),\n            n = n())\n\n\n\n\n\n# A tibble: 2 × 3\n  sex    `mean(body_mass_g)`     n\n  &lt;fct&gt;                &lt;dbl&gt; &lt;int&gt;\n1 female               3862.   165\n2 male                 4546.   168\n\n\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "eda.html#download-install",
-    "href": "eda.html#download-install",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "Download & Install",
-    "text": "Download & Install\n\n✅ R Software, https://cloud.r-project.org/\n✅ RStudio IDE, https://posit.co/products/open-source/rstudio/?sid=1\n✅ Quarto, https://quarto.org/docs/get-started/"
-  },
-  {
-    "objectID": "eda.html#rstudio",
-    "href": "eda.html#rstudio",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "RStudio",
-    "text": "RStudio\n\n✅ Create RStudio Project in your computer\n✅ Create quarto document\n✅ Create folder data & save file penguins.csv"
-  },
-  {
-    "objectID": "eda.html#data-penguins",
-    "href": "eda.html#data-penguins",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "Data: penguins",
-    "text": "Data: penguins\nLive on three island: Biscoe, Dream, & Torgersen.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource: palmerpenguins"
-  },
-  {
-    "objectID": "eda.html#exploratory-data-analysis-eda",
-    "href": "eda.html#exploratory-data-analysis-eda",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "Exploratory Data Analysis (EDA)",
-    "text": "Exploratory Data Analysis (EDA)\n\n\n“how to use visualization and transformation to explore your data in a systematic way”\n\n\n\nSource: R for Data Science (2e)"
-  },
-  {
-    "objectID": "eda.html#step-1-r-packages",
-    "href": "eda.html#step-1-r-packages",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "📦 Step 1: R Packages",
-    "text": "📦 Step 1: R Packages\n\nInstall R Packages only once:\n\n```{r}\ninstall.packages(\"palmerpenguins\") # to get data\ninstall.packages(\"tidyverse\")      # to collection of R pkgs\ninstall.packages(\"skimr\")          # summary of data  \ninstall.packages(\"janitor\")        # data cleaning\n```\n\n\nCall/load R packages\n\n```{r}\nlibrary(palmerpenguins)\nlibrary(tidyverse)\nlibrary(skimr)\nlibrary(janitor)\n```"
-  },
-  {
-    "objectID": "eda.html#step-2-import-the-dataset",
-    "href": "eda.html#step-2-import-the-dataset",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "📁 Step 2: Import the Dataset",
-    "text": "📁 Step 2: Import the Dataset\nYou can import from CSV, Excel, or other sources.\n\n\n```{r}\nlibrary(readr)\npenguins &lt;- read_csv(\"session-1/practice/data/penguins.csv\", \n    col_types = cols(sex = col_factor(levels = c(\"male\", \n        \"female\"))))\nView(penguins)\n```\n\n\n```{r}\n# Replace with your actual file path\ndata &lt;- read_csv(\"your_dataset.csv\")   \n```"
-  },
-  {
-    "objectID": "eda.html#data-structure",
-    "href": "eda.html#data-structure",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "Data Structure",
-    "text": "Data Structure\n\n\n\n\nSource: R for Data Science (2e)"
-  },
-  {
-    "objectID": "eda.html#step-3-explore-the-data-structure",
-    "href": "eda.html#step-3-explore-the-data-structure",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "📊 Step 3: Explore the Data Structure",
-    "text": "📊 Step 3: Explore the Data Structure\n\n\n```{r}\ndim(data)          # Dimensions (rows & columns)\n\nnames(data)        # Column names\n\nspec(data)         # columns specifications\n\nhead(data)         # First few rows\n\nglimpse(data)      # Compact structure\n\nstr(data)          # Structure\n```"
-  },
-  {
-    "objectID": "eda.html#check-data-for",
-    "href": "eda.html#check-data-for",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "Check Data for",
-    "text": "Check Data for\n\n\nMissing values\nDuplicate rows\nInconsistent column names"
-  },
-  {
-    "objectID": "eda.html#step-4-transform-clean-the-data",
-    "href": "eda.html#step-4-transform-clean-the-data",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "✅ Step 4: Transform & Clean the Data",
-    "text": "✅ Step 4: Transform & Clean the Data\n\nTransformSummaryMissing Values\n\n\n\n```{r}\nlibrary(readr)\n\npenguins &lt;- read_csv(\"data/penguins.csv\", \n    col_types = cols(sex = col_factor(levels = c(\"male\", \"female\")),\n                     species = col_factor(levels = c(\"Chinstrap\",\n                                                     \"Gentoo\",\n                                                     \"Adelie\")),\n                     island  = col_factor(levels = c(\"Biscoe\",\n                                                     \"Dream\",\n                                                     \"Torgersen\"))\n                     ))\n```\n\n\n\n\n\n```{r}\nsummary(penguins)         #basic summary\n```\n\n\n\n\n```{r}\nsum(is.na(penguins))                 # Total missing values\ncolSums(is.na(penguins))             # Total column wise missing values       \n```"
-  },
-  {
-    "objectID": "eda.html#variation",
-    "href": "eda.html#variation",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "Variation",
-    "text": "Variation\n\n“It is the tendency of the values of a variable to change from measurement to measurement or across different subjects or at different times.”\n“Every variable has its own pattern of variation, which can reveal interesting information about how it varies between measurements on the same observation as well as across observations.”\n\n\n\nSource: R for Data Science (2e)"
-  },
-  {
-    "objectID": "eda.html#variation-types",
-    "href": "eda.html#variation-types",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "Variation Types",
-    "text": "Variation Types\n\nWhat type of variation occurs within my variables?\nWhat type of co-variation occurs between my variables?"
-  },
-  {
-    "objectID": "eda.html#step-5-univariate-analysis",
-    "href": "eda.html#step-5-univariate-analysis",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "📈 Step 5: Univariate Analysis",
-    "text": "📈 Step 5: Univariate Analysis\n\nExplore each variable individually\n\n\nNumerical variablesCategorical variables\n\n\n\n```{r}\nsummary(data$variable)\nhist(data$variable, main=\"Mass Distribution\", col=\"lightblue\")\n```\n\nUse ggplot2 for more control\n\n```{r}\nggplot(penguins, aes(x = body_mass_g)) +\n  geom_histogram(fill = \"skyblue\", bins = 30, color = \"white\") +\n  labs(title = \"Distribution of Body Mass (g)\", x = \"Body Mass (g)\") +\n  theme_minimal()\n```\n\n\n\n\n```{r}\ntable(data$variable)\nbarplot(table(data$variable), col=\"pink\", main=\"Species Count\")\n```\n\nUse ggplot2 for more control\n\n```{r}\nggplot(penguins, aes(x = species)) +\n  geom_bar(fill = \"steelblue\") +\n  labs(title = \"Penguin Species Count\") +\n  theme_minimal()\n```"
-  },
-  {
-    "objectID": "eda.html#step-6-bivariate-analysis",
-    "href": "eda.html#step-6-bivariate-analysis",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "🔁 Step 6: Bivariate Analysis",
-    "text": "🔁 Step 6: Bivariate Analysis\n\nExplore relationships between variables\n\n\nNumeric vs Numeric:Numeric vs Categorical\n\n\n\n```{r}\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +\n  geom_point(aes(color = species)) +\n  geom_smooth(method = \"lm\", se = FALSE) +\n  labs(title = \"Flipper Length vs Body Mass\") +\n  theme_minimal()\n```\n\n\n\n\n```{r}\nggplot(penguins, aes(x = species, y = body_mass_g, fill = species)) +\n  geom_boxplot() +\n  labs(title = \"Body Mass by Species\") +\n  theme_minimal()\n```"
-  },
-  {
-    "objectID": "eda.html#step-7-summary-statistics",
-    "href": "eda.html#step-7-summary-statistics",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "📌 Step 7: Summary Statistics",
-    "text": "📌 Step 7: Summary Statistics\n\n\n```{r}\nskimr::skim(data)         # Rich summary\n```"
-  },
-  {
-    "objectID": "eda.html#step-8-outlier-detection",
-    "href": "eda.html#step-8-outlier-detection",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "📉 Step 8: Outlier Detection",
-    "text": "📉 Step 8: Outlier Detection\n\nAn outlier is a data point that differs markedly from the rest of the data.\n\n\n\n\n```{r}\nggplot(penguins, aes(y = body_mass_g, x = species, fill = species)) +\n  geom_boxplot() +\n  labs(title = \"Outliers in Body Mass by Species\") +\n  theme_minimal()\n```"
-  },
-  {
-    "objectID": "eda.html#step-9-handle-missing-data",
-    "href": "eda.html#step-9-handle-missing-data",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "🧹 Step 9: Handle Missing Data",
-    "text": "🧹 Step 9: Handle Missing Data\n\n(if needed)\n\nFill missing valuesRemove missing values\n\n\n\n```{r}\n# Fill missing values\npenguins$body_mass_g[is.na(penguins$body_mass_g)] &lt;- median(penguins$body_mass_g, na.rm = TRUE)\n\nsummary(penguins$body_mass_g)\n```\n\n\n\n\n```{r}\n# Remove rows with missing data\npenguins_clean &lt;- penguins %&gt;% drop_na()\ndim(penguins_clean)\n```"
-  },
-  {
-    "objectID": "eda.html#step-10-save-cleaned-data",
-    "href": "eda.html#step-10-save-cleaned-data",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "🧾 Step 10: Save Cleaned Data",
-    "text": "🧾 Step 10: Save Cleaned Data\n\n\n```{r}\nwrite.csv(data_clean, \"cleaned_data.csv\")\n```"
-  },
-  {
-    "objectID": "eda.html#learnings",
-    "href": "eda.html#learnings",
-    "title": "EXPLORINGYOUR DATA",
-    "section": "🎯 Learnings",
-    "text": "🎯 Learnings\n\nInstalling R, RStudio, Quarto & R packages.\nImport & export of Data\nView summary & structure of data\nTable & plots to see pattern in data\nTreating missing & outlier values"
-  },
-  {
-    "objectID": "visualization.html#section-1",
-    "href": "visualization.html#section-1",
-    "title": "DATA  VISUALIZATION",
-    "section": "",
-    "text": "“The simple graph has brought more information to the data analyst’s mind than any other device.” — John Tukey"
-  },
-  {
-    "objectID": "visualization.html#goal",
-    "href": "visualization.html#goal",
-    "title": "DATA  VISUALIZATION",
-    "section": "Goal",
-    "text": "Goal\nHow to visualize data using R package ggplot2."
-  },
-  {
-    "objectID": "visualization.html#section-2",
-    "href": "visualization.html#section-2",
-    "title": "DATA  VISUALIZATION",
-    "section": "",
-    "text": "Source: Tanya Shapiro"
-  },
-  {
-    "objectID": "visualization.html#ggplot2-layers",
-    "href": "visualization.html#ggplot2-layers",
-    "title": "DATA  VISUALIZATION",
-    "section": "ggplot2 Layers",
-    "text": "ggplot2 Layers"
-  },
-  {
-    "objectID": "visualization.html#import-data",
-    "href": "visualization.html#import-data",
-    "title": "DATA  VISUALIZATION",
-    "section": "Import Data",
-    "text": "Import Data\n\nTaskCodeOutput\n\n\n\n\n\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nggplot(data = penguins)\n\n\n\n\n\n\n\n\n\n\n\nFigure 1"
-  },
-  {
-    "objectID": "visualization.html#map-variables-aesthetics",
-    "href": "visualization.html#map-variables-aesthetics",
-    "title": "DATA  VISUALIZATION",
-    "section": "Map Variables Aesthetics",
-    "text": "Map Variables Aesthetics\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species))\n\n\n\n\n\n\n\n\n\n\n\nFigure 2"
-  },
-  {
-    "objectID": "visualization.html#add-geometric-shapes",
-    "href": "visualization.html#add-geometric-shapes",
-    "title": "DATA  VISUALIZATION",
-    "section": "Add Geometric Shapes",
-    "text": "Add Geometric Shapes\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar()\n\n\n\n\n\n\n\n\n\n\n\nFigure 3"
-  },
-  {
-    "objectID": "visualization.html#key-components-are",
-    "href": "visualization.html#key-components-are",
-    "title": "DATA  VISUALIZATION",
-    "section": "Key Components are:",
-    "text": "Key Components are:\n\n\ndata,\nA set of aesthetic mappings between variables in the data and visual properties, and\nAt least one layer which describes how to render each observation. Layers are usually created with a geom function."
-  },
-  {
-    "objectID": "visualization.html#your-turn",
-    "href": "visualization.html#your-turn",
-    "title": "DATA  VISUALIZATION",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = island)) +\n  geom_bar()\n\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "visualization.html#common-mistakes",
-    "href": "visualization.html#common-mistakes",
-    "title": "DATA  VISUALIZATION",
-    "section": "Common Mistakes",
-    "text": "Common Mistakes\n\nMake sure that every ( is matched with a ) and every \" is paired with another \".\nConsole shows no results but a + sign that means your code is incomplete and R is waiting for you to complete the code.\nin ggplot + has to come at the end of the line, not the start"
-  },
-  {
-    "objectID": "visualization.html#fill-color",
-    "href": "visualization.html#fill-color",
-    "title": "DATA  VISUALIZATION",
-    "section": "“Fill” Color",
-    "text": "“Fill” Color\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar(fill = \"blue\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 4"
-  },
-  {
-    "objectID": "visualization.html#fill-colors",
-    "href": "visualization.html#fill-colors",
-    "title": "DATA  VISUALIZATION",
-    "section": "“Fill” Colors",
-    "text": "“Fill” Colors\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar(fill = c(\"blue\", \"green\", \"yellow\"))\n\n\n\n\n\n\n\n\n\n\n\nFigure 5"
-  },
-  {
-    "objectID": "visualization.html#fill-color-colors",
-    "href": "visualization.html#fill-color-colors",
-    "title": "DATA  VISUALIZATION",
-    "section": "“Fill” & “Color” Colors",
-    "text": "“Fill” & “Color” Colors\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = species)) +\n  geom_bar(fill = c(\"blue\", \"green\", \"yellow\"),\n           color = \"black\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 6"
-  },
-  {
-    "objectID": "visualization.html#your-turn-1",
-    "href": "visualization.html#your-turn-1",
-    "title": "DATA  VISUALIZATION",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = island)) +\n  geom_bar(fill = c(\"red\", \"yellow\", \"darkgreen\"),\n           color = \"black\")\n\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "visualization.html#know-your-data",
-    "href": "visualization.html#know-your-data",
-    "title": "DATA  VISUALIZATION",
-    "section": "Know Your Data",
-    "text": "Know Your Data\n\n\nglimpse(penguins)\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
-  },
-  {
-    "objectID": "visualization.html#plot-a-continuous-variable",
-    "href": "visualization.html#plot-a-continuous-variable",
-    "title": "DATA  VISUALIZATION",
-    "section": "Plot A Continuous Variable",
-    "text": "Plot A Continuous Variable\n\nTaskCodeOutput\n\n\n\n\n\n\n# bill_length_mm is dbl type variable/column\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_histogram()\n\n\n\n\n\n\n\n\n\n\n\nFigure 7"
-  },
-  {
-    "objectID": "visualization.html#your-turn-2",
-    "href": "visualization.html#your-turn-2",
-    "title": "DATA  VISUALIZATION",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_histogram(fill = \"darkblue\",\n                 color = \"white\")\n\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "visualization.html#two-continuous-variables",
-    "href": "visualization.html#two-continuous-variables",
-    "title": "DATA  VISUALIZATION",
-    "section": "Two Continuous Variables",
-    "text": "Two Continuous Variables\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\n\n\nFigure 8"
-  },
-  {
-    "objectID": "visualization.html#geom-size",
-    "href": "visualization.html#geom-size",
-    "title": "DATA  VISUALIZATION",
-    "section": "Geom Size",
-    "text": "Geom Size\n\nTaskCodeOutput\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(size = 5)\n\n\n\n\n\n\n\n\n\n\n\nFigure 9"
-  },
-  {
-    "objectID": "visualization.html#geom-shape",
-    "href": "visualization.html#geom-shape",
-    "title": "DATA  VISUALIZATION",
-    "section": "Geom Shape",
-    "text": "Geom Shape\n\nTaskCodeOutput\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(size = 5,\n             shape = 8)\n\n\n\n\n\n\n\n\n\n\n\nFigure 10"
-  },
-  {
-    "objectID": "visualization.html#your-turn-3",
-    "href": "visualization.html#your-turn-3",
-    "title": "DATA  VISUALIZATION",
-    "section": "🧠 YOUR TURN",
-    "text": "🧠 YOUR TURN\n\nTaskAnswer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = body_mass_g, y = flipper_length_mm)) +\n  geom_point(size = 2, shape = 23, color = \"red\", fill = \"gold\")\n\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "visualization.html#plot-a-factor-factor",
-    "href": "visualization.html#plot-a-factor-factor",
-    "title": "DATA  VISUALIZATION",
-    "section": "Plot A Factor & Factor",
-    "text": "Plot A Factor & Factor\n\nTaskCodeOutput\n\n\nSometimes, we want to differentiate values of a factor/category variable on the basis of another factor/category variable.\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = island)) +\n  geom_bar(aes(fill = sex))\n\n\n\n\n\n\n\n\n\n\n\nFigure 11"
-  },
-  {
-    "objectID": "visualization.html#plot-a-factor-continuous",
-    "href": "visualization.html#plot-a-factor-continuous",
-    "title": "DATA  VISUALIZATION",
-    "section": "Plot A Factor & Continuous",
-    "text": "Plot A Factor & Continuous\n\nTaskCodeOutput\n\n\nSometimes, we want to differentiate values from a continuous variable on the basis of factor/category variables.\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm)) +\n  geom_histogram(aes(fill = sex), color = \"black\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 12"
-  },
-  {
-    "objectID": "visualization.html#a-factor-two-cont.",
-    "href": "visualization.html#a-factor-two-cont.",
-    "title": "DATA  VISUALIZATION",
-    "section": "A Factor & Two Cont.",
-    "text": "A Factor & Two Cont.\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = sex))\n\n\n\n\n\n\n\n\n\n\n\nFigure 13"
-  },
-  {
-    "objectID": "visualization.html#a-factor-two-cont.-1",
-    "href": "visualization.html#a-factor-two-cont.-1",
-    "title": "DATA  VISUALIZATION",
-    "section": "A Factor & Two Cont.",
-    "text": "A Factor & Two Cont.\n\nTaskCodeOutput\n\n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species))\n\n\n\n\n\n\n\n\n\n\n\nFigure 14"
-  },
-  {
-    "objectID": "visualization.html#write-labels",
-    "href": "visualization.html#write-labels",
-    "title": "DATA  VISUALIZATION",
-    "section": "Write Labels",
-    "text": "Write Labels\n\nTaskCodeOutput\n\n\n\nTitle of the plot\nSubtitle of the plot with more information\nTitle of the x-axis\nTitle of the y-axis\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  )\n\n\n\n\n\n\n\n\n\n\n\nFigure 15"
-  },
-  {
-    "objectID": "visualization.html#different-shapes",
-    "href": "visualization.html#different-shapes",
-    "title": "DATA  VISUALIZATION",
-    "section": "Different Shapes",
-    "text": "Different Shapes\n\nTaskCodeOutput\n\n\nEach level of the factor/category can be shown using a different shape of different color.\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  )\n\n\n\n\n\n\n\n\n\n\n\nFigure 16"
-  },
-  {
-    "objectID": "visualization.html#various-themes",
-    "href": "visualization.html#various-themes",
-    "title": "DATA  VISUALIZATION",
-    "section": "Various Themes",
-    "text": "Various Themes\n\nTaskCodeOutput\n\n\nSource: ggthemes\n\nlibrary(ggthemes)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_economist()\n\n\n\n\n\n\n\n\n\n\n\nFigure 17"
-  },
-  {
-    "objectID": "visualization.html#various-themes-1",
-    "href": "visualization.html#various-themes-1",
-    "title": "DATA  VISUALIZATION",
-    "section": "Various Themes",
-    "text": "Various Themes\n\nTaskCodeOutput\n\n\nSource: ggthemes\n\nlibrary(ggthemes)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_solarized_2()\n\n\n\n\n\n\n\n\n\n\n\nFigure 18"
-  },
-  {
-    "objectID": "visualization.html#various-themes-2",
-    "href": "visualization.html#various-themes-2",
-    "title": "DATA  VISUALIZATION",
-    "section": "Various Themes",
-    "text": "Various Themes\n\nTaskCodeOutput\n\n\nSource: ggthemes\n\nlibrary(ggthemes)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_tufte()\n\n\n\n\n\n\n\n\n\n\n\nFigure 19"
-  },
-  {
-    "objectID": "visualization.html#various-themes-3",
-    "href": "visualization.html#various-themes-3",
-    "title": "DATA  VISUALIZATION",
-    "section": "Various Themes",
-    "text": "Various Themes\n\nTaskCodeOutput\n\n\nSource: ggthemes\n\nlibrary(ggthemes)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean()\n\n\n\n\n\n\n\n\n\n\n\nFigure 20"
-  },
-  {
-    "objectID": "visualization.html#color-palette",
-    "href": "visualization.html#color-palette",
-    "title": "DATA  VISUALIZATION",
-    "section": "Color Palette",
-    "text": "Color Palette"
-  },
-  {
-    "objectID": "visualization.html#color-palette-1",
-    "href": "visualization.html#color-palette-1",
-    "title": "DATA  VISUALIZATION",
-    "section": "Color Palette",
-    "text": "Color Palette\n\nTaskCodeOutput\n\n\nR package ggthemes have function to use color scheme for colorblindness. Know more\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean() +\n  scale_color_colorblind()\n\n\n\n\n\n\n\n\n\n\n\nFigure 21"
-  },
-  {
-    "objectID": "visualization.html#color-palette-2",
-    "href": "visualization.html#color-palette-2",
-    "title": "DATA  VISUALIZATION",
-    "section": "Color Palette",
-    "text": "Color Palette\n\nTaskCodeOutput\n\n\n\nlibrary(RColorBrewer)\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean() +\n  scale_color_brewer(palette = \"Dark2\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 22"
-  },
-  {
-    "objectID": "visualization.html#color-palette-3",
-    "href": "visualization.html#color-palette-3",
-    "title": "DATA  VISUALIZATION",
-    "section": "Color Palette",
-    "text": "Color Palette\n\nTaskCodeOutput\n\n\n\nlibrary(wesanderson)\n\nnames(wes_palettes)\n\n [1] \"BottleRocket1\"     \"BottleRocket2\"     \"Rushmore1\"        \n [4] \"Rushmore\"          \"Royal1\"            \"Royal2\"           \n [7] \"Zissou1\"           \"Zissou1Continuous\" \"Darjeeling1\"      \n[10] \"Darjeeling2\"       \"Chevalier1\"        \"FantasticFox1\"    \n[13] \"Moonrise1\"         \"Moonrise2\"         \"Moonrise3\"        \n[16] \"Cavalcanti1\"       \"GrandBudapest1\"    \"GrandBudapest2\"   \n[19] \"IsleofDogs1\"       \"IsleofDogs2\"       \"FrenchDispatch\"   \n[22] \"AsteroidCity1\"     \"AsteroidCity2\"     \"AsteroidCity3\"    \n\n\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean() +\n  scale_color_manual(values = wes_palette(\"BottleRocket2\", n = 3))\n\n\n\n\n\n\n\n\n\n\n\nFigure 23"
-  },
-  {
-    "objectID": "visualization.html#export-plot",
-    "href": "visualization.html#export-plot",
-    "title": "DATA  VISUALIZATION",
-    "section": "Export Plot",
-    "text": "Export Plot\n\nTaskCodeOutput\n\n\nExport/save plot as pdf, jpg or png file.\n\n\n\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  labs(\n    title = \"The title of the plot\",\n    subtitle = \"The subtitle of the plot\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\"\n  ) +\n  theme_clean() +\n  scale_color_manual(values = wes_palette(\"BottleRocket2\", n = 3))\n\nggsave(\"penguins-plot.pdf\")\n\n\n\n\n\n\n\n\n\n\n\nFigure 24"
+    "text": "Thank You!\n\n\n \n\n\n\nSavitribai Ramabai (SARA) Institute of Data Science\n\n\n\n\n\n \nFollow SARA\n @sara_institute\n SARA LinkedIn Page\n @SARADataScience\n SARA Facebook Page\n SARA Institute WhatsApp Channel\n\n\n\n  \nContact SARA\n 925 315 2024\n sara.institute.info@gmail.com\n www.sara-edu.netlify.app/\n SARA Institute of Data Science, Dr. Ambedkar Bhawan, Kakroi Road, Near Dayanand Hospital, Sonipat - 131001, Haryana, India."
   },
   {
     "objectID": "welcome.html#section",

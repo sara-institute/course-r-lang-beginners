@@ -1,0 +1,170 @@
+---
+title: "[THANKS<br>CEREMONY]{.r-fit-text}"
+subtitle: "[2nd SARA Data Science Summer School<br> 25-29 July 2025,  Sonipat (HR)]{.r-fit-text .clr-white}"
+format: 
+  revealjs:
+    background-transition: convex
+    execute: 
+      echo: true
+controls: true
+slide-number: true
+scrollable: true
+logo: images/logo-sara.png
+incremental: true
+#bibliography: references.bib
+theme: style.scss
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  data-background-size: cover
+  data-background-color: black
+  data-background-opacity: "0.7"
+  #data-background-repeat: yes
+---
+
+##  {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+
+<br>
+<br>
+
+::::::: centering
+:::::: columns
+::: {.column width="36%"}
+![**GYAN JYOTI [SA]{.clr-red}VITRIBAI PHULE (1831-1897)**<br>🌺 🙏🏽
+🌼](images/savitrimai.png){width=70%}
+:::
+
+::: {.column width="29%"}
+
+<br>
+
+![](images/logo-sara.png){width="2.0in" fig-align="center"}
+:::
+
+::: {.column width="34.75%"}
+![**MATA [RA]{.clr-red}MABAI AMBEDKAR (1898-1935)**<br>🌺 🙏🏽
+🌼](images/ramai.png){width=70%}
+:::
+::::::
+
+[**Savitribai Ramabai (SARA) Institute of Data Science**]{.r-fit-text}
+:::::::
+
+# {background-color=black}
+
+[![](images/thank-sara.png){fig-align=center}]{.r-stretch}
+
+# {background-color=black}
+
+[![](images/flyer-summer.png){fig-align=center}]{.r-stretch}
+
+## Event Overview {background-color=teal}
+
+- Open to Everyone
+
+- Participants
+    - 12 registered.
+    - **09 attended**.
+
+- **30-35 hours** of teaching data science.
+
+## International Guest Speaker 🇩🇪🇦🇺🇦🇷🇮🇳 {background-color=black}
+
+{{< video images/speakers-summer-r.mp4 loop="true" >}}
+
+## Five SARA Scholarship {background-color=black}
+
+![](images/scholarships.png){fig-align=center}
+
+## {background-image=images/collage.png background-size=contain background-color=black}
+
+## {background-image=images/students.jpg background-size=cover}
+
+## {background-image="https://images.unsplash.com/photo-1615715035868-fc94bd5ffdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+
+<br>
+<br>
+
+:::: {.centering}
+
+![](images/sonipat-bhawan.png)
+
+[***The Ambedkar <br>Educational Society Sonipat***]{.r-fit-text}
+
+::::
+
+## Support SARA {background-image=images/babasaheb.jpg background-size=contain background-position="right"}
+
+:::: {.columns}
+
+::: {.column width="50%" .nonincremental}
+
+- Teach at SARA.
+
+- Donate to SARA.
+
+![](images/qr-code-sara.png){width=55% fig-align=center}
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+## Thank You!
+
+:::::: columns
+::: {.column .centering width="25%"}
+<br> <br>
+
+![Savitribai Ramabai (SARA) Institute of Data Science](images/logo-sara.png)
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="30%" .r-fit-text}
+<br> <br><br><br>
+
+### Follow SARA
+<br>[[{{< fa brands twitter >}}](https://twitter.com/sara_institute)]{.clr-black} [\@sara_institute](https://twitter.com/sara_institute)
+
+[[{{< fa brands linkedin >}}](https://www.linkedin.com/company/sara-institute/)]{.clr-black} [SARA LinkedIn Page](https://www.linkedin.com/company/sara-institute/)
+
+[[{{< fa brands youtube >}}](https://www.youtube.com/@SARADataScience)]{.clr-black} [\@SARADataScience](https://www.youtube.com/@SARADataScience)
+
+[[{{< fa brands facebook >}}](https://www.facebook.com/profile.php?id=61564043738390)]{.clr-black} [SARA Facebook
+Page](https://www.facebook.com/profile.php?id=61564043738390)
+
+[[{{< fa brands whatsapp >}}](https://whatsapp.com/channel/0029Va4r7rGLCoWycMwThl2J)]{.clr-black} [SARA Institute WhatsApp
+Channel](https://whatsapp.com/channel/0029Va4r7rGLCoWycMwThl2J)
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column .r-fit-text width="35%"}
+<br> <br> <br><br>
+
+### Contact SARA
+
+<br>{{< fa mobile-screen >}} 925 315 2024
+
+{{< fa envelope >}} [sara.institute.info\@gmail.com](mailto:%20sara.institute.info@gmail.com)
+
+{{< fa globe >}} [www.sara-edu.netlify.app/](https://sara-edu.netlify.app/)
+
+{{< fa location-dot >}} SARA Institute of Data Science, <br>Dr. Ambedkar Bhawan, Kakroi Road, Near
+Dayanand Hospital, <br>Sonipat - 131001, Haryana, India.
+:::
+::::::
+
+
+
+
+
+
+
+

@@ -94,3 +94,9 @@ Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 ## Session
 
 {{< revealjs file="hypothesis-formulation.html" height="500px" class="ratio ratio-16x9" >}}
+
+<br>
+
+## Session
+
+{{< revealjs file="thanks.html" height="500px" class="ratio ratio-16x9" >}}
