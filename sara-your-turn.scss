@@ -1,0 +1,611 @@
+/*-- scss:defaults --*/
+
+/*
+ * SARA Summer School — 3rd Edition
+ * "R for Researchers"
+ * Your Turn — Q&A Slide Theme
+ * Palette: Sea Beach Summer
+ *
+ * Built for reveal.js 16:9 canvas (960×540px).
+ * All sizing is relative to the slide canvas —
+ * no vw/vh, no fixed px that break on scaling.
+ *
+ * Usage: theme: [default, sara-summer-school.scss, sara-your-turn.scss]
+ * Slide: ## Title {.your-turn} / {.answer} / {.hint}
+ */
+
+// ─────────────────────────────────────────────
+// PALETTE
+// ─────────────────────────────────────────────
+
+$ocean-deep: #0A4F6E;
+$ocean-mid: #1A7FA0;
+$ocean-light: #5BB8D4;
+$seafoam: #A8DDE9;
+$wet-sand: #D4B896;
+$dry-sand: #F2E0C4;
+$sky-blue: #87CEDF;
+$sky-light: #E8F6FA;
+$sunshine: #F9C74F;
+$coral: #E8735A;
+$sea-glass: #3AAFA9;
+$white-foam: #FFFFFF;
+$text-dark: #1A2F3A;
+$text-muted: #4A6B7A;
+$code-bg: #0D3D55;
+
+/*-- scss:rules --*/
+
+$font-sans: "Nunito", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-mono: "Fira Code", "Consolas", "Courier New", monospace;
+
+// ─────────────────────────────────────────────
+// SLIDE CANVAS RESET
+// reveal.js sizes .slides section to fill the
+// 960×540 canvas exactly. We must not add any
+// extra dimensions — only override colours and
+// cosmetics. padding is kept tight so content
+// never bleeds outside the canvas.
+// ─────────────────────────────────────────────
+
+%slide-base {
+  // fill the full canvas
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  // padding: 2.5em 3em 2em 3em !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+%badge-base {
+  position: absolute;
+  top: 0.6em;
+  right: 0.8em;
+  font-family: $font-sans;
+  font-size: 0.45em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.25em 0.8em;
+  border-radius: 20px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+%top-bar-base {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; // 100% of the slide canvas — correct for scaled reveal
+  height: 5px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+%code-block-base {
+  font-family: $font-mono !important;
+  //font-size: 0.7em !important; // this controls the size of the code font in answers also
+  line-height: 1.45 !important;
+  border-radius: 6px !important;
+  padding: 0.8em 1em !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: auto !important;
+  white-space: pre !important;
+  margin: 0.4em 0 !important;
+
+  code {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  span {
+    background: transparent !important;
+  }
+}
+
+
+// ─────────────────────────────────────────────
+// YOUR TURN SLIDE  {.your-turn}
+// ─────────────────────────────────────────────
+.your-turn {
+  @extend %slide-base;
+  background: linear-gradient(150deg,
+      $dry-sand 0%,
+      lighten($seafoam, 10%) 100%) !important;
+
+
+  // headings
+  h1 {
+    font-size: 1.8em;
+    color: $ocean-deep;
+    margin: 0 0 0.3em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    color: $ocean-deep;
+    margin: 0 0 0.3em;
+  }
+
+  h3 {
+    font-size: 1.05em;
+    color: $ocean-mid;
+    margin: 0 0 0.25em;
+  }
+
+  // body
+  p,
+  li {
+    color: $text-dark;
+    line-height: 1.45;
+    margin: 0.3em 0;
+  }
+
+  strong {
+    color: $coral;
+  }
+
+  em {
+    color: $ocean-mid;
+    font-style: italic;
+  }
+
+  a {
+    color: $sea-glass;
+
+    &:hover {
+      color: $coral;
+    }
+  }
+
+  // inline code
+  code {
+    font-family: $font-mono;
+    font-size: 0.82em;
+    background: rgba($ocean-deep, 0.09);
+    color: $ocean-deep;
+    padding: 0.08em 0.35em;
+    border-radius: 4px;
+  }
+
+  // code block
+  pre,
+  .sourceCode pre {
+    @extend %code-block-base;
+    background: $code-bg !important;
+    color: $white-foam !important;
+    border-left: 4px solid $sunshine !important;
+
+    code {
+      color: $white-foam !important;
+    }
+
+    span {
+      color: $white-foam !important;
+    }
+  }
+
+  div.sourceCode {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 0.4em 0;
+  }
+
+  // bullet list — seashell bullets
+  ul {
+    list-style: none !important;
+    padding-left: 0;
+    margin: 0.3em 0;
+
+    li {
+      list-style: none !important;
+      padding-left: 1.5em;
+      position: relative;
+      margin-bottom: 0.25em;
+
+      &::before {
+        content: "🐚";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 0.8em;
+        line-height: 1.5;
+      }
+
+      ul li::before {
+        content: "▸";
+        font-size: 0.85em;
+        color: $ocean-mid;
+      }
+    }
+  }
+
+  // numbered list — coral circles
+  ol {
+    list-style: none !important;
+    padding-left: 0;
+    margin: 0.3em 0;
+    counter-reset: turn-counter;
+
+    li {
+      list-style: none !important;
+      counter-increment: turn-counter;
+      padding-left: 2em;
+      position: relative;
+      margin-bottom: 0.25em;
+
+      &::before {
+        content: counter(turn-counter);
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+        width: 1.4em;
+        height: 1.4em;
+        background: $coral;
+        color: $white-foam;
+        font-weight: 700;
+        font-size: 0.68em;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        line-height: 1.4em;
+      }
+    }
+  }
+}
+
+
+// ─────────────────────────────────────────────
+// ANSWER SLIDE  {.answer}
+// ─────────────────────────────────────────────
+
+.answer {
+  @extend %slide-base;
+  background: linear-gradient(150deg,
+      $ocean-deep 0%,
+      darken($ocean-mid, 8%) 100%) !important;
+
+
+  h1 {
+    font-size: 1.8em;
+    color: $white-foam;
+    margin: 0 0 0.3em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    color: $seafoam;
+    margin: 0 0 0.3em;
+  }
+
+  h3 {
+    font-size: 1.05em;
+    color: $sky-blue;
+    margin: 0 0 0.25em;
+  }
+
+  p,
+  li {
+    color: rgba($white-foam, 0.92);
+    line-height: 1.45;
+    margin: 0.3em 0;
+  }
+
+  strong {
+    color: $sunshine;
+  }
+
+  em {
+    color: $seafoam;
+    font-style: italic;
+  }
+
+  a {
+    color: $sunshine;
+
+    &:hover {
+      color: $coral;
+    }
+  }
+
+  code {
+    font-family: $font-mono;
+    font-size: 0.82em;
+    background: rgba($white-foam, 0.1);
+    color: $seafoam;
+    padding: 0.08em 0.35em;
+    border-radius: 4px;
+  }
+
+  pre,
+  .sourceCode pre {
+    @extend %code-block-base;
+    background: rgba($white-foam, 0.07) !important;
+    color: $white-foam !important;
+    border-left: 4px solid $sea-glass !important;
+
+    code {
+      color: $white-foam !important;
+    }
+
+    span {
+      color: $white-foam !important;
+    }
+  }
+
+  div.sourceCode {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 0.4em 0;
+  }
+
+  // blockquote as R output box
+  blockquote {
+    background: rgba($white-foam, 0.07);
+    border-left: 4px solid $sunshine;
+    border-radius: 0 6px 6px 0;
+    padding: 0.5em 0.9em;
+    margin: 0.4em 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-style: normal;
+    box-shadow: none;
+
+    p {
+      color: rgba($white-foam, 0.9);
+      margin: 0;
+    }
+  }
+
+  // bullet list — wave bullets
+  ul {
+    list-style: none !important;
+    padding-left: 0;
+    margin: 0.3em 0;
+
+    li {
+      list-style: none !important;
+      padding-left: 1.5em;
+      position: relative;
+      margin-bottom: 0.25em;
+
+      &::before {
+        content: "🌊";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 0.8em;
+        line-height: 1.5;
+      }
+
+      ul li::before {
+        content: "▸";
+        font-size: 0.85em;
+        color: $seafoam;
+      }
+    }
+  }
+
+  // numbered list — sea-glass circles
+  ol {
+    list-style: none !important;
+    padding-left: 0;
+    margin: 0.3em 0;
+    counter-reset: answer-counter;
+
+    li {
+      list-style: none !important;
+      counter-increment: answer-counter;
+      padding-left: 2em;
+      position: relative;
+      margin-bottom: 0.25em;
+
+      &::before {
+        content: counter(answer-counter);
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+        width: 1.4em;
+        height: 1.4em;
+        background: $sea-glass;
+        color: $white-foam;
+        font-weight: 700;
+        font-size: 0.68em;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        line-height: 1.4em;
+      }
+    }
+  }
+}
+
+
+// ─────────────────────────────────────────────
+// HINT SLIDE  {.hint}
+// ─────────────────────────────────────────────
+
+.reveal .slides section.hint {
+  @extend %slide-base;
+  background: linear-gradient(150deg,
+      lighten($seafoam, 8%) 0%,
+      $sky-light 100%) !important;
+
+  &::before {
+    @extend %top-bar-base;
+    background: linear-gradient(90deg, $seafoam, $sky-blue, $ocean-light);
+  }
+
+  &::after {
+    @extend %badge-base;
+    content: "💡  Hint";
+    background: $ocean-light;
+    color: $white-foam;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    color: $ocean-mid;
+    margin: 0 0 0.3em;
+  }
+
+  h3 {
+    font-size: 1.05em;
+    color: $sea-glass;
+    margin: 0 0 0.25em;
+  }
+
+  p,
+  li {
+    color: $text-dark;
+    line-height: 1.45;
+    margin: 0.3em 0;
+  }
+
+  strong {
+    color: $ocean-deep;
+  }
+
+  em {
+    color: $ocean-mid;
+    font-style: italic;
+  }
+
+  code {
+    font-family: $font-mono;
+    font-size: 0.82em;
+    background: rgba($ocean-mid, 0.1);
+    color: $ocean-deep;
+    padding: 0.08em 0.35em;
+    border-radius: 4px;
+  }
+
+  ul {
+    list-style: none !important;
+    padding-left: 0;
+    margin: 0.3em 0;
+
+    li {
+      list-style: none !important;
+      padding-left: 1.5em;
+      position: relative;
+      margin-bottom: 0.25em;
+
+      &::before {
+        content: "🐠";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 0.8em;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+
+// ─────────────────────────────────────────────
+// UTILITY CLASSES
+// ─────────────────────────────────────────────
+
+// Task instruction box
+.task-box {
+  background: rgba($ocean-deep, 0.07);
+  border: 1.5px dashed $ocean-mid;
+  border-radius: 6px;
+  padding: 0.55em 0.9em;
+  margin: 0.4em 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: $text-dark;
+  font-size: 0.9em;
+
+  p {
+    margin: 0;
+  }
+
+  &::before {
+    content: "📌 Task";
+    display: block;
+    font-weight: 800;
+    font-size: 0.68em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $ocean-mid;
+    margin-bottom: 0.25em;
+  }
+}
+
+// Expected output box
+.output-box {
+  background: rgba($sea-glass, 0.1);
+  border: 1.5px solid $sea-glass;
+  border-radius: 6px;
+  padding: 0.55em 0.9em;
+  margin: 0.4em 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.9em;
+
+  p {
+    margin: 0;
+  }
+
+  &::before {
+    content: "📤 Output";
+    display: block;
+    font-weight: 800;
+    font-size: 0.68em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $sea-glass;
+    margin-bottom: 0.25em;
+  }
+}
+
+// Timer badge — [5 mins]{.timer}
+.timer {
+  display: inline-block;
+  background: $coral;
+  color: $white-foam;
+  font-family: $font-mono;
+  font-size: 0.6em;
+  font-weight: 700;
+  padding: 0.12em 0.6em;
+  border-radius: 10px;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+
+  &::before {
+    content: "⏱  ";
+  }
+}
+
+// Two-column layout
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  align-items: start;
+  width: 100%;
+  box-sizing: border-box;
+}

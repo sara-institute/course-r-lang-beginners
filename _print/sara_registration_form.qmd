@@ -1,0 +1,332 @@
+---
+title: ""
+format:
+  typst:
+    paper: a4
+    margin:
+      top: 1.5cm
+      bottom: 1.5cm
+      left: 1.8cm
+      right: 1.8cm
+---
+
+```{=typst}
+
+// ── Colours ──────────────────────────────────────────────────────────────────
+#let navy      = rgb("#1a1a2e")
+#let blue      = rgb("#4a90d9")
+#let lightblue = rgb("#daeaf7")
+#let amber     = rgb("#C97B2A")
+#let gray-bg   = rgb("#f5f5f5")
+#let mid-gray  = rgb("#888888")
+#let border    = rgb("#cccccc")
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+// A labelled field: label on top, underline below for writing
+#let field(label, width: 1fr, height: 0.7cm) = {
+  box(width: width)[
+    #text(size: 7.5pt, fill: mid-gray, weight: "regular")[#label]
+    #v(1pt)
+    #line(length: 100%, stroke: 0.5pt + border)
+    #v(height)
+  ]
+}
+
+// A section header bar
+#let section(title) = {
+  v(6pt)
+  block(
+    width: 100%,
+    fill: white,
+    stroke: 1pt + navy,
+    inset: (x: 8pt, y: 5pt),
+    radius: 3pt,
+  )[
+    #text(size: 8.5pt, fill: navy, weight: "bold", tracking: 1pt)[
+      #upper(title)
+    ]
+  ]
+  v(4pt)
+}
+
+// Checkbox helper
+#let checkbox(label) = {
+  box(width: 10pt, height: 10pt, stroke: 0.5pt + border, radius: 1pt)
+  h(4pt)
+  text(size: 8.5pt)[#label]
+  h(12pt)
+}
+
+// ── HEADER ────────────────────────────────────────────────────────────────────
+#block(
+  width: 100%,
+  fill: white,
+  stroke: 1pt + navy,
+  inset: (x: 12pt, y: 10pt),
+  radius: 4pt,
+)[
+  #grid(
+    columns: (2cm, 1fr, 2.5cm),
+    column-gutter: 10pt,
+    align: horizon,
+
+    // SARA logo placeholder
+    block(
+      width: 2cm,
+      height: 2cm,
+      fill: white,
+      radius: 4pt,
+      inset: 4pt,
+    )[
+      #align(center + horizon)[
+        //#text(size: 7pt, fill: navy, weight: "bold")[SARA\ LOGO]
+        #box(image("logo-sara.png", width:100%))
+      ]
+    ],
+
+    // Title block
+    align(center)[
+      #text(size: 15pt, fill: navy, weight: "bold")[
+        SARA Institute of Data Science
+      ]
+      #v(2pt)
+      #text(size: 9pt, fill: rgb("#677887"))[
+        SARA EDUCATION TRUST (REGD.)
+      ]
+      #v(3pt)
+      #block(
+        fill: white,
+        stroke: 0.5pt + navy,
+        inset: (x: 10pt, y: 4pt),
+        radius: 3pt,
+      )[
+        #text(size: 9pt, fill: navy, weight: "bold")[
+          3rd SARA Summer School: R for Researchers, 22–26 July 2026, Sonipat
+        ]
+        #h(6pt)
+        //#text(size: 8.5pt, fill: rgb("#7c8084"))[
+          //22–26 July 2026  •  Dr. Ambedkar Bhawan, Sonipat
+        //]
+      ]
+      #v(2pt)
+      #text(size: 8pt, fill: rgb("#677887"))[
+        PARTICIPANT REGISTRATION FORM
+      ]
+    ],
+
+    // Photo box
+    block(
+      width: 2.5cm,
+      height: 3cm,
+      stroke: 0.5pt + border,
+      radius: 3pt,
+      fill: rgb("#e8e8e8"),
+    )[
+      #align(center + horizon)[
+        #text(size: 7pt, fill: mid-gray, style: "italic")[
+          Paste\ Passport\ Size\ Photo
+        ]
+      ]
+    ],
+  )
+]
+
+#v(6pt)
+
+// ── SECTION 1: PERSONAL DETAILS ───────────────────────────────────────────────
+#section("1. Personal Details")
+
+#grid(
+  columns: (1fr, 1fr, 1fr),
+  column-gutter: 10pt,
+  row-gutter: 8pt,
+
+  field("Full Name", width: 100%),
+  field("Date of Birth (DD/MM/YYYY)", width: 100%),
+  field("Gender", width: 100%),
+
+  field("Father's Name", width: 100%),
+  field("Mother's Name", width: 100%),
+  field("Caste Category (SC/ST/OBC/General)", width: 100%),
+)
+
+#v(2pt)
+
+#grid(
+  columns: (1fr, 1fr, 1fr),
+  column-gutter: 10pt,
+
+  field("Mobile Number", width: 100%),
+  field("WhatsApp Number (if different)", width: 100%),
+  field("Email Address", width: 100%),
+)
+
+// ── SECTION 2: ADDRESS ────────────────────────────────────────────────────────
+#section("2. Correspondence Address")
+
+#grid(
+  columns: (2fr, 1fr, 1fr),
+  column-gutter: 10pt,
+  row-gutter: 8pt,
+
+  field("Street Address / Village / Locality", width: 100%),
+  field("City / Town", width: 100%),
+  field("District", width: 100%),
+
+  field("State", width: 100%),
+  field("PIN Code", width: 100%),
+  field("Country", width: 100%),
+)
+
+// ── SECTION 3: ACADEMIC & PROFESSIONAL DETAILS ────────────────────────────────
+#section("3. Academic & Professional Details")
+
+#grid(
+  columns: (1fr, 1fr, 1fr),
+  column-gutter: 10pt,
+  row-gutter: 8pt,
+
+  field("Highest Qualification", width: 100%),
+  field("Subject / Discipline", width: 100%),
+  field("Institution / University", width: 100%),
+
+  field("Current Status", width: 100%),
+  field("Designation (if employed)", width: 100%),
+  field("Organisation / College (if applicable)", width: 100%),
+)
+
+#v(4pt)
+#text(size: 7.5pt, fill: mid-gray)[Current Status:]
+#h(6pt)
+#checkbox("Student")
+#checkbox("Research Scholar")
+#checkbox("Faculty")
+#checkbox("Working Professional")
+#checkbox("Other")
+
+// ── SECTION 4: R & STATISTICAL BACKGROUND ────────────────────────────────────
+// #section("4. Background in R & Statistics")
+
+// #v(2pt)
+// #text(size: 7.5pt, fill: mid-gray)[R Programming experience:]
+// #h(6pt)
+// #checkbox("No experience")
+// #checkbox("Beginner")
+// #checkbox("Intermediate")
+// #checkbox("Advanced")
+
+// #v(5pt)
+// #text(size: 7.5pt, fill: mid-gray)[Statistics background:]
+// #h(6pt)
+// #checkbox("None")
+// #checkbox("Basic")
+// #checkbox("Intermediate")
+// #checkbox("Advanced")
+
+// #v(5pt)
+// #field("What do you hope to learn from this Summer School?", width: 100%, height: 1cm)
+
+// ── SECTION 5: ACCOMMODATION & FOOD ──────────────────────────────────────────
+// #section("5. Accommodation & Food")
+
+// #v(2pt)
+// #text(size: 7.5pt, fill: mid-gray)[Do you require accommodation?]
+// #h(6pt)
+// #checkbox("Yes")
+// #checkbox("No")
+// #h(20pt)
+// #text(size: 7.5pt, fill: mid-gray)[Food preference:]
+// #h(6pt)
+// #checkbox("Vegetarian")
+// #checkbox("Vegan")
+// #checkbox("No preference")
+
+// #v(5pt)
+// #text(size: 7.5pt, fill: mid-gray)[Any dietary restrictions / allergies / medical needs:]
+// #v(1pt)
+// #line(length: 100%, stroke: 0.5pt + border)
+// #v(0.4cm)
+
+// ── SECTION 6: FELLOWSHIP / FEE ───────────────────────────────────────────────
+#section("4. Five Days Food & Accommodation Charges")
+
+#v(2pt)
+#text(size: 7.5pt, fill: mid-gray)[]
+#h(6pt)
+#checkbox("Fully-funded")
+#checkbox("Early Bird Rs.2700")
+#checkbox("Regular Price Rs.4500")
+
+
+// ── SECTION 7: EMERGENCY CONTACT ─────────────────────────────────────────────
+#v(5pt)
+#section("5. Emergency Contact")
+
+#grid(
+  columns: (1fr, 1fr, 1fr),
+  column-gutter: 10pt,
+
+  field("Name", width: 100%),
+  field("Relationship", width: 100%),
+  field("Mobile Number", width: 100%),
+)
+
+// ── DECLARATION & SIGNATURE ───────────────────────────────────────────────────
+#v(5pt)
+#block(
+  width: 100%,
+  fill: white,
+  //stroke: 0.5pt + navy,
+  inset: (x: 10pt, y: 7pt),
+  radius: 3pt,
+  stroke: 0.4pt + blue,
+)[
+  #text(size: 7.5pt, style: "italic", fill: rgb("#333333"))[
+    I hereby declare that the information provided above is true and correct to the best of my knowledge. 
+    I agree to abide by the rules and guidelines of the SARA Summer School and to engage with fellow 
+    participants with respect, kindness, and integrity.
+  ]
+]
+
+#v(5pt)
+#grid(
+  columns: (1.5fr, 1fr, 1fr),
+  column-gutter: 16pt,
+
+  [
+    #text(size: 7.5pt, fill: mid-gray)[Participant's Signature]
+    #v(1pt)
+    #line(length: 100%, stroke: 0.5pt + border)
+    #v(0.8cm)
+  ],
+  [
+    #text(size: 7.5pt, fill: mid-gray)[Date (DD/MM/YYYY)]
+    #v(1pt)
+    #line(length: 100%, stroke: 0.5pt + border)
+    #v(0.8cm)
+  ],
+  [
+    #text(size: 7.5pt, fill: mid-gray)[Place]
+    #v(1pt)
+    #line(length: 100%, stroke: 0.5pt + border)
+    #v(0.8cm)
+  ],
+)
+
+// ── FOOTER ────────────────────────────────────────────────────────────────────
+#v(2pt)
+#block(
+  width: 100%,
+  fill: white,
+  stroke: 0.5pt + navy,
+  inset: (x: 10pt, y: 5pt),
+  radius: 3pt,
+)[
+  #align(center)[
+    #text(size: 7pt, fill: rgb("#6d7378"))[
+      SARA Institute of Data Science  •  Dr. Ambedkar Bhawan, Kakroi Road, Sonipat  
+      •  sara-edu.netlify.app
+    ]
+  ]
+]
+```

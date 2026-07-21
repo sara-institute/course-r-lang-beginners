@@ -1,0 +1,650 @@
+/*-- scss:defaults --*/
+
+// ─────────────────────────────────────────────
+// COLOUR PALETTE
+// ─────────────────────────────────────────────
+
+// Ocean depths → shoreline → sand → sky
+$ocean-deep: #0A4F6E; // deep sea blue
+$ocean-mid: #1A7FA0; // clear ocean water
+$ocean-light: #5BB8D4; // shallow turquoise
+$seafoam: #A8DDE9; // sea foam / wave crest
+$wet-sand: #D4B896; // wet sand near the water
+$dry-sand: #F2E0C4; // warm dry beach sand
+$sky-blue: #87CEDF; // summer sky
+$sky-light: #E8F6FA; // pale morning sky (slide bg)
+$sunshine: #F9C74F; // bright sun / accent
+$coral: #E8735A; // tropical coral / warm accent
+$sea-glass: #3AAFA9; // sea glass green-teal
+$white-foam: #FFFFFF; // white foam / text on dark
+
+/*-- scss:rules --*/
+
+// Functional roles
+$primary: $ocean-deep;
+$accent: $coral;
+$highlight: $sunshine;
+$bg-light: $sky-light;
+$bg-dark: $ocean-deep;
+$text-dark: #1A2F3A; // near-black, readable
+$text-muted: #4A6B7A; // muted ocean tone
+
+
+// ─────────────────────────────────────────────
+// TYPOGRAPHY
+// ─────────────────────────────────────────────
+
+$font-family-sans: "Nunito", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: "Merriweather", Georgia, serif;
+$font-family-mono: "Fira Code", "Consolas", "Courier New", monospace;
+
+$font-size-base: 36px; // 16px
+$font-size-sm: 0.85rem;
+$font-size-lg: 1.15rem;
+
+// ─────────────────────────────────────────────
+// REVEAL.JS CORE OVERRIDES
+// ─────────────────────────────────────────────
+
+.reveal-viewport {
+    background-color: $bg-light !important;
+}
+
+.reveal {
+    font-family: $font-family-sans;
+    font-size: $font-size-base;
+    font-weight: 400;
+    color: $text-dark;
+}
+
+// ─────────────────────────────────────────────
+// HEADINGS
+// ─────────────────────────────────────────────
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+    font-family: $font-family-sans;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    color: $ocean-deep;
+}
+
+.reveal h1 {
+    font-size: 2.2em;
+    color: $ocean-deep;
+}
+
+.reveal h2 {
+    font-size: 1.6em;
+    color: $ocean-mid;
+}
+
+.reveal h3 {
+    font-size: 1.25em;
+    color: $sea-glass;
+}
+
+.reveal h4 {
+    font-size: 1.05em;
+    color: $text-muted;
+}
+
+// ─────────────────────────────────────────────
+// BODY TEXT & LINKS
+// ─────────────────────────────────────────────
+
+.reveal p,
+.reveal li {
+    line-height: 1.75;
+    color: $text-dark;
+}
+
+.reveal a {
+    color: $sea-glass;
+    text-decoration: underline;
+    text-decoration-color: rgba($sea-glass, 0.4);
+    transition: color 0.2s;
+
+    &:hover {
+        color: $coral;
+        text-decoration-color: $coral;
+    }
+}
+
+.reveal strong {
+    color: $ocean-mid;
+}
+
+.reveal em {
+    color: $coral;
+    font-style: italic;
+}
+
+
+// ─────────────────────────────────────────────
+// CODE BLOCKS
+// ─────────────────────────────────────────────
+
+// ── CODE BLOCK (the R code you write) ──────────
+div.sourceCode {
+    background: #0D3D55; // dark ocean — your code bg
+    border-radius: 6px;
+    padding: 0.5em;
+    margin: 0.4em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.sourceCode pre {
+    background: transparent; // let the div colour show through
+    border-left: 4px solid #3AAFA9;
+    margin: 0;
+    padding: 0.6em 0.9em;
+
+    code,
+    span {
+        color: #FFFFFF; // white text on dark bg
+        background: transparent;
+    }
+}
+
+
+// ── CODE OUTPUT (what R prints below) ──────────
+.cell-output pre {
+    background: #F2E0C4; // warm dry sand — output bg
+    color: #1A2F3A; // dark text
+    border-left: 4px solid #D4B896;
+    border-radius: 6px;
+    padding: 0.6em 0.9em;
+    //font-size: 0.60em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+// ── OUTPUT TYPES — target individually ─────────
+
+// Printed text output  e.g.  [1] 42
+.cell-output-stdout pre {
+    background: #F2E0C4; // sand
+    border-left-color: #D4B896;
+}
+
+// Warning messages
+.cell-output-stderr pre {
+    background: #FFF3CD; // pale yellow
+    border-left: 4px solid #F9C74F;
+    color: #7A5C00;
+}
+
+// Error messages
+.cell-output-error pre {
+    background: #FDE8E4; // pale coral
+    border-left: 4px solid #E8735A;
+    color: #8B2500;
+}
+
+
+// to give coral color to the inline R codes text
+.reveal code {
+    font-family: $font-family-mono;
+    font-size: 0.88em;
+    color: $coral;
+    background: rgba($ocean-mid, 0.08);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+}
+
+// ── COMMENTS — stand out, muted, italic ────────
+div.sourceCode pre span.co {
+    color: #7AAFC0 !important; // muted sky blue
+    font-style: italic !important;
+    font-weight: 400 !important;
+}
+
+// ── CODE TOKENS ────────────────────────────────
+
+// keywords — if, for, while, function, return
+div.sourceCode pre span.kw {
+    color: #F9C74F !important; // sunshine yellow
+    font-weight: 700 !important;
+}
+
+// strings — "hello", "SARA"
+div.sourceCode pre span.st {
+    color: #A8DDE9 !important; // seafoam
+}
+
+// numbers — 42, 3.14
+div.sourceCode pre span.dv,
+div.sourceCode pre span.fl {
+    color: #E8735A !important; // coral
+}
+
+// function calls — mean(), c(), ggplot()
+div.sourceCode pre span.fu {
+    color: #3AAFA9 !important; // sea glass
+}
+
+// built-in functions — library(), print()
+div.sourceCode pre span.bu {
+    color: #87CEDF !important; // sky blue
+}
+
+// operators — <-, =, +, |>, ~
+div.sourceCode pre span.ot,
+div.sourceCode pre span.op {
+    color: #D4B896 !important; // wet sand
+}
+
+// constants — TRUE, FALSE, NULL, NA
+div.sourceCode pre span.cn {
+    color: #F9C74F !important; // sunshine
+    font-weight: 700 !important;
+}
+
+// base text / variable names — default white
+div.sourceCode pre span {
+    color: #FFFFFF !important;
+}
+
+
+// ── COPY BUTTON — default state ────────────────
+div.sourceCode {
+    position: relative; // needed so button positions inside the block
+}
+
+button.code-copy-button {
+    position: absolute;
+    top: 0.4em;
+    right: 0.4em;
+
+    // size
+    padding: 0.2em 0.5em;
+    font-size: 0.6em;
+    line-height: 1.4;
+
+    // look
+    background: rgba(#A8DDE9, 0.15); // faint seafoam
+    color: #A8DDE9; // seafoam icon/text
+    border: 1px solid rgba(#A8DDE9, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    // hide the default tooltip
+    &::after {
+        display: none;
+    }
+}
+
+// ── HOVER — invite the click ────────────────────
+button.code-copy-button:hover {
+    background: #3AAFA9; // sea glass fill
+    color: #FFFFFF;
+    border-color: #3AAFA9;
+    transform: scale(1.05);
+}
+
+// ── ACTIVE / CLICK ──────────────────────────────
+button.code-copy-button:active {
+    background: #0A4F6E; // deep ocean on click
+    color: #FFFFFF;
+    transform: scale(0.97);
+}
+
+// ── AFTER COPY — "Copied!" success state ────────
+// Quarto adds .code-copy-button-checked after a copy
+button.code-copy-button-checked {
+    background: #3AAFA9 !important; // sea glass — success
+    color: #FFFFFF !important;
+    border-color: #3AAFA9 !important;
+
+    // override the icon with a message
+    &::before {
+        content: "✓ Copied!";
+        font-size: 0.85em;
+        font-weight: 700;
+        font-family: "Nunito", sans-serif;
+        letter-spacing: 0.03em;
+    }
+
+    // hide the default clipboard icon when showing message
+    svg {
+        display: none;
+    }
+}
+
+
+
+// ─────────────────────────────────────────────
+// SLIDE BACKGROUNDS
+// ─────────────────────────────────────────────
+
+// Default content slides — pale sky
+.reveal .slides section {
+    background-color: rgba($bg-light, 0.0);
+}
+
+// Title slide — deep ocean
+.reveal .slides section.title-slide,
+.reveal .slides section[data-background-color="#{$ocean-deep}"] {
+    background-color: $ocean-deep !important;
+    color: $white-foam;
+
+    h1,
+    h2,
+    h3 {
+        color: $white-foam;
+    }
+
+    p {
+        color: rgba($seafoam, 0.45);
+    }
+
+    a {
+        color: $sunshine;
+    }
+}
+
+// Section divider slides
+.reveal .slides section.section-slide {
+    background-color: $ocean-mid;
+    color: $white-foam;
+
+    h2 {
+        color: $white-foam;
+        font-size: 2em;
+    }
+
+    p {
+        color: $seafoam;
+    }
+}
+
+
+
+// ─────────────────────────────────────────────
+// PROGRESS BAR & CONTROLS
+// ─────────────────────────────────────────────
+
+.reveal .progress {
+    height: 4px;
+    color: $sunshine;
+    background: rgba($ocean-mid, 0.15);
+}
+
+.reveal .controls {
+    color: $ocean-mid;
+
+    .controls-arrow {
+        &:hover {
+            color: $coral;
+        }
+    }
+}
+
+.reveal .slide-number {
+    background: rgba($ocean-deep, 0.75);
+    color: rgba($coral, 0.5);
+    font-family: $font-family-mono;
+    font-size: 0.7em;
+    border-radius: 4px;
+    padding: 2px 8px;
+}
+
+
+
+// ─────────────────────────────────────────────
+// LISTS
+// ─────────────────────────────────────────────
+
+.reveal ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.4em 0;
+
+    li {
+        padding-left: 1.4em;
+        position: relative;
+        margin-bottom: 0.3em;
+
+        &::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: $sea-glass;
+            font-weight: 700;
+        }
+
+        // nested
+        ul li::before {
+            color: $ocean-light;
+            content: "–";
+        }
+    }
+}
+
+.reveal ol {
+    list-style: none !important;
+    padding-left: 0;
+    margin: 0.4em 0;
+    counter-reset: beach-counter;
+
+    li {
+        counter-increment: beach-counter;
+        list-style: none !important;
+
+        display: flex;
+        align-items: center; // vertical alignment
+        gap: 0.7em;
+
+        margin-bottom: 0.3em;
+
+        &::before {
+            content: counter(beach-counter);
+
+            flex-shrink: 0;
+
+            width: 1.5em;
+            height: 1.5em;
+
+            background: $ocean-mid;
+            color: $white-foam;
+
+            font-weight: 700;
+            font-size: 0.72em;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+// ─────────────────────────────────────────────
+// BLOCKQUOTES (tips, callouts)
+// ─────────────────────────────────────────────
+
+.reveal blockquote {
+    background: rgba($seafoam, 0.25);
+    border-left: 4px solid $sea-glass;
+    border-radius: 0 8px 8px 0;
+    padding: 0.8em 1.2em;
+    font-style: italic;
+    color: $ocean-deep;
+    margin: 1em 0;
+    box-shadow: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+// ─────────────────────────────────────────────
+// UTILITY CLASSES (use in slide .qmd source)
+// ─────────────────────────────────────────────
+
+// Callout box — tip/note
+.tip-box {
+    background: rgba($sunshine, 0.15);
+    border-left: 4px solid $sunshine;
+    border-radius: 0 8px 8px 0;
+    padding: 0.7em 1em;
+    margin: 0.8em 0;
+    color: $text-dark;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    &::before {
+        content: "💡 Tip: ";
+        font-weight: 700;
+        color: darken($sunshine, 20%);
+    }
+}
+
+// Highlight badge
+.badge {
+    display: inline-block;
+    background: $coral;
+    color: $white-foam;
+    font-size: 0.75em;
+    font-weight: 700;
+    padding: 0.15em 0.6em;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+// Seafoam highlight for inline emphasis
+.highlight {
+    background: rgba($seafoam, 0.45);
+    padding: 0.05em 0.3em;
+    border-radius: 3px;
+    color: $ocean-deep;
+    font-weight: 600;
+}
+
+// Large centered statistic
+.stat-callout {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: $ocean-mid;
+    line-height: 1;
+
+    span {
+        display: block;
+        font-size: 0.35em;
+        font-weight: 400;
+        color: $text-muted;
+        margin-top: 0.3em;
+    }
+}
+
+// Two-column layout helper
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+// Card-style content block
+.card {
+    background: $white-foam;
+    border: 1px solid rgba($ocean-light, 0.4);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 2px 8px rgba($ocean-deep, 0.08);
+
+    h3 {
+        margin-top: 0;
+        color: $ocean-mid;
+        font-size: 0.95em;
+        border-bottom: 2px solid $seafoam;
+        padding-bottom: 0.3em;
+        margin-bottom: 0.5em;
+    }
+}
+
+
+/* grid layout for faculty pictures*/
+.layout-grid-img {
+    --gap: 0.85rem;
+    display: grid;
+    gap: var(--gap);
+}
+
+@media (min-width: 800px) {
+    .layout-grid-img {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.layout-grid-img>* {
+    flex: 1;
+}
+
+
+.col {
+    display: grid;
+    gap: var(--gap);
+    align-content: center;
+}
+
+
+
+
+// ─────────────────────────────────────────────
+// FOOTER (optional — set in _quarto.yml)
+// ─────────────────────────────────────────────
+
+.reveal .footer {
+    font-size: 0.65em;
+    color: $text-muted;
+    font-family: $font-family-mono;
+}
+
+
+// ─────────────────────────────────────────────
+// TRANSITIONS
+// ─────────────────────────────────────────────
+
+.reveal .slides section {
+    transition: none; // keep snappy for teaching
+}
+
+
+
+// ─────────────────────────────────────────────
+// TEXT ALIGNMENT
+// ─────────────────────────────────────────────
+
+.centering {
+    text-align: center;
+}
+
+.reveal .center-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}

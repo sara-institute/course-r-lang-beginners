@@ -1,0 +1,46 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;600&display=swap');
+
+
+/*-- scss:rules --*/
+
+.reveal h1 {
+    font-family: 'Playfair Display', serif;
+    color: #1B4F8A;
+}
+
+.reveal h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #2E6DB4;
+}
+
+.reveal a {
+    color: #4A90D9;
+}
+
+.reveal blockquote {
+    border-left: 4px solid #C97B2A;
+    color: #C97B2A;
+    font-style: italic;
+}
+
+.reveal .center-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.reveal .highlight {
+    color: #4A90D9;
+    font-weight: 600;
+}
+
+.avatar-round {
+    border-radius: 50%;
+    object-fit: cover;
+}

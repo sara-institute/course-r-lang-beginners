@@ -1,0 +1,10 @@
+---
+title: "Hello World"
+subtitle: "2nd SARA Bootcamp 2026"
+author: "Dr. Ajay Kumar Koli"
+date: today
+format: 
+  html:
+    embed-resources: true
+---
+

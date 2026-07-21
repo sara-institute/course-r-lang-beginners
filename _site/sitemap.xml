@@ -2,70 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sara-course-r4b.netlify.app/practice-stats/practice-hypo.html</loc>
-    <lastmod>2024-12-15T13:37:41.000Z</lastmod>
+    <lastmod>2026-05-06T08:59:29.636Z</lastmod>
   </url>
   <url>
-    <loc>https://sara-course-r4b.netlify.app/hypothesis-formulation.html</loc>
-    <lastmod>2025-07-28T02:31:22.817Z</lastmod>
+    <loc>https://sara-course-r4b.netlify.app/test.html</loc>
+    <lastmod>2026-05-15T10:36:21.041Z</lastmod>
   </url>
   <url>
-    <loc>https://sara-course-r4b.netlify.app/objects.html</loc>
-    <lastmod>2025-07-18T07:18:29.698Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/code-chunk.html</loc>
-    <lastmod>2025-07-17T14:25:27.745Z</lastmod>
+    <loc>https://sara-course-r4b.netlify.app/Session2_GrammarOfGraphics.html</loc>
+    <lastmod>2026-07-19T13:25:24.296Z</lastmod>
   </url>
   <url>
     <loc>https://sara-course-r4b.netlify.app/visualization.html</loc>
-    <lastmod>2025-07-24T02:59:33.023Z</lastmod>
+    <lastmod>2026-07-19T23:33:55.519Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/Session1_GettingStarted.html</loc>
+    <lastmod>2026-07-19T13:18:22.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/transformation.html</loc>
+    <lastmod>2026-07-19T22:01:53.648Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/Session3_PolishingAndPublishing.html</loc>
+    <lastmod>2026-07-19T13:29:01.905Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sara-course-r4b.netlify.app/intro-r-rstudio.html</loc>
+    <lastmod>2026-07-19T23:38:34.337Z</lastmod>
   </url>
   <url>
     <loc>https://sara-course-r4b.netlify.app/eda.html</loc>
-    <lastmod>2025-07-24T03:15:25.135Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/wrangling.html</loc>
-    <lastmod>2025-07-24T02:59:43.184Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/talk-jnu.html</loc>
-    <lastmod>2025-07-19T02:26:20.775Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/r-intro.html</loc>
-    <lastmod>2025-07-24T02:59:30.401Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/scales.html</loc>
-    <lastmod>2025-07-28T03:35:30.284Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/markdown.html</loc>
-    <lastmod>2025-07-16T09:08:29.424Z</lastmod>
+    <lastmod>2026-05-06T08:59:29.268Z</lastmod>
   </url>
   <url>
     <loc>https://sara-course-r4b.netlify.app/index.html</loc>
-    <lastmod>2025-07-29T04:06:16.107Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/quarto.html</loc>
-    <lastmod>2025-07-24T02:31:07.678Z</lastmod>
+    <lastmod>2026-07-21T15:51:32.780Z</lastmod>
   </url>
   <url>
     <loc>https://sara-course-r4b.netlify.app/thanks.html</loc>
-    <lastmod>2025-07-29T04:05:41.432Z</lastmod>
+    <lastmod>2026-07-19T15:37:56.077Z</lastmod>
   </url>
   <url>
     <loc>https://sara-course-r4b.netlify.app/welcome.html</loc>
-    <lastmod>2025-07-24T03:01:17.886Z</lastmod>
+    <lastmod>2026-07-20T22:49:56.241Z</lastmod>
   </url>
   <url>
     <loc>https://sara-course-r4b.netlify.app/practice/practice-hypo.html</loc>
-    <lastmod>2025-07-28T02:38:50.145Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sara-course-r4b.netlify.app/rstudio.html</loc>
-    <lastmod>2025-07-24T03:01:00.784Z</lastmod>
+    <lastmod>2026-05-06T08:59:29.644Z</lastmod>
   </url>
 </urlset>

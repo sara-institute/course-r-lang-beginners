@@ -1,0 +1,1846 @@
+---
+title: "Introduction to<br>R & RStudio"
+#subtitle: "3rd SARA Summer School<br>22-26 July 2026"
+#author: "Dr. Ajay Kumar Koli"
+format: 
+  revealjs:
+    auto-animate: true
+    theme: [default, style-sea-summer.scss, sara-your-turn.scss]
+    slide-number: c/t
+    logo: images/logo-sara.png
+    transition: slide
+    incremental: true
+    scrollable: true
+execute: 
+  echo: true
+#footer: "[Study Material Website](https://sara-course-r4b.netlify.app/)"  
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/vector-1746618662777-7058cb830c6a?q=80&w=1567&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+---
+
+## Dr. Ajay Kumar Koli, PhD {.center}
+
+::: {.columns}
+
+::: {.column width="70%"}
+
+- Founder & Director of SARA
+- JNU, Pondicherry Central University, University of Hyderabad, University of Würzbürg 
+- Pursuing MSc Data Science from IGNOU
+
+:::
+
+::: {.column width="25%"}
+
+![](images/speakers/ajay.png){fig-align="center"}
+
+[{{< fa brands linkedin >}}](https://www.linkedin.com/in/ajay-kumar-koli/) [{{< fa brands github >}}](https://github.com/koliajaykr) [{{< fa brands twitter >}}](https://x.com/ajay_kolii) [{{< iconify fa6-brands bluesky >}}](https://bsky.app/profile/ajaykoli.bsky.social) [{{< fa brands instagram >}}](https://www.instagram.com/sara_data_sci/)
+
+:::
+
+:::
+
+::: {.footer}
+Slides prepared with 💙 & [Quarto](https://quarto.org/)
+:::
+
+
+## Data Science Project {background-color="black"}
+
+<br>
+
+![](https://r4ds.hadley.nz/diagrams/data-science/base.png){fig-align="center"}
+
+::: footer
+Image source: <https://r4ds.hadley.nz/>
+:::
+
+## The R Programming Language
+
+<br> <br>
+
+::::: columns
+::: {.column width="25%"}
+![](https://www.r-project.org/logo/Rlogo.png)
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="70%"}
+> "R is a free software environment for statistical computing and graphics."
+:::
+:::::
+
+::: footer
+R website link: <https://www.r-project.org/>
+:::
+
+## 🥳 Latest Ranking of R
+
+Rank [`#8`]{.stat-callout} in May 2026: Highest Position (since 2007)
+
+![](images/ratiing-r.png){fig-align="center"}
+
+::: footer
+Source: <https://www.tiobe.com/tiobe-index/r/>
+:::
+
+## History of R
+
+:::: {.nonincremental}
+
+- Intially as **S** language by Bell Labs.
+
+- First appeared in **August 1993** as R language by:
+
+::: {layout-ncol=2 }
+![Ross Ihaka, New Zealand Statistician](images/ross.jpg){width=2.50in}
+
+![Robert Gentleman, Canadian Statistician](images/robert.jpg){width=2.50in}
+:::
+
+::::
+
+## Download R from CRAN {.clr-ocean background-color="black"}
+
+Demo: <https://www.r-project.org/>
+
+![](images/cran.png)
+
+## R Console
+
+::: columns
+::: {.column width="50%"}
+
+-   R version 4.6.0 (2026-04-24)
+
+-   R name "Because it was There"
+
+-   R licence "ABSOLUTELY NO WARRANTY"
+
+-   R prompt `>`
+:::
+
+::: {.column width="50%"}
+
+![](images/console-r.png){width=75% fig-align='center'}
+:::
+:::
+
+## Workspace Image
+
+:::: columns
+::: {.column width="52%"}
+
+<br>
+
+[Don't save workspace image]{.badge}
+
+-   It helps in "freshly minted R sessions".
+
+-   "put more trust in your script than in your memory".
+:::
+
+::: {.column width="48%"}
+![](images/console-workspace.png){width=75% fig-align='center'}
+:::
+::::
+
+::: footer
+Source: [R Bloggers](https://www.r-bloggers.com/2017/04/using-r-dont-save-your-workspace/)
+:::
+
+# R Coding
+
+## Ways to Run R code
+
+::: {.panel-tabset}
+
+## Console
+
+- Type code directly after the `>` prompt and press Enter to run
+- Best for quick, one-line commands and experimenting
+- Output appears immediately below your command
+- Nothing is saved - closing R loses everything you typed
+- Think of it as a **scratch pad**
+
+## R Script (`.R` File)
+
+- Write multiple lines of code in a plain text file saved as `.R`
+- Code is saved and reusable - you can share it with others
+- Output appears in the Console, plots appear in the Plots pane
+
+
+## Quarto File (`.qmd`)
+
+- Mix R code chunks with text, headings, and images in one document
+- Click `Render` to produce a final HTML, PDF, or Word report
+- Perfect for reproducible research and sharing your full analysis as a report
+:::
+
+## R Console {auto-animate=true}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### Code
+```{r}
+#| label: number
+#| eval: false
+7
+```
+:::
+
+::: {.column width="50%"}
+### Output
+
+```{r}
+#| label: number
+#| echo: false
+```
+:::
+:::
+
+. . .
+
+::: {.tip-box}
+Press `Enter` key to run the code in console
+
+Copy code to clipboard
+:::
+
+## R Console: Addition {auto-animate=true}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: add
+#| eval: false
+2 + 1
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: add
+#| echo: false
+
+```
+:::
+:::
+
+## Operators
+
+<br>
+
+`12 + 3` in this code [`+`]{.stat-callout} is an operator.
+
+<br>
+
+. . . 
+
+> "Operators are used to perform operations on **variables** and **values.**"
+
+::: footer
+Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+:::
+
+## Arithmetic Operators
+
+> "Arithmetic operators are used with numeric values to perform common mathematical operations."
+
+. . . 
+
+::: {.tip-box}
+- Put spaces between and around operators (`= + - * /`)
+
+- Increase screen font size for better view.
+:::
+
+## Arithmetic Operators
+
+<br>
+
+| Operator | Name           | Example   |
+|----------|----------------|-----------|
+| `+`      | Addition       | `x + y`   |
+| `-`      | Subtraction    | `x - y`   |
+| `*`      | Multiplication | `x * y`   |
+| `/`      | Division       | `x / y`   |
+| `^`      | Exponent       | `x ^ y`   |
+| `%%`     | Remainder      | `x %% y`  |
+
+::: footer
+Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+:::
+
+
+## R Console: Subtraction {auto-animate=true}
+
+<br>
+
+::: columns
+
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: subtract
+#| eval: false
+10 - 2
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: subtract
+#| echo: false
+```
+:::
+
+:::
+
+## R Console: Multiplication {auto-animate=true}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: multiply
+#| eval: false
+12 * 4
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: multiply
+#| echo: false
+```
+:::
+:::
+
+## R Console: Division {auto-animate=true}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: division
+#| eval: false
+25 / 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: division
+#| echo: false
+```
+:::
+:::
+
+## R Console 
+
+<br>
+
+::: columns
+::: {.column width="70%"}
+### [Code]{.center}
+
+```{r}
+#| label: calci5
+#| eval: false
+3434 + 343453 * 2323 / 534 - 1000
+```
+:::
+
+::: {.column width="30%"}
+### [Output]{.center}
+
+```{r}
+#| label: calci5
+#| echo: false
+```
+:::
+
+::: {.tip-box}
+R follows the BODMAS (bracket, order, division, multiplication, addition and subtraction) rule to solve mathematical equations.
+:::
+:::
+
+## R Comparison Operators
+
+<br>
+
+> "Comparison operators are used to compare two values."
+
+## R Comparison Operators
+
+<br>
+
+| Operator | Name                     | Example   |
+|----------|--------------------------|-----------|
+| `==`     | Equal                    | `x == y`  |
+| `!=`     | Not equal                | `x != y`  |
+| `>`      | Greater than             | `x > y`   |
+| `<`      | Less than                | `x < y`   |
+| `>=`     | Greater than or equal to | `x >= y`  |
+| `<=`     | Less than or equal to    | `x <= y`  |
+
+::: footer
+Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+:::
+
+## R Console
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: logic1
+#| eval: false
+4 == 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: logic1
+#| echo: false
+```
+:::
+:::
+
+## R Console
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: logic2
+#| eval: false
+67 > 60
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: logic2
+#| echo: false
+```
+:::
+:::
+
+## R Miscellaneous Operator {auto-animate=true}
+
+> "Miscellaneous operators are used to manipulate data."
+
+<br>
+
+. . .
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: misc1
+#| eval: false
+12:36
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: misc1
+#| echo: false
+```
+
+:::
+:::
+
+::: footer
+Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+:::
+
+## [What if we want to add all these values in R?]{.clr-tom}
+
+<br>
+
+```{r}
+#| label: misc1
+#| echo: false
+```
+
+# R Functions 
+
+## R Function
+
+> A function is a **shortcut for a task we do repeatedly**.
+
+. . .
+
+> "A function, in a programming environment, is a set of **instructions**."
+
+## R Function `sum()` {auto-animate=true}
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: fun-sum1
+#| eval: false
+sum(2, 4, 6)
+```
+
+### Output
+
+```{r}
+#| label: fun-sum1
+#| echo: false
+```
+:::
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str1.png)
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str2.png)
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str3.png)
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str4.png)
+
+## Structure of a R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str5.png)
+
+<!-- ## Structure of R function {.center background-image="images/function-args.png" background-size="80%"} -->
+
+## R Function `sum()`
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: fun-sum2
+#| eval: false
+sum(12:36)
+```
+
+### Output
+
+```{r}
+#| label: fun-sum2
+#| echo: false
+```
+:::
+
+## Round function {auto-animate=true}
+
+::: panel-tabset
+### Code
+
+Function with default argument.
+
+```{r}
+#| label: fun-round2
+#| eval: false
+round(x = 42.58756)
+```
+
+or 
+
+```{r}
+#| label: fun-round22
+#| eval: false
+round(42.58756)
+```
+
+### Output
+
+```{r}
+#| label: fun-round2
+#| echo: false
+```
+
+or
+
+```{r}
+#| label: fun-round22
+#| echo: false
+```
+:::
+
+## Round function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-round3
+#| eval: false
+round(x = 46.58754, digits = 2)
+```
+
+or
+
+```{r}
+#| label: fun-round33
+#| eval: false
+round(46.58754, 2)
+```
+
+### Output
+
+```{r}
+#| label: fun-round3
+#| echo: false
+```
+
+or
+
+```{r}
+#| label: fun-round33
+#| echo: false
+```
+:::
+
+## Square Root Function {auto-animate=true}
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-sqrt
+#| eval: false
+sqrt(x = 9)
+```
+
+### Output
+
+```{r}
+#| label: fun-sqrt
+#| echo: false
+```
+:::
+
+## Sequence Function {auto-animate=true}
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-seq
+#| eval: false
+seq.int(from = 10, to = 30, by = 5)
+```
+
+or
+
+```{r}
+#| label: fun-seq11
+#| eval: false
+seq.int(10, 30, 5)
+```
+
+### Output
+
+```{r}
+#| label: fun-seq
+#| echo: false
+```
+
+or 
+
+```{r}
+#| label: fun-seq1
+#| echo: false
+```
+
+or
+
+```{r}
+#| label: fun-seq11
+#| echo: false
+```
+
+:::
+
+
+## Plot using R {auto-animate=true}
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: plot1
+#| eval: false
+plot(1:100)
+```
+
+### Output
+
+```{r}
+#| label: plot1
+#| echo: false
+```
+:::
+
+
+## Getting Help with R
+
+- The `help()` function and `?` help operator in R. 
+
+- Use `args()` function to the get the list of arguments of a function.
+
+::: footer
+[R Website](https://www.r-project.org/help.html)
+:::
+
+## Your Turn {.your-turn}
+
+```{r}
+#| echo: false
+library(countdown)
+
+countdown(minutes = 15, play_sound = TRUE, top = 0)
+```
+
+::: {.nonincremental}
+-  Add two numbers: 15 + 27
+
+- Create a sequence of numbers from 1 to 10
+
+- Create a sequence from 5 to 50, interval by 5
+
+- Find the square root of 81
+
+- Round the number 3.786 to 2 decimal places
+:::
+
+## Answers {.answer}
+
+- Add two numbers: 15 + 27, `15 + 27`
+
+- Create a sequence of numbers from 1 to 10, `seq(1, 10)`
+
+- Create a sequence from 5 to 50, interval of 5, `seq(5, 50, by = 5)`
+
+- Find the square root of 81, `sqrt(81)`
+
+- Round the number 3.786 to 2 decimal places, `round(3.786, 2)`
+
+## 😏 That's okay but how to ...
+
+::: nonincremental
+- **Everything in one Software** codes, results, writing.
+
+- **Always reproducible** re-run work, anytime, by anyone.
+
+- **Share and publish** with other Word, PDF or HTML.
+:::
+
+## {transition="zoom" transition-speed="slow" .center background-color="black"}
+
+![](https://media3.giphy.com/media/o6FWop1Gbuyly/giphy.gif?cid=ecf05e474i92dhzes35zr0jtervmdixne1moeehvvtnntmm8&ep=v1_gifs_related&rid=giphy.gif&ct=g){fig-align="center" width=75%}
+
+[We need a superhero 🐾 RStudio ]{.r-fit-text .badge}
+
+# RStudio IDE 
+
+## 
+
+<br>
+<br>
+<br>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](images/logo_rstd.png)
+:::
+
+::: {.column width="60%"}
+RStudio is an integrated development environment (IDE) for R and Python from company [posit](https://posit.co/)
+:::
+
+::::
+
+## R and RStudio {.centering}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### Imagine R as a powerful engine
+
+<br>
+
+[{{< fa gear size=7x >}}]{style="color:gray"}
+:::
+
+::: {.column width="50%"}
+### and RStudio as a stylish car
+
+<br>
+
+[{{< fa car size=7x >}}]{style="color:#F9C74F"}
+:::
+:::
+
+::: footer
+Download RStudio: <https://posit.co/download/rstudio-desktop>
+:::
+
+## RStudio IDE {background-color=black}
+
+![](images/rstd_ide.png){fig-align="center"}
+
+##  [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center} {background-color=black}
+
+![](images/rstd_options1.png){fig-align="center"}
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .centering} {background-color=black}
+
+![](images/rstd_options2.png){fig-align="center"}
+
+## RStudio Without Project {background-color=black}
+
+![](images/rstd-proj-none.png){fig-align=center}
+
+## RStudio Without Project {background-color=black}
+
+![](images/rstd-proj-folders.png){fig-align=center}
+
+## RStudio Project Helps: {background-image="images/r-projects.png" background-size="55%" background-position="bottom right"}
+
+::: columns
+::: {.column width="100%"}
+"to divide your work into multiple contexts, each with their own"
+
+- Working directory,
+- Workspace,
+- History, and
+- Source documents.
+
+:::
+:::
+
+::: footer
+Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) & artwork by [Allison Horst](https://www.allisonhorst.com/)
+:::
+
+## Create RStudio project {background-color=black}
+
+![](images/rstd_proj1.png){fig-align=center}
+
+## Create RStudio project {background-color=black}
+
+![](images/rstd_proj2.png){fig-align=center}
+
+## In case anything goes wrong$...$ {background-color=black}
+
+![](images/rstd_proj3.1.png){fig-align=center}
+
+## Create RStudio Project {background-color=black}
+
+![](images/rstd_proj3.png){fig-align=center}
+
+## Create RStudio project {background-color=black}
+
+![](images/rstd_proj4.png){fig-align=center}
+
+## Create RStudio project {background-color=black}
+
+![](images/rstd_proj4a.png){fig-align=center}
+
+## Create RStudio project {background-color=black}
+
+![](images/rstd_proj4b.png){fig-align=center}
+
+## Create RStudio project {background-color=black}
+
+![](images/rstd_proj4c.png){fig-align=center}
+
+## RStudio project "name" {background-color=black}
+
+![](images/rstd_proj_name.png){fig-align=center}
+
+## RStudio project "path" {background-color=black}
+
+![](images/rstd_proj_path1.png){fig-align=center}
+
+## RStudio project {background-color=black}
+
+![](images/rstd_proj_path2.png){fig-align=center}
+
+## Your Turn {.your-turn}
+
+
+
+::: {.task-box}
+### Run these codes in the console of RStudio
+- "Hello World"
+- 12 + 2
+- 3 * 9
+- 34 == 34
+- 67 == 90
+:::
+
+# R Script
+
+## Pros of R Script (`.R` File) {.scrollable}
+
+- **Clean and focused** - a `.R` file contains only code, making it easy to read, edit, and run without any extra formatting.
+
+- **Fast to execute** - you can run the entire script in one go, making it ideal data cleaning scripts, and automation.
+
+- **Easy to share and version control** - a plain `.R` file is lightweight and it opens immediately.
+
+## Create R Script {background-color="black"}
+
+::: {.columns}
+
+::: {.column width=30%}
+
+![](images/r-script.png)
+
+:::
+
+::: {.column width=70%}
+
+![](images/r-script-file.png)
+
+[{{< fa file-arrow-down >}} Save "Five Essentials" Practice File (.R)](demo/five_essentials.R)
+
+:::
+:::
+
+## How to use this file
+
+- [Run one line at a time:]{.highlight} place cursor on a line: `Ctrl + Enter` (Win) / `Cmd + Enter` (Mac)
+- [Run a whole section:]{.highlight} select lines → `Ctrl + Enter`
+- [Run the full file:]{.highlight} `Ctrl + Shift + Enter`
+- Output appears in the Console
+
+## Variables & Data Types {auto-animate=true}
+
+- A variable stores a value, like a box, so you can reuse it.
+
+- Use  `<-`  to assign (R's way of saying "equals"): `Alt + -` (Win) / `option + -` (Mac)
+
+- Character  (text - always in quotes), numeric (whole number or decimal) and logical (TRUE or FALSE)
+
+## Create Variables {auto-animate=true}
+
+```{r}
+name <- "SARA Institute" # character
+
+year <- 2023 # numeric
+
+fee <- 4500.00 # numeric
+
+is_free <- FALSE # logical
+```
+
+. . .
+
+::: {.tip-box}
+Comment is any line in R that starts with `#` - R completely ignores it when running code
+:::
+
+## Print a Variable {auto-animate=true}
+
+Type variable name and run
+
+::: {.columns}
+
+::: {.column}
+
+### Code
+
+```{r}
+#| label: print-vars
+#| eval: false
+name
+
+#year
+
+fee
+
+#is_free
+```
+
+:::
+
+::: {.column}
+
+### Output
+
+```{r}
+#| label: print-vars
+#| echo: false
+```
+
+:::
+
+:::
+
+
+## Type of a Variable {auto-animate=true}
+
+Type variable name and run
+
+::: {.columns}
+
+::: {.column}
+
+### Code
+
+```{r}
+#| label: type-vars
+#| eval: false
+class(name)
+
+class(year)
+
+class(fee)
+
+class(is_free)
+```
+
+:::
+
+::: {.column}
+
+### Output
+
+```{r}
+#| label: type-vars
+#| echo: false
+```
+
+:::
+:::
+
+## See a quick Summary of Variable {auto-animate=true}
+
+::: {.columns}
+
+::: {.column}
+
+### Code
+
+```{r}
+#| label: str-vars
+#| eval: false
+str(name)
+
+str(year)
+```
+
+:::
+
+::: {.column}
+
+### Output
+
+```{r}
+#| label: str-vars
+#| echo: false
+```
+
+:::
+:::
+
+## Your Turn {.your-turn}
+
+1. Create a variable called my_name with your name.
+
+1. Create a variable called my_city with your city.
+
+1. Print both. What class are they?
+
+```{r}
+#| echo: false
+countdown(minutes = 10, play_sound = TRUE, top = 0)
+```
+
+## Beautiful R Codes {.scrollable}
+
+::: {.tip-box}
+
+- Writing readable code because other people might need to use your code.
+
+- Writing readable code because you might need to use your code, a few weeks/months/years after you’ve written it.
+
+- Put spaces between and around variable names and operators (`= + - * /`).
+
+- Break up long lines of code.
+
+- Keeping a consistent style.
+
+:::
+
+## Vector {auto-animate=true}
+
+- A vector is a sequence of values of the SAME type.
+
+- `c()` function means "combine" - it is how to build a vector.
+
+. . .
+
+```{r}
+students <- c("Priya", "Rahul", "Anita", "Suresh", "Meena")
+
+scores <- c(88, 75, 92, 60, 85)
+
+passed <- c(TRUE, TRUE, TRUE, FALSE, TRUE)
+```
+
+## Print Vector {auto-animate=true}
+
+::: {.columns}
+
+::: {.column width=30%}
+
+### Code
+
+```{r}
+#| label: print-vectors
+#| eval: false
+students
+
+scores
+
+passed
+```
+
+:::
+
+::: {.column width=70%}
+
+### Output
+
+```{r}
+#| label: print-vectors
+#| echo: false
+```
+
+:::
+:::
+
+## Access Individual Elements {auto-animate=true}
+
+R starts counting from 1
+
+::: {.columns}
+
+::: {.column}
+
+### Code
+
+```{r}
+#| label: print-elements
+#| eval: false
+# first student
+students[1]
+
+# third score
+scores[3]
+
+# elements 2 to 4
+students[2:4]
+
+# elements 1 and 5
+scores[c(1, 5)]
+```
+
+:::
+
+::: {.column}
+
+### Output
+
+```{r}
+#| label: print-elements
+#| echo: false
+```
+
+:::
+:::
+
+## Arithmetic on Vector {auto-animate=true}
+
+::: {.columns}
+
+::: {.column}
+
+### Code
+
+```{r}
+#| label: arith-vectors
+#| eval: false
+# add 5 bonus marks to everyone
+scores + 5
+
+# increase all scores by 10%
+scores * 1.1
+
+# TRUE/FALSE — who scored 70 or above?
+scores >= 70
+```
+
+:::
+
+::: {.column}
+
+### Output
+
+```{r}
+#| label: arith-vectors
+#| echo: false
+```
+
+:::
+:::
+
+## Built-in Summary Functions
+
+- `length(scores)` for how many elements?
+- `sum(scores)` for total
+- `mean(scores)` for average
+- `median(scores)` for middle value
+- `max(scores)` for highest
+- `min(scores)` for lowest
+- `range(scores)` for min and max together
+- `sd(scores)`for standard deviation
+
+## Cons of R Script (`.R` File) {.scrollable}
+
+- **Output is not saved with the code** - plots appear in the Plots pane and results in the Console, but closing RStudio loses everything; you have to rerun the script every time to see the output again.
+
+- **No narrative or context** - you can only add short comments with `#`; there is no space to explain your thinking, interpret results, or present findings in a readable way for others.
+
+- **Not reproducible as a report** — a `.R` file cannot be directly shared as a document; turning your analysis into something a non-coder can read requires extra steps, unlike `.qmd` which renders everything in one click.
+
+## Your Turn {.your-turn}
+
+1. Create a vector of 5 temperatures (any values you like).
+
+1. Find the mean, max, and min.
+
+1. Which temperatures are above 30? (use >= 30)
+
+## Data Frames {background-color="black"}
+
+![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/85520b8f-4629-4763-8a2a-9ceff27458bf_rw_1920.jpg?h=21007b20ac00cf37318dca645c215453)
+
+::: footer
+Source: <https://allisonhorst.com/other-r-fun>
+:::
+
+## Data Frame {auto-animate=true}
+
+::: {.panel-tabset}
+
+## Code
+
+```{r}
+#| label: data-frame
+#| eval: false
+participants <- data.frame(
+  name = c("Priya", "Rahul", "Anita", "Suresh", "Meena"),
+  city = c("Delhi", "Jaipur", "Mumbai", "Lucknow", "Pune"),
+  score = c(88, 75, 92, 60, 85),
+  passed = c(TRUE, TRUE, TRUE, FALSE, TRUE)
+)
+
+# print the whole table
+participants
+```
+
+## Output
+
+```{r}
+#| label: data-frame
+#| echo: false
+```
+
+:::
+
+## Look at the data frame
+
+- `head(participants)` first 6 rows (useful for big data)
+
+- `tail(participants)` last 6 rows
+
+- `nrow(participants)` number of rows
+
+- `ncol(participants)`  number of columns
+
+- `dim(participants)`  rows and columns together
+
+- `names(participants)`  column names
+
+- `str(participants)`  structure — types of each column
+
+- `summary(participants)`  quick stats for each column
+
+
+## Access columns using `$` {auto-animate=true}
+
+— gives you the whole column as a vector
+
+<br>
+
+```{r}
+participants$name
+
+participants$score
+```
+
+## Access a specific `[row, column]` {auto-animate=true}
+
+```{r}
+participants[1, ] # first row, all columns
+participants[, 3] # all rows, third column (score)
+participants[2, 3] # row 2, column 3 → Rahul's score
+```
+
+## Filter rows - who passed? {auto-animate=true}
+
+```{r}
+participants[participants$passed == TRUE, ]
+```
+
+## Who scored above 80? {auto-animate=true}
+
+```{r}
+participants[participants$score > 80, ]
+```
+
+## Add a new column {auto-animate=true}
+
+```{r}
+participants$grade <- ifelse(participants$score >= 80, "Distinction", "Pass")
+participants
+```
+
+## Your Turn {.your-turn}
+
+::: {.task-box}
+- Create a data frame with 4 of your friends: `name`, `age`, and `favourite_subject`.
+- Print only the `name` and `favourite_subject` columns.
+- Filter: who is older than `25`?
+:::
+
+# R Packages
+
+## R Packages 📦 {background-image="images/packages.png" background-position="bottom right" background-size="40%"}
+
+> "An R package is a collection of **functions, data, and documentation** that extends the capabilities of base R. Using packages is key to the successful use of R."
+
+::: footer
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+:::
+
+## R Packages
+
+- Install the R package
+
+- Call the R package
+
+- Update the R package
+
+- Remove the R package
+
+## Install Packages {background-color="black"}
+
+![](images/pkg-download1.png){fig-align="center"}
+
+## Name of the Packages {background-color="black"}
+
+![](images/pkg-download2.png){fig-align="center"}
+
+## Installed Packages {background-color="black"}
+
+![](images/pkg-download3.png){fig-align="center"}
+
+## Tools $\rightarrow$ Package Updates {background-color="black"}
+
+![](images/update-pkg1.png){fig-align="center"}
+
+## Select Packages to Update {background-color="black"}
+
+![](images/update-pkg2.png){fig-align="center"}
+
+## Click Install Updates {background-color="black"}
+
+![](images/update-pkg3.png){fig-align="center"}
+
+## To Remove Packages {background-color="black"}
+
+![](images/remove-pkg.png){fig-align="center"}
+
+## Functions for Packages
+
+<br>
+
+::: {.columns}
+
+::: {.column}
+### Install a Package
+We install a package once
+```{r}
+#| eval: false
+install.packages("tidyverse")
+```
+
+:::
+
+::: {.column}
+### Call a Package
+
+Call it atleast once in file
+```{r}
+#| eval: false
+library(tidyverse)
+```
+
+:::
+
+:::
+
+. . .
+
+::: {.tip-box}
+If you un-install R or RStudio, you will lose all installed packages.
+:::
+
+## Create your own R Functions 
+
+- A function is a reusable block of code that does one job.
+- We have already used built-in functions: `mean()`, `sum()`, `c()`
+
+## Basic structure of Function
+
+<br>
+
+```markdown
+my_function <- function(argument1, argument2) {
+    result <- code that does something
+    return(result)
+}
+```
+
+## Write a R Function {auto-animate=true}
+
+<br>
+
+```{r}
+add_numbers <- function(x, y) {
+  result <- x + y
+  return(result)
+}
+```
+
+. . .
+
+1. [function name]{.badge} - what we call it `add_numbers()`
+1. [An argument]{.badge} - what you give it `function(x, y)`
+1. [A body]{.badge} - what it does with it `{result <- x + y` & `return(result)}`
+
+## Example 1 - Add two numbers {auto-animate=true}
+
+```{r}
+add_numbers <- function(x, y) {
+  result <- x + y
+  return(result)
+}
+
+add_numbers(1, 2)
+
+add_numbers(3, 55)
+
+add_numbers(-3, 10)
+```
+
+## Example 2 - Greet a participant {auto-animate=true}
+
+```{r}
+greet <- function(name) {
+  message <- paste("Hello,", name, "!")
+  return(message)
+}
+
+greet("Kiran")
+
+greet("Ajay")
+```
+
+## Example 3 - Convert Marks to Percent {auto-animate=true}
+
+```{r}
+to_percent <- function(marks, total = 100) {
+  # total has a default value
+  percent <- (marks / total) * 100
+  return(round(percent, 2)) # round to 2 decimal places
+}
+
+to_percent(75) # out of 100 (default)
+to_percent(55, total = 60) # out of 60
+```
+
+## Example 4 — Classify a Score {.scrollable auto-animate=true} 
+
+```{r}
+classify_score <- function(score) {
+  if (score >= 90) {
+    return("Excellent")
+  } else if (score >= 75) {
+    return("Good")
+  } else if (score >= 60) {
+    return("Pass")
+  } else {
+    return("Needs Improvement")
+  }
+}
+
+classify_score(92)
+classify_score(78)
+classify_score(55)
+```
+
+## Your Turn {.your-turn}
+
+::: {.task-box}
+- Write a function called celsius_to_fahrenheit that converts temperature: `F = (C * 9/5) + 32`.
+- Test it with 0, 100, and 37 (body temperature)
+:::
+
+## Answers {.answer}
+
+```{r}
+celsius_to_fahrenheit <- function(x) {
+  F <- (x * 9 / 5) + 32
+  return(F)
+}
+
+celsius_to_fahrenheit(37)
+```
+
+# Quarto
+
+## Quarto {background-image="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b041d35c-5117-4dd0-9b08-d2d0f7a77f9a.png?h=21528b7e9f1a2e24c9ec3d46cfca8653" background-size="65%" background-position="bottom"}
+
+> "An open-source scientific and technical publishing system"
+
+::: {.footer}
+Source: <https://quarto.org/> | Artwork from [Allison Horst](https://allisonhorst.com/horst-hill-collaborations)
+:::
+
+## Quarto Workflow {background-color="black"}
+
+<br>
+
+![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b5217f2a-f129-4bf9-90dc-c5b9783d0ea8.png?h=f8d3ed40353f4ae6eb77dae39072510c)
+
+## Create Quarto Document {background-color="black"}
+
+::: {.centering layout-ncol=2 layout-valign="bottom"}
+
+![Step 1](images/quarto-new-file.png){width="45%"}
+
+![Step 2](images/quarto-new-document.png)
+
+:::
+
+## Quarto Main Components {auto-animate=true}
+
+1. [YAML]{.badge}
+
+1. [Markdown Text]{.badge}
+
+1. [Code Chunk/Block/Cell]{.badge}
+
+## YAML {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```yaml
+---
+title: "Hello World"
+subtitle: "2nd SARA Bootcamp 2026"
+author: "Dr. Ajay Kumar Koli"
+date: today
+format: html
+---
+
+```
+
+:::
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src="./_example1.html" width="100%" height="500"></iframe>
+```
+
+:::
+
+::::
+
+::: footer
+More YAML options for HTML ouput <https://quarto.org/docs/reference/formats/html.html>
+:::
+
+## Markdown Syntax {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```yaml
+---
+title: "Hello World"
+subtitle: "2nd SARA Bootcamp 2026"
+author: "Dr. Ajay Kumar Koli"
+date: today
+format: html
+---
+
+## First Time Coding
+
+- Relax
+
+- Patience
+
+## Having Fun
+
+This is *just* the beginning. 
+It will be **awesome** at the end. 
+Learn more from this link <https://quarto.org/docs/reference/formats/html.html>.
+
+## Add Image
+
+![](images/rose.jpg)
+
+```
+
+:::
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe src="./_example-02.html" width="100%" height="500"></iframe>
+```
+
+:::
+
+::::
+
+::: footer
+Markdown basics <https://quarto.org/docs/authoring/markdown-basics.html>
+:::
+
+## Code Blocks {auto-animate=true} 
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+````yaml
+---
+title: "ggplot2 demo"
+author: "Norah Jones"
+date: "5/22/2021"
+format: 
+  html:
+    code-fold: true
+---
+
+## Air Quality
+
+@fig-airquality further explores the impact of temperature on ozone level.
+
+```{{r}}
+#| label: fig-airquality
+#| fig-cap: "Temperature and ozone level."
+#| warning: false
+
+library(ggplot2)
+
+ggplot(airquality, aes(Temp, Ozone)) + 
+  geom_point() + 
+  geom_smooth(method = "loess")
+```
+````
+
+:::
+
+::: {.column width="30%"}
+
+<iframe src="./_example-03.html" width="100%" height="500"></iframe>
+
+:::
+
+::::
+
+
+::: footer
+R Code Blocks <https://quarto.org/docs/computations/r.html>
+:::
+
+## Inline Code {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+````yaml
+---
+title: "Inline Coding"
+date: "3/14/2026"
+format: html
+---
+
+```{{r}}
+marks <- c(2, 4, 6, 8)
+```
+
+The sum of the marks is `{{r}} sum(marks)`. 
+
+The mean of the marks is `{{r}} mean(marks)`. 
+````
+:::
+
+::: {.column width="30%"}
+
+<iframe src="./_example-04.html" width="100%" height="500"></iframe>
+
+:::
+
+::::
+
+## Quarto Output Formats
+
+::: {.panel-tabset}
+### HTML
+
+```yaml
+---
+title: "My document"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    css: styles.css
+---
+```
+
+### PDF
+
+```yaml
+---
+title: "My document"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+```
+
+### WORD
+
+```yaml
+---
+title: "My Document"
+format:
+  docx:
+    toc: true
+    number-sections: true
+    highlight-style: github
+---
+```
+:::
+
+. . .
+
+::: {.callout-caution}
+Not all YAML options are supported across every output format.
+:::
+
+::: footer
+More info <https://quarto.org/docs/output-formats/all-formats.html>
+:::
+
+## Thank you! {.center}
+
+**Module 1 complete** 🎉
+
+*SARA Institute of Data Science - 3rd SARA Summer School 22-26 July 2026 "R for Researchers"*
+
+::: {.footer}
+Course Slides website: <https://sara-course-r4b.netlify.app/>
+:::

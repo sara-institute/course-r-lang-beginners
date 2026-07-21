@@ -1,6 +1,6 @@
 ---
-title: "{{< fa brands r-project >}} for Beginners"
-subtitle: "2nd SARA Data Science Summer School 2025"
+title: "R for Researchers"
+subtitle: "3rd SARA Summer School, 22-26 July 2026"
 format: html
 toc: true
 number-sections: true
@@ -19,7 +19,7 @@ This course aims to help the participants to overcome the fear of coding.
 
 - Students from Underrepresented Communities are Prioritized for Selection. 
 
-- There is no tuition fee for any participant. The fee of Rs. 6000 (around 70 USD) includes the food and accommodation for five days at the SARA Institute, Dr. Ambedkar Bhawan, Sonipat, Haryana - 131001.
+- There is no tuition fee for any participant. The fee of Rs. 4500 (around 50 USD) includes the food and accommodation for five days at the SARA Institute, Dr. Ambedkar Bhawan, Sonipat, Haryana - 131001.
 
 Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
@@ -27,76 +27,76 @@ Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
 <br>
 
-{{< revealjs file="welcome.html" height="500px" class="ratio ratio-16x9" >}}
+{{< revealjs file="welcome.html" height="500px" class="ratio ratio-16x9" >}} 
 
 <br>
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="r-intro.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="r-intro.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="rstudio.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="rstudio.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="objects.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="objects.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="code-chunk.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="code-chunk.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="wrangling.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="wrangling.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="quarto.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="quarto.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="markdown.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="markdown.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="scales.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="scales.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="visualization.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="visualization.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="eda.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="eda.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="hypothesis-formulation.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="hypothesis-formulation.html" height="500px" class="ratio ratio-16x9" >}} -->
 
-<br>
+<!-- <br> -->
 
-## Session
+<!-- ## Session -->
 
-{{< revealjs file="thanks.html" height="500px" class="ratio ratio-16x9" >}}
+<!-- {{< revealjs file="thanks.html" height="500px" class="ratio ratio-16x9" >}} -->

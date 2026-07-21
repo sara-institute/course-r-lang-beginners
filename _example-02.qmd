@@ -1,0 +1,24 @@
+---
+title: "Hello World"
+subtitle: "2nd SARA Bootcamp 2026"
+author: "Dr. Ajay Kumar Koli"
+date: today
+format: 
+  html:
+    embed-resources: true
+---
+
+## First Time Coding
+
+- Relax
+
+- Patience
+
+## Having Fun
+
+This is *just* the beginning. It will be **awesome** at the end. Learn more from this link <https://quarto.org/docs/reference/formats/html.html>.
+
+## Add Image
+
+![](images/rose.jpg)
+

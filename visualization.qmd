@@ -1,67 +1,111 @@
 ---
-title: "[DATA <br> VISUALIZATION]{.r-fit-text}"
-subtitle: "[Dr. Ajay Kumar Koli, PhD | SARA Institute of Data Science, India]{.r-fit-text}"
+title: "Data<br>Visualisation"
+#subtitle: "3rd SARA Summer School<br>22-26 July 2026"
+#author: "Dr. Ajay Kumar Koli"
 format: 
   revealjs:
-    background-transition: convex
-    execute: 
-      echo: true
-controls: true
-slide-number: true
-scrollable: true
-logo: images/logo-sara.png
-#bibliography: references.bib
-theme: style.scss
+    auto-animate: true
+    theme: [default, style-sea-summer.scss, sara-your-turn.scss]
+    slide-number: c/t
+    logo: images/logo-sara.png
+    transition: slide
+    incremental: true
+    scrollable: true
+execute: 
+  echo: true
+#footer: "[Study Material Website](https://sara-course-r4b.netlify.app/)"  
 title-slide-attributes: 
-  data-background-image: "https://images.unsplash.com/photo-1619153041153-65c8e78e4710?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  data-background-size: cover
-  data-background-color: black
-  data-background-opacity: "0.7"
-  #data-background-repeat: yes
+  data-background-image: "https://images.unsplash.com/vector-1746618662777-7058cb830c6a?q=80&w=1567&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 
-
-##  {.inverse background-image=images/logo-ggplot.png background-size=contain}
-
-## {background-color=#}
-
-<br>
-<br>
-<br>
-<br>
-
-> “The simple graph has brought more information to the data analyst’s mind than any other device.” — John Tukey
-
-```{r}
-#| label: packages-used2
-#| echo: false
-#| warning: false
-#| message: false
-
-#library(palmerpenguins)
-library(emoji)
-library(countdown)
-```
-
-## Goal
-
-How to visualize data using R package ggplot2.
+## Data Visualization
 
 <br>
 
-![](https://r4ds.hadley.nz/data-visualize_files/figure-html/unnamed-chunk-7-1.png)
+> "The simple graph has brough more information to the data analyst's mind than any other device." - John Tukey
 
-## {background-image=images/cake-ggplot.png background-size=contain}
+## Climate Spiral {background-color="black"}
 
-::: aside
+{{< video https://youtu.be/jWoCXLuTIkI?si=Z1Q9sl2obtVBIUWu width="95%" height="85%" >}}
 
-[Source: [Tanya Shapiro](https://twitter.com/tanya_shapiro/status/1576935152575340544/photo/1)]{.small}
+
+::: {.footer}
+Source: [NASA Climate Change](https://youtu.be/jWoCXLuTIkI?si=PltjZGbujplNq27B)
+:::
+
+## The R Graph Gallery {background-color="black"}
+
+<br>
+
+<iframe src="https://r-graph-gallery.com/index.html" width="100%" height="500px" title="Embedded Webpage" style="border:none;"></iframe>
+
+::: {.footer}
+Source: [Yan Holtz](https://r-graph-gallery.com/)
+:::
+
+## Computational Art {background-color="black"}
+
+<br>
+
+<iframe src="https://art.djnavarro.net/gallery/" width="100%" height="500px" title="Embedded Webpage" style="border:none;"></iframe>
+
+::: {.footer}
+Source: [Danielle Navarro](https://art.djnavarro.net/gallery/)
+:::
+
+## Grammar of Graphics {background-image="images/logo-ggplot.png" background-size="25%" background-position="90%"}
+
+
+::: {.columns}
+
+::: {.column width="60%"}
+
+<br>
+
+- "`ggplot2` implements **grammar of graphics**, a coherent system for describing and building graphs"
 
 :::
 
+::: {.column}
+
+
+
+:::
+
+:::
+
+::: {.footer}
+Source: <https://r4ds.hadley.nz/data-visualizehttps://r4ds.hadley.nz/data-visualize>
+:::
+
+## Set-up
+
+<br>
+
+```{r}
+#| label: set-up-data-viz
+#| echo: fenced
+library(palmerpenguins) # to access peguins data
+
+# to access ggplot2 package
+library(tidyverse)
+```
+
+## Know your Data
+
+<br>
+
+```{r}
+glimpse(penguins)
+```
+
+## Ultimate Goal {background-color="black"}
+
+![](images/goal-viz.png)
+
 ## {background-image=images/layer3d.png background-size=contain background-color=#000}
 
-## ggplot2 Layers {.center}
+## ggplot2 Layers {background-color="black"}
 
 ![](images/layer00.png)
 
@@ -70,16 +114,13 @@ How to visualize data using R package ggplot2.
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer1.png){width=45%}
+![](images/layer1.png){width=35%}
 
 ### Code
 
 ```{r}
-#| label: fig-data
+#| label: import-data
 #| eval: false
-
-library(tidyverse)
-library(palmerpenguins)
 
 ggplot(data = penguins)
 ```
@@ -87,7 +128,7 @@ ggplot(data = penguins)
 ### Output
 
 ```{r }
-#| label: fig-data
+#| label: import-data
 #| echo: false
 ```
 
@@ -98,23 +139,23 @@ ggplot(data = penguins)
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer2.png){width=45%}
+![](images/layer2.png){width=35%}
 
 ### Code
 
 ```{r}
-#| label: fig-var
+#| label: map-var
 #| eval: false
 #| code-line-numbers: "2"
 
-ggplot(data = penguins,
-       mapping = aes(x = species))
+ggplot(data = penguins, 
+        mapping = aes(x = species))
 ```
 
 ### Output
 
 ```{r }
-#| label: fig-var
+#| label: map-var
 #| echo: false
 ```
 
@@ -125,24 +166,31 @@ ggplot(data = penguins,
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer3.png){width=45%}
+![](images/layer3.png){width=35%}
 
 ### Code
 
 ```{r}
-#| label: fig-geoms
+#| label: figure-geoms
 #| eval: false
 #| code-line-numbers: "3"
 
-ggplot(data = penguins,
-       mapping = aes(x = species)) +
-  geom_bar()
+ggplot(data = penguins, 
+        mapping = aes(x = species)) +
+          geom_bar()
 ```
+
+
+::: {.callout-caution .fragment}
+
+**Common beginner mistake:** putting `+` at the *start* of a new line instead of the *end* of the previous line. R needs the `+` at the end to know more is coming!
+
+:::
 
 ### Output
 
 ```{r }
-#| label: fig-geoms
+#| label: figure-geoms
 #| echo: false
 ```
 
@@ -152,11 +200,11 @@ ggplot(data = penguins,
 
 <br>
 
-1. [data]{.rainbow-orange},
+- **Data** - which data frame?
 
-1. A set of [aesthetic mappings]{.rainbow-orange} between variables in the data and visual properties, and
+- **Aesthetics (`aes`)** - which columns map to x, y, colour, size...?
 
-1. At least one layer which describes how to render each observation. Layers are usually created with a [geom]{.rainbow-orange} function.
+- **Geometry (`geom`)** - what *type* of plot? points, bars, lines...
 
 ## `r emo::ji("brain")` YOUR TURN {.your-turn}
 
@@ -175,51 +223,41 @@ ggplot(data = penguins,
 #| eval: false
 #| echo: true
 
-ggplot(data = penguins,
-       mapping = aes(x = island)) +
-  geom_bar()
+ggplot(data = penguins, 
+        mapping = aes(x = island)) +
+        geom_bar()
 ```
 
 :::
 
 ```{r echo=FALSE}
-countdown(minutes = 5,
-          play_sound = TRUE,
-          top = "-5%",
-          font_size = "2em")
+library(countdown)
+countdown(minutes = 5, play_sound = TRUE, top = "0", font_size = "2em")
 ```
-
-## Common Mistakes
-
--   Make sure that every `(` is matched with a `)` and every `"` is paired with another `"`.
-
--   Console shows no results but a `+` sign that means your code is incomplete and R is waiting for you to complete the code.
-
--   in ggplot `+` has to come at the end of the line, not the start
 
 ## "Fill" Color
 
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer3.png){width=45%}
+![](images/layer3.png){width=35%}
 
 ### Code
 
 ```{r}
-#| label: fig-fill-colr
+#| label: figure-fill-colr
 #| eval: false
 #| code-line-numbers: "3"
 
-ggplot(data = penguins,
-       mapping = aes(x = species)) +
-  geom_bar(fill = "blue")
+ggplot(data = penguins, 
+      mapping = aes(x = species)) +
+        geom_bar(fill = "navy")
 ```
 
 ### Output
 
 ```{r }
-#| label: fig-fill-colr
+#| label: figure-fill-colr
 #| echo: false
 ```
 
@@ -230,59 +268,59 @@ ggplot(data = penguins,
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer3.png){width=45%}
+![](images/layer3.png){width=35%}
 
 ### Code
 
 ```{r}
-#| label: fig-colrs
+#| label: figure-colrs
 #| eval: false
 #| code-line-numbers: "3"
 
-ggplot(data = penguins,
-       mapping = aes(x = species)) +
-  geom_bar(fill = c("blue", "green", "yellow"))
+ggplot(data = penguins, 
+      mapping = aes(x = species)) +
+        geom_bar(fill = c("navy", "tomato", "seagreen"))
 ```
 
 ### Output
 
 ```{r }
-#| label: fig-colrs
+#| label: figure-colrs
 #| echo: false
 ```
 
 :::
 
-## "Fill" & "Color" Colors
+## "Fill" Colors vs "Color" Colors
 
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer3.png){width=45%}
+![](images/layer3.png){width=35%}
 
 ### Code
 
 ```{r}
-#| label: fig-color-colr
+#| label: figure-color-colr
 #| eval: false
 #| code-line-numbers: "4"
 
 ggplot(data = penguins,
-       mapping = aes(x = species)) +
-  geom_bar(fill = c("blue", "green", "yellow"),
-           color = "black")
+      mapping = aes(x = species)) +
+        geom_bar(fill = c("navy", "tomato", "seagreen"),
+        color = "skyblue")
 ```
 
 ### Output
 
 ```{r }
-#| label: fig-color-colr
+#| label: figure-color-colr
 #| echo: false
 ```
 
 :::
 
-## `r emo::ji("brain")` YOUR TURN {.your-turn}
+## `r emo::ji("pencil")` YOUR TURN {.your-turn}
 
 ::: {.panel-tabset}
 ### Task
@@ -310,16 +348,8 @@ ggplot(data = penguins,
 ```{r echo=FALSE}
 countdown(minutes = 5,
           play_sound = TRUE,
-          top = "-5%",
+          top = "0%",
           font_size = "2em")
-```
-
-## Know Your Data
-
-<br>
-
-```{r}
-glimpse(penguins)
 ```
 
 ## Plot A Continuous Variable
@@ -327,12 +357,12 @@ glimpse(penguins)
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer3.png){width=45%}
+![](images/layer3.png){width=35%}
 
 ### Code
 
 ```{r}
-#| label: fig-cont-var
+#| label: figure-cont-var
 #| eval: false
 #| code-line-numbers: "4,5"
 
@@ -346,7 +376,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-cont-var
+#| label: figure-cont-var
 #| echo: false
 ```
 
@@ -380,16 +410,17 @@ ggplot(data = penguins,
 ```{r echo=FALSE}
 countdown(minutes = 5,
           play_sound = TRUE,
-          top = "-5%",
+          top = "0%",
           font_size = "2em")
 ```
+
 
 ## Two Continuous Variables
 
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer3.png){width=45%}
+![](images/layer3.png){width=35%}
 
 ### Code
 
@@ -406,7 +437,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-cont-vars
+#| label: figure-cont-vars
 #| echo: false
 ```
 
@@ -428,7 +459,7 @@ ggplot(sizes, aes(size, stroke, size = size, stroke = stroke)) +
 ### Code
 
 ```{r}
-#| label: fig-geom-size
+#| label: figure-geom-size
 #| eval: false
 #| code-line-numbers: "3"
 
@@ -440,7 +471,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-geom-size
+#| label: figure-geom-size
 #| echo: false
 ```
 
@@ -465,11 +496,10 @@ ggplot(shapes, aes(x, y)) +
   theme_void()
 ```
 
-
 ### Code
 
 ```{r}
-#| label: fig-geom-shp
+#| label: figure-geom-shp
 #| eval: false
 #| code-line-numbers: "4"
 
@@ -482,13 +512,13 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-geom-shp
+#| label: figure-geom-shp
 #| echo: false
 ```
 
 :::
 
-## `r emo::ji("brain")` YOUR TURN {.your-turn}
+## `r emo::ji("pencil")` YOUR TURN {.your-turn}
 
 ::: {.panel-tabset}
 ### Task
@@ -515,7 +545,7 @@ ggplot(data = penguins,
 ```{r echo=FALSE}
 countdown(minutes = 5,
           play_sound = TRUE,
-          top = "-5%",
+          top = "0%",
           font_size = "2em")
 ```
 
@@ -524,12 +554,12 @@ countdown(minutes = 5,
 ::: {.panel-tabset}
 ### Task
 
-Sometimes, we want to differentiate values of a factor/category variable on the basis of another factor/category variable.
+- Sometimes, we want to differentiate values of a factor/category variable on the basis of another factor/category variable.
 
 ### Code
 
 ```{r}
-#| label: fig-fct-fct
+#| label: figure-fct-fct
 #| eval: false
 #| code-line-numbers: "4"
 
@@ -541,7 +571,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-fct-fct
+#| label: figure-fct-fct
 #| echo: false
 ```
 
@@ -552,12 +582,12 @@ ggplot(data = penguins,
 ::: {.panel-tabset}
 ### Task
 
-Sometimes, we want to differentiate values from a continuous variable on the basis of factor/category variables.
+- Sometimes, we want to differentiate values from a continuous variable on the basis of factor/category variables.
 
 ### Code
 
 ```{r}
-#| label: fig-fct-int
+#| label: figure-fct-int
 #| eval: false
 #| code-line-numbers: "4"
 
@@ -569,23 +599,23 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-fct-int
+#| label: figure-fct-int
 #| echo: false
 ```
 
 :::
 
-## A Factor & Two Cont.
+## A Factor & Two Cont. Variables
 
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer3.png){width=45%}
+![](images/layer3.png){width=35%}
 
 ### Code
 
 ```{r}
-#| label: fig-fct-2cont
+#| label: figure-fct-2cont
 #| eval: false
 #| code-line-numbers: "2,3"
 
@@ -597,23 +627,23 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-fct-2cont
+#| label: figure-fct-2cont
 #| echo: false
 ```
 
 :::
 
-## A Factor & Two Cont.
+## A Factor & Two Cont. Variables
 
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer3.png){width=45%}
+![](images/layer3.png){width=35%}
 
 ### Code
 
 ```{r}
-#| label: fig-fct-2cont2
+#| label: figure-fct-2cont2
 #| eval: false
 #| code-line-numbers: "2,3"
 
@@ -625,7 +655,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-fct-2cont2
+#| label: figure-fct-2cont2
 #| echo: false
 ```
 
@@ -647,9 +677,9 @@ ggplot(data = penguins,
 ### Code
 
 ```{r}
-#| label: fig-lbs
+#| label: figure-lbs
 #| eval: false
-#| code-line-numbers: "4,9"
+#| code-line-numbers: "4-9"
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
@@ -665,7 +695,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-lbs
+#| label: figure-lbs
 #| echo: false
 ```
 
@@ -676,14 +706,14 @@ ggplot(data = penguins,
 ::: {.panel-tabset}
 ### Task
 
-Each level of the factor/category can be shown using a different shape of different color.
+- Each level of the factor/category can be shown using a different shape of different color.
 
 ### Code
 
 ```{r}
-#| label: fig-fct-shps
+#| label: figure-fct-shps
 #| eval: false
-#| code-line-numbers: "2,3"
+#| code-line-numbers: "2-3"
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
@@ -699,7 +729,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-fct-shps
+#| label: figure-fct-shps
 #| echo: false
 ```
 
@@ -720,7 +750,7 @@ library(ggthemes)
 ### Code
 
 ```{r}
-#| label: fig-theme-eco
+#| label: figure-theme-eco
 #| eval: false
 #| code-line-numbers: "10"
 
@@ -739,7 +769,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-theme-eco
+#| label: figure-theme-eco
 #| echo: false
 ```
 
@@ -760,7 +790,7 @@ library(ggthemes)
 ### Code
 
 ```{r}
-#| label: fig-theme-solar
+#| label: figure-theme-solar
 #| eval: false
 #| code-line-numbers: "10"
 
@@ -779,7 +809,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-theme-solar
+#| label: figure-theme-solar
 #| echo: false
 ```
 
@@ -799,7 +829,7 @@ library(ggthemes)
 ### Code
 
 ```{r}
-#| label: fig-theme-tufte
+#| label: figure-theme-tufte
 #| eval: false
 #| code-line-numbers: "10"
 
@@ -818,7 +848,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-theme-tufte
+#| label: figure-theme-tufte
 #| echo: false
 ```
 
@@ -839,7 +869,7 @@ library(ggthemes)
 ### Code
 
 ```{r}
-#| label: fig-theme-clean
+#| label: figure-theme-clean
 #| eval: false
 #| code-line-numbers: "10"
 
@@ -858,13 +888,13 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-theme-clean
+#| label: figure-theme-clean
 #| echo: false
 ```
 
 :::
 
-## Color Palette {.center}
+## Color Palette {.center-slide background-color="black"}
 
 ![](https://r-graph-gallery.com/38-rcolorbrewers-palettes_files/figure-html/thecode-1.png)
 
@@ -878,7 +908,7 @@ R package `ggthemes` have function to use color scheme for colorblindness. [Know
 ### Code
 
 ```{r}
-#| label: fig-col-blind
+#| label: figure-col-blind
 #| eval: false
 #| code-line-numbers: "11"
 
@@ -898,7 +928,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-col-blind
+#| label: figure-col-blind
 #| echo: false
 ```
 
@@ -916,7 +946,7 @@ library(RColorBrewer)
 ### Code
 
 ```{r}
-#| label: fig-col-palt
+#| label: figure-col-palt
 #| eval: false
 #| code-line-numbers: "11"
 
@@ -936,7 +966,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-col-palt
+#| label: figure-col-palt
 #| echo: false
 ```
 
@@ -956,7 +986,7 @@ names(wes_palettes)
 ### Code
 
 ```{r}
-#| label: fig-col-wes
+#| label: figure-col-wes
 #| eval: false
 #| code-line-numbers: "11"
 
@@ -976,7 +1006,7 @@ ggplot(data = penguins,
 ### Output
 
 ```{r }
-#| label: fig-col-wes
+#| label: figure-col-wes
 #| echo: false
 ```
 
@@ -987,12 +1017,12 @@ ggplot(data = penguins,
 ::: {.panel-tabset}
 ### Task
 
-Export/save plot as pdf, jpg or png file.
+- Export/save plot as pdf, jpg or png file.
 
 ### Code
 
 ```{r}
-#| label: fig-save
+#| label: figure-save
 #| eval: false
 #| code-line-numbers: "13"
 
@@ -1014,14 +1044,15 @@ ggsave("penguins-plot.pdf")
 ### Output
 
 ```{r }
-#| label: fig-save
+#| label: figure-save
 #| echo: false
 ```
 
 :::
 
-
-
-# {.center}
+## {.center-slide}
 
 [🧑🏽‍💻👨🏽‍💻<br>Question & Answer]{.r-fit-text}
+
+
+

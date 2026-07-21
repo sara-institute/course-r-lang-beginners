@@ -1,0 +1,263 @@
+---
+title: "R for Researchers"
+subtitle: "3rd SARA Summer School"
+author: "July 22-26, 2026 | Sonipat (HR)"
+format: typst 
+abstract-title: "Welcome!"
+abstract: |
+  |
+  |
+  | **Savitribai Ramabai (SARA) Institute of Data Science** is a non-profit organization dedicated to inclusive education. We offer free and low-cost education in **data science and research** for all. Priority admission for marginalized communities and women. Thank you to our students and donors for supporting us. We are proudly supported by **The ambedkar Educational Society, Sonipat.** 
+  | 
+  | **15 participants** will be attending from across India.
+  |
+  | **Five international data science speakers:**
+  | 1. Miss Shivani Srivastava, Gurugram, India
+  | 2. Dr. Prof. Jessica Mar, University of Queensland, Australia
+  | 3. Dr. Nikee Silayach, Manipal University Jaipur, India
+  | 4. Dr. Ozan Evkaya, University of Edinburgh, UK
+  | 5. Dr. Bailey Immel, Data Scientist at Kate Farms, USA
+  |
+  |
+  |
+  | Dr. Ajay Kumar Koli
+  | Director, SARA Institute
+  | Contact: 925 315 2024
+  | Email: sara.institute.info@gmail.com
+
+classoption: "landscape"
+---
+
+```{=typst}
+#set page(
+  flipped: true,
+  header: [
+  _Schedule of the 3rd SARA Summer School "R for Researchers"_
+  #h(1fr)
+  #box(image("logo-sara.png", width:5%))
+])
+
+#set page(footer: context [
+  Event website https://sara-edu.netlify.app/summer/2026-r4b/ 
+  #h(1fr)
+  #counter(page).display(
+  "1/1",
+  both: true,
+)
+])
+```
+
+
+## 📅 DAY 1 - Wednesday 22 July 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  rows: (1.25cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Speaker*],
+  [08:00 am to 08:45 am], [Breakfast], [], [], 
+  [09:00 am to 09:40 am], [*_Welcome Ceremony_*], [Tribute with Candles], [Mr. Surender Kumar, Vice President],
+  [10:00 am to 11:30 am], [*Key Note Talk*], [Adventures in R in Science], [Dr. Jessica Mar, University of Queensland, Australia],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 1*], [R, RStudio, & Quarto], [Dr. Ajay Koli],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 2*], [R, RStudio, & Quarto], [Dr. Ajay Koli],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Class Session 3*], [R, RStudio, & Quarto], [Dr. Ajay Koli],
+  [07:30 pm to 08:30 pm], [Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 2 - Thursday 23 July 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  rows: (1.25cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Speaker*],
+  [08:30 am to 09:30 am], [Breakfast], [], [], 
+  [10:00 am to 11:30 am], [*Class Session 1*], [Data wrangling], [Dr. Ajay Koli],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 2*], [Data wrangling], [Dr. Ajay Koli],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 3*], [EDA & Data cleaning], [Dr. Ajay Koli],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Class Session 4*], [EDA & Data cleaning], [Dr. Ajay Koli],
+  [07:30 pm to 08:30 pm], [Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 3 - Friday 24 July 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  rows: (1.25cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Speaker*],
+  [08:30 am to 09:30 am], [Breakfast], [], [], 
+  [10:00 am to 11:30 am], [*Class Session 1*], [Data Visualisation using ggplot2], [Dr. Ajay Koli],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 2*], [Data Visualisation using ggplot2], [Dr. Ajay Koli],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 3*], [Data Visualization using ggplot2], [Dr. Ajay Koli],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Expert Guest Speaker*], [Importance of DataViz - Examples and Reflections], [Dr. Ozan Evkaya, University of Edinburgh, UK],
+  [07:30 pm to 08:30 pm], [Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 4 - Saturday 25 July 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  rows: (1.25cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Speaker*],
+  [08:30 am to 09:30 am], [Breakfast], [], [], 
+  [10:00 am to 11:30 am], [*Class Session 1*], [Descriptive statistics], [Dr. Ajay Koli],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 2*], [Framing Hypothesis (NHST)], [Dr. Ajay Koli],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 3*], [ANOVA, Chi-square Test & Regression], [Dr. Ajay Koli],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Expert Guest Speaker*], [Utilizing R for Quantitative Analysis Across Industries], [Dr. Bailey Immel, Business Analyst at Kate Farms, USA],
+  [07:30 pm to 08:30 pm], [Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+## 📅 DAY 5 - Sunday 26 July 2026
+
+```{=typst} 
+#v(10pt)
+
+// See the strokes section for details on this!
+#let frame(stroke) = (x, y) => (
+  left: if x > 0 { 0pt } else { stroke },
+  right: stroke,
+  top: if y < 2 { stroke } else { 0pt },
+  bottom: stroke,
+)
+
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: frame(rgb("21222C")),
+)
+
+#table(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  rows: (1.25cm),
+  align: left + horizon,
+  [*Time*], [*Activity*], [*Topic*], [*Speaker*],
+  [08:30 am to 09:30 am], [Breakfast], [], [], 
+  [10:00 am to 11:30 am], [*Class Session 1*], [Reading Between the Lines: Qualitative Research in R], [Dr. Nikee Silayach, Manipal University Jaipur, India],
+  [11:30 am to 12:00 am], [Discussion Break], [], [],
+  [12:00 am to 01:30 pm], [*Class Session 2*], [Reading Between the Lines: Qualitative Research in R], [Dr. Nikee Silayach, Manipal University Jaipur, India],
+  [01:30 pm to 02:30 pm], [Lunch], [], [],
+  [02:30 pm to 04:00 pm], [*Class Session 3*], [Eavesdropping at Scale: Web and Social Media Analytics in R], [Dr. Nikee Silayach, Manipal University Jaipur, India],
+  [04:00 pm to 04:30 pm], [Discussion Break with Tea], [], [],
+  [04:30 pm to 06:00 pm], [*Expert Guest Speaker*], [Transferable Research Skills and how R helps], [Shivani Srivastava, Data Scientist, Gurugram, India],
+  [06:30 pm to 07:30 pm], [*_Thanks Ceremony_*], [Participant's feedback], [Mr. Rajesh Kataria, President],
+  [07:30 pm to 08:30 pm], [Dinner], [], [],
+)
+
+#pagebreak()
+```
+
+# Your Feedback
+
+## Name *(optional)*:
+
+```{=typst}
+#set line(length: 100%)
+
+#stack(
+  spacing: 3.5em,
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+  line(stroke: (paint: rgb("EAF2F5"), thickness: 1pt, dash: ("dot", 2pt, 4pt, 2pt))),
+)
+```
+

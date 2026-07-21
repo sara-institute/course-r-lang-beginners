@@ -1,0 +1,107 @@
+---
+title: "Attendance Record | R for Researchers"
+subtitle: "3rd SARA Summer School"
+author: "22-26 July 2026 | Sonipat (HR)"
+format:
+  typst:
+    page-orientation: landscape
+abstract-title: "Welcome!"
+classoption: "landscape"
+abstract: |
+  |
+  |
+  | - Please arrive on time and sign the attendance sheet upon entry  
+  | - Maintain respectful and professional conduct throughout the session
+  | - Mobile phones on silent mode
+  | - Your cooperation helps create a productive learning environment for all
+  |  
+  | 
+  | All the best to all the participants.
+  |
+  |
+  | Dr. Ajay Koli
+  | Founder & Director of SARA
+  | Contact: 925 315 2024
+  | Email: sara.institute.info@gmail.com
+
+
+---
+
+```{=typst}
+#set page(
+  flipped: true,
+  header: [
+  _Attendance of the Participants of 3rd SARA Summer School “R for Researchers” 22-26 July 2026_
+  #h(1fr)
+  #box(image("logo-sara.png", width:5%))
+])
+
+#set page(footer: context [
+  Event website https://sara-edu.netlify.app/summer/2026-r4b/
+  #h(1fr)
+  #counter(page).display(
+  "1/1",
+  both: true,
+)
+])
+```
+
+
+```{=typst} 
+#v(10pt)
+
+#set table(
+  fill: (x, y) =>
+    if x == 0 or y == 0 {
+      gray.lighten(40%)
+    },
+  align: right,
+  
+)
+
+#show table.cell.where(x: 0): strong
+#show table.cell.where(y: 0): strong
+
+#table(
+  columns: (0.5fr, 1.5fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  rows: (1.25cm),
+  stroke: 0.5pt + rgb("666675"), 
+  align: left + horizon,
+
+  table.header(
+    [S.No.], [*Name of the Participant*], [*Wed 22 Jul*], [*Thu 23 Jul*], [*Fri 24 Jul*], [*Sat 25 Jul*], [*Sun 26 Jul*],
+  ),
+
+  [1.], [Vaishnavi Humane], [], [], [], [], [], 
+  [2.], [Dr. Ashok Kumar], [], [], [], [], [],
+  [3.], [Rajat Kumar], [], [], [], [], [],
+  [4.], [Dr. G. Dhananjhay], [], [], [], [], [], 
+  [5.], [Aishwarya Karan], [], [], [], [], [], 
+  [6.], [Roshan Pandey], [], [], [], [], [], 
+  [7.], [Dalphin Suna], [], [], [], [], [], 
+  [8.], [Dr. Priyanka Ch.], [], [], [], [], [], 
+  [9.], [Kajal Mahor], [], [], [], [], [], 
+  [10.], [Kriti Dhuriya], [], [], [], [], [],
+  [11.], [Achal Bujade], [], [], [], [], [],
+  [12.], [Yogendra Kumar], [], [], [], [], [],
+  [13.], [Tushar Jadhav], [], [], [], [], [],
+  [14.], [Rajeshri Mandloi], [], [], [], [], [],
+  [15.], [Ankita Hirwani], [], [], [], [], [],
+  [16.], [], [], [], [], [], [],
+  [17.], [], [], [], [], [], [],
+  [18.], [], [], [], [], [], [],
+  [19.], [], [], [], [], [], [],
+  [20.], [], [], [], [], [], [],
+  
+)
+
+```
+
+
+
+
+
+
+
+
+

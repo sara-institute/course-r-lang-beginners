@@ -1,0 +1,25 @@
+---
+title: "Introduction to<br>R & RStudio"
+format: revealjs
+theme: [default, style-sea-summer.scss, sara-your-turn.scss]
+slide-number: c/t
+logo: images/logo-sara.png
+execute: 
+  echo: true
+footer: "[Study Material Website](https://sara-course-r4b.netlify.app/)"  
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/vector-1746618662777-7058cb830c6a?q=80&w=1567&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  
+---
+
+## Hello
+
+## Your Turn {.your-turn}
+
+- Question number 1 is
+
+- Questin number 2 is
+
+## Answer {.answer}
+
+
+

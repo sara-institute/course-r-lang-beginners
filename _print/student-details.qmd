@@ -1,0 +1,120 @@
+---
+title: "Participant Details | R for Researchers"
+subtitle: "3rd SARA Summer School"
+author: "22-26 July 2026 | Sonipat, HR, India"
+date: today
+date-format: long
+format:
+  typst:
+    page-orientation: landscape
+abstract-title: "Welcome!"
+classoption: "landscape"
+abstract: |
+  |
+  |
+  | THIS LIST IS WORK IN PROGRESS 
+  | 
+  |  
+  | 
+  | REGISTRATION DEADLINE 30 June 2026 *(we may extend it)*
+  |
+  |
+  | Dr. Ajay Kumar 
+  | Founder & Director
+  | Contact: 925 315 2024
+  | Email: sara.institute.info@gmail.com
+---
+
+```{=typst}
+#set page(
+  flipped: true,
+  header: [
+  Participants of 3rd SARA Summer School "R for Researchers"
+  #h(1fr)
+  #box(image("logo-sara.png", width:5%))
+])
+
+#set page(footer: context [
+  Event website https://sara-edu.netlify.app/summer/2026-r4b/
+  #h(1fr)
+  #counter(page).display(
+  "1/1",
+  both: true,
+)
+])
+```
+
+
+```{=typst} 
+#v(10pt)
+
+#set table(
+  fill: (x, y) =>
+    if x == 0 or y == 0 {
+      gray.lighten(40%)
+    },
+  align: right,
+  
+)
+
+
+#show table.cell.where(x: 0): strong
+#show table.cell.where(y: 0): strong
+
+#table(
+  columns: (0.3fr, 1fr, 0.5fr, 0.5fr, 1fr, 0.5fr),
+  rows: (1.25cm),
+  stroke: 0.5pt + rgb("666675"), 
+  align: left + horizon,
+
+  table.header(
+
+    [S.No.], [*Name of the Participant*], [*Seat Type*], [*Place*], [*Education*], [*Contact*],
+  ),
+
+  [1.], [*Vaishnavi Humane*], [Fully Funded], [Mumbai, MH], [MA Education, Nagpur Univeristy], [93221 54217],
+  [2.], [Dr. Ashok Kumar], [Early Bird], [Chandigarh], [Professor Bioinformatics, Panjab Univeristy], [79738 89824],
+  [3.], [Rajat Kumar], [Early Bird], [New Delhi], [UG Student of Data Science, IIT Madras], [85108 33433],
+  [4.], [Dr Gangineni Dhananjhay], [Early Bird], [Andhra Pradesh], [Professor Management Studies, Narayana Engineering College], [93913 19721],
+  [5.], [*Aishwarya Karan*], [Early Bird], [New Delhi], [PhD Student of Law, Delhi University], [96546 67897],
+  [6.], [Roshan Pandey], [Early Bird], [Varanasi, UP], [PhD Student, Public Health/Sociology, BHU], [78609 23284],
+  [7.], [Dalphin Suna], [Early Bird], [New Delhi], [PhD Student, Education, Delhi Univeristy], [90565 56623],
+  [8.], [*Dr. Priyanka Choudhary*], [Early Bird], [Jaipur, RJ], [Assistant Professor, Political Science, Delhi Univeristy], [94143 63424],
+  [9.], [*Kajal Mahor*], [Fully Funded], [Wardha, MH], [BSc Biology, Azim Premji University], [99755 84007],
+  [10.], [*Vidhata Tamgadge*], [Fully Funded], [Wardha, MH], [BSc Biology, Azim Premji University], [76667 04679],
+  [11.], [*Achal Bujade*], [Fully Funded], [Wardha, MH], [BSc Biology, Azim Premji University], [84219 66582],
+  [12.], [Yogendra Kumar], [Regular Price], [Delhi], [PhD Student, Sociology, Delhi University], [80036 26067],
+  [13.], [Tushar Jadhav], [Fully Funded], [Bengaluru], [MA Urban Economy, IIHS University], [77094 03143],
+  [14.], [*Rajeshri Mandloi*], [Fully Funded], [Delhli], [Research Analyst, ZHCES, JNU], [85279 12921],
+  [15.], [*Ankita Hirwani*], [Fully Funded], [New Dehi], [MA Sociology, DSE, Delhi University], [87073 59179],
+)
+
+```
+
+**Female Participants = 08**
+
+Total participants = 15 
+
+## Two Guest Speakers
+
+### 1. Dr. Nikee Silayach, Manipal Univeristy Jaipur
+
+3rd SARA Summer School Data Science Educator, 22-26 July 2026
+
+### 2. Shivani Srivastava, Data Scientist
+
+3rd SARA Summer School Speaker, 22-26 July 2026
+
+
+
+
+
+
+
+
+
+
+
+
+
+
