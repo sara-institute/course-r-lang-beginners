@@ -253,20 +253,20 @@ Data Educator SARA - HR
 - [Rajat Kumar]{.fragment .highlight-blue .fade-in-then-semi-out}
 - [Dr. G. Dhananjhay]{.fragment .highlight-blue .fade-in-then-semi-out}
 - [Aishwarya Karan]{.fragment .highlight-blue .fade-in-then-semi-out}
-- [Roshan Pandey]{.fragment .highlight-blue .fade-in-then-semi-out}
-- [Dalphin Suna]{.fragment .highlight-blue .fade-in-then-semi-out}
 - [Dr. Priyanka Ch.]{.fragment .highlight-blue .fade-in-then-semi-out}
 - [Kajal Mahor]{.fragment .highlight-blue .fade-in-then-semi-out}
-- [Vidhata Tamgadge]{.fragment .highlight-blue .fade-in-then-semi-out}
+
 
 :::
 
 ::: {.column .r-fit-text}
+- [Vidhata Tamgadge]{.fragment .highlight-blue .fade-in-then-semi-out}
 - [Achal Bujade]{.fragment .highlight-blue .fade-in-then-semi-out}
 - [Yogendra Kumar]{.fragment .highlight-blue .fade-in-then-semi-out}
 - [Tushar Jadhav]{.fragment .highlight-blue .fade-in-then-semi-out}
 - [Rajeshri Mandloi]{.fragment .highlight-blue .fade-in-then-semi-out}
 - [Ankita Hirwani]{.fragment .highlight-blue .fade-in-then-semi-out}
+- [Salman]{.fragment .highlight-blue .fade-in-then-semi-out}
 
 :::
 
