@@ -29,74 +29,8 @@ Email us at `sara.institute.info@gmail.com` $\cdot$ Call us at `925 315 2024`.
 
 {{< revealjs file="welcome.html" height="500px" class="ratio ratio-16x9" >}} 
 
+## Session
+
 <br>
 
-<!-- ## Session -->
-
-<!-- {{< revealjs file="r-intro.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="rstudio.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="objects.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="code-chunk.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="wrangling.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="quarto.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="markdown.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="scales.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="visualization.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="eda.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="hypothesis-formulation.html" height="500px" class="ratio ratio-16x9" >}} -->
-
-<!-- <br> -->
-
-<!-- ## Session -->
-
-<!-- {{< revealjs file="thanks.html" height="500px" class="ratio ratio-16x9" >}} -->
+{{< revealjs file="intro.html" height="500px" class="ratio ratio-16x9" >}}
