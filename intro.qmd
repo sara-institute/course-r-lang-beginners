@@ -968,7 +968,7 @@ Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-
 
 ![](images/r-script-file.png)
 
-[{{< fa file-arrow-down >}} Save "Five Essentials" Practice File (.R)](demo/five_essentials.R)
+<!-- [{{< fa file-arrow-down >}} Save "Five Essentials" Practice File (.R)](demo/five_essentials.R) -->
 
 :::
 :::

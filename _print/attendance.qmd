@@ -64,7 +64,7 @@ abstract: |
 
 #table(
   columns: (0.5fr, 1.5fr, 1fr, 1fr, 1fr, 1fr, 1fr),
-  rows: (1.25cm),
+  rows: (1.20cm),
   stroke: 0.5pt + rgb("666675"), 
   align: left + horizon,
 
@@ -75,23 +75,14 @@ abstract: |
   [1.], [Vaishnavi Humane], [], [], [], [], [], 
   [2.], [Dr. Ashok Kumar], [], [], [], [], [],
   [3.], [Rajat Kumar], [], [], [], [], [],
-  [4.], [Dr. G. Dhananjhay], [], [], [], [], [], 
-  [5.], [Aishwarya Karan], [], [], [], [], [], 
-  [6.], [Roshan Pandey], [], [], [], [], [], 
-  [7.], [Dalphin Suna], [], [], [], [], [], 
-  [8.], [Dr. Priyanka Ch.], [], [], [], [], [], 
-  [9.], [Kajal Mahor], [], [], [], [], [], 
-  [10.], [Kriti Dhuriya], [], [], [], [], [],
-  [11.], [Achal Bujade], [], [], [], [], [],
-  [12.], [Yogendra Kumar], [], [], [], [], [],
-  [13.], [Tushar Jadhav], [], [], [], [], [],
-  [14.], [Rajeshri Mandloi], [], [], [], [], [],
-  [15.], [Ankita Hirwani], [], [], [], [], [],
-  [16.], [], [], [], [], [], [],
-  [17.], [], [], [], [], [], [],
-  [18.], [], [], [], [], [], [],
-  [19.], [], [], [], [], [], [],
-  [20.], [], [], [], [], [], [],
+  [4.], [Aishwarya Karan], [], [], [], [], [], 
+  [5.], [Dr. Priyanka Ch.], [], [], [], [], [], 
+  [6.], [Kajal Mahor], [], [], [], [], [], 
+  [7.], [Achal Bujade], [], [], [], [], [],
+  [8.], [Yogendra Kumar], [], [], [], [], [],
+  [9.], [Tushar Jadhav], [], [], [], [], [],
+  [10.], [Vidhata Tamgadge], [], [], [], [], [],
+  [11.], [Ankita Hirwani ], [], [], [], [], [],
   
 )
 
