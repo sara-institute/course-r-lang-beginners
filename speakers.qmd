@@ -1,0 +1,246 @@
+---
+title: "Day 3<br>R for Researchers"
+subtitle: "3rd SARA Summer School<br>22-26 July 2026"
+format: revealjs
+theme: [default, style-sea-summer.scss, sara-your-turn.scss]
+slide-number: c/t
+logo: images/logo-sara.png
+incremental: false
+execute: 
+  echo: true
+#footer: "[Study Material Website](https://sara-course-r4b.netlify.app/)"  
+title-slide-attributes: 
+  data-background-image: "https://images.unsplash.com/vector-1746618662777-7058cb830c6a?q=80&w=1567&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+---
+
+## 
+
+<br>
+
+::::::: centering
+:::::: columns
+::: {.column width="35%"}
+![](images/savitrimai.png){fig-alt="Sara's headshot" fig-align="center" width=250px style="border-radius: 50%;"}
+
+#### Savitribai Phule (1831-1897)<br>🌺 🙏🏽🌼
+
+:::
+
+::: {.column width="30%"}
+
+![](images/logo-sara.png){width="2.0in" fig-align="center"}
+:::
+
+::: {.column width="35%"}
+![](images/ramai.png){fig-alt="Sara's headshot" fig-align="center" width=250px style="border-radius: 50%;"}
+
+#### Ramabai Ambedkar (1898-1935)<br>🌺 🙏🏽🌼
+:::
+::::::
+
+[**Savitribai Ramabai (SARA) Institute of Data Science, Sonipat**]{.r-fit-text}
+:::::::
+
+::: {.footer}
+Title slide background source: [Yusuf](https://unsplash.com/@jack_aloya/illustrations)
+:::
+
+## About SARA {background-image="https://images.unsplash.com/vector-1754288532523-0f0f5e988cf5?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="50%" background-position="bottom right"}
+
+> Since 2023, we believe education is for everyone.
+
+::: {.columns}
+
+::: {.column width="60%"}
+
+- Provides free open-source data science education
+- Priority admission for marginalised communities & women
+- Promoting AI Awareness
+
+:::
+
+::: {.column}
+
+:::
+
+:::
+
+
+::: {.footer}
+Image source [Afandi](https://unsplash.com/@kertiaa)
+:::
+
+## SARA Data Schools {background-color="black"}
+
+::: {.panel-tabset}
+
+### Summer School
+
+::: {#fig-summer layout-ncol=2}
+
+![1st, 22-26, July 2024](images/welcome/summer-students1.jpeg){#fig-surus}
+
+![2nd, 25-29, July 2025](images/welcome/summer-students2.png){#fig-hanno}
+
+Participants of the SARA Summer Schools "R for Researchers"
+:::
+
+### Winter School 
+
+::: {#fig-winter layout-ncol=2}
+
+![1st, 16-20, Dec 2024](images/welcome/winter-students1.jpeg){#fig-surus}
+
+![2nd, 23-27,  Jan 2026](images/welcome/winter-students2.jpeg){#fig-hanno}
+
+Participants of the SARA Winter Schools "Statistics using R"
+:::
+
+### Bootcamp
+
+::: {#fig-bootcamp layout-ncol=2}
+
+![1st, 3-7, March 2025](images/welcome/bootcamp-students1.jpg){#fig-surus}
+
+![2nd, 20-22, March 2026](images/welcome/bootcamp-students2.png){#fig-hanno}
+
+Participants of the SARA Coding Bootcamps "Publish using Quarto"
+:::
+
+::: 
+---
+
+##  {.your-turn}
+
+<br>
+
+:::: {.centering}
+
+![](images/sonipat-bhawan.png)
+
+[***The Ambedkar <br>Educational Society Sonipat (HR)***]{.r-fit-text}
+
+::::
+
+::: {.footer}
+Established in 1969
+:::
+
+# "R for<br>Researchers"
+
+[3rd SARA Summer School - July 2026]{.highlight}
+
+## 3rd SARA Summer School {background-image="images/speakers/students.jpeg" background-size="40%" background-position="right"}
+
+:::: {.nonincremental}
+::: {.columns}
+
+::: {.column width="70%"}
+
+- 5 day, 40 hours, free data science education
+
+- 10 participants from UG to PhD level
+
+- Five international pro-bono guest speakers
+
+:::
+
+::: {.column}
+
+
+
+:::
+
+:::
+::::
+
+
+## Teaching Modules {background-image="images/welcome/flyer.png" background-size="30%" background-position="right"}
+
+::: {.nonincremental}
+
+- Day 1: Introduction to R & RStudio
+
+- Day 2: Data import, clean, & wrangling
+
+- [Day 3: Data visualization using ggplot]{.badge}
+
+- Day 4: Quantitative analysis
+
+- Day 5: Qualitative anlaysis
+
+:::
+
+::: {.footer}
+Course slides [website](https://sara-course-r4b.netlify.app/)
+:::
+
+## SARA Online Guest Speakers {.r-fit-text}
+
+::: {.layout-grid-img}
+
+::: {.card}
+
+![](images/speakers/jessica.png)
+
+### Dr. Jessica Mar [{{< fa brands linkedin >}}](https://www.linkedin.com/in/jessica-mar-0386772/)
+University of Queensland - AU
+
+:::
+
+
+::: {.card}
+
+![](images/speakers/ozan.png)
+
+### Dr. Ozan Evkaya [{{< fa brands linkedin >}}](https://www.linkedin.com/in/ozanevkaya/?skipRedirect=true)
+University of Edinburgh - UK
+
+:::
+
+::: {.card}
+
+![](images/speakers/bailey.png)
+
+### Dr. Bailey Immel [{{< fa brands linkedin >}}](https://www.linkedin.com/in/bailey-immel-phd/)
+Data Scientist & Researcher - USA
+
+:::
+
+:::
+
+## SARA In-person Speakers
+
+::: {.layout-grid-img}
+
+::: {.card}
+
+![](images/speakers/nikee.png)
+
+### Dr. Nikee [{{< fa brands linkedin >}}](https://www.linkedin.com/in/nikee-silayach-a13623231/)
+CA & Manipal University - RJ
+
+:::
+
+
+::: {.card}
+
+![](images/speakers/shivani.png)
+
+### Miss. Shivani [{{< fa brands linkedin >}}](https://www.linkedin.com/in/shivanisrvstv/)
+Data Scientist & Researcher - DL
+
+:::
+
+::: {.card}
+
+![](images/speakers/ajay.png)
+
+### Dr. Ajay Koli [{{< fa brands linkedin >}}](https://www.linkedin.com/in/ajay-kumar-koli/)
+Data Educator SARA - HR
+
+:::
+
+:::
+
+# {background-image="images/speakers/ozan-flyer.png" background-size="contain" background-color="black"}

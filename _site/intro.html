@@ -927,7 +927,7 @@
 <h2>Your Turn</h2>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_5dabc952" minutes="15" seconds="0" update-every="1" play-sound="true" tabindex="0" style="top:0;right:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_775fbec0" minutes="15" seconds="0" update-every="1" play-sound="true" tabindex="0" style="top:0;right:0;"></countdown-timer>
 </div>
 </div>
 <ul>
@@ -1133,7 +1133,7 @@
 <span id="cb39-2" class="hljs-ln-code"><a></a></span>
 <span id="cb39-3" class="hljs-ln-code"><a></a>year <span class="ot">&lt;-</span> <span class="dv">2023</span> <span class="co"># numeric</span></span>
 <span id="cb39-4" class="hljs-ln-code"><a></a></span>
-<span id="cb39-5" class="hljs-ln-code"><a></a>fee <span class="ot">&lt;-</span> <span class="fl">4500.00</span> <span class="co"># numeric</span></span>
+<span id="cb39-5" class="hljs-ln-code"><a></a>fee <span class="ot">&lt;-</span> <span class="dv">4500</span> <span class="co"># numeric</span></span>
 <span id="cb39-6" class="hljs-ln-code"><a></a></span>
 <span id="cb39-7" class="hljs-ln-code"><a></a>is_free <span class="ot">&lt;-</span> <span class="cn">FALSE</span> <span class="co"># logical</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -1234,7 +1234,7 @@
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_029b4f7b" minutes="10" seconds="0" update-every="1" play-sound="true" tabindex="0" style="top:0;right:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_de60dc17" minutes="10" seconds="0" update-every="1" play-sound="true" tabindex="0" style="top:0;right:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -1375,11 +1375,9 @@
 </section>
 <section id="cons-of-r-script-.r-file" class="slide level2 scrollable">
 <h2>Cons of R Script (<code>.R</code> File)</h2>
-<ul>
-<li class="fragment"><p><strong>Output is not saved with the code</strong> - plots appear in the Plots pane and results in the Console, but closing RStudio loses everything; you have to rerun the script every time to see the output again.</p></li>
-<li class="fragment"><p><strong>No narrative or context</strong> - you can only add short comments with <code>#</code>; there is no space to explain your thinking, interpret results, or present findings in a readable way for others.</p></li>
-<li class="fragment"><p><strong>Not reproducible as a report</strong> — a <code>.R</code> file cannot be directly shared as a document; turning your analysis into something a non-coder can read requires extra steps, unlike <code>.qmd</code> which renders everything in one click.</p></li>
-</ul>
+<p><span class="fragment fade-in-then-semi-out">- <strong>Output is not saved with the code</strong> - plots appear in the Plots pane and results in the Console, but closing RStudio loses everything; you have to rerun the script every time to see the output again.</span></p>
+<p><span class="fragment fade-in-then-semi-out">- <strong>No narrative or context</strong> - you can only add short comments with <code>#</code>; there is no space to explain your thinking, interpret results, or present findings in a readable way for others.</span></p>
+<p><span class="fragment fade-in-then-semi-out">- <strong>Not reproducible as a report</strong> — a <code>.R</code> file cannot be directly shared as a document; turning your analysis into something a non-coder can read requires extra steps, unlike <code>.qmd</code> which renders everything in one click.</span></p>
 </section>
 <section id="your-turn-3" class="slide level2 your-turn scrollable">
 <h2>Your Turn</h2>
@@ -1388,6 +1386,21 @@
 <li class="fragment"><p>Find the mean, max, and min.</p></li>
 <li class="fragment"><p>Which temperatures are above 30? (use &gt;= 30)</p></li>
 </ol>
+</section>
+<section id="answers-1" class="slide level2 answer">
+<h2>Answers</h2>
+<ul>
+<li>Create a vector of 5 temperatures</li>
+</ul>
+<p><code>temps &lt;- c(28, 32, 25, 35, 30)</code></p>
+<ul>
+<li>Mean, max, and min</li>
+</ul>
+<p><code>mean(temps)</code> <code>max(temps)</code> <code>min(temps)</code></p>
+<ul>
+<li>Which temperatures are &gt;= 30?</li>
+</ul>
+<p><code>temps[temps &gt;= 30]</code></p>
 </section>
 <section id="data-frames" class="slide level2" data-background-color="black">
 <h2>Data Frames</h2>
@@ -1728,7 +1741,7 @@
 </ul>
 </div>
 </section>
-<section id="answers-1" class="slide level2 answer">
+<section id="answers-2" class="slide level2 answer">
 <h2>Answers</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb107"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a></a>celsius_to_fahrenheit <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>

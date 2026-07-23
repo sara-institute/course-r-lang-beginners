@@ -16,7 +16,7 @@ abstract: |
   | - Your cooperation helps create a productive learning environment for all
   |  
   | 
-  | All the best to all the participants.
+  | All the best dear participants!
   |
   |
   | Dr. Ajay Koli
@@ -75,14 +75,13 @@ abstract: |
   [1.], [Vaishnavi Humane], [], [], [], [], [], 
   [2.], [Dr. Ashok Kumar], [], [], [], [], [],
   [3.], [Rajat Kumar], [], [], [], [], [],
-  [4.], [Aishwarya Karan], [], [], [], [], [], 
-  [5.], [Dr. Priyanka Ch.], [], [], [], [], [], 
-  [6.], [Kajal Mahor], [], [], [], [], [], 
-  [7.], [Achal Bujade], [], [], [], [], [],
-  [8.], [Yogendra Kumar], [], [], [], [], [],
-  [9.], [Tushar Jadhav], [], [], [], [], [],
-  [10.], [Vidhata Tamgadge], [], [], [], [], [],
-  [11.], [Ankita Hirwani ], [], [], [], [], [],
+  [4.], [Dr. Priyanka Ch.], [], [], [], [], [], 
+  [5.], [Kajal Mahor], [], [], [], [], [], 
+  [6.], [Achal Bujade], [], [], [], [], [],
+  [7.], [Yogendra Kumar], [], [], [], [], [],
+  [8.], [Tushar Jadhav], [], [], [], [], [],
+  [9.], [Vidhata Tamgadge], [], [], [], [], [],
+  [10.], [Ankita Hirwani ], [], [], [], [], [],
   
 )
 

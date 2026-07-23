@@ -1267,6 +1267,62 @@
     "text": "Thank you!\nModule 2 complete 🎉\nSARA Institute of Data Science - 3rd SARA Summer School 22-26 July 2026 “R for Researchers”\n\nCourse Slides website: https://sara-course-r4b.netlify.app/"
   },
   {
+    "objectID": "speakers.html#section",
+    "href": "speakers.html#section",
+    "title": "Day 3R for Researchers",
+    "section": "",
+    "text": "Savitribai Phule (1831-1897)🌺 🙏🏽🌼\n\n\n\n\n\n\n\n\n\n\n\n\nRamabai Ambedkar (1898-1935)🌺 🙏🏽🌼\n\nSavitribai Ramabai (SARA) Institute of Data Science, Sonipat\n\n\nTitle slide background source: Yusuf"
+  },
+  {
+    "objectID": "speakers.html#about-sara",
+    "href": "speakers.html#about-sara",
+    "title": "Day 3R for Researchers",
+    "section": "About SARA",
+    "text": "About SARA\n\nSince 2023, we believe education is for everyone.\n\n\n\n\nProvides free open-source data science education\nPriority admission for marginalised communities & women\nPromoting AI Awareness\n\n\n\n\n\nImage source Afandi"
+  },
+  {
+    "objectID": "speakers.html#sara-data-schools",
+    "href": "speakers.html#sara-data-schools",
+    "title": "Day 3R for Researchers",
+    "section": "SARA Data Schools",
+    "text": "SARA Data Schools\n\nSummer SchoolWinter SchoolBootcamp\n\n\n\n\n\n\n\n\n\n\n\n\n\n(a) 1st, 22-26, July 2024\n\n\n\n\n\n\n\n\n\n\n\n(b) 2nd, 25-29, July 2025\n\n\n\n\n\n\n\nFigure 1: Participants of the SARA Summer Schools “R for Researchers”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(a) 1st, 16-20, Dec 2024\n\n\n\n\n\n\n\n\n\n\n\n(b) 2nd, 23-27, Jan 2026\n\n\n\n\n\n\n\nFigure 2: Participants of the SARA Winter Schools “Statistics using R”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(a) 1st, 3-7, March 2025\n\n\n\n\n\n\n\n\n\n\n\n(b) 2nd, 20-22, March 2026\n\n\n\n\n\n\n\nFigure 3: Participants of the SARA Coding Bootcamps “Publish using Quarto”"
+  },
+  {
+    "objectID": "speakers.html#section-1",
+    "href": "speakers.html#section-1",
+    "title": "Day 3R for Researchers",
+    "section": "",
+    "text": "The Ambedkar Educational Society Sonipat (HR)\n\n\nEstablished in 1969"
+  },
+  {
+    "objectID": "speakers.html#rd-sara-summer-school",
+    "href": "speakers.html#rd-sara-summer-school",
+    "title": "Day 3R for Researchers",
+    "section": "3rd SARA Summer School",
+    "text": "3rd SARA Summer School\n\n\n\n5 day, 40 hours, free data science education\n10 participants from UG to PhD level\nFive international pro-bono guest speakers"
+  },
+  {
+    "objectID": "speakers.html#teaching-modules",
+    "href": "speakers.html#teaching-modules",
+    "title": "Day 3R for Researchers",
+    "section": "Teaching Modules",
+    "text": "Teaching Modules\n\nDay 1: Introduction to R & RStudio\nDay 2: Data import, clean, & wrangling\nDay 3: Data visualization using ggplot\nDay 4: Quantitative analysis\nDay 5: Qualitative anlaysis\n\n\nCourse slides website"
+  },
+  {
+    "objectID": "speakers.html#sara-online-guest-speakers",
+    "href": "speakers.html#sara-online-guest-speakers",
+    "title": "Day 3R for Researchers",
+    "section": "SARA Online Guest Speakers",
+    "text": "SARA Online Guest Speakers\n\n\n\nDr. Jessica Mar \nUniversity of Queensland - AU\n\n\n\nDr. Ozan Evkaya \nUniversity of Edinburgh - UK\n\n\n\nDr. Bailey Immel \nData Scientist & Researcher - USA"
+  },
+  {
+    "objectID": "speakers.html#sara-in-person-speakers",
+    "href": "speakers.html#sara-in-person-speakers",
+    "title": "Day 3R for Researchers",
+    "section": "SARA In-person Speakers",
+    "text": "SARA In-person Speakers\n\n\n\nDr. Nikee \nCA & Manipal University - RJ\n\n\n\nMiss. Shivani \nData Scientist & Researcher - DL\n\n\n\nDr. Ajay Koli \nData Educator SARA - HR"
+  },
+  {
     "objectID": "Session3_PolishingAndPublishing.html#welcome-back",
     "href": "Session3_PolishingAndPublishing.html#welcome-back",
     "title": "Data Visualisation with R",
@@ -1908,7 +1964,7 @@
     "href": "intro.html#create-variables",
     "title": "Introduction toR & RStudio",
     "section": "Create Variables",
-    "text": "Create Variables\n\nname &lt;- \"SARA Institute\" # character\n\nyear &lt;- 2023 # numeric\n\nfee &lt;- 4500.00 # numeric\n\nis_free &lt;- FALSE # logical\n\n\n\nComment is any line in R that starts with # - R completely ignores it when running code"
+    "text": "Create Variables\n\nname &lt;- \"SARA Institute\" # character\n\nyear &lt;- 2023 # numeric\n\nfee &lt;- 4500 # numeric\n\nis_free &lt;- FALSE # logical\n\n\n\nComment is any line in R that starts with # - R completely ignores it when running code"
   },
   {
     "objectID": "intro.html#print-a-variable",
@@ -1985,7 +2041,7 @@
     "href": "intro.html#cons-of-r-script-.r-file",
     "title": "Introduction toR & RStudio",
     "section": "Cons of R Script (.R File)",
-    "text": "Cons of R Script (.R File)\n\nOutput is not saved with the code - plots appear in the Plots pane and results in the Console, but closing RStudio loses everything; you have to rerun the script every time to see the output again.\nNo narrative or context - you can only add short comments with #; there is no space to explain your thinking, interpret results, or present findings in a readable way for others.\nNot reproducible as a report — a .R file cannot be directly shared as a document; turning your analysis into something a non-coder can read requires extra steps, unlike .qmd which renders everything in one click."
+    "text": "Cons of R Script (.R File)\n- Output is not saved with the code - plots appear in the Plots pane and results in the Console, but closing RStudio loses everything; you have to rerun the script every time to see the output again.\n- No narrative or context - you can only add short comments with #; there is no space to explain your thinking, interpret results, or present findings in a readable way for others.\n- Not reproducible as a report — a .R file cannot be directly shared as a document; turning your analysis into something a non-coder can read requires extra steps, unlike .qmd which renders everything in one click."
   },
   {
     "objectID": "intro.html#your-turn-3",
@@ -1993,6 +2049,13 @@
     "title": "Introduction toR & RStudio",
     "section": "Your Turn",
     "text": "Your Turn\n\nCreate a vector of 5 temperatures (any values you like).\nFind the mean, max, and min.\nWhich temperatures are above 30? (use &gt;= 30)"
+  },
+  {
+    "objectID": "intro.html#answers-1",
+    "href": "intro.html#answers-1",
+    "title": "Introduction toR & RStudio",
+    "section": "Answers",
+    "text": "Answers\n\nCreate a vector of 5 temperatures\n\ntemps &lt;- c(28, 32, 25, 35, 30)\n\nMean, max, and min\n\nmean(temps) max(temps) min(temps)\n\nWhich temperatures are &gt;= 30?\n\ntemps[temps &gt;= 30]"
   },
   {
     "objectID": "intro.html#data-frames",
@@ -2184,8 +2247,8 @@
     "text": "Your Turn\n\n\nWrite a function called celsius_to_fahrenheit that converts temperature: F = (C * 9/5) + 32.\nTest it with 0, 100, and 37 (body temperature)"
   },
   {
-    "objectID": "intro.html#answers-1",
-    "href": "intro.html#answers-1",
+    "objectID": "intro.html#answers-2",
+    "href": "intro.html#answers-2",
     "title": "Introduction toR & RStudio",
     "section": "Answers",
     "text": "Answers\n\ncelsius_to_fahrenheit &lt;- function(x) {\n  F &lt;- (x * 9 / 5) + 32\n  return(F)\n}\n\ncelsius_to_fahrenheit(37)\n\n[1] 98.6"
@@ -2415,6 +2478,13 @@
     "text": "2 Session\n    View slides in full screen"
   },
   {
+    "objectID": "index.html#session-2",
+    "href": "index.html#session-2",
+    "title": "R for Researchers",
+    "section": "3 Session",
+    "text": "3 Session\n    View slides in full screen"
+  },
+  {
     "objectID": "thanks.html#section",
     "href": "thanks.html#section",
     "title": "SARA | The Non-Profit",
@@ -2426,7 +2496,7 @@
     "href": "thanks.html#about-sara",
     "title": "SARA | The Non-Profit",
     "section": "About SARA",
-    "text": "About SARA\n\nSince 2023, we believe coding is for everyone.\n\n\n\n\nProvides free open-source data science education\nPriority admission for marginalised communities & women\nPromoting AI Awareness"
+    "text": "About SARA\n\nSince 2023, we believe education is for everyone.\n\n\n\n\nProvides free open-source data science education\nPriority admission for marginalised communities & women\nPromoting AI Awareness"
   },
   {
     "objectID": "thanks.html#sara-data-schools",

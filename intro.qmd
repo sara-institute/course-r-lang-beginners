@@ -995,7 +995,7 @@ name <- "SARA Institute" # character
 
 year <- 2023 # numeric
 
-fee <- 4500.00 # numeric
+fee <- 4500 # numeric
 
 is_free <- FALSE # logical
 ```
@@ -1275,11 +1275,11 @@ scores >= 70
 
 ## Cons of R Script (`.R` File) {.scrollable}
 
-- **Output is not saved with the code** - plots appear in the Plots pane and results in the Console, but closing RStudio loses everything; you have to rerun the script every time to see the output again.
+[- **Output is not saved with the code** - plots appear in the Plots pane and results in the Console, but closing RStudio loses everything; you have to rerun the script every time to see the output again.]{.fragment .fade-in-then-semi-out}
 
-- **No narrative or context** - you can only add short comments with `#`; there is no space to explain your thinking, interpret results, or present findings in a readable way for others.
+[- **No narrative or context** - you can only add short comments with `#`; there is no space to explain your thinking, interpret results, or present findings in a readable way for others.]{.fragment .fade-in-then-semi-out}
 
-- **Not reproducible as a report** — a `.R` file cannot be directly shared as a document; turning your analysis into something a non-coder can read requires extra steps, unlike `.qmd` which renders everything in one click.
+[- **Not reproducible as a report** — a `.R` file cannot be directly shared as a document; turning your analysis into something a non-coder can read requires extra steps, unlike `.qmd` which renders everything in one click.]{.fragment .fade-in-then-semi-out}
 
 ## Your Turn {.your-turn}
 
@@ -1288,6 +1288,26 @@ scores >= 70
 1. Find the mean, max, and min.
 
 1. Which temperatures are above 30? (use >= 30)
+
+## Answers {.answer}
+
+::: {.nonincremental}
+
+- Create a vector of 5 temperatures
+
+`temps <- c(28, 32, 25, 35, 30)`
+
+- Mean, max, and min
+
+`mean(temps)`
+`max(temps)`
+`min(temps)`
+
+- Which temperatures are >= 30?
+
+`temps[temps >= 30]`
+
+:::
 
 ## Data Frames {background-color="black"}
 
