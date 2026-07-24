@@ -74,21 +74,20 @@ abstract: |
   [1.], [*Vaishnavi Humane*], [Fully Funded], [Mumbai, MH], [MA Education, Nagpur Univeristy], [93221 54217],
   [2.], [Dr. Ashok Kumar], [Early Bird], [Chandigarh], [Professor Bioinformatics, Panjab Univeristy], [79738 89824],
   [3.], [Rajat Kumar], [Early Bird], [New Delhi], [UG Student of Data Science, IIT Madras], [85108 33433],
-  [4.], [*Aishwarya Karan*], [Early Bird], [New Delhi], [PhD Student of Law, Delhi University], [96546 67897],
-  [5.], [*Dr. Priyanka Choudhary*], [Early Bird], [Jaipur, RJ], [Assistant Professor, Political Science, Delhi Univeristy], [94143 63424],
-  [6.], [*Kajal Mahor*], [Fully Funded], [Wardha, MH], [BSc Biology, Azim Premji University], [99755 84007],
-  [7.], [*Achal Bujade*], [Fully Funded], [Wardha, MH], [BSc Biology, Azim Premji University], [84219 66582],
-  [8.], [Yogendra Kumar], [Regular Price], [Delhi], [PhD Student, Sociology, Delhi University], [80036 26067],
-  [9.], [Tushar Jadhav], [Fully Funded], [Bengaluru], [MA Urban Economy, IIHS University], [77094 03143],
-  [10.], [*Vidhata Tamgadge*], [Fully Funded], [Wardha, MH], [BSc Biology, Azim Premji University], [76667 04679],
-  [11.], [*Ankita Hirwani*], [Fully Funded], [New Dehi], [MA Sociology, DSE, Delhi University], [87073 59179],
+  [4.], [*Dr. Priyanka Choudhary*], [Early Bird], [Jaipur, RJ], [Assistant Professor, Political Science, Delhi Univeristy], [94143 63424],
+  [5.], [*Kajal Mahor*], [Fully Funded], [Wardha, MH], [BSc Biology, Azim Premji University], [99755 84007],
+  [6.], [*Achal Bujade*], [Fully Funded], [Wardha, MH], [BSc Biology, Azim Premji University], [84219 66582],
+  [7.], [Yogendra Kumar], [Regular Price], [Delhi], [PhD Student, Sociology, Delhi University], [80036 26067],
+  [8.], [Tushar Jadhav], [Fully Funded], [Bengaluru], [MA Urban Economy, IIHS University], [77094 03143],
+  [9.], [*Vidhata Tamgadge*], [Fully Funded], [Wardha, MH], [BSc Biology, Azim Premji University], [76667 04679],
+  [10.], [*Ankita Hirwani*], [Fully Funded], [New Dehi], [MA Sociology, DSE, Delhi University], [87073 59179],
 )
 
 ```
 
-**Female Participants = 08**
+**Female Participants = 06**
 
-Total participants = 15 
+Total participants = 10
 
 ## Two Guest Speakers
 
